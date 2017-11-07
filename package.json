@@ -1,0 +1,30 @@
+{
+  "name": "docstamp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "deploy": "truffle migrate --reset",
+    "deploy:rinkeby": "truffle migrate --network=rinkeby --reset",
+    "watch:client": "watchify -t [babelify] public/js/main.js -o public/dist/bundle.js",
+    "build:client": "browserify -t [babelify] public/js/main.js -o public/dist/bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "moment": "^2.19.1",
+    "promise-wait": "^1.0.0",
+    "truffle-contract": "^3.0.1",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3-detect-network": "0.0.4"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "watchify": "^3.9.0"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "contract_name": "DocStamp",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "records",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "record",
+          "type": "string"
+        }
+      ],
+      "name": "didStamp",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "record",
+          "type": "string"
+        },
+        {
+          "name": "stamper",
+          "type": "address"
+        }
+      ],
+      "name": "isStamper",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "record",
+          "type": "string"
+        }
+      ],
+      "name": "getStamper",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "record",
+          "type": "string"
+        }
+      ],
+      "name": "stamp",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "record",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "stamper",
+          "type": "address"
+        }
+      ],
+      "name": "_DocStamped",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040525b60008054600160a060020a03191633600160a060020a03161790555b5b610476806100316000396000f300606060405236156100805763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166301e6472581146100855780635a53832a146100b75780638da5cb5b146100e9578063c45ae95b14610118578063f2fde38b14610158578063f57b6f9814610179578063f63c82fb146101b3575b600080fd5b341561009057600080fd5b61009b6004356101d3565b604051600160a060020a03909116815260200160405180910390f35b34156100c257600080fd5b6100d560048035602481019101356101ee565b604051901515815260200160405180910390f35b34156100f457600080fd5b61009b610240565b604051600160a060020a03909116815260200160405180910390f35b341561012357600080fd5b6100d56024600480358281019291013590600160a060020a0390351661024f565b604051901515815260200160405180910390f35b341561016357600080fd5b610177600160a060020a03600435166102a2565b005b341561018457600080fd5b61009b600480356024810191013561033b565b604051600160a060020a03909116815260200160405180910390f35b34156101be57600080fd5b6101776004803560248101910135610382565b005b600160205260009081526040902054600160a060020a031681565b600033600160a060020a0316600160008585604051808383808284378201915050925050506040519081900390208152602081019190915260400160002054600160a060020a03161490505b92915050565b600054600160a060020a031681565b600081600160a060020a0316600160008686604051808383808284378201915050925050506040519081900390208152602081019190915260400160002054600160a060020a03161490505b9392505050565b60005433600160a060020a039081169116146102bd57600080fd5b600160a060020a03811615156102d257600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b50565b6000600160008484604051808383808284378201915050925050506040519081900390208152602081019190915260400160002054600160a060020a031690505b92915050565b6000828260405180838380828437820191505092505050604051809103902090506040516040519081900390208114156103bb57600080fd5b600081815260016020526040902054600160a060020a0316156103dd57600080fd5b60008181526001602052604090819020805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a03169081179091559082907fc16e581122eb06241ed2be34413d370b8cbbb4fb92c02299be1e23f4e3b4077d905160405180910390a35b5050505600a165627a7a72305820632ed5dd24cf86fd76bc6509042820c8775f94d175d3a5830298ee4435e883980029",
+  "networks": {
+    "4": {
+      "events": {
+        "0xc16e581122eb06241ed2be34413d370b8cbbb4fb92c02299be1e23f4e3b4077d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "record",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "stamper",
+              "type": "address"
+            }
+          ],
+          "name": "_DocStamped",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xdc0ccda5393ce63a2bda4ea3919150dc7e954e0a1770c9813bd60f7d4e57570b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "record",
+              "type": "string"
+            },
+            {
+              "indexed": true,
+              "name": "stamper",
+              "type": "address"
+            }
+          ],
+          "name": "_DocStamped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x8c992c4bdedde71a4dc35b58d66a2eb26e084718",
+      "updated_at": 1510038047840
+    },
+    "1510030404004": {
+      "events": {
+        "0xc16e581122eb06241ed2be34413d370b8cbbb4fb92c02299be1e23f4e3b4077d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "hash",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "stamper",
+              "type": "address"
+            }
+          ],
+          "name": "_DocStamped",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb10ce1edf064e78c2ff936e041f8d065ba086ebc",
+      "updated_at": 1510032990363
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1510038047840
+}

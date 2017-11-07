@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>DocStamp.it</title>
+</head>
+<body>
+  <h1>docstamp.it</h1>
+  <form id="form">
+    <div>Stamp a doc</div>
+    <div>
+      <input type="file" id="file">
+    </div>
+    <div>
+      <input type="text" readonly id="hash">
+    </div>
+    <div>
+      <button type="submit">Stamp it!</button>
+    </div>
+  </form>
+  <br />
+  <br />
+  <br />
+  <form id="checkerForm">
+    <div>Check stamper</div>
+    <div>
+      <input type="file" id="checkerFile">
+    </div>
+    <div>
+      <input type="text" readonly id="checkerHash">
+    </div>
+    <div>
+      <button type="submit">Check</button>
+    </div>
+    <div>
+      <label>Stamper:</label>
+      <input type="text" readonly id="stamper">
+    </div>
+  </form>
+  <div>
+    <ul id="eventsLog"></ul>
+  </div>
+  <script src="/vendor/web3.min.js"></script>
+  <script src="/dist/bundle.js"></script>
+</body>
+</html>
