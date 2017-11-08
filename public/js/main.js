@@ -1,5 +1,6 @@
 // TODO refactor+clean up
 
+const moment = require('moment')
 const wait = require('promise-wait')
 const tc = require('truffle-contract')
 const detectNetwork = require('web3-detect-network')
@@ -38,6 +39,8 @@ const checkerHash = document.querySelector('#checkerHash')
 const checkStamper = document.querySelector('#stamper')
 checkerForm.addEventListener('submit', handleCheckForm, false)
 
+const {soliditySHA3} = require('ethereumjs-abi')
+
 function handleCheckForm (event) {
   event.preventDefault()
 
@@ -51,8 +54,13 @@ function handleCheckForm (event) {
     checkerHash.value = hex(hash)
 
     try {
+      console.log(hex(hash))
       const stamper = await instance.getStamper(hex(hash), {from: account})
-      debugger
+      const timestamp = await instance.getTimestamp(hex(hash), {from: account})
+      console.log("TIME", moment.unix(timestamp).format('MM DD YYYY hh:mmA'))
+
+      //var h = `0x${soliditySHA3(['string'], [hex(hash)]).toString('hex')}`
+
       checkStamper.value = stamper
     } catch (error) {
       alert(error)
@@ -69,7 +77,7 @@ function handleSubmit (event) {
     return false
   }
 
-  const hash = fileInput.value
+  const hash = hashField.value
 
   stampDoc(hash)
 }
@@ -77,7 +85,6 @@ function handleSubmit (event) {
 async function stampDoc (hash) {
   try {
     const value = await instance.stamp(hash, {from: account})
-    debugger
     alert('stamped')
   } catch (error) {
     alert(error)
@@ -95,26 +102,49 @@ function getProvider () {
   return provider
 }
 
+function getWebsocketProvider () {
+  // https://github.com/ethereum/web3.js/issues/1119
+  if (!window.Web3.providers.WebsocketProvider.prototype.sendAsync) {
+    window.Web3.providers.WebsocketProvider.prototype.sendAsync = window.Web3.providers.WebsocketProvider.prototype.send
+  }
+
+  return new window.Web3.providers.WebsocketProvider('wss://rinkeby.infura.io/ws')
+}
+
 function getAccount () {
   if (window.web3) {
     return window.web3.defaultAccount || window.web3.eth.accounts[0]
   }
 }
 
-function setUpEvents () {
+async function setUpEvents () {
+var Web3WsProvider = require('web3-providers-ws');
+
+var ws = new Web3WsProvider('wss://rinkeby.infura.io/ws');
+  ws.sendAsync = ws.send
+  const contract = tc(source)
+  const provider = ws //getWebsocketProvider()
+  contract.setProvider(provider)
+
+  const instance = await contract.deployed()
+
   instance.allEvents({fromBlock: 0, toBlock: 'latest'})
   .watch(function (error, log) {
     if (error) {
       console.error(error)
       return false
     }
-    console.log(log)
 
-    const name = log.event
-    const args = log.args
-
-    eventsLog.innerHTML += `<li>${name} ${JSON.stringify(args)}</li>`
+    handleLog(log)
   })
+}
+
+function handleLog(log) {
+  console.log(log)
+  const name = log.event
+  const args = log.args
+
+  eventsLog.innerHTML += `<li>${name} ${JSON.stringify(args)}</li>`
 }
 
 async function init () {
