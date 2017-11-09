@@ -1,0 +1,3 @@
+[submodule "lib/ECVerify"]
+	path = lib/ECVerify
+	url = https://github.com/miguelmota/ECVerify
