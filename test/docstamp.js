@@ -75,7 +75,6 @@ contract('DocStamp', function(accounts) {
 
       var h = web3.sha3(msg)
       var sig = web3.eth.sign(account, h);
-
       var isSigner = await instance.verifySig.call(msg, sig)
       assert.ok(isSigner)
     } catch(error) {
