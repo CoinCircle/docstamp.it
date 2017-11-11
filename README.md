@@ -1,10 +1,10 @@
 # docstamp.it
 
-> Document Notarization on the Ethereum Blockchain
+> Document Notarization on the [Ethereum](https://ethereum.org/) Blockchain
 
-<img src="./public/assets/screenshot.png" width="700" />
+<a href="https://docstamp.it"><img src="./public/assets/screenshot.png" width="700" /></a>
 
-Currently, the Rinkeby testnet.
+Currently it's on the [Rinkeby](https://www.rinkeby.io) testnet.
 
 # Demo
 
