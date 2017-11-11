@@ -1,7 +1,6 @@
 pragma solidity ^0.4.4;
 
 import './Ownable.sol';
-//import "./ECVerify.sol";
 
 contract DocStamp is Ownable {
   mapping (bytes32 => address) public records;
