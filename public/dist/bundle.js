@@ -67510,6 +67510,10 @@ async function init() {
 
   instance = await contract.deployed();
   account = getAccount();
+
+  if (!window.web3) {
+    window.web3 = new window.Web3(provider);
+  }
 }
 
 /**
@@ -67725,6 +67729,13 @@ async function handleGenSigForm(event) {
 
   if (!account) {
     alert('Please connect MetaMask account set to Rinkeby network');
+    return false;
+  }
+
+  const stamper = await instance.getStamper(hash, { from: account });
+
+  if (stamper !== account) {
+    alert('You are not the stamper of this document');
     return false;
   }
 
