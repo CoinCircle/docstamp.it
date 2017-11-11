@@ -41,7 +41,7 @@ input[type="text"][readonly] {
   font-size: 0.7em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   #header span {
     display: block;
     width: 100%;
