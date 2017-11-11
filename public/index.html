@@ -3,42 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
-  <title>DocStamp.it</title>
+  <meta name="description" content="Notarize documents online, timestamp, ethereum, blockchain">
+  <meta name="keywords" content="notary, online, document, timestamp, ethereum, blockchain, smart contracts">
+  <title>docstamp.it - Notarize your documents on Ethereum</title>
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>docstamp.it</h1>
-  <form id="form">
-    <div>Stamp a doc</div>
-    <div>
-      <input type="file" id="file">
-    </div>
-    <div>
-      <input type="text" readonly id="hash">
-    </div>
-    <div>
-      <button type="submit">Stamp it!</button>
-    </div>
-  </form>
-  <br />
-  <br />
-  <br />
-  <form id="checkerForm">
-    <div>Check stamper</div>
-    <div>
-      <input type="file" id="checkerFile">
-    </div>
-    <div>
-      <input type="text" readonly id="checkerHash">
-    </div>
-    <div>
-      <button type="submit">Check</button>
-    </div>
-    <div>
-      <label>Stamper:</label>
-      <input type="text" readonly id="stamper">
-    </div>
-  </form>
-  <div>
+  <header id="header">
+  <h1>docstamp.it
+    <span>Network: <strong>Rinkeby Testnet</strong>
+      <br><a href="https://github.com/miguelmota/docstamp.it" target="_blank" rel="noopener noreferrer">fork me on github</a>
+  </span></h1>
+    <small>Document Notarization on the Ethereum Blockchain</small>
+  </header>
+  <div id="formsContainer">
+    <form id="stampForm">
+      <div class="formTitle">
+        Stamp a Document
+        <small>Notarize your document, to later prove that you cryptographically signed it and had access to it.</small>
+      </div>
+      <div>
+        <label>File <small>Only the hash of the document is retrieved to be stored as the fingerprint; the actual contents are never stored anywhere.</small></label>
+        <input type="file" id="stampFile">
+      </div>
+      <div>
+        <label>Hash <small>The fingerprint of the document.</small></label>
+        <input type="text" readonly id="stampHash">
+      </div>
+      <div>
+        <button type="submit">Stamp it!</button>
+      </div>
+    </form>
+    <form id="checkForm">
+      <div class="formTitle">
+        Check Stamper of Document
+        <small>See who the signer of the document is.</small>
+      </div>
+      <div>
+        <label>File <small>Upload the original file to retrieve the document fingerprint; remember, nothing is ever stored.</small></label>
+        <input type="file" id="checkFile">
+      </div>
+      <div>
+        <label>Hash <small>The fingerprint of the document.</small></label>
+        <input type="text" readonly id="checkHash">
+      </div>
+      <div>
+        <button type="submit">Check Stamper</button>
+      </div>
+      <div class="formOutput">
+        <label>Stamper <small>The signer of the document.</small></label>
+        <input type="text" readonly id="checkStamper">
+      </div>
+      <div>
+        <label>Datetime <small>When the document was notarized.</small></label>
+        <input type="text" readonly id="checkDatetime">
+      </div>
+    </form>
+    <form id="genSigForm">
+      <div class="formTitle">
+        Generate Signature to Prove that you Stamped Document
+        <small>You can generate a cryptographic signature of the document you notarized to prove to others that you are indeed the signer.</small>
+      </div>
+      <div>
+        <label>File <small>The file you notarized.</small></label>
+        <input type="file" id="genSigFile">
+      </div>
+      <div>
+        <button type="submit">Generate Signature</button>
+      </div>
+      <div class="formOutput">
+        <label>Signature <small>The cryptographic signature which you can share.</small></label>
+        <input type="text" id="genSigHash" readonly>
+      </div>
+    </form>
+    <form id="verifySigForm">
+      <div class="formTitle">
+        Verify Signature
+        <small>You can verify that the signature signer actually owns that document they claim to own.</small>
+      </div>
+      <div>
+        <label>File <small>Original file to retrieve fingerprint.</small>
+        </label>
+        <input type="file" id="verifySigFile">
+      </div>
+      <div>
+        <label>Signature <small>The signer's provided signature.</small></label>
+        <input type="text" id="verifySigInput">
+      </div>
+      <div>
+        <button type="submit">Verify Signature of Stamper</button>
+      </div>
+      <div class="formOutput">
+        <output id="verifySigOut"></output>
+      </div>
+    </form>
+  </div>
+  <div id="events">
+    <div class="eventsTitle">Events</div>
     <ul id="eventsLog"></ul>
   </div>
   <script src="/dist/bundle.js"></script>

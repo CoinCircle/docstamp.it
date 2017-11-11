@@ -1,6 +1,7 @@
 pragma solidity ^0.4.4;
 
 import './Ownable.sol';
+//import "./ECVerify.sol";
 
 contract DocStamp is Ownable {
   mapping (bytes32 => address) public records;
@@ -8,7 +9,7 @@ contract DocStamp is Ownable {
 
   event _DocStamped(bytes32 indexed record, address indexed stamper, uint256 timestamp);
 
-  function stamp(string record) external {
+  function stamp(bytes32 record) external {
     bytes32 hash = sha3(record);
     require(hash != sha3(""));
     require(records[hash] == address(0));
@@ -19,42 +20,35 @@ contract DocStamp is Ownable {
     _DocStamped(hash, msg.sender, block.timestamp);
   }
 
-  function exists(string record) constant returns (bool) {
+  function exists(bytes32 record) constant returns (bool) {
     bytes32 hash = sha3(record);
     return records[hash] != address(0);
   }
 
-  function getStamper(string record) constant returns (address) {
+  function getStamper(bytes32 record) constant returns (address) {
     return records[sha3(record)];
   }
 
-  function getTimestamp(string record) constant returns (uint256) {
+  function getTimestamp(bytes32 record) constant returns (uint256) {
     return timestamps[sha3(record)];
   }
 
-  function didStamp(string record) constant returns (bool) {
+  function didStamp(bytes32 record) constant returns (bool) {
     return records[sha3(record)] == msg.sender;
   }
 
-  function isStamper(string record, address stamper) constant returns (bool) {
+  function isStamper(bytes32 record, address stamper) constant returns (bool) {
     return records[sha3(record)] == stamper;
   }
 
-  function verifySig(string record, bytes sig) returns (bool) {
-    bytes32 hash = sha3(record);
-    require(hash != sha3(""));
-    require(sig.length != 0);
-
-    return ecverify(hash, sig, records[hash]);
-  }
-
-  function ecrecovery(bytes32 hash, bytes sig) returns (address) {
+  function ecrecovery(bytes32 hash, bytes sig) public constant returns (address) {
     bytes32 r;
     bytes32 s;
     uint8 v;
 
-    if (sig.length != 65)
+    if (sig.length != 65) {
       return 0;
+    }
 
     assembly {
       r := mload(add(sig, 32))
@@ -63,20 +57,18 @@ contract DocStamp is Ownable {
     }
 
     // https://github.com/ethereum/go-ethereum/issues/2053
-    if (v < 27)
+    if (v < 27) {
       v += 27;
+    }
 
-    if (v != 27 && v != 28)
+    if (v != 27 && v != 28) {
       return 0;
-
-    // https://github.com/ethereum/go-ethereum/issues/3731
-    bytes memory prefix = "\x19Ethereum Signed Message:\n32";
-    hash = sha3(prefix, hash);
+    }
 
     return ecrecover(hash, v, r, s);
   }
 
-  function ecverify (bytes32 hash, bytes sig, address signer) returns (bool) {
+  function ecverify(bytes32 hash, bytes sig, address signer) public constant returns (bool) {
     return signer == ecrecovery(hash, sig);
   }
 

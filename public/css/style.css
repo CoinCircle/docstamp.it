@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #222;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 0.5em;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.2em;
+  font-size: 1em;
+}
+
+input[type="text"][readonly] {
+  background: #f9f9f9;
+}
+
+#header {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+#header span {
+  font-size: 0.5em;
+  float: right;
+  font-weight: normal;
+  display: block;
+  text-align: right;
+}
+
+#header span a {
+  font-size: 0.7em;
+}
+
+@media (max-width: 500px) {
+  #header span {
+    float: none;
+  }
+}
+
+#header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#header h1 small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.5em;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+#formsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  margin: 0 auto 1em auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+#formsContainer form {
+  display: block;
+  padding: 1.5em;
+  text-align: left;
+  border: none;
+  box-shadow: 0 1px 1px #b7b7b7;
+}
+
+#formsContainer form.loading {
+  opacity: 0.5;
+}
+
+#formsContainer form.loading,
+#formsContainer form.loading * {
+  cursor: wait;
+}
+
+#formsContainer div {
+  margin-bottom: 0.5em;
+}
+
+#formsContainer label {
+  display: block;
+}
+
+#formsContainer label small {
+  font-size: 0.6em;
+  display: block;
+}
+
+#formsContainer button {
+  display: inline-block;
+  text-align: center;
+  -webkit-appearance: none;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0.3em 0.7em;
+  min-width: 165px;
+  box-shadow: 0 1px 1px #b7b7b7;
+  border: 1px solid #fbfbfb;
+  transition: all 0.2s ease-out;
+}
+
+#formsContainer button:hover {
+  box-shadow: 0 1px 1px #797979;
+}
+
+#formsContainer .formTitle {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#formsContainer .formTitle small {
+  font-size: 0.6em;
+  display: block;
+  font-weight: normal;
+}
+
+#formsContainer .formOutput {
+  display: block;
+}
+
+#events {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  overflow: auto;
+  padding: 1.5em;
+}
+
+#events .eventsTitle {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#eventsLog {
+  display: block;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
