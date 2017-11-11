@@ -43,7 +43,10 @@ input[type="text"][readonly] {
 
 @media (max-width: 500px) {
   #header span {
+    display: block;
+    width: 100%;
     float: none;
+    text-align: left;
   }
 }
 
