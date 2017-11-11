@@ -25,8 +25,8 @@ input[type="text"][readonly] {
   display: block;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 2em 0;
+  margin: 1em auto 2em auto;
+  padding: 0;
 }
 
 #header span {
