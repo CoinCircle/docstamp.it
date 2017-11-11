@@ -1,6 +1,6 @@
 # docstamp.it
 
-> Document Notarization on the [Ethereum](https://ethereum.org/) Blockchain
+> Document Notarization on the [Ethereum](https://ethereum.org/) Blockchain.
 
 <a href="https://docstamp.it"><img src="./public/assets/screenshot.png" width="700" /></a>
 
