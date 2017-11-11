@@ -1,7 +1,21 @@
 # docstamp.it
 
-> "notarize" documents on Ethereum.
+> Document Notarization on the Ethereum Blockchain
 
-WIP
+<img src="./public/assets/screenshot.png" width="700" />
 
-<!-- openssl sha -sha256 file -->
+Currently, the Rinkeby testnet.
+
+# Demo
+
+[https://docstamp.it](https://docstamp.it)
+
+# Test
+
+```bash
+truffle test
+```
+
+# License
+
+MIT
