@@ -8,7 +8,7 @@ Currently it's on the [Rinkeby](https://www.rinkeby.io) testnet.
 
 # Demo
 
-[https://docstamp.it](https://docstamp.it)
+**[https://docstamp.it](https://docstamp.it)**
 
 # Architecture
 
