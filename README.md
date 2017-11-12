@@ -12,7 +12,7 @@ Currently it's on the [Rinkeby](https://www.rinkeby.io) testnet.
 
 # Architecture
 
-<img src="./public/assets/diagrams/docstampit.png" width="600" /></a>
+<img src="./public/assets/diagrams/docstampitv1.png" width="600" /></a>
 
 # Test
 
