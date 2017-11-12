@@ -144,11 +144,12 @@ p {
 }
 
 #events {
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
   width: 100%;
   max-width: 800px;
   overflow: auto;
   padding: 1.5em;
+  max-height: 300px;
 }
 
 #events .eventsTitle {
@@ -168,4 +169,32 @@ p {
 
 .red {
   color: red;
+}
+
+#faq {
+  margin: 0 auto 1em auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+#faq .faqTitle {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#faq dl {
+  font-size: 0.8em;
+}
+
+#faq dt {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#faq dd {
+  margin-bottom: 1em;
+  border-left: 4px solid #eaeaea;
+  padding-left: 1em;
 }

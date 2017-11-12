@@ -7,6 +7,8 @@ const detectNetwork = require('web3-detect-network')
 const {soliditySHA3} = require('ethereumjs-abi')
 const {sha3} = require('ethereumjs-util')
 const Buffer = require('buffer/').Buffer
+const Web3WsProvider = require('web3-providers-ws')
+const arrayBufferToBuffer = require('arraybuffer-to-buffer')
 
 const source = require('../../build/contracts/DocStamp.json')
 
@@ -91,9 +93,8 @@ function getAccount () {
  */
 
 async function setUpEvents () {
-var Web3WsProvider = require('web3-providers-ws');
 
-  var ws = new Web3WsProvider('wss://rinkeby.infura.io/ws');
+  const ws = new Web3WsProvider('wss://rinkeby.infura.io/ws');
   ws.sendAsync = ws.send
   const contract = tc(source)
   const provider = ws //getWebsocketProvider()
@@ -147,15 +148,14 @@ stampForm.addEventListener('submit', handleStampForm, false)
 async function handleStampFile (event) {
   stampOutHash.value = ''
   const file = event.target.files[0]
+  const hash = await fileToSha3(file)
 
-  var buffer = await file2Buffer(file)
-  var hash = web3.sha3(hex(await sha256(buffer)))
   stampOutHash.value = hash
 }
 
 async function handleStampForm (event) {
   event.preventDefault()
-  var target = event.target
+  const target = event.target
 
   if (!account) {
     alert('Please connect MetaMask account set to Rinkeby network')
@@ -206,8 +206,7 @@ async function handleCheckFile (event) {
   checkHash.value = ''
   const file = event.target.files[0]
 
-  var buffer = await file2Buffer(file)
-  var hash = web3.sha3(hex(await sha256(buffer)))
+  const hash = await fileToSha3(file)
   checkHash.value = hash
 }
 
@@ -257,9 +256,7 @@ async function handleGenSigForm (event) {
 
   genSigHash.value = ''
   const file = genSigFile.files[0]
-
-  var buffer = await file2Buffer(file)
-  var hash = web3.sha3(hex(await sha256(buffer)))
+  const hash = await fileToSha3(file)
 
   const exists = await instance.exists(hash, {from: account})
 
@@ -302,8 +299,7 @@ async function handleVerifySigForm (event) {
   verifySigOut.innerHTML = ''
   const file = verifySigFile.files[0]
 
-  const buffer = await file2Buffer(file)
-  const hash = web3.sha3(hex(await sha256(buffer)))
+  const hash = await fileToSha3(file)
   const sig = verifySigInput.value
 
   const exists = await instance.exists(hash, {from: account})
@@ -321,7 +317,7 @@ async function handleVerifySigForm (event) {
   const addr = await instance.getStamper(hash)
   const isSigner = await instance.ecverify(hash, sig, addr, {from: account})
 
-  var output = `<span class="red">✘ ${addr} <strong>IS NOT</strong> signer of ${hash}</span>`
+  let output = `<span class="red">✘ ${addr} <strong>IS NOT</strong> signer of ${hash}</span>`
 
   if (isSigner) {
     output = `<span class="green">✔ ${addr} <strong>IS</strong> signer of ${hash}</span>`
@@ -334,7 +330,7 @@ async function handleVerifySigForm (event) {
  * HELPERS
  */
 
-function file2Buffer (file) {
+function fileToBuffer (file) {
   return new Promise(function (resolve, reject) {
     const reader = new FileReader()
     const readFile = function(event) {
@@ -347,27 +343,14 @@ function file2Buffer (file) {
   })
 }
 
-function sha256 (buffer) {
- return crypto.subtle.digest('SHA-256', buffer).then(function(hash) {
-   return hash
-  })
+async function bufferToSha3 (buffer) {
+  return `0x${sha3(buffer).toString('hex')}`
 }
 
-function hex (buffer) {
-  var digest = ''
-  var view = new DataView(buffer)
-  for(var i = 0; i < view.byteLength; i += 4) {
-    // We use getUint32 to reduce the number of iterations (notice the `i += 4`)
-    var value = view.getUint32(i)
-    // toString(16) will transform the integer into the corresponding hex string
-    // but will remove any initial "0"
-    var stringValue = value.toString(16)
-    // One Uint32 element is 4 bytes or 8 hex chars (it would also work with 4
-    // chars for Uint16 and 2 chars for Uint8)
-    var padding = '00000000'
-    var paddedValue = (padding + stringValue).slice(-padding.length)
-    digest += paddedValue
-  }
+async function fileToSha3 (file) {
+  const buffer = await fileToBuffer(file)
+  const hash = bufferToSha3(arrayBufferToBuffer(buffer))
 
-  return digest
+  return hash
 }
+

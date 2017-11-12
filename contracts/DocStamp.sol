@@ -9,8 +9,8 @@ contract DocStamp is Ownable {
   event _DocStamped(bytes32 indexed record, address indexed stamper, uint256 timestamp);
 
   function stamp(bytes32 record) external {
-    bytes32 hash = sha3(record);
-    require(hash != sha3(""));
+    bytes32 hash = keccak256(record);
+    require(hash != keccak256(""));
     require(records[hash] == address(0));
     require(timestamps[hash] == 0);
     records[hash] = msg.sender;
@@ -20,24 +20,24 @@ contract DocStamp is Ownable {
   }
 
   function exists(bytes32 record) constant returns (bool) {
-    bytes32 hash = sha3(record);
+    bytes32 hash = keccak256(record);
     return records[hash] != address(0);
   }
 
   function getStamper(bytes32 record) constant returns (address) {
-    return records[sha3(record)];
+    return records[keccak256(record)];
   }
 
   function getTimestamp(bytes32 record) constant returns (uint256) {
-    return timestamps[sha3(record)];
+    return timestamps[keccak256(record)];
   }
 
   function didStamp(bytes32 record) constant returns (bool) {
-    return records[sha3(record)] == msg.sender;
+    return records[keccak256(record)] == msg.sender;
   }
 
   function isStamper(bytes32 record, address stamper) constant returns (bool) {
-    return records[sha3(record)] == stamper;
+    return records[keccak256(record)] == stamper;
   }
 
   function ecrecovery(bytes32 hash, bytes sig) public constant returns (address) {
@@ -69,18 +69,5 @@ contract DocStamp is Ownable {
 
   function ecverify(bytes32 hash, bytes sig, address signer) public constant returns (bool) {
     return signer == ecrecovery(hash, sig);
-  }
-
-  function bytesToAddress(bytes _address) public returns (address) {
-    uint160 m = 0;
-    uint160 b = 0;
-
-    for (uint8 i = 0; i < 20; i++) {
-      m *= 256;
-      b = uint160(_address[i]);
-      m += (b);
-    }
-
-    return address(m);
   }
 }

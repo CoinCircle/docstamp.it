@@ -19,6 +19,7 @@ contract('DocStamp', function(accounts) {
 
     try {
       const instance = await DocStamp.deployed()
+      // SHA-256 of file
       const msg = '7e5941f066b2070419995072dac7323c02d5ae107b23d8085772f232487fecae'
       const hash = web3.sha3(msg)
 

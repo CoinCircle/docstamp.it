@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "arraybuffer-to-buffer": "0.0.4",
     "dotenv": "^4.0.0",
     "ethereumjs-abi": "^0.6.4",
     "ethereumjs-util": "^5.1.2",
