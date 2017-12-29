@@ -15,6 +15,9 @@ const source = require('../../build/contracts/DocStamp.json')
 let instance = null
 let account = null
 
+// rinkeby
+// 0xb10ce1edf064e78c2ff936e041f8d065ba086ebc
+
 /**
  * ON LOAD
  */
