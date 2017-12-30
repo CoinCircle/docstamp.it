@@ -24,7 +24,7 @@
     "moment": "^2.19.1",
     "promise-wait": "^1.0.0",
     "truffle-contract": "^3.0.1",
-    "web3-detect-network": "0.0.4"
+    "web3-detect-network": "0.0.17"
   },
   "devDependencies": {
     "browserify": "^14.5.0",

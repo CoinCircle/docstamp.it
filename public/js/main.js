@@ -15,8 +15,10 @@ const source = require('../../build/contracts/DocStamp.json')
 let instance = null
 let account = null
 
-// rinkeby
-// 0xb10ce1edf064e78c2ff936e041f8d065ba086ebc
+let addresses = {
+  mainnet: '0xd749c968399b8cbdf2ce95d1f87c1c38157c579a',
+  rinkeby: '0x3b41bc65821962b9ac60c8151ba0ae593e4e3078'
+}
 
 /**
  * ON LOAD
@@ -40,20 +42,30 @@ async function onLoad () {
   }
 }
 
+let network = 'mainnet'
+
 async function init () {
   contract = tc(source)
 
   // wait for web3 to load
   await wait(1000)
+
+  const {id:netId, type:netType} = await detectNetwork(getProvider())
+  if (!(netType === 'mainnet' || netType === 'rinkeby')) {
+    alert('Only Mainnet or Rinkeby Testnet is currencly supported')
+  } else {
+    network = netType
+  }
+
   provider = getProvider()
   contract.setProvider(provider)
 
-  const {id:netId, type:netType} = await detectNetwork(provider)
-  if (netType !== 'rinkeby') {
-    alert('Please connect to the Rinkeby testnet')
-  }
+  contractAddress = addresses[network]
 
-  instance = await contract.deployed()
+  document.querySelector('#networkType').innerHTML = network
+  document.querySelector('#etherscanLink').href = `https://${network === 'mainnet' ? '' : `${network}.`}etherscan.io/address/${contractAddress}`
+
+  instance = await contract.at(contractAddress)
   account = getAccount()
 
   if (!window.web3) {
@@ -70,7 +82,7 @@ function getProvider () {
     return window.web3.currentProvider
   }
 
-  const providerUrl = 'https://rinkeby.infura.io:443'
+  const providerUrl = `https://${network}.infura.io:443`
   const provider = new window.Web3.providers.HttpProvider(providerUrl)
 
   return provider
@@ -82,7 +94,7 @@ function getWebsocketProvider () {
     window.Web3.providers.WebsocketProvider.prototype.sendAsync = window.Web3.providers.WebsocketProvider.prototype.send
   }
 
-  return new window.Web3.providers.WebsocketProvider('wss://rinkeby.infura.io/ws')
+  return new window.Web3.providers.WebsocketProvider(`wss://${network}.infura.io/ws`)
 }
 
 function getAccount () {
@@ -97,7 +109,7 @@ function getAccount () {
 
 async function setUpEvents () {
 
-  const ws = new Web3WsProvider('wss://rinkeby.infura.io/ws');
+  const ws = new Web3WsProvider(`wss://${network}.infura.io/ws`);
   ws.sendAsync = ws.send
   const contract = tc(source)
   const provider = ws //getWebsocketProvider()

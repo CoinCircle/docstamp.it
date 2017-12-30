@@ -87,24 +87,6 @@ module.exports={
       "type": "function"
     },
     {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "_address",
-          "type": "bytes"
-        }
-      ],
-      "name": "bytesToAddress",
-      "outputs": [
-        {
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "type": "function"
-    },
-    {
       "constant": true,
       "inputs": [
         {
@@ -277,8 +259,54 @@ module.exports={
       "type": "event"
     }
   ],
-  "unlinked_binary": "0x60606040525b60008054600160a060020a03191633600160a060020a03161790555b5b61085c806100316000396000f300606060405236156100c25763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166301e6472581146100c757806328073edf146100f957806338a699a41461012f57806339cdde321461015957806342526e4e146101ce57806377d32e941461023b5780638ade01a4146102ad5780638c32d9a6146102d75780638da5cb5b14610309578063b587295814610338578063d45c443514610360578063dd89581f14610388578063f2fde38b146103a0575b600080fd5b34156100d257600080fd5b6100dd6004356103c1565b604051600160a060020a03909116815260200160405180910390f35b341561010457600080fd5b61011b600435600160a060020a03602435166103dc565b604051901515815260200160405180910390f35b341561013a57600080fd5b61011b600435610423565b604051901515815260200160405180910390f35b341561016457600080fd5b61011b600480359060446024803590810190830135806020601f8201819004810201604051908101604052818152929190602084018383808284375094965050509235600160a060020a0316925061045e915050565b604051901515815260200160405180910390f35b34156101d957600080fd5b6100dd60046024813581810190830135806020601f8201819004810201604051908101604052818152929190602084018383808284375094965061048895505050505050565b604051600160a060020a03909116815260200160405180910390f35b341561024657600080fd5b6100dd600480359060446024803590810190830135806020601f820181900481020160405190810160405281815292919060208401838380828437509496506104f895505050505050565b604051600160a060020a03909116815260200160405180910390f35b34156102b857600080fd5b61011b6004356105d8565b604051901515815260200160405180910390f35b34156102e257600080fd5b6100dd60043561061e565b604051600160a060020a03909116815260200160405180910390f35b341561031457600080fd5b6100dd610659565b604051600160a060020a03909116815260200160405180910390f35b341561034357600080fd5b61034e600435610668565b60405190815260200160405180910390f35b341561036b57600080fd5b61034e60043561067a565b60405190815260200160405180910390f35b341561039357600080fd5b61039e6004356106ac565b005b34156103ab57600080fd5b61039e600160a060020a0360043516610797565b005b600160205260009081526040902054600160a060020a031681565b600081600160a060020a031660016000856040519081526020016040519081900390208152602081019190915260400160002054600160a060020a03161490505b92915050565b60008082604051908152602001604051908190039020600081815260016020526040902054600160a060020a03161515925090505b50919050565b600061046a84846104f8565b600160a060020a031682600160a060020a03161490505b9392505050565b60008080805b60148160ff1610156104ec5761010083029250848160ff16815181106104b057fe5b01602001517f0100000000000000000000000000000000000000000000000000000000000000908190048102049283019291505b60010161048e565b8293505b505050919050565b600080600080845160411461051057600093506105cf565b602085015192506040850151915060ff6041860151169050601b8160ff16101561053857601b015b8060ff16601b1415801561055057508060ff16601c14155b1561055e57600093506105cf565b6001868285856040516000815260200160405260006040516020015260405193845260ff90921660208085019190915260408085019290925260608401929092526080909201915160208103908084039060008661646e5a03f115156105c357600080fd5b50506020604051035193505b50505092915050565b600033600160a060020a031660016000846040519081526020016040519081900390208152602081019190915260400160002054600160a060020a03161490505b919050565b600060016000836040519081526020016040519081900390208152602081019190915260400160002054600160a060020a031690505b919050565b600054600160a060020a031681565b60026020526000908152604090205481565b60006002600083604051908152602001604051908190039020815260208101919091526040016000205490505b919050565b600081604051908152602001604051809103902090506040516040519081900390208114156106da57600080fd5b600081815260016020526040902054600160a060020a0316156106fc57600080fd5b6000818152600260205260409020541561071557600080fd5b6000818152600160209081526040808320805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a03169081179091556002909252918290204290819055909183917ff89c7c6203cd979ded19b0275133041d46e64b693f750b95926cecedef975ab7915190815260200160405180910390a35b5050565b60005433600160a060020a039081169116146107b257600080fd5b600160a060020a03811615156107c757600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b505600a165627a7a723058204599fb34b6bbe99389a434fad640101e6a2dcbad737c3af65d608b3ebf17d20e0029",
+  "unlinked_binary": "0x60606040525b60008054600160a060020a03191633600160a060020a03161790555b5b610774806100316000396000f300606060405236156100b75763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166301e6472581146100bc57806328073edf146100ee57806338a699a41461012457806339cdde321461014e57806377d32e94146101c35780638ade01a4146102355780638c32d9a61461025f5780638da5cb5b14610291578063b5872958146102c0578063d45c4435146102e8578063dd89581f14610310578063f2fde38b14610328575b600080fd5b34156100c757600080fd5b6100d2600435610349565b604051600160a060020a03909116815260200160405180910390f35b34156100f957600080fd5b610110600435600160a060020a0360243516610364565b604051901515815260200160405180910390f35b341561012f57600080fd5b6101106004356103ab565b604051901515815260200160405180910390f35b341561015957600080fd5b610110600480359060446024803590810190830135806020601f8201819004810201604051908101604052818152929190602084018383808284375094965050509235600160a060020a031692506103e6915050565b604051901515815260200160405180910390f35b34156101ce57600080fd5b6100d2600480359060446024803590810190830135806020601f8201819004810201604051908101604052818152929190602084018383808284375094965061041095505050505050565b604051600160a060020a03909116815260200160405180910390f35b341561024057600080fd5b6101106004356104f0565b604051901515815260200160405180910390f35b341561026a57600080fd5b6100d2600435610536565b604051600160a060020a03909116815260200160405180910390f35b341561029c57600080fd5b6100d2610571565b604051600160a060020a03909116815260200160405180910390f35b34156102cb57600080fd5b6102d6600435610580565b60405190815260200160405180910390f35b34156102f357600080fd5b6102d6600435610592565b60405190815260200160405180910390f35b341561031b57600080fd5b6103266004356105c4565b005b341561033357600080fd5b610326600160a060020a03600435166106af565b005b600160205260009081526040902054600160a060020a031681565b600081600160a060020a031660016000856040519081526020016040519081900390208152602081019190915260400160002054600160a060020a03161490505b92915050565b60008082604051908152602001604051908190039020600081815260016020526040902054600160a060020a03161515925090505b50919050565b60006103f28484610410565b600160a060020a031682600160a060020a03161490505b9392505050565b600080600080845160411461042857600093506104e7565b602085015192506040850151915060ff6041860151169050601b8160ff16101561045057601b015b8060ff16601b1415801561046857508060ff16601c14155b1561047657600093506104e7565b6001868285856040516000815260200160405260006040516020015260405193845260ff90921660208085019190915260408085019290925260608401929092526080909201915160208103908084039060008661646e5a03f115156104db57600080fd5b50506020604051035193505b50505092915050565b600033600160a060020a031660016000846040519081526020016040519081900390208152602081019190915260400160002054600160a060020a03161490505b919050565b600060016000836040519081526020016040519081900390208152602081019190915260400160002054600160a060020a031690505b919050565b600054600160a060020a031681565b60026020526000908152604090205481565b60006002600083604051908152602001604051908190039020815260208101919091526040016000205490505b919050565b600081604051908152602001604051809103902090506040516040519081900390208114156105f257600080fd5b600081815260016020526040902054600160a060020a03161561061457600080fd5b6000818152600260205260409020541561062d57600080fd5b6000818152600160209081526040808320805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a03169081179091556002909252918290204290819055909183917ff89c7c6203cd979ded19b0275133041d46e64b693f750b95926cecedef975ab7915190815260200160405180910390a35b5050565b60005433600160a060020a039081169116146106ca57600080fd5b600160a060020a03811615156106df57600080fd5b600054600160a060020a0380831691167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a36000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b5b505600a165627a7a72305820e9f5c4f836247ceb62cd89de68ab53a3caf2f77083f1526c47e4f0ce494385040029",
   "networks": {
+    "1": {
+      "events": {
+        "0xf89c7c6203cd979ded19b0275133041d46e64b693f750b95926cecedef975ab7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "record",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "name": "stamper",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "_DocStamped",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd749c968399b8cbdf2ce95d1f87c1c38157c579a",
+      "updated_at": 1514592539068
+    },
     "4": {
       "events": {
         "0xc16e581122eb06241ed2be34413d370b8cbbb4fb92c02299be1e23f4e3b4077d": {
@@ -404,7 +432,7 @@ module.exports={
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1510380003796
+  "updated_at": 1514592539068
 }
 },{}],2:[function(require,module,exports){
 'use strict';
@@ -936,7 +964,7 @@ function getMetaSchemaOptions(self) {
   return metaOpts;
 }
 
-},{"./$data":2,"./cache":4,"./compile":9,"./compile/async":6,"./compile/error_classes":7,"./compile/formats":8,"./compile/resolve":10,"./compile/rules":11,"./compile/schema_obj":12,"./compile/util":14,"./keyword":38,"./patternGroups":39,"./refs/$data.json":40,"./refs/json-schema-draft-06.json":41,"co":95,"fast-json-stable-stringify":179}],4:[function(require,module,exports){
+},{"./$data":2,"./cache":4,"./compile":9,"./compile/async":6,"./compile/error_classes":7,"./compile/formats":8,"./compile/resolve":10,"./compile/rules":11,"./compile/schema_obj":12,"./compile/util":14,"./keyword":38,"./patternGroups":39,"./refs/$data.json":40,"./refs/json-schema-draft-06.json":41,"co":96,"fast-json-stable-stringify":180}],4:[function(require,module,exports){
 'use strict';
 
 
@@ -1643,7 +1671,7 @@ function vars(arr, statement) {
   return code;
 }
 
-},{"../dotjs/validate":37,"./error_classes":7,"./resolve":10,"./util":14,"co":95,"fast-deep-equal":178,"fast-json-stable-stringify":179}],10:[function(require,module,exports){
+},{"../dotjs/validate":37,"./error_classes":7,"./resolve":10,"./util":14,"co":96,"fast-deep-equal":179,"fast-json-stable-stringify":180}],10:[function(require,module,exports){
 'use strict';
 
 var url = require('url')
@@ -1916,7 +1944,7 @@ function resolveIds(schema) {
   return localRefs;
 }
 
-},{"./schema_obj":12,"./util":14,"fast-deep-equal":178,"json-schema-traverse":201,"url":393}],11:[function(require,module,exports){
+},{"./schema_obj":12,"./util":14,"fast-deep-equal":179,"json-schema-traverse":202,"url":395}],11:[function(require,module,exports){
 'use strict';
 
 var ruleModules = require('./_rules')
@@ -2278,7 +2306,7 @@ function unescapeJsonPointer(str) {
   return str.replace(/~1/g, '/').replace(/~0/g, '~');
 }
 
-},{"./ucs2length":13,"fast-deep-equal":178}],15:[function(require,module,exports){
+},{"./ucs2length":13,"fast-deep-equal":179}],15:[function(require,module,exports){
 'use strict';
 module.exports = function generate__limit(it, $keyword, $ruleType) {
   var out = ' ';
@@ -5854,7 +5882,7 @@ module.exports={
 })(this);
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93}],43:[function(require,module,exports){
+},{"buffer":94}],43:[function(require,module,exports){
 var asn1 = exports;
 
 asn1.bignum = require('bn.js');
@@ -5865,7 +5893,7 @@ asn1.constants = require('./asn1/constants');
 asn1.decoders = require('./asn1/decoders');
 asn1.encoders = require('./asn1/encoders');
 
-},{"./asn1/api":44,"./asn1/base":46,"./asn1/constants":50,"./asn1/decoders":52,"./asn1/encoders":55,"bn.js":60}],44:[function(require,module,exports){
+},{"./asn1/api":44,"./asn1/base":46,"./asn1/constants":50,"./asn1/decoders":52,"./asn1/encoders":55,"bn.js":61}],44:[function(require,module,exports){
 var asn1 = require('../asn1');
 var inherits = require('inherits');
 
@@ -5928,7 +5956,7 @@ Entity.prototype.encode = function encode(data, enc, /* internal */ reporter) {
   return this._getEncoder(enc).encode(data, reporter);
 };
 
-},{"../asn1":43,"inherits":196,"vm":400}],45:[function(require,module,exports){
+},{"../asn1":43,"inherits":197,"vm":402}],45:[function(require,module,exports){
 var inherits = require('inherits');
 var Reporter = require('../base').Reporter;
 var Buffer = require('buffer').Buffer;
@@ -6046,7 +6074,7 @@ EncoderBuffer.prototype.join = function join(out, offset) {
   return out;
 };
 
-},{"../base":46,"buffer":93,"inherits":196}],46:[function(require,module,exports){
+},{"../base":46,"buffer":94,"inherits":197}],46:[function(require,module,exports){
 var base = exports;
 
 base.Reporter = require('./reporter').Reporter;
@@ -6690,7 +6718,7 @@ Node.prototype._isPrintstr = function isPrintstr(str) {
   return /^[A-Za-z0-9 '\(\)\+,\-\.\/:=\?]*$/.test(str);
 };
 
-},{"../base":46,"minimalistic-assert":212}],48:[function(require,module,exports){
+},{"../base":46,"minimalistic-assert":213}],48:[function(require,module,exports){
 var inherits = require('inherits');
 
 function Reporter(options) {
@@ -6813,7 +6841,7 @@ ReporterError.prototype.rethrow = function rethrow(msg) {
   return this;
 };
 
-},{"inherits":196}],49:[function(require,module,exports){
+},{"inherits":197}],49:[function(require,module,exports){
 var constants = require('../constants');
 
 exports.tagClass = {
@@ -7204,7 +7232,7 @@ function derDecodeLen(buf, primitive, fail) {
   return len;
 }
 
-},{"../../asn1":43,"inherits":196}],52:[function(require,module,exports){
+},{"../../asn1":43,"inherits":197}],52:[function(require,module,exports){
 var decoders = exports;
 
 decoders.der = require('./der');
@@ -7261,7 +7289,7 @@ PEMDecoder.prototype.decode = function decode(data, options) {
   return DERDecoder.prototype.decode.call(this, input, options);
 };
 
-},{"./der":51,"buffer":93,"inherits":196}],54:[function(require,module,exports){
+},{"./der":51,"buffer":94,"inherits":197}],54:[function(require,module,exports){
 var inherits = require('inherits');
 var Buffer = require('buffer').Buffer;
 
@@ -7558,7 +7586,7 @@ function encodeTag(tag, primitive, cls, reporter) {
   return res;
 }
 
-},{"../../asn1":43,"buffer":93,"inherits":196}],55:[function(require,module,exports){
+},{"../../asn1":43,"buffer":94,"inherits":197}],55:[function(require,module,exports){
 var encoders = exports;
 
 encoders.der = require('./der');
@@ -7587,7 +7615,7 @@ PEMEncoder.prototype.encode = function encode(data, options) {
   return out.join('\n');
 };
 
-},{"./der":54,"inherits":196}],57:[function(require,module,exports){
+},{"./der":54,"inherits":197}],57:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -8081,7 +8109,7 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":399}],58:[function(require,module,exports){
+},{"util/":401}],58:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -8312,7 +8340,5633 @@ module.exports = {
   encode: encode
 }
 
-},{"safe-buffer":261}],60:[function(require,module,exports){
+},{"safe-buffer":263}],60:[function(require,module,exports){
+(function (process,global){
+/* @preserve
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2013-2017 Petka Antonov
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ * 
+ */
+/**
+ * bluebird build version 3.5.1
+ * Features enabled: core, race, call_get, generators, map, nodeify, promisify, props, reduce, settle, some, using, timers, filter, any, each
+*/
+!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.Promise=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof _dereq_=="function"&&_dereq_;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof _dereq_=="function"&&_dereq_;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise) {
+var SomePromiseArray = Promise._SomePromiseArray;
+function any(promises) {
+    var ret = new SomePromiseArray(promises);
+    var promise = ret.promise();
+    ret.setHowMany(1);
+    ret.setUnwrap();
+    ret.init();
+    return promise;
+}
+
+Promise.any = function (promises) {
+    return any(promises);
+};
+
+Promise.prototype.any = function () {
+    return any(this);
+};
+
+};
+
+},{}],2:[function(_dereq_,module,exports){
+"use strict";
+var firstLineError;
+try {throw new Error(); } catch (e) {firstLineError = e;}
+var schedule = _dereq_("./schedule");
+var Queue = _dereq_("./queue");
+var util = _dereq_("./util");
+
+function Async() {
+    this._customScheduler = false;
+    this._isTickUsed = false;
+    this._lateQueue = new Queue(16);
+    this._normalQueue = new Queue(16);
+    this._haveDrainedQueues = false;
+    this._trampolineEnabled = true;
+    var self = this;
+    this.drainQueues = function () {
+        self._drainQueues();
+    };
+    this._schedule = schedule;
+}
+
+Async.prototype.setScheduler = function(fn) {
+    var prev = this._schedule;
+    this._schedule = fn;
+    this._customScheduler = true;
+    return prev;
+};
+
+Async.prototype.hasCustomScheduler = function() {
+    return this._customScheduler;
+};
+
+Async.prototype.enableTrampoline = function() {
+    this._trampolineEnabled = true;
+};
+
+Async.prototype.disableTrampolineIfNecessary = function() {
+    if (util.hasDevTools) {
+        this._trampolineEnabled = false;
+    }
+};
+
+Async.prototype.haveItemsQueued = function () {
+    return this._isTickUsed || this._haveDrainedQueues;
+};
+
+
+Async.prototype.fatalError = function(e, isNode) {
+    if (isNode) {
+        process.stderr.write("Fatal " + (e instanceof Error ? e.stack : e) +
+            "\n");
+        process.exit(2);
+    } else {
+        this.throwLater(e);
+    }
+};
+
+Async.prototype.throwLater = function(fn, arg) {
+    if (arguments.length === 1) {
+        arg = fn;
+        fn = function () { throw arg; };
+    }
+    if (typeof setTimeout !== "undefined") {
+        setTimeout(function() {
+            fn(arg);
+        }, 0);
+    } else try {
+        this._schedule(function() {
+            fn(arg);
+        });
+    } catch (e) {
+        throw new Error("No async scheduler available\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+};
+
+function AsyncInvokeLater(fn, receiver, arg) {
+    this._lateQueue.push(fn, receiver, arg);
+    this._queueTick();
+}
+
+function AsyncInvoke(fn, receiver, arg) {
+    this._normalQueue.push(fn, receiver, arg);
+    this._queueTick();
+}
+
+function AsyncSettlePromises(promise) {
+    this._normalQueue._pushOne(promise);
+    this._queueTick();
+}
+
+if (!util.hasDevTools) {
+    Async.prototype.invokeLater = AsyncInvokeLater;
+    Async.prototype.invoke = AsyncInvoke;
+    Async.prototype.settlePromises = AsyncSettlePromises;
+} else {
+    Async.prototype.invokeLater = function (fn, receiver, arg) {
+        if (this._trampolineEnabled) {
+            AsyncInvokeLater.call(this, fn, receiver, arg);
+        } else {
+            this._schedule(function() {
+                setTimeout(function() {
+                    fn.call(receiver, arg);
+                }, 100);
+            });
+        }
+    };
+
+    Async.prototype.invoke = function (fn, receiver, arg) {
+        if (this._trampolineEnabled) {
+            AsyncInvoke.call(this, fn, receiver, arg);
+        } else {
+            this._schedule(function() {
+                fn.call(receiver, arg);
+            });
+        }
+    };
+
+    Async.prototype.settlePromises = function(promise) {
+        if (this._trampolineEnabled) {
+            AsyncSettlePromises.call(this, promise);
+        } else {
+            this._schedule(function() {
+                promise._settlePromises();
+            });
+        }
+    };
+}
+
+Async.prototype._drainQueue = function(queue) {
+    while (queue.length() > 0) {
+        var fn = queue.shift();
+        if (typeof fn !== "function") {
+            fn._settlePromises();
+            continue;
+        }
+        var receiver = queue.shift();
+        var arg = queue.shift();
+        fn.call(receiver, arg);
+    }
+};
+
+Async.prototype._drainQueues = function () {
+    this._drainQueue(this._normalQueue);
+    this._reset();
+    this._haveDrainedQueues = true;
+    this._drainQueue(this._lateQueue);
+};
+
+Async.prototype._queueTick = function () {
+    if (!this._isTickUsed) {
+        this._isTickUsed = true;
+        this._schedule(this.drainQueues);
+    }
+};
+
+Async.prototype._reset = function () {
+    this._isTickUsed = false;
+};
+
+module.exports = Async;
+module.exports.firstLineError = firstLineError;
+
+},{"./queue":26,"./schedule":29,"./util":36}],3:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL, tryConvertToPromise, debug) {
+var calledBind = false;
+var rejectThis = function(_, e) {
+    this._reject(e);
+};
+
+var targetRejected = function(e, context) {
+    context.promiseRejectionQueued = true;
+    context.bindingPromise._then(rejectThis, rejectThis, null, this, e);
+};
+
+var bindingResolved = function(thisArg, context) {
+    if (((this._bitField & 50397184) === 0)) {
+        this._resolveCallback(context.target);
+    }
+};
+
+var bindingRejected = function(e, context) {
+    if (!context.promiseRejectionQueued) this._reject(e);
+};
+
+Promise.prototype.bind = function (thisArg) {
+    if (!calledBind) {
+        calledBind = true;
+        Promise.prototype._propagateFrom = debug.propagateFromFunction();
+        Promise.prototype._boundValue = debug.boundValueFunction();
+    }
+    var maybePromise = tryConvertToPromise(thisArg);
+    var ret = new Promise(INTERNAL);
+    ret._propagateFrom(this, 1);
+    var target = this._target();
+    ret._setBoundTo(maybePromise);
+    if (maybePromise instanceof Promise) {
+        var context = {
+            promiseRejectionQueued: false,
+            promise: ret,
+            target: target,
+            bindingPromise: maybePromise
+        };
+        target._then(INTERNAL, targetRejected, undefined, ret, context);
+        maybePromise._then(
+            bindingResolved, bindingRejected, undefined, ret, context);
+        ret._setOnCancel(maybePromise);
+    } else {
+        ret._resolveCallback(target);
+    }
+    return ret;
+};
+
+Promise.prototype._setBoundTo = function (obj) {
+    if (obj !== undefined) {
+        this._bitField = this._bitField | 2097152;
+        this._boundTo = obj;
+    } else {
+        this._bitField = this._bitField & (~2097152);
+    }
+};
+
+Promise.prototype._isBound = function () {
+    return (this._bitField & 2097152) === 2097152;
+};
+
+Promise.bind = function (thisArg, value) {
+    return Promise.resolve(value).bind(thisArg);
+};
+};
+
+},{}],4:[function(_dereq_,module,exports){
+"use strict";
+var old;
+if (typeof Promise !== "undefined") old = Promise;
+function noConflict() {
+    try { if (Promise === bluebird) Promise = old; }
+    catch (e) {}
+    return bluebird;
+}
+var bluebird = _dereq_("./promise")();
+bluebird.noConflict = noConflict;
+module.exports = bluebird;
+
+},{"./promise":22}],5:[function(_dereq_,module,exports){
+"use strict";
+var cr = Object.create;
+if (cr) {
+    var callerCache = cr(null);
+    var getterCache = cr(null);
+    callerCache[" size"] = getterCache[" size"] = 0;
+}
+
+module.exports = function(Promise) {
+var util = _dereq_("./util");
+var canEvaluate = util.canEvaluate;
+var isIdentifier = util.isIdentifier;
+
+var getMethodCaller;
+var getGetter;
+if (!true) {
+var makeMethodCaller = function (methodName) {
+    return new Function("ensureMethod", "                                    \n\
+        return function(obj) {                                               \n\
+            'use strict'                                                     \n\
+            var len = this.length;                                           \n\
+            ensureMethod(obj, 'methodName');                                 \n\
+            switch(len) {                                                    \n\
+                case 1: return obj.methodName(this[0]);                      \n\
+                case 2: return obj.methodName(this[0], this[1]);             \n\
+                case 3: return obj.methodName(this[0], this[1], this[2]);    \n\
+                case 0: return obj.methodName();                             \n\
+                default:                                                     \n\
+                    return obj.methodName.apply(obj, this);                  \n\
+            }                                                                \n\
+        };                                                                   \n\
+        ".replace(/methodName/g, methodName))(ensureMethod);
+};
+
+var makeGetter = function (propertyName) {
+    return new Function("obj", "                                             \n\
+        'use strict';                                                        \n\
+        return obj.propertyName;                                             \n\
+        ".replace("propertyName", propertyName));
+};
+
+var getCompiled = function(name, compiler, cache) {
+    var ret = cache[name];
+    if (typeof ret !== "function") {
+        if (!isIdentifier(name)) {
+            return null;
+        }
+        ret = compiler(name);
+        cache[name] = ret;
+        cache[" size"]++;
+        if (cache[" size"] > 512) {
+            var keys = Object.keys(cache);
+            for (var i = 0; i < 256; ++i) delete cache[keys[i]];
+            cache[" size"] = keys.length - 256;
+        }
+    }
+    return ret;
+};
+
+getMethodCaller = function(name) {
+    return getCompiled(name, makeMethodCaller, callerCache);
+};
+
+getGetter = function(name) {
+    return getCompiled(name, makeGetter, getterCache);
+};
+}
+
+function ensureMethod(obj, methodName) {
+    var fn;
+    if (obj != null) fn = obj[methodName];
+    if (typeof fn !== "function") {
+        var message = "Object " + util.classString(obj) + " has no method '" +
+            util.toString(methodName) + "'";
+        throw new Promise.TypeError(message);
+    }
+    return fn;
+}
+
+function caller(obj) {
+    var methodName = this.pop();
+    var fn = ensureMethod(obj, methodName);
+    return fn.apply(obj, this);
+}
+Promise.prototype.call = function (methodName) {
+    var args = [].slice.call(arguments, 1);;
+    if (!true) {
+        if (canEvaluate) {
+            var maybeCaller = getMethodCaller(methodName);
+            if (maybeCaller !== null) {
+                return this._then(
+                    maybeCaller, undefined, undefined, args, undefined);
+            }
+        }
+    }
+    args.push(methodName);
+    return this._then(caller, undefined, undefined, args, undefined);
+};
+
+function namedGetter(obj) {
+    return obj[this];
+}
+function indexedGetter(obj) {
+    var index = +this;
+    if (index < 0) index = Math.max(0, index + obj.length);
+    return obj[index];
+}
+Promise.prototype.get = function (propertyName) {
+    var isIndex = (typeof propertyName === "number");
+    var getter;
+    if (!isIndex) {
+        if (canEvaluate) {
+            var maybeGetter = getGetter(propertyName);
+            getter = maybeGetter !== null ? maybeGetter : namedGetter;
+        } else {
+            getter = namedGetter;
+        }
+    } else {
+        getter = indexedGetter;
+    }
+    return this._then(getter, undefined, undefined, propertyName, undefined);
+};
+};
+
+},{"./util":36}],6:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, PromiseArray, apiRejection, debug) {
+var util = _dereq_("./util");
+var tryCatch = util.tryCatch;
+var errorObj = util.errorObj;
+var async = Promise._async;
+
+Promise.prototype["break"] = Promise.prototype.cancel = function() {
+    if (!debug.cancellation()) return this._warn("cancellation is disabled");
+
+    var promise = this;
+    var child = promise;
+    while (promise._isCancellable()) {
+        if (!promise._cancelBy(child)) {
+            if (child._isFollowing()) {
+                child._followee().cancel();
+            } else {
+                child._cancelBranched();
+            }
+            break;
+        }
+
+        var parent = promise._cancellationParent;
+        if (parent == null || !parent._isCancellable()) {
+            if (promise._isFollowing()) {
+                promise._followee().cancel();
+            } else {
+                promise._cancelBranched();
+            }
+            break;
+        } else {
+            if (promise._isFollowing()) promise._followee().cancel();
+            promise._setWillBeCancelled();
+            child = promise;
+            promise = parent;
+        }
+    }
+};
+
+Promise.prototype._branchHasCancelled = function() {
+    this._branchesRemainingToCancel--;
+};
+
+Promise.prototype._enoughBranchesHaveCancelled = function() {
+    return this._branchesRemainingToCancel === undefined ||
+           this._branchesRemainingToCancel <= 0;
+};
+
+Promise.prototype._cancelBy = function(canceller) {
+    if (canceller === this) {
+        this._branchesRemainingToCancel = 0;
+        this._invokeOnCancel();
+        return true;
+    } else {
+        this._branchHasCancelled();
+        if (this._enoughBranchesHaveCancelled()) {
+            this._invokeOnCancel();
+            return true;
+        }
+    }
+    return false;
+};
+
+Promise.prototype._cancelBranched = function() {
+    if (this._enoughBranchesHaveCancelled()) {
+        this._cancel();
+    }
+};
+
+Promise.prototype._cancel = function() {
+    if (!this._isCancellable()) return;
+    this._setCancelled();
+    async.invoke(this._cancelPromises, this, undefined);
+};
+
+Promise.prototype._cancelPromises = function() {
+    if (this._length() > 0) this._settlePromises();
+};
+
+Promise.prototype._unsetOnCancel = function() {
+    this._onCancelField = undefined;
+};
+
+Promise.prototype._isCancellable = function() {
+    return this.isPending() && !this._isCancelled();
+};
+
+Promise.prototype.isCancellable = function() {
+    return this.isPending() && !this.isCancelled();
+};
+
+Promise.prototype._doInvokeOnCancel = function(onCancelCallback, internalOnly) {
+    if (util.isArray(onCancelCallback)) {
+        for (var i = 0; i < onCancelCallback.length; ++i) {
+            this._doInvokeOnCancel(onCancelCallback[i], internalOnly);
+        }
+    } else if (onCancelCallback !== undefined) {
+        if (typeof onCancelCallback === "function") {
+            if (!internalOnly) {
+                var e = tryCatch(onCancelCallback).call(this._boundValue());
+                if (e === errorObj) {
+                    this._attachExtraTrace(e.e);
+                    async.throwLater(e.e);
+                }
+            }
+        } else {
+            onCancelCallback._resultCancelled(this);
+        }
+    }
+};
+
+Promise.prototype._invokeOnCancel = function() {
+    var onCancelCallback = this._onCancel();
+    this._unsetOnCancel();
+    async.invoke(this._doInvokeOnCancel, this, onCancelCallback);
+};
+
+Promise.prototype._invokeInternalOnCancel = function() {
+    if (this._isCancellable()) {
+        this._doInvokeOnCancel(this._onCancel(), true);
+        this._unsetOnCancel();
+    }
+};
+
+Promise.prototype._resultCancelled = function() {
+    this.cancel();
+};
+
+};
+
+},{"./util":36}],7:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(NEXT_FILTER) {
+var util = _dereq_("./util");
+var getKeys = _dereq_("./es5").keys;
+var tryCatch = util.tryCatch;
+var errorObj = util.errorObj;
+
+function catchFilter(instances, cb, promise) {
+    return function(e) {
+        var boundTo = promise._boundValue();
+        predicateLoop: for (var i = 0; i < instances.length; ++i) {
+            var item = instances[i];
+
+            if (item === Error ||
+                (item != null && item.prototype instanceof Error)) {
+                if (e instanceof item) {
+                    return tryCatch(cb).call(boundTo, e);
+                }
+            } else if (typeof item === "function") {
+                var matchesPredicate = tryCatch(item).call(boundTo, e);
+                if (matchesPredicate === errorObj) {
+                    return matchesPredicate;
+                } else if (matchesPredicate) {
+                    return tryCatch(cb).call(boundTo, e);
+                }
+            } else if (util.isObject(e)) {
+                var keys = getKeys(item);
+                for (var j = 0; j < keys.length; ++j) {
+                    var key = keys[j];
+                    if (item[key] != e[key]) {
+                        continue predicateLoop;
+                    }
+                }
+                return tryCatch(cb).call(boundTo, e);
+            }
+        }
+        return NEXT_FILTER;
+    };
+}
+
+return catchFilter;
+};
+
+},{"./es5":13,"./util":36}],8:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise) {
+var longStackTraces = false;
+var contextStack = [];
+
+Promise.prototype._promiseCreated = function() {};
+Promise.prototype._pushContext = function() {};
+Promise.prototype._popContext = function() {return null;};
+Promise._peekContext = Promise.prototype._peekContext = function() {};
+
+function Context() {
+    this._trace = new Context.CapturedTrace(peekContext());
+}
+Context.prototype._pushContext = function () {
+    if (this._trace !== undefined) {
+        this._trace._promiseCreated = null;
+        contextStack.push(this._trace);
+    }
+};
+
+Context.prototype._popContext = function () {
+    if (this._trace !== undefined) {
+        var trace = contextStack.pop();
+        var ret = trace._promiseCreated;
+        trace._promiseCreated = null;
+        return ret;
+    }
+    return null;
+};
+
+function createContext() {
+    if (longStackTraces) return new Context();
+}
+
+function peekContext() {
+    var lastIndex = contextStack.length - 1;
+    if (lastIndex >= 0) {
+        return contextStack[lastIndex];
+    }
+    return undefined;
+}
+Context.CapturedTrace = null;
+Context.create = createContext;
+Context.deactivateLongStackTraces = function() {};
+Context.activateLongStackTraces = function() {
+    var Promise_pushContext = Promise.prototype._pushContext;
+    var Promise_popContext = Promise.prototype._popContext;
+    var Promise_PeekContext = Promise._peekContext;
+    var Promise_peekContext = Promise.prototype._peekContext;
+    var Promise_promiseCreated = Promise.prototype._promiseCreated;
+    Context.deactivateLongStackTraces = function() {
+        Promise.prototype._pushContext = Promise_pushContext;
+        Promise.prototype._popContext = Promise_popContext;
+        Promise._peekContext = Promise_PeekContext;
+        Promise.prototype._peekContext = Promise_peekContext;
+        Promise.prototype._promiseCreated = Promise_promiseCreated;
+        longStackTraces = false;
+    };
+    longStackTraces = true;
+    Promise.prototype._pushContext = Context.prototype._pushContext;
+    Promise.prototype._popContext = Context.prototype._popContext;
+    Promise._peekContext = Promise.prototype._peekContext = peekContext;
+    Promise.prototype._promiseCreated = function() {
+        var ctx = this._peekContext();
+        if (ctx && ctx._promiseCreated == null) ctx._promiseCreated = this;
+    };
+};
+return Context;
+};
+
+},{}],9:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, Context) {
+var getDomain = Promise._getDomain;
+var async = Promise._async;
+var Warning = _dereq_("./errors").Warning;
+var util = _dereq_("./util");
+var canAttachTrace = util.canAttachTrace;
+var unhandledRejectionHandled;
+var possiblyUnhandledRejection;
+var bluebirdFramePattern =
+    /[\\\/]bluebird[\\\/]js[\\\/](release|debug|instrumented)/;
+var nodeFramePattern = /\((?:timers\.js):\d+:\d+\)/;
+var parseLinePattern = /[\/<\(](.+?):(\d+):(\d+)\)?\s*$/;
+var stackFramePattern = null;
+var formatStack = null;
+var indentStackFrames = false;
+var printWarning;
+var debugging = !!(util.env("BLUEBIRD_DEBUG") != 0 &&
+                        (true ||
+                         util.env("BLUEBIRD_DEBUG") ||
+                         util.env("NODE_ENV") === "development"));
+
+var warnings = !!(util.env("BLUEBIRD_WARNINGS") != 0 &&
+    (debugging || util.env("BLUEBIRD_WARNINGS")));
+
+var longStackTraces = !!(util.env("BLUEBIRD_LONG_STACK_TRACES") != 0 &&
+    (debugging || util.env("BLUEBIRD_LONG_STACK_TRACES")));
+
+var wForgottenReturn = util.env("BLUEBIRD_W_FORGOTTEN_RETURN") != 0 &&
+    (warnings || !!util.env("BLUEBIRD_W_FORGOTTEN_RETURN"));
+
+Promise.prototype.suppressUnhandledRejections = function() {
+    var target = this._target();
+    target._bitField = ((target._bitField & (~1048576)) |
+                      524288);
+};
+
+Promise.prototype._ensurePossibleRejectionHandled = function () {
+    if ((this._bitField & 524288) !== 0) return;
+    this._setRejectionIsUnhandled();
+    var self = this;
+    setTimeout(function() {
+        self._notifyUnhandledRejection();
+    }, 1);
+};
+
+Promise.prototype._notifyUnhandledRejectionIsHandled = function () {
+    fireRejectionEvent("rejectionHandled",
+                                  unhandledRejectionHandled, undefined, this);
+};
+
+Promise.prototype._setReturnedNonUndefined = function() {
+    this._bitField = this._bitField | 268435456;
+};
+
+Promise.prototype._returnedNonUndefined = function() {
+    return (this._bitField & 268435456) !== 0;
+};
+
+Promise.prototype._notifyUnhandledRejection = function () {
+    if (this._isRejectionUnhandled()) {
+        var reason = this._settledValue();
+        this._setUnhandledRejectionIsNotified();
+        fireRejectionEvent("unhandledRejection",
+                                      possiblyUnhandledRejection, reason, this);
+    }
+};
+
+Promise.prototype._setUnhandledRejectionIsNotified = function () {
+    this._bitField = this._bitField | 262144;
+};
+
+Promise.prototype._unsetUnhandledRejectionIsNotified = function () {
+    this._bitField = this._bitField & (~262144);
+};
+
+Promise.prototype._isUnhandledRejectionNotified = function () {
+    return (this._bitField & 262144) > 0;
+};
+
+Promise.prototype._setRejectionIsUnhandled = function () {
+    this._bitField = this._bitField | 1048576;
+};
+
+Promise.prototype._unsetRejectionIsUnhandled = function () {
+    this._bitField = this._bitField & (~1048576);
+    if (this._isUnhandledRejectionNotified()) {
+        this._unsetUnhandledRejectionIsNotified();
+        this._notifyUnhandledRejectionIsHandled();
+    }
+};
+
+Promise.prototype._isRejectionUnhandled = function () {
+    return (this._bitField & 1048576) > 0;
+};
+
+Promise.prototype._warn = function(message, shouldUseOwnTrace, promise) {
+    return warn(message, shouldUseOwnTrace, promise || this);
+};
+
+Promise.onPossiblyUnhandledRejection = function (fn) {
+    var domain = getDomain();
+    possiblyUnhandledRejection =
+        typeof fn === "function" ? (domain === null ?
+                                            fn : util.domainBind(domain, fn))
+                                 : undefined;
+};
+
+Promise.onUnhandledRejectionHandled = function (fn) {
+    var domain = getDomain();
+    unhandledRejectionHandled =
+        typeof fn === "function" ? (domain === null ?
+                                            fn : util.domainBind(domain, fn))
+                                 : undefined;
+};
+
+var disableLongStackTraces = function() {};
+Promise.longStackTraces = function () {
+    if (async.haveItemsQueued() && !config.longStackTraces) {
+        throw new Error("cannot enable long stack traces after promises have been created\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    if (!config.longStackTraces && longStackTracesIsSupported()) {
+        var Promise_captureStackTrace = Promise.prototype._captureStackTrace;
+        var Promise_attachExtraTrace = Promise.prototype._attachExtraTrace;
+        config.longStackTraces = true;
+        disableLongStackTraces = function() {
+            if (async.haveItemsQueued() && !config.longStackTraces) {
+                throw new Error("cannot enable long stack traces after promises have been created\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+            }
+            Promise.prototype._captureStackTrace = Promise_captureStackTrace;
+            Promise.prototype._attachExtraTrace = Promise_attachExtraTrace;
+            Context.deactivateLongStackTraces();
+            async.enableTrampoline();
+            config.longStackTraces = false;
+        };
+        Promise.prototype._captureStackTrace = longStackTracesCaptureStackTrace;
+        Promise.prototype._attachExtraTrace = longStackTracesAttachExtraTrace;
+        Context.activateLongStackTraces();
+        async.disableTrampolineIfNecessary();
+    }
+};
+
+Promise.hasLongStackTraces = function () {
+    return config.longStackTraces && longStackTracesIsSupported();
+};
+
+var fireDomEvent = (function() {
+    try {
+        if (typeof CustomEvent === "function") {
+            var event = new CustomEvent("CustomEvent");
+            util.global.dispatchEvent(event);
+            return function(name, event) {
+                var domEvent = new CustomEvent(name.toLowerCase(), {
+                    detail: event,
+                    cancelable: true
+                });
+                return !util.global.dispatchEvent(domEvent);
+            };
+        } else if (typeof Event === "function") {
+            var event = new Event("CustomEvent");
+            util.global.dispatchEvent(event);
+            return function(name, event) {
+                var domEvent = new Event(name.toLowerCase(), {
+                    cancelable: true
+                });
+                domEvent.detail = event;
+                return !util.global.dispatchEvent(domEvent);
+            };
+        } else {
+            var event = document.createEvent("CustomEvent");
+            event.initCustomEvent("testingtheevent", false, true, {});
+            util.global.dispatchEvent(event);
+            return function(name, event) {
+                var domEvent = document.createEvent("CustomEvent");
+                domEvent.initCustomEvent(name.toLowerCase(), false, true,
+                    event);
+                return !util.global.dispatchEvent(domEvent);
+            };
+        }
+    } catch (e) {}
+    return function() {
+        return false;
+    };
+})();
+
+var fireGlobalEvent = (function() {
+    if (util.isNode) {
+        return function() {
+            return process.emit.apply(process, arguments);
+        };
+    } else {
+        if (!util.global) {
+            return function() {
+                return false;
+            };
+        }
+        return function(name) {
+            var methodName = "on" + name.toLowerCase();
+            var method = util.global[methodName];
+            if (!method) return false;
+            method.apply(util.global, [].slice.call(arguments, 1));
+            return true;
+        };
+    }
+})();
+
+function generatePromiseLifecycleEventObject(name, promise) {
+    return {promise: promise};
+}
+
+var eventToObjectGenerator = {
+    promiseCreated: generatePromiseLifecycleEventObject,
+    promiseFulfilled: generatePromiseLifecycleEventObject,
+    promiseRejected: generatePromiseLifecycleEventObject,
+    promiseResolved: generatePromiseLifecycleEventObject,
+    promiseCancelled: generatePromiseLifecycleEventObject,
+    promiseChained: function(name, promise, child) {
+        return {promise: promise, child: child};
+    },
+    warning: function(name, warning) {
+        return {warning: warning};
+    },
+    unhandledRejection: function (name, reason, promise) {
+        return {reason: reason, promise: promise};
+    },
+    rejectionHandled: generatePromiseLifecycleEventObject
+};
+
+var activeFireEvent = function (name) {
+    var globalEventFired = false;
+    try {
+        globalEventFired = fireGlobalEvent.apply(null, arguments);
+    } catch (e) {
+        async.throwLater(e);
+        globalEventFired = true;
+    }
+
+    var domEventFired = false;
+    try {
+        domEventFired = fireDomEvent(name,
+                    eventToObjectGenerator[name].apply(null, arguments));
+    } catch (e) {
+        async.throwLater(e);
+        domEventFired = true;
+    }
+
+    return domEventFired || globalEventFired;
+};
+
+Promise.config = function(opts) {
+    opts = Object(opts);
+    if ("longStackTraces" in opts) {
+        if (opts.longStackTraces) {
+            Promise.longStackTraces();
+        } else if (!opts.longStackTraces && Promise.hasLongStackTraces()) {
+            disableLongStackTraces();
+        }
+    }
+    if ("warnings" in opts) {
+        var warningsOption = opts.warnings;
+        config.warnings = !!warningsOption;
+        wForgottenReturn = config.warnings;
+
+        if (util.isObject(warningsOption)) {
+            if ("wForgottenReturn" in warningsOption) {
+                wForgottenReturn = !!warningsOption.wForgottenReturn;
+            }
+        }
+    }
+    if ("cancellation" in opts && opts.cancellation && !config.cancellation) {
+        if (async.haveItemsQueued()) {
+            throw new Error(
+                "cannot enable cancellation after promises are in use");
+        }
+        Promise.prototype._clearCancellationData =
+            cancellationClearCancellationData;
+        Promise.prototype._propagateFrom = cancellationPropagateFrom;
+        Promise.prototype._onCancel = cancellationOnCancel;
+        Promise.prototype._setOnCancel = cancellationSetOnCancel;
+        Promise.prototype._attachCancellationCallback =
+            cancellationAttachCancellationCallback;
+        Promise.prototype._execute = cancellationExecute;
+        propagateFromFunction = cancellationPropagateFrom;
+        config.cancellation = true;
+    }
+    if ("monitoring" in opts) {
+        if (opts.monitoring && !config.monitoring) {
+            config.monitoring = true;
+            Promise.prototype._fireEvent = activeFireEvent;
+        } else if (!opts.monitoring && config.monitoring) {
+            config.monitoring = false;
+            Promise.prototype._fireEvent = defaultFireEvent;
+        }
+    }
+    return Promise;
+};
+
+function defaultFireEvent() { return false; }
+
+Promise.prototype._fireEvent = defaultFireEvent;
+Promise.prototype._execute = function(executor, resolve, reject) {
+    try {
+        executor(resolve, reject);
+    } catch (e) {
+        return e;
+    }
+};
+Promise.prototype._onCancel = function () {};
+Promise.prototype._setOnCancel = function (handler) { ; };
+Promise.prototype._attachCancellationCallback = function(onCancel) {
+    ;
+};
+Promise.prototype._captureStackTrace = function () {};
+Promise.prototype._attachExtraTrace = function () {};
+Promise.prototype._clearCancellationData = function() {};
+Promise.prototype._propagateFrom = function (parent, flags) {
+    ;
+    ;
+};
+
+function cancellationExecute(executor, resolve, reject) {
+    var promise = this;
+    try {
+        executor(resolve, reject, function(onCancel) {
+            if (typeof onCancel !== "function") {
+                throw new TypeError("onCancel must be a function, got: " +
+                                    util.toString(onCancel));
+            }
+            promise._attachCancellationCallback(onCancel);
+        });
+    } catch (e) {
+        return e;
+    }
+}
+
+function cancellationAttachCancellationCallback(onCancel) {
+    if (!this._isCancellable()) return this;
+
+    var previousOnCancel = this._onCancel();
+    if (previousOnCancel !== undefined) {
+        if (util.isArray(previousOnCancel)) {
+            previousOnCancel.push(onCancel);
+        } else {
+            this._setOnCancel([previousOnCancel, onCancel]);
+        }
+    } else {
+        this._setOnCancel(onCancel);
+    }
+}
+
+function cancellationOnCancel() {
+    return this._onCancelField;
+}
+
+function cancellationSetOnCancel(onCancel) {
+    this._onCancelField = onCancel;
+}
+
+function cancellationClearCancellationData() {
+    this._cancellationParent = undefined;
+    this._onCancelField = undefined;
+}
+
+function cancellationPropagateFrom(parent, flags) {
+    if ((flags & 1) !== 0) {
+        this._cancellationParent = parent;
+        var branchesRemainingToCancel = parent._branchesRemainingToCancel;
+        if (branchesRemainingToCancel === undefined) {
+            branchesRemainingToCancel = 0;
+        }
+        parent._branchesRemainingToCancel = branchesRemainingToCancel + 1;
+    }
+    if ((flags & 2) !== 0 && parent._isBound()) {
+        this._setBoundTo(parent._boundTo);
+    }
+}
+
+function bindingPropagateFrom(parent, flags) {
+    if ((flags & 2) !== 0 && parent._isBound()) {
+        this._setBoundTo(parent._boundTo);
+    }
+}
+var propagateFromFunction = bindingPropagateFrom;
+
+function boundValueFunction() {
+    var ret = this._boundTo;
+    if (ret !== undefined) {
+        if (ret instanceof Promise) {
+            if (ret.isFulfilled()) {
+                return ret.value();
+            } else {
+                return undefined;
+            }
+        }
+    }
+    return ret;
+}
+
+function longStackTracesCaptureStackTrace() {
+    this._trace = new CapturedTrace(this._peekContext());
+}
+
+function longStackTracesAttachExtraTrace(error, ignoreSelf) {
+    if (canAttachTrace(error)) {
+        var trace = this._trace;
+        if (trace !== undefined) {
+            if (ignoreSelf) trace = trace._parent;
+        }
+        if (trace !== undefined) {
+            trace.attachExtraTrace(error);
+        } else if (!error.__stackCleaned__) {
+            var parsed = parseStackAndMessage(error);
+            util.notEnumerableProp(error, "stack",
+                parsed.message + "\n" + parsed.stack.join("\n"));
+            util.notEnumerableProp(error, "__stackCleaned__", true);
+        }
+    }
+}
+
+function checkForgottenReturns(returnValue, promiseCreated, name, promise,
+                               parent) {
+    if (returnValue === undefined && promiseCreated !== null &&
+        wForgottenReturn) {
+        if (parent !== undefined && parent._returnedNonUndefined()) return;
+        if ((promise._bitField & 65535) === 0) return;
+
+        if (name) name = name + " ";
+        var handlerLine = "";
+        var creatorLine = "";
+        if (promiseCreated._trace) {
+            var traceLines = promiseCreated._trace.stack.split("\n");
+            var stack = cleanStack(traceLines);
+            for (var i = stack.length - 1; i >= 0; --i) {
+                var line = stack[i];
+                if (!nodeFramePattern.test(line)) {
+                    var lineMatches = line.match(parseLinePattern);
+                    if (lineMatches) {
+                        handlerLine  = "at " + lineMatches[1] +
+                            ":" + lineMatches[2] + ":" + lineMatches[3] + " ";
+                    }
+                    break;
+                }
+            }
+
+            if (stack.length > 0) {
+                var firstUserLine = stack[0];
+                for (var i = 0; i < traceLines.length; ++i) {
+
+                    if (traceLines[i] === firstUserLine) {
+                        if (i > 0) {
+                            creatorLine = "\n" + traceLines[i - 1];
+                        }
+                        break;
+                    }
+                }
+
+            }
+        }
+        var msg = "a promise was created in a " + name +
+            "handler " + handlerLine + "but was not returned from it, " +
+            "see http://goo.gl/rRqMUw" +
+            creatorLine;
+        promise._warn(msg, true, promiseCreated);
+    }
+}
+
+function deprecated(name, replacement) {
+    var message = name +
+        " is deprecated and will be removed in a future version.";
+    if (replacement) message += " Use " + replacement + " instead.";
+    return warn(message);
+}
+
+function warn(message, shouldUseOwnTrace, promise) {
+    if (!config.warnings) return;
+    var warning = new Warning(message);
+    var ctx;
+    if (shouldUseOwnTrace) {
+        promise._attachExtraTrace(warning);
+    } else if (config.longStackTraces && (ctx = Promise._peekContext())) {
+        ctx.attachExtraTrace(warning);
+    } else {
+        var parsed = parseStackAndMessage(warning);
+        warning.stack = parsed.message + "\n" + parsed.stack.join("\n");
+    }
+
+    if (!activeFireEvent("warning", warning)) {
+        formatAndLogError(warning, "", true);
+    }
+}
+
+function reconstructStack(message, stacks) {
+    for (var i = 0; i < stacks.length - 1; ++i) {
+        stacks[i].push("From previous event:");
+        stacks[i] = stacks[i].join("\n");
+    }
+    if (i < stacks.length) {
+        stacks[i] = stacks[i].join("\n");
+    }
+    return message + "\n" + stacks.join("\n");
+}
+
+function removeDuplicateOrEmptyJumps(stacks) {
+    for (var i = 0; i < stacks.length; ++i) {
+        if (stacks[i].length === 0 ||
+            ((i + 1 < stacks.length) && stacks[i][0] === stacks[i+1][0])) {
+            stacks.splice(i, 1);
+            i--;
+        }
+    }
+}
+
+function removeCommonRoots(stacks) {
+    var current = stacks[0];
+    for (var i = 1; i < stacks.length; ++i) {
+        var prev = stacks[i];
+        var currentLastIndex = current.length - 1;
+        var currentLastLine = current[currentLastIndex];
+        var commonRootMeetPoint = -1;
+
+        for (var j = prev.length - 1; j >= 0; --j) {
+            if (prev[j] === currentLastLine) {
+                commonRootMeetPoint = j;
+                break;
+            }
+        }
+
+        for (var j = commonRootMeetPoint; j >= 0; --j) {
+            var line = prev[j];
+            if (current[currentLastIndex] === line) {
+                current.pop();
+                currentLastIndex--;
+            } else {
+                break;
+            }
+        }
+        current = prev;
+    }
+}
+
+function cleanStack(stack) {
+    var ret = [];
+    for (var i = 0; i < stack.length; ++i) {
+        var line = stack[i];
+        var isTraceLine = "    (No stack trace)" === line ||
+            stackFramePattern.test(line);
+        var isInternalFrame = isTraceLine && shouldIgnore(line);
+        if (isTraceLine && !isInternalFrame) {
+            if (indentStackFrames && line.charAt(0) !== " ") {
+                line = "    " + line;
+            }
+            ret.push(line);
+        }
+    }
+    return ret;
+}
+
+function stackFramesAsArray(error) {
+    var stack = error.stack.replace(/\s+$/g, "").split("\n");
+    for (var i = 0; i < stack.length; ++i) {
+        var line = stack[i];
+        if ("    (No stack trace)" === line || stackFramePattern.test(line)) {
+            break;
+        }
+    }
+    if (i > 0 && error.name != "SyntaxError") {
+        stack = stack.slice(i);
+    }
+    return stack;
+}
+
+function parseStackAndMessage(error) {
+    var stack = error.stack;
+    var message = error.toString();
+    stack = typeof stack === "string" && stack.length > 0
+                ? stackFramesAsArray(error) : ["    (No stack trace)"];
+    return {
+        message: message,
+        stack: error.name == "SyntaxError" ? stack : cleanStack(stack)
+    };
+}
+
+function formatAndLogError(error, title, isSoft) {
+    if (typeof console !== "undefined") {
+        var message;
+        if (util.isObject(error)) {
+            var stack = error.stack;
+            message = title + formatStack(stack, error);
+        } else {
+            message = title + String(error);
+        }
+        if (typeof printWarning === "function") {
+            printWarning(message, isSoft);
+        } else if (typeof console.log === "function" ||
+            typeof console.log === "object") {
+            console.log(message);
+        }
+    }
+}
+
+function fireRejectionEvent(name, localHandler, reason, promise) {
+    var localEventFired = false;
+    try {
+        if (typeof localHandler === "function") {
+            localEventFired = true;
+            if (name === "rejectionHandled") {
+                localHandler(promise);
+            } else {
+                localHandler(reason, promise);
+            }
+        }
+    } catch (e) {
+        async.throwLater(e);
+    }
+
+    if (name === "unhandledRejection") {
+        if (!activeFireEvent(name, reason, promise) && !localEventFired) {
+            formatAndLogError(reason, "Unhandled rejection ");
+        }
+    } else {
+        activeFireEvent(name, promise);
+    }
+}
+
+function formatNonError(obj) {
+    var str;
+    if (typeof obj === "function") {
+        str = "[function " +
+            (obj.name || "anonymous") +
+            "]";
+    } else {
+        str = obj && typeof obj.toString === "function"
+            ? obj.toString() : util.toString(obj);
+        var ruselessToString = /\[object [a-zA-Z0-9$_]+\]/;
+        if (ruselessToString.test(str)) {
+            try {
+                var newStr = JSON.stringify(obj);
+                str = newStr;
+            }
+            catch(e) {
+
+            }
+        }
+        if (str.length === 0) {
+            str = "(empty array)";
+        }
+    }
+    return ("(<" + snip(str) + ">, no stack trace)");
+}
+
+function snip(str) {
+    var maxChars = 41;
+    if (str.length < maxChars) {
+        return str;
+    }
+    return str.substr(0, maxChars - 3) + "...";
+}
+
+function longStackTracesIsSupported() {
+    return typeof captureStackTrace === "function";
+}
+
+var shouldIgnore = function() { return false; };
+var parseLineInfoRegex = /[\/<\(]([^:\/]+):(\d+):(?:\d+)\)?\s*$/;
+function parseLineInfo(line) {
+    var matches = line.match(parseLineInfoRegex);
+    if (matches) {
+        return {
+            fileName: matches[1],
+            line: parseInt(matches[2], 10)
+        };
+    }
+}
+
+function setBounds(firstLineError, lastLineError) {
+    if (!longStackTracesIsSupported()) return;
+    var firstStackLines = firstLineError.stack.split("\n");
+    var lastStackLines = lastLineError.stack.split("\n");
+    var firstIndex = -1;
+    var lastIndex = -1;
+    var firstFileName;
+    var lastFileName;
+    for (var i = 0; i < firstStackLines.length; ++i) {
+        var result = parseLineInfo(firstStackLines[i]);
+        if (result) {
+            firstFileName = result.fileName;
+            firstIndex = result.line;
+            break;
+        }
+    }
+    for (var i = 0; i < lastStackLines.length; ++i) {
+        var result = parseLineInfo(lastStackLines[i]);
+        if (result) {
+            lastFileName = result.fileName;
+            lastIndex = result.line;
+            break;
+        }
+    }
+    if (firstIndex < 0 || lastIndex < 0 || !firstFileName || !lastFileName ||
+        firstFileName !== lastFileName || firstIndex >= lastIndex) {
+        return;
+    }
+
+    shouldIgnore = function(line) {
+        if (bluebirdFramePattern.test(line)) return true;
+        var info = parseLineInfo(line);
+        if (info) {
+            if (info.fileName === firstFileName &&
+                (firstIndex <= info.line && info.line <= lastIndex)) {
+                return true;
+            }
+        }
+        return false;
+    };
+}
+
+function CapturedTrace(parent) {
+    this._parent = parent;
+    this._promisesCreated = 0;
+    var length = this._length = 1 + (parent === undefined ? 0 : parent._length);
+    captureStackTrace(this, CapturedTrace);
+    if (length > 32) this.uncycle();
+}
+util.inherits(CapturedTrace, Error);
+Context.CapturedTrace = CapturedTrace;
+
+CapturedTrace.prototype.uncycle = function() {
+    var length = this._length;
+    if (length < 2) return;
+    var nodes = [];
+    var stackToIndex = {};
+
+    for (var i = 0, node = this; node !== undefined; ++i) {
+        nodes.push(node);
+        node = node._parent;
+    }
+    length = this._length = i;
+    for (var i = length - 1; i >= 0; --i) {
+        var stack = nodes[i].stack;
+        if (stackToIndex[stack] === undefined) {
+            stackToIndex[stack] = i;
+        }
+    }
+    for (var i = 0; i < length; ++i) {
+        var currentStack = nodes[i].stack;
+        var index = stackToIndex[currentStack];
+        if (index !== undefined && index !== i) {
+            if (index > 0) {
+                nodes[index - 1]._parent = undefined;
+                nodes[index - 1]._length = 1;
+            }
+            nodes[i]._parent = undefined;
+            nodes[i]._length = 1;
+            var cycleEdgeNode = i > 0 ? nodes[i - 1] : this;
+
+            if (index < length - 1) {
+                cycleEdgeNode._parent = nodes[index + 1];
+                cycleEdgeNode._parent.uncycle();
+                cycleEdgeNode._length =
+                    cycleEdgeNode._parent._length + 1;
+            } else {
+                cycleEdgeNode._parent = undefined;
+                cycleEdgeNode._length = 1;
+            }
+            var currentChildLength = cycleEdgeNode._length + 1;
+            for (var j = i - 2; j >= 0; --j) {
+                nodes[j]._length = currentChildLength;
+                currentChildLength++;
+            }
+            return;
+        }
+    }
+};
+
+CapturedTrace.prototype.attachExtraTrace = function(error) {
+    if (error.__stackCleaned__) return;
+    this.uncycle();
+    var parsed = parseStackAndMessage(error);
+    var message = parsed.message;
+    var stacks = [parsed.stack];
+
+    var trace = this;
+    while (trace !== undefined) {
+        stacks.push(cleanStack(trace.stack.split("\n")));
+        trace = trace._parent;
+    }
+    removeCommonRoots(stacks);
+    removeDuplicateOrEmptyJumps(stacks);
+    util.notEnumerableProp(error, "stack", reconstructStack(message, stacks));
+    util.notEnumerableProp(error, "__stackCleaned__", true);
+};
+
+var captureStackTrace = (function stackDetection() {
+    var v8stackFramePattern = /^\s*at\s*/;
+    var v8stackFormatter = function(stack, error) {
+        if (typeof stack === "string") return stack;
+
+        if (error.name !== undefined &&
+            error.message !== undefined) {
+            return error.toString();
+        }
+        return formatNonError(error);
+    };
+
+    if (typeof Error.stackTraceLimit === "number" &&
+        typeof Error.captureStackTrace === "function") {
+        Error.stackTraceLimit += 6;
+        stackFramePattern = v8stackFramePattern;
+        formatStack = v8stackFormatter;
+        var captureStackTrace = Error.captureStackTrace;
+
+        shouldIgnore = function(line) {
+            return bluebirdFramePattern.test(line);
+        };
+        return function(receiver, ignoreUntil) {
+            Error.stackTraceLimit += 6;
+            captureStackTrace(receiver, ignoreUntil);
+            Error.stackTraceLimit -= 6;
+        };
+    }
+    var err = new Error();
+
+    if (typeof err.stack === "string" &&
+        err.stack.split("\n")[0].indexOf("stackDetection@") >= 0) {
+        stackFramePattern = /@/;
+        formatStack = v8stackFormatter;
+        indentStackFrames = true;
+        return function captureStackTrace(o) {
+            o.stack = new Error().stack;
+        };
+    }
+
+    var hasStackAfterThrow;
+    try { throw new Error(); }
+    catch(e) {
+        hasStackAfterThrow = ("stack" in e);
+    }
+    if (!("stack" in err) && hasStackAfterThrow &&
+        typeof Error.stackTraceLimit === "number") {
+        stackFramePattern = v8stackFramePattern;
+        formatStack = v8stackFormatter;
+        return function captureStackTrace(o) {
+            Error.stackTraceLimit += 6;
+            try { throw new Error(); }
+            catch(e) { o.stack = e.stack; }
+            Error.stackTraceLimit -= 6;
+        };
+    }
+
+    formatStack = function(stack, error) {
+        if (typeof stack === "string") return stack;
+
+        if ((typeof error === "object" ||
+            typeof error === "function") &&
+            error.name !== undefined &&
+            error.message !== undefined) {
+            return error.toString();
+        }
+        return formatNonError(error);
+    };
+
+    return null;
+
+})([]);
+
+if (typeof console !== "undefined" && typeof console.warn !== "undefined") {
+    printWarning = function (message) {
+        console.warn(message);
+    };
+    if (util.isNode && process.stderr.isTTY) {
+        printWarning = function(message, isSoft) {
+            var color = isSoft ? "\u001b[33m" : "\u001b[31m";
+            console.warn(color + message + "\u001b[0m\n");
+        };
+    } else if (!util.isNode && typeof (new Error().stack) === "string") {
+        printWarning = function(message, isSoft) {
+            console.warn("%c" + message,
+                        isSoft ? "color: darkorange" : "color: red");
+        };
+    }
+}
+
+var config = {
+    warnings: warnings,
+    longStackTraces: false,
+    cancellation: false,
+    monitoring: false
+};
+
+if (longStackTraces) Promise.longStackTraces();
+
+return {
+    longStackTraces: function() {
+        return config.longStackTraces;
+    },
+    warnings: function() {
+        return config.warnings;
+    },
+    cancellation: function() {
+        return config.cancellation;
+    },
+    monitoring: function() {
+        return config.monitoring;
+    },
+    propagateFromFunction: function() {
+        return propagateFromFunction;
+    },
+    boundValueFunction: function() {
+        return boundValueFunction;
+    },
+    checkForgottenReturns: checkForgottenReturns,
+    setBounds: setBounds,
+    warn: warn,
+    deprecated: deprecated,
+    CapturedTrace: CapturedTrace,
+    fireDomEvent: fireDomEvent,
+    fireGlobalEvent: fireGlobalEvent
+};
+};
+
+},{"./errors":12,"./util":36}],10:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise) {
+function returner() {
+    return this.value;
+}
+function thrower() {
+    throw this.reason;
+}
+
+Promise.prototype["return"] =
+Promise.prototype.thenReturn = function (value) {
+    if (value instanceof Promise) value.suppressUnhandledRejections();
+    return this._then(
+        returner, undefined, undefined, {value: value}, undefined);
+};
+
+Promise.prototype["throw"] =
+Promise.prototype.thenThrow = function (reason) {
+    return this._then(
+        thrower, undefined, undefined, {reason: reason}, undefined);
+};
+
+Promise.prototype.catchThrow = function (reason) {
+    if (arguments.length <= 1) {
+        return this._then(
+            undefined, thrower, undefined, {reason: reason}, undefined);
+    } else {
+        var _reason = arguments[1];
+        var handler = function() {throw _reason;};
+        return this.caught(reason, handler);
+    }
+};
+
+Promise.prototype.catchReturn = function (value) {
+    if (arguments.length <= 1) {
+        if (value instanceof Promise) value.suppressUnhandledRejections();
+        return this._then(
+            undefined, returner, undefined, {value: value}, undefined);
+    } else {
+        var _value = arguments[1];
+        if (_value instanceof Promise) _value.suppressUnhandledRejections();
+        var handler = function() {return _value;};
+        return this.caught(value, handler);
+    }
+};
+};
+
+},{}],11:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL) {
+var PromiseReduce = Promise.reduce;
+var PromiseAll = Promise.all;
+
+function promiseAllThis() {
+    return PromiseAll(this);
+}
+
+function PromiseMapSeries(promises, fn) {
+    return PromiseReduce(promises, fn, INTERNAL, INTERNAL);
+}
+
+Promise.prototype.each = function (fn) {
+    return PromiseReduce(this, fn, INTERNAL, 0)
+              ._then(promiseAllThis, undefined, undefined, this, undefined);
+};
+
+Promise.prototype.mapSeries = function (fn) {
+    return PromiseReduce(this, fn, INTERNAL, INTERNAL);
+};
+
+Promise.each = function (promises, fn) {
+    return PromiseReduce(promises, fn, INTERNAL, 0)
+              ._then(promiseAllThis, undefined, undefined, promises, undefined);
+};
+
+Promise.mapSeries = PromiseMapSeries;
+};
+
+
+},{}],12:[function(_dereq_,module,exports){
+"use strict";
+var es5 = _dereq_("./es5");
+var Objectfreeze = es5.freeze;
+var util = _dereq_("./util");
+var inherits = util.inherits;
+var notEnumerableProp = util.notEnumerableProp;
+
+function subError(nameProperty, defaultMessage) {
+    function SubError(message) {
+        if (!(this instanceof SubError)) return new SubError(message);
+        notEnumerableProp(this, "message",
+            typeof message === "string" ? message : defaultMessage);
+        notEnumerableProp(this, "name", nameProperty);
+        if (Error.captureStackTrace) {
+            Error.captureStackTrace(this, this.constructor);
+        } else {
+            Error.call(this);
+        }
+    }
+    inherits(SubError, Error);
+    return SubError;
+}
+
+var _TypeError, _RangeError;
+var Warning = subError("Warning", "warning");
+var CancellationError = subError("CancellationError", "cancellation error");
+var TimeoutError = subError("TimeoutError", "timeout error");
+var AggregateError = subError("AggregateError", "aggregate error");
+try {
+    _TypeError = TypeError;
+    _RangeError = RangeError;
+} catch(e) {
+    _TypeError = subError("TypeError", "type error");
+    _RangeError = subError("RangeError", "range error");
+}
+
+var methods = ("join pop push shift unshift slice filter forEach some " +
+    "every map indexOf lastIndexOf reduce reduceRight sort reverse").split(" ");
+
+for (var i = 0; i < methods.length; ++i) {
+    if (typeof Array.prototype[methods[i]] === "function") {
+        AggregateError.prototype[methods[i]] = Array.prototype[methods[i]];
+    }
+}
+
+es5.defineProperty(AggregateError.prototype, "length", {
+    value: 0,
+    configurable: false,
+    writable: true,
+    enumerable: true
+});
+AggregateError.prototype["isOperational"] = true;
+var level = 0;
+AggregateError.prototype.toString = function() {
+    var indent = Array(level * 4 + 1).join(" ");
+    var ret = "\n" + indent + "AggregateError of:" + "\n";
+    level++;
+    indent = Array(level * 4 + 1).join(" ");
+    for (var i = 0; i < this.length; ++i) {
+        var str = this[i] === this ? "[Circular AggregateError]" : this[i] + "";
+        var lines = str.split("\n");
+        for (var j = 0; j < lines.length; ++j) {
+            lines[j] = indent + lines[j];
+        }
+        str = lines.join("\n");
+        ret += str + "\n";
+    }
+    level--;
+    return ret;
+};
+
+function OperationalError(message) {
+    if (!(this instanceof OperationalError))
+        return new OperationalError(message);
+    notEnumerableProp(this, "name", "OperationalError");
+    notEnumerableProp(this, "message", message);
+    this.cause = message;
+    this["isOperational"] = true;
+
+    if (message instanceof Error) {
+        notEnumerableProp(this, "message", message.message);
+        notEnumerableProp(this, "stack", message.stack);
+    } else if (Error.captureStackTrace) {
+        Error.captureStackTrace(this, this.constructor);
+    }
+
+}
+inherits(OperationalError, Error);
+
+var errorTypes = Error["__BluebirdErrorTypes__"];
+if (!errorTypes) {
+    errorTypes = Objectfreeze({
+        CancellationError: CancellationError,
+        TimeoutError: TimeoutError,
+        OperationalError: OperationalError,
+        RejectionError: OperationalError,
+        AggregateError: AggregateError
+    });
+    es5.defineProperty(Error, "__BluebirdErrorTypes__", {
+        value: errorTypes,
+        writable: false,
+        enumerable: false,
+        configurable: false
+    });
+}
+
+module.exports = {
+    Error: Error,
+    TypeError: _TypeError,
+    RangeError: _RangeError,
+    CancellationError: errorTypes.CancellationError,
+    OperationalError: errorTypes.OperationalError,
+    TimeoutError: errorTypes.TimeoutError,
+    AggregateError: errorTypes.AggregateError,
+    Warning: Warning
+};
+
+},{"./es5":13,"./util":36}],13:[function(_dereq_,module,exports){
+var isES5 = (function(){
+    "use strict";
+    return this === undefined;
+})();
+
+if (isES5) {
+    module.exports = {
+        freeze: Object.freeze,
+        defineProperty: Object.defineProperty,
+        getDescriptor: Object.getOwnPropertyDescriptor,
+        keys: Object.keys,
+        names: Object.getOwnPropertyNames,
+        getPrototypeOf: Object.getPrototypeOf,
+        isArray: Array.isArray,
+        isES5: isES5,
+        propertyIsWritable: function(obj, prop) {
+            var descriptor = Object.getOwnPropertyDescriptor(obj, prop);
+            return !!(!descriptor || descriptor.writable || descriptor.set);
+        }
+    };
+} else {
+    var has = {}.hasOwnProperty;
+    var str = {}.toString;
+    var proto = {}.constructor.prototype;
+
+    var ObjectKeys = function (o) {
+        var ret = [];
+        for (var key in o) {
+            if (has.call(o, key)) {
+                ret.push(key);
+            }
+        }
+        return ret;
+    };
+
+    var ObjectGetDescriptor = function(o, key) {
+        return {value: o[key]};
+    };
+
+    var ObjectDefineProperty = function (o, key, desc) {
+        o[key] = desc.value;
+        return o;
+    };
+
+    var ObjectFreeze = function (obj) {
+        return obj;
+    };
+
+    var ObjectGetPrototypeOf = function (obj) {
+        try {
+            return Object(obj).constructor.prototype;
+        }
+        catch (e) {
+            return proto;
+        }
+    };
+
+    var ArrayIsArray = function (obj) {
+        try {
+            return str.call(obj) === "[object Array]";
+        }
+        catch(e) {
+            return false;
+        }
+    };
+
+    module.exports = {
+        isArray: ArrayIsArray,
+        keys: ObjectKeys,
+        names: ObjectKeys,
+        defineProperty: ObjectDefineProperty,
+        getDescriptor: ObjectGetDescriptor,
+        freeze: ObjectFreeze,
+        getPrototypeOf: ObjectGetPrototypeOf,
+        isES5: isES5,
+        propertyIsWritable: function() {
+            return true;
+        }
+    };
+}
+
+},{}],14:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL) {
+var PromiseMap = Promise.map;
+
+Promise.prototype.filter = function (fn, options) {
+    return PromiseMap(this, fn, options, INTERNAL);
+};
+
+Promise.filter = function (promises, fn, options) {
+    return PromiseMap(promises, fn, options, INTERNAL);
+};
+};
+
+},{}],15:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, tryConvertToPromise, NEXT_FILTER) {
+var util = _dereq_("./util");
+var CancellationError = Promise.CancellationError;
+var errorObj = util.errorObj;
+var catchFilter = _dereq_("./catch_filter")(NEXT_FILTER);
+
+function PassThroughHandlerContext(promise, type, handler) {
+    this.promise = promise;
+    this.type = type;
+    this.handler = handler;
+    this.called = false;
+    this.cancelPromise = null;
+}
+
+PassThroughHandlerContext.prototype.isFinallyHandler = function() {
+    return this.type === 0;
+};
+
+function FinallyHandlerCancelReaction(finallyHandler) {
+    this.finallyHandler = finallyHandler;
+}
+
+FinallyHandlerCancelReaction.prototype._resultCancelled = function() {
+    checkCancel(this.finallyHandler);
+};
+
+function checkCancel(ctx, reason) {
+    if (ctx.cancelPromise != null) {
+        if (arguments.length > 1) {
+            ctx.cancelPromise._reject(reason);
+        } else {
+            ctx.cancelPromise._cancel();
+        }
+        ctx.cancelPromise = null;
+        return true;
+    }
+    return false;
+}
+
+function succeed() {
+    return finallyHandler.call(this, this.promise._target()._settledValue());
+}
+function fail(reason) {
+    if (checkCancel(this, reason)) return;
+    errorObj.e = reason;
+    return errorObj;
+}
+function finallyHandler(reasonOrValue) {
+    var promise = this.promise;
+    var handler = this.handler;
+
+    if (!this.called) {
+        this.called = true;
+        var ret = this.isFinallyHandler()
+            ? handler.call(promise._boundValue())
+            : handler.call(promise._boundValue(), reasonOrValue);
+        if (ret === NEXT_FILTER) {
+            return ret;
+        } else if (ret !== undefined) {
+            promise._setReturnedNonUndefined();
+            var maybePromise = tryConvertToPromise(ret, promise);
+            if (maybePromise instanceof Promise) {
+                if (this.cancelPromise != null) {
+                    if (maybePromise._isCancelled()) {
+                        var reason =
+                            new CancellationError("late cancellation observer");
+                        promise._attachExtraTrace(reason);
+                        errorObj.e = reason;
+                        return errorObj;
+                    } else if (maybePromise.isPending()) {
+                        maybePromise._attachCancellationCallback(
+                            new FinallyHandlerCancelReaction(this));
+                    }
+                }
+                return maybePromise._then(
+                    succeed, fail, undefined, this, undefined);
+            }
+        }
+    }
+
+    if (promise.isRejected()) {
+        checkCancel(this);
+        errorObj.e = reasonOrValue;
+        return errorObj;
+    } else {
+        checkCancel(this);
+        return reasonOrValue;
+    }
+}
+
+Promise.prototype._passThrough = function(handler, type, success, fail) {
+    if (typeof handler !== "function") return this.then();
+    return this._then(success,
+                      fail,
+                      undefined,
+                      new PassThroughHandlerContext(this, type, handler),
+                      undefined);
+};
+
+Promise.prototype.lastly =
+Promise.prototype["finally"] = function (handler) {
+    return this._passThrough(handler,
+                             0,
+                             finallyHandler,
+                             finallyHandler);
+};
+
+
+Promise.prototype.tap = function (handler) {
+    return this._passThrough(handler, 1, finallyHandler);
+};
+
+Promise.prototype.tapCatch = function (handlerOrPredicate) {
+    var len = arguments.length;
+    if(len === 1) {
+        return this._passThrough(handlerOrPredicate,
+                                 1,
+                                 undefined,
+                                 finallyHandler);
+    } else {
+         var catchInstances = new Array(len - 1),
+            j = 0, i;
+        for (i = 0; i < len - 1; ++i) {
+            var item = arguments[i];
+            if (util.isObject(item)) {
+                catchInstances[j++] = item;
+            } else {
+                return Promise.reject(new TypeError(
+                    "tapCatch statement predicate: "
+                    + "expecting an object but got " + util.classString(item)
+                ));
+            }
+        }
+        catchInstances.length = j;
+        var handler = arguments[i];
+        return this._passThrough(catchFilter(catchInstances, handler, this),
+                                 1,
+                                 undefined,
+                                 finallyHandler);
+    }
+
+};
+
+return PassThroughHandlerContext;
+};
+
+},{"./catch_filter":7,"./util":36}],16:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise,
+                          apiRejection,
+                          INTERNAL,
+                          tryConvertToPromise,
+                          Proxyable,
+                          debug) {
+var errors = _dereq_("./errors");
+var TypeError = errors.TypeError;
+var util = _dereq_("./util");
+var errorObj = util.errorObj;
+var tryCatch = util.tryCatch;
+var yieldHandlers = [];
+
+function promiseFromYieldHandler(value, yieldHandlers, traceParent) {
+    for (var i = 0; i < yieldHandlers.length; ++i) {
+        traceParent._pushContext();
+        var result = tryCatch(yieldHandlers[i])(value);
+        traceParent._popContext();
+        if (result === errorObj) {
+            traceParent._pushContext();
+            var ret = Promise.reject(errorObj.e);
+            traceParent._popContext();
+            return ret;
+        }
+        var maybePromise = tryConvertToPromise(result, traceParent);
+        if (maybePromise instanceof Promise) return maybePromise;
+    }
+    return null;
+}
+
+function PromiseSpawn(generatorFunction, receiver, yieldHandler, stack) {
+    if (debug.cancellation()) {
+        var internal = new Promise(INTERNAL);
+        var _finallyPromise = this._finallyPromise = new Promise(INTERNAL);
+        this._promise = internal.lastly(function() {
+            return _finallyPromise;
+        });
+        internal._captureStackTrace();
+        internal._setOnCancel(this);
+    } else {
+        var promise = this._promise = new Promise(INTERNAL);
+        promise._captureStackTrace();
+    }
+    this._stack = stack;
+    this._generatorFunction = generatorFunction;
+    this._receiver = receiver;
+    this._generator = undefined;
+    this._yieldHandlers = typeof yieldHandler === "function"
+        ? [yieldHandler].concat(yieldHandlers)
+        : yieldHandlers;
+    this._yieldedPromise = null;
+    this._cancellationPhase = false;
+}
+util.inherits(PromiseSpawn, Proxyable);
+
+PromiseSpawn.prototype._isResolved = function() {
+    return this._promise === null;
+};
+
+PromiseSpawn.prototype._cleanup = function() {
+    this._promise = this._generator = null;
+    if (debug.cancellation() && this._finallyPromise !== null) {
+        this._finallyPromise._fulfill();
+        this._finallyPromise = null;
+    }
+};
+
+PromiseSpawn.prototype._promiseCancelled = function() {
+    if (this._isResolved()) return;
+    var implementsReturn = typeof this._generator["return"] !== "undefined";
+
+    var result;
+    if (!implementsReturn) {
+        var reason = new Promise.CancellationError(
+            "generator .return() sentinel");
+        Promise.coroutine.returnSentinel = reason;
+        this._promise._attachExtraTrace(reason);
+        this._promise._pushContext();
+        result = tryCatch(this._generator["throw"]).call(this._generator,
+                                                         reason);
+        this._promise._popContext();
+    } else {
+        this._promise._pushContext();
+        result = tryCatch(this._generator["return"]).call(this._generator,
+                                                          undefined);
+        this._promise._popContext();
+    }
+    this._cancellationPhase = true;
+    this._yieldedPromise = null;
+    this._continue(result);
+};
+
+PromiseSpawn.prototype._promiseFulfilled = function(value) {
+    this._yieldedPromise = null;
+    this._promise._pushContext();
+    var result = tryCatch(this._generator.next).call(this._generator, value);
+    this._promise._popContext();
+    this._continue(result);
+};
+
+PromiseSpawn.prototype._promiseRejected = function(reason) {
+    this._yieldedPromise = null;
+    this._promise._attachExtraTrace(reason);
+    this._promise._pushContext();
+    var result = tryCatch(this._generator["throw"])
+        .call(this._generator, reason);
+    this._promise._popContext();
+    this._continue(result);
+};
+
+PromiseSpawn.prototype._resultCancelled = function() {
+    if (this._yieldedPromise instanceof Promise) {
+        var promise = this._yieldedPromise;
+        this._yieldedPromise = null;
+        promise.cancel();
+    }
+};
+
+PromiseSpawn.prototype.promise = function () {
+    return this._promise;
+};
+
+PromiseSpawn.prototype._run = function () {
+    this._generator = this._generatorFunction.call(this._receiver);
+    this._receiver =
+        this._generatorFunction = undefined;
+    this._promiseFulfilled(undefined);
+};
+
+PromiseSpawn.prototype._continue = function (result) {
+    var promise = this._promise;
+    if (result === errorObj) {
+        this._cleanup();
+        if (this._cancellationPhase) {
+            return promise.cancel();
+        } else {
+            return promise._rejectCallback(result.e, false);
+        }
+    }
+
+    var value = result.value;
+    if (result.done === true) {
+        this._cleanup();
+        if (this._cancellationPhase) {
+            return promise.cancel();
+        } else {
+            return promise._resolveCallback(value);
+        }
+    } else {
+        var maybePromise = tryConvertToPromise(value, this._promise);
+        if (!(maybePromise instanceof Promise)) {
+            maybePromise =
+                promiseFromYieldHandler(maybePromise,
+                                        this._yieldHandlers,
+                                        this._promise);
+            if (maybePromise === null) {
+                this._promiseRejected(
+                    new TypeError(
+                        "A value %s was yielded that could not be treated as a promise\u000a\u000a    See http://goo.gl/MqrFmX\u000a\u000a".replace("%s", String(value)) +
+                        "From coroutine:\u000a" +
+                        this._stack.split("\n").slice(1, -7).join("\n")
+                    )
+                );
+                return;
+            }
+        }
+        maybePromise = maybePromise._target();
+        var bitField = maybePromise._bitField;
+        ;
+        if (((bitField & 50397184) === 0)) {
+            this._yieldedPromise = maybePromise;
+            maybePromise._proxy(this, null);
+        } else if (((bitField & 33554432) !== 0)) {
+            Promise._async.invoke(
+                this._promiseFulfilled, this, maybePromise._value()
+            );
+        } else if (((bitField & 16777216) !== 0)) {
+            Promise._async.invoke(
+                this._promiseRejected, this, maybePromise._reason()
+            );
+        } else {
+            this._promiseCancelled();
+        }
+    }
+};
+
+Promise.coroutine = function (generatorFunction, options) {
+    if (typeof generatorFunction !== "function") {
+        throw new TypeError("generatorFunction must be a function\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    var yieldHandler = Object(options).yieldHandler;
+    var PromiseSpawn$ = PromiseSpawn;
+    var stack = new Error().stack;
+    return function () {
+        var generator = generatorFunction.apply(this, arguments);
+        var spawn = new PromiseSpawn$(undefined, undefined, yieldHandler,
+                                      stack);
+        var ret = spawn.promise();
+        spawn._generator = generator;
+        spawn._promiseFulfilled(undefined);
+        return ret;
+    };
+};
+
+Promise.coroutine.addYieldHandler = function(fn) {
+    if (typeof fn !== "function") {
+        throw new TypeError("expecting a function but got " + util.classString(fn));
+    }
+    yieldHandlers.push(fn);
+};
+
+Promise.spawn = function (generatorFunction) {
+    debug.deprecated("Promise.spawn()", "Promise.coroutine()");
+    if (typeof generatorFunction !== "function") {
+        return apiRejection("generatorFunction must be a function\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    var spawn = new PromiseSpawn(generatorFunction, this);
+    var ret = spawn.promise();
+    spawn._run(Promise.spawn);
+    return ret;
+};
+};
+
+},{"./errors":12,"./util":36}],17:[function(_dereq_,module,exports){
+"use strict";
+module.exports =
+function(Promise, PromiseArray, tryConvertToPromise, INTERNAL, async,
+         getDomain) {
+var util = _dereq_("./util");
+var canEvaluate = util.canEvaluate;
+var tryCatch = util.tryCatch;
+var errorObj = util.errorObj;
+var reject;
+
+if (!true) {
+if (canEvaluate) {
+    var thenCallback = function(i) {
+        return new Function("value", "holder", "                             \n\
+            'use strict';                                                    \n\
+            holder.pIndex = value;                                           \n\
+            holder.checkFulfillment(this);                                   \n\
+            ".replace(/Index/g, i));
+    };
+
+    var promiseSetter = function(i) {
+        return new Function("promise", "holder", "                           \n\
+            'use strict';                                                    \n\
+            holder.pIndex = promise;                                         \n\
+            ".replace(/Index/g, i));
+    };
+
+    var generateHolderClass = function(total) {
+        var props = new Array(total);
+        for (var i = 0; i < props.length; ++i) {
+            props[i] = "this.p" + (i+1);
+        }
+        var assignment = props.join(" = ") + " = null;";
+        var cancellationCode= "var promise;\n" + props.map(function(prop) {
+            return "                                                         \n\
+                promise = " + prop + ";                                      \n\
+                if (promise instanceof Promise) {                            \n\
+                    promise.cancel();                                        \n\
+                }                                                            \n\
+            ";
+        }).join("\n");
+        var passedArguments = props.join(", ");
+        var name = "Holder$" + total;
+
+
+        var code = "return function(tryCatch, errorObj, Promise, async) {    \n\
+            'use strict';                                                    \n\
+            function [TheName](fn) {                                         \n\
+                [TheProperties]                                              \n\
+                this.fn = fn;                                                \n\
+                this.asyncNeeded = true;                                     \n\
+                this.now = 0;                                                \n\
+            }                                                                \n\
+                                                                             \n\
+            [TheName].prototype._callFunction = function(promise) {          \n\
+                promise._pushContext();                                      \n\
+                var ret = tryCatch(this.fn)([ThePassedArguments]);           \n\
+                promise._popContext();                                       \n\
+                if (ret === errorObj) {                                      \n\
+                    promise._rejectCallback(ret.e, false);                   \n\
+                } else {                                                     \n\
+                    promise._resolveCallback(ret);                           \n\
+                }                                                            \n\
+            };                                                               \n\
+                                                                             \n\
+            [TheName].prototype.checkFulfillment = function(promise) {       \n\
+                var now = ++this.now;                                        \n\
+                if (now === [TheTotal]) {                                    \n\
+                    if (this.asyncNeeded) {                                  \n\
+                        async.invoke(this._callFunction, this, promise);     \n\
+                    } else {                                                 \n\
+                        this._callFunction(promise);                         \n\
+                    }                                                        \n\
+                                                                             \n\
+                }                                                            \n\
+            };                                                               \n\
+                                                                             \n\
+            [TheName].prototype._resultCancelled = function() {              \n\
+                [CancellationCode]                                           \n\
+            };                                                               \n\
+                                                                             \n\
+            return [TheName];                                                \n\
+        }(tryCatch, errorObj, Promise, async);                               \n\
+        ";
+
+        code = code.replace(/\[TheName\]/g, name)
+            .replace(/\[TheTotal\]/g, total)
+            .replace(/\[ThePassedArguments\]/g, passedArguments)
+            .replace(/\[TheProperties\]/g, assignment)
+            .replace(/\[CancellationCode\]/g, cancellationCode);
+
+        return new Function("tryCatch", "errorObj", "Promise", "async", code)
+                           (tryCatch, errorObj, Promise, async);
+    };
+
+    var holderClasses = [];
+    var thenCallbacks = [];
+    var promiseSetters = [];
+
+    for (var i = 0; i < 8; ++i) {
+        holderClasses.push(generateHolderClass(i + 1));
+        thenCallbacks.push(thenCallback(i + 1));
+        promiseSetters.push(promiseSetter(i + 1));
+    }
+
+    reject = function (reason) {
+        this._reject(reason);
+    };
+}}
+
+Promise.join = function () {
+    var last = arguments.length - 1;
+    var fn;
+    if (last > 0 && typeof arguments[last] === "function") {
+        fn = arguments[last];
+        if (!true) {
+            if (last <= 8 && canEvaluate) {
+                var ret = new Promise(INTERNAL);
+                ret._captureStackTrace();
+                var HolderClass = holderClasses[last - 1];
+                var holder = new HolderClass(fn);
+                var callbacks = thenCallbacks;
+
+                for (var i = 0; i < last; ++i) {
+                    var maybePromise = tryConvertToPromise(arguments[i], ret);
+                    if (maybePromise instanceof Promise) {
+                        maybePromise = maybePromise._target();
+                        var bitField = maybePromise._bitField;
+                        ;
+                        if (((bitField & 50397184) === 0)) {
+                            maybePromise._then(callbacks[i], reject,
+                                               undefined, ret, holder);
+                            promiseSetters[i](maybePromise, holder);
+                            holder.asyncNeeded = false;
+                        } else if (((bitField & 33554432) !== 0)) {
+                            callbacks[i].call(ret,
+                                              maybePromise._value(), holder);
+                        } else if (((bitField & 16777216) !== 0)) {
+                            ret._reject(maybePromise._reason());
+                        } else {
+                            ret._cancel();
+                        }
+                    } else {
+                        callbacks[i].call(ret, maybePromise, holder);
+                    }
+                }
+
+                if (!ret._isFateSealed()) {
+                    if (holder.asyncNeeded) {
+                        var domain = getDomain();
+                        if (domain !== null) {
+                            holder.fn = util.domainBind(domain, holder.fn);
+                        }
+                    }
+                    ret._setAsyncGuaranteed();
+                    ret._setOnCancel(holder);
+                }
+                return ret;
+            }
+        }
+    }
+    var args = [].slice.call(arguments);;
+    if (fn) args.pop();
+    var ret = new PromiseArray(args).promise();
+    return fn !== undefined ? ret.spread(fn) : ret;
+};
+
+};
+
+},{"./util":36}],18:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise,
+                          PromiseArray,
+                          apiRejection,
+                          tryConvertToPromise,
+                          INTERNAL,
+                          debug) {
+var getDomain = Promise._getDomain;
+var util = _dereq_("./util");
+var tryCatch = util.tryCatch;
+var errorObj = util.errorObj;
+var async = Promise._async;
+
+function MappingPromiseArray(promises, fn, limit, _filter) {
+    this.constructor$(promises);
+    this._promise._captureStackTrace();
+    var domain = getDomain();
+    this._callback = domain === null ? fn : util.domainBind(domain, fn);
+    this._preservedValues = _filter === INTERNAL
+        ? new Array(this.length())
+        : null;
+    this._limit = limit;
+    this._inFlight = 0;
+    this._queue = [];
+    async.invoke(this._asyncInit, this, undefined);
+}
+util.inherits(MappingPromiseArray, PromiseArray);
+
+MappingPromiseArray.prototype._asyncInit = function() {
+    this._init$(undefined, -2);
+};
+
+MappingPromiseArray.prototype._init = function () {};
+
+MappingPromiseArray.prototype._promiseFulfilled = function (value, index) {
+    var values = this._values;
+    var length = this.length();
+    var preservedValues = this._preservedValues;
+    var limit = this._limit;
+
+    if (index < 0) {
+        index = (index * -1) - 1;
+        values[index] = value;
+        if (limit >= 1) {
+            this._inFlight--;
+            this._drainQueue();
+            if (this._isResolved()) return true;
+        }
+    } else {
+        if (limit >= 1 && this._inFlight >= limit) {
+            values[index] = value;
+            this._queue.push(index);
+            return false;
+        }
+        if (preservedValues !== null) preservedValues[index] = value;
+
+        var promise = this._promise;
+        var callback = this._callback;
+        var receiver = promise._boundValue();
+        promise._pushContext();
+        var ret = tryCatch(callback).call(receiver, value, index, length);
+        var promiseCreated = promise._popContext();
+        debug.checkForgottenReturns(
+            ret,
+            promiseCreated,
+            preservedValues !== null ? "Promise.filter" : "Promise.map",
+            promise
+        );
+        if (ret === errorObj) {
+            this._reject(ret.e);
+            return true;
+        }
+
+        var maybePromise = tryConvertToPromise(ret, this._promise);
+        if (maybePromise instanceof Promise) {
+            maybePromise = maybePromise._target();
+            var bitField = maybePromise._bitField;
+            ;
+            if (((bitField & 50397184) === 0)) {
+                if (limit >= 1) this._inFlight++;
+                values[index] = maybePromise;
+                maybePromise._proxy(this, (index + 1) * -1);
+                return false;
+            } else if (((bitField & 33554432) !== 0)) {
+                ret = maybePromise._value();
+            } else if (((bitField & 16777216) !== 0)) {
+                this._reject(maybePromise._reason());
+                return true;
+            } else {
+                this._cancel();
+                return true;
+            }
+        }
+        values[index] = ret;
+    }
+    var totalResolved = ++this._totalResolved;
+    if (totalResolved >= length) {
+        if (preservedValues !== null) {
+            this._filter(values, preservedValues);
+        } else {
+            this._resolve(values);
+        }
+        return true;
+    }
+    return false;
+};
+
+MappingPromiseArray.prototype._drainQueue = function () {
+    var queue = this._queue;
+    var limit = this._limit;
+    var values = this._values;
+    while (queue.length > 0 && this._inFlight < limit) {
+        if (this._isResolved()) return;
+        var index = queue.pop();
+        this._promiseFulfilled(values[index], index);
+    }
+};
+
+MappingPromiseArray.prototype._filter = function (booleans, values) {
+    var len = values.length;
+    var ret = new Array(len);
+    var j = 0;
+    for (var i = 0; i < len; ++i) {
+        if (booleans[i]) ret[j++] = values[i];
+    }
+    ret.length = j;
+    this._resolve(ret);
+};
+
+MappingPromiseArray.prototype.preservedValues = function () {
+    return this._preservedValues;
+};
+
+function map(promises, fn, options, _filter) {
+    if (typeof fn !== "function") {
+        return apiRejection("expecting a function but got " + util.classString(fn));
+    }
+
+    var limit = 0;
+    if (options !== undefined) {
+        if (typeof options === "object" && options !== null) {
+            if (typeof options.concurrency !== "number") {
+                return Promise.reject(
+                    new TypeError("'concurrency' must be a number but it is " +
+                                    util.classString(options.concurrency)));
+            }
+            limit = options.concurrency;
+        } else {
+            return Promise.reject(new TypeError(
+                            "options argument must be an object but it is " +
+                             util.classString(options)));
+        }
+    }
+    limit = typeof limit === "number" &&
+        isFinite(limit) && limit >= 1 ? limit : 0;
+    return new MappingPromiseArray(promises, fn, limit, _filter).promise();
+}
+
+Promise.prototype.map = function (fn, options) {
+    return map(this, fn, options, null);
+};
+
+Promise.map = function (promises, fn, options, _filter) {
+    return map(promises, fn, options, _filter);
+};
+
+
+};
+
+},{"./util":36}],19:[function(_dereq_,module,exports){
+"use strict";
+module.exports =
+function(Promise, INTERNAL, tryConvertToPromise, apiRejection, debug) {
+var util = _dereq_("./util");
+var tryCatch = util.tryCatch;
+
+Promise.method = function (fn) {
+    if (typeof fn !== "function") {
+        throw new Promise.TypeError("expecting a function but got " + util.classString(fn));
+    }
+    return function () {
+        var ret = new Promise(INTERNAL);
+        ret._captureStackTrace();
+        ret._pushContext();
+        var value = tryCatch(fn).apply(this, arguments);
+        var promiseCreated = ret._popContext();
+        debug.checkForgottenReturns(
+            value, promiseCreated, "Promise.method", ret);
+        ret._resolveFromSyncValue(value);
+        return ret;
+    };
+};
+
+Promise.attempt = Promise["try"] = function (fn) {
+    if (typeof fn !== "function") {
+        return apiRejection("expecting a function but got " + util.classString(fn));
+    }
+    var ret = new Promise(INTERNAL);
+    ret._captureStackTrace();
+    ret._pushContext();
+    var value;
+    if (arguments.length > 1) {
+        debug.deprecated("calling Promise.try with more than 1 argument");
+        var arg = arguments[1];
+        var ctx = arguments[2];
+        value = util.isArray(arg) ? tryCatch(fn).apply(ctx, arg)
+                                  : tryCatch(fn).call(ctx, arg);
+    } else {
+        value = tryCatch(fn)();
+    }
+    var promiseCreated = ret._popContext();
+    debug.checkForgottenReturns(
+        value, promiseCreated, "Promise.try", ret);
+    ret._resolveFromSyncValue(value);
+    return ret;
+};
+
+Promise.prototype._resolveFromSyncValue = function (value) {
+    if (value === util.errorObj) {
+        this._rejectCallback(value.e, false);
+    } else {
+        this._resolveCallback(value, true);
+    }
+};
+};
+
+},{"./util":36}],20:[function(_dereq_,module,exports){
+"use strict";
+var util = _dereq_("./util");
+var maybeWrapAsError = util.maybeWrapAsError;
+var errors = _dereq_("./errors");
+var OperationalError = errors.OperationalError;
+var es5 = _dereq_("./es5");
+
+function isUntypedError(obj) {
+    return obj instanceof Error &&
+        es5.getPrototypeOf(obj) === Error.prototype;
+}
+
+var rErrorKey = /^(?:name|message|stack|cause)$/;
+function wrapAsOperationalError(obj) {
+    var ret;
+    if (isUntypedError(obj)) {
+        ret = new OperationalError(obj);
+        ret.name = obj.name;
+        ret.message = obj.message;
+        ret.stack = obj.stack;
+        var keys = es5.keys(obj);
+        for (var i = 0; i < keys.length; ++i) {
+            var key = keys[i];
+            if (!rErrorKey.test(key)) {
+                ret[key] = obj[key];
+            }
+        }
+        return ret;
+    }
+    util.markAsOriginatingFromRejection(obj);
+    return obj;
+}
+
+function nodebackForPromise(promise, multiArgs) {
+    return function(err, value) {
+        if (promise === null) return;
+        if (err) {
+            var wrapped = wrapAsOperationalError(maybeWrapAsError(err));
+            promise._attachExtraTrace(wrapped);
+            promise._reject(wrapped);
+        } else if (!multiArgs) {
+            promise._fulfill(value);
+        } else {
+            var args = [].slice.call(arguments, 1);;
+            promise._fulfill(args);
+        }
+        promise = null;
+    };
+}
+
+module.exports = nodebackForPromise;
+
+},{"./errors":12,"./es5":13,"./util":36}],21:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise) {
+var util = _dereq_("./util");
+var async = Promise._async;
+var tryCatch = util.tryCatch;
+var errorObj = util.errorObj;
+
+function spreadAdapter(val, nodeback) {
+    var promise = this;
+    if (!util.isArray(val)) return successAdapter.call(promise, val, nodeback);
+    var ret =
+        tryCatch(nodeback).apply(promise._boundValue(), [null].concat(val));
+    if (ret === errorObj) {
+        async.throwLater(ret.e);
+    }
+}
+
+function successAdapter(val, nodeback) {
+    var promise = this;
+    var receiver = promise._boundValue();
+    var ret = val === undefined
+        ? tryCatch(nodeback).call(receiver, null)
+        : tryCatch(nodeback).call(receiver, null, val);
+    if (ret === errorObj) {
+        async.throwLater(ret.e);
+    }
+}
+function errorAdapter(reason, nodeback) {
+    var promise = this;
+    if (!reason) {
+        var newReason = new Error(reason + "");
+        newReason.cause = reason;
+        reason = newReason;
+    }
+    var ret = tryCatch(nodeback).call(promise._boundValue(), reason);
+    if (ret === errorObj) {
+        async.throwLater(ret.e);
+    }
+}
+
+Promise.prototype.asCallback = Promise.prototype.nodeify = function (nodeback,
+                                                                     options) {
+    if (typeof nodeback == "function") {
+        var adapter = successAdapter;
+        if (options !== undefined && Object(options).spread) {
+            adapter = spreadAdapter;
+        }
+        this._then(
+            adapter,
+            errorAdapter,
+            undefined,
+            this,
+            nodeback
+        );
+    }
+    return this;
+};
+};
+
+},{"./util":36}],22:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function() {
+var makeSelfResolutionError = function () {
+    return new TypeError("circular promise resolution chain\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+};
+var reflectHandler = function() {
+    return new Promise.PromiseInspection(this._target());
+};
+var apiRejection = function(msg) {
+    return Promise.reject(new TypeError(msg));
+};
+function Proxyable() {}
+var UNDEFINED_BINDING = {};
+var util = _dereq_("./util");
+
+var getDomain;
+if (util.isNode) {
+    getDomain = function() {
+        var ret = process.domain;
+        if (ret === undefined) ret = null;
+        return ret;
+    };
+} else {
+    getDomain = function() {
+        return null;
+    };
+}
+util.notEnumerableProp(Promise, "_getDomain", getDomain);
+
+var es5 = _dereq_("./es5");
+var Async = _dereq_("./async");
+var async = new Async();
+es5.defineProperty(Promise, "_async", {value: async});
+var errors = _dereq_("./errors");
+var TypeError = Promise.TypeError = errors.TypeError;
+Promise.RangeError = errors.RangeError;
+var CancellationError = Promise.CancellationError = errors.CancellationError;
+Promise.TimeoutError = errors.TimeoutError;
+Promise.OperationalError = errors.OperationalError;
+Promise.RejectionError = errors.OperationalError;
+Promise.AggregateError = errors.AggregateError;
+var INTERNAL = function(){};
+var APPLY = {};
+var NEXT_FILTER = {};
+var tryConvertToPromise = _dereq_("./thenables")(Promise, INTERNAL);
+var PromiseArray =
+    _dereq_("./promise_array")(Promise, INTERNAL,
+                               tryConvertToPromise, apiRejection, Proxyable);
+var Context = _dereq_("./context")(Promise);
+ /*jshint unused:false*/
+var createContext = Context.create;
+var debug = _dereq_("./debuggability")(Promise, Context);
+var CapturedTrace = debug.CapturedTrace;
+var PassThroughHandlerContext =
+    _dereq_("./finally")(Promise, tryConvertToPromise, NEXT_FILTER);
+var catchFilter = _dereq_("./catch_filter")(NEXT_FILTER);
+var nodebackForPromise = _dereq_("./nodeback");
+var errorObj = util.errorObj;
+var tryCatch = util.tryCatch;
+function check(self, executor) {
+    if (self == null || self.constructor !== Promise) {
+        throw new TypeError("the promise constructor cannot be invoked directly\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    if (typeof executor !== "function") {
+        throw new TypeError("expecting a function but got " + util.classString(executor));
+    }
+
+}
+
+function Promise(executor) {
+    if (executor !== INTERNAL) {
+        check(this, executor);
+    }
+    this._bitField = 0;
+    this._fulfillmentHandler0 = undefined;
+    this._rejectionHandler0 = undefined;
+    this._promise0 = undefined;
+    this._receiver0 = undefined;
+    this._resolveFromExecutor(executor);
+    this._promiseCreated();
+    this._fireEvent("promiseCreated", this);
+}
+
+Promise.prototype.toString = function () {
+    return "[object Promise]";
+};
+
+Promise.prototype.caught = Promise.prototype["catch"] = function (fn) {
+    var len = arguments.length;
+    if (len > 1) {
+        var catchInstances = new Array(len - 1),
+            j = 0, i;
+        for (i = 0; i < len - 1; ++i) {
+            var item = arguments[i];
+            if (util.isObject(item)) {
+                catchInstances[j++] = item;
+            } else {
+                return apiRejection("Catch statement predicate: " +
+                    "expecting an object but got " + util.classString(item));
+            }
+        }
+        catchInstances.length = j;
+        fn = arguments[i];
+        return this.then(undefined, catchFilter(catchInstances, fn, this));
+    }
+    return this.then(undefined, fn);
+};
+
+Promise.prototype.reflect = function () {
+    return this._then(reflectHandler,
+        reflectHandler, undefined, this, undefined);
+};
+
+Promise.prototype.then = function (didFulfill, didReject) {
+    if (debug.warnings() && arguments.length > 0 &&
+        typeof didFulfill !== "function" &&
+        typeof didReject !== "function") {
+        var msg = ".then() only accepts functions but was passed: " +
+                util.classString(didFulfill);
+        if (arguments.length > 1) {
+            msg += ", " + util.classString(didReject);
+        }
+        this._warn(msg);
+    }
+    return this._then(didFulfill, didReject, undefined, undefined, undefined);
+};
+
+Promise.prototype.done = function (didFulfill, didReject) {
+    var promise =
+        this._then(didFulfill, didReject, undefined, undefined, undefined);
+    promise._setIsFinal();
+};
+
+Promise.prototype.spread = function (fn) {
+    if (typeof fn !== "function") {
+        return apiRejection("expecting a function but got " + util.classString(fn));
+    }
+    return this.all()._then(fn, undefined, undefined, APPLY, undefined);
+};
+
+Promise.prototype.toJSON = function () {
+    var ret = {
+        isFulfilled: false,
+        isRejected: false,
+        fulfillmentValue: undefined,
+        rejectionReason: undefined
+    };
+    if (this.isFulfilled()) {
+        ret.fulfillmentValue = this.value();
+        ret.isFulfilled = true;
+    } else if (this.isRejected()) {
+        ret.rejectionReason = this.reason();
+        ret.isRejected = true;
+    }
+    return ret;
+};
+
+Promise.prototype.all = function () {
+    if (arguments.length > 0) {
+        this._warn(".all() was passed arguments but it does not take any");
+    }
+    return new PromiseArray(this).promise();
+};
+
+Promise.prototype.error = function (fn) {
+    return this.caught(util.originatesFromRejection, fn);
+};
+
+Promise.getNewLibraryCopy = module.exports;
+
+Promise.is = function (val) {
+    return val instanceof Promise;
+};
+
+Promise.fromNode = Promise.fromCallback = function(fn) {
+    var ret = new Promise(INTERNAL);
+    ret._captureStackTrace();
+    var multiArgs = arguments.length > 1 ? !!Object(arguments[1]).multiArgs
+                                         : false;
+    var result = tryCatch(fn)(nodebackForPromise(ret, multiArgs));
+    if (result === errorObj) {
+        ret._rejectCallback(result.e, true);
+    }
+    if (!ret._isFateSealed()) ret._setAsyncGuaranteed();
+    return ret;
+};
+
+Promise.all = function (promises) {
+    return new PromiseArray(promises).promise();
+};
+
+Promise.cast = function (obj) {
+    var ret = tryConvertToPromise(obj);
+    if (!(ret instanceof Promise)) {
+        ret = new Promise(INTERNAL);
+        ret._captureStackTrace();
+        ret._setFulfilled();
+        ret._rejectionHandler0 = obj;
+    }
+    return ret;
+};
+
+Promise.resolve = Promise.fulfilled = Promise.cast;
+
+Promise.reject = Promise.rejected = function (reason) {
+    var ret = new Promise(INTERNAL);
+    ret._captureStackTrace();
+    ret._rejectCallback(reason, true);
+    return ret;
+};
+
+Promise.setScheduler = function(fn) {
+    if (typeof fn !== "function") {
+        throw new TypeError("expecting a function but got " + util.classString(fn));
+    }
+    return async.setScheduler(fn);
+};
+
+Promise.prototype._then = function (
+    didFulfill,
+    didReject,
+    _,    receiver,
+    internalData
+) {
+    var haveInternalData = internalData !== undefined;
+    var promise = haveInternalData ? internalData : new Promise(INTERNAL);
+    var target = this._target();
+    var bitField = target._bitField;
+
+    if (!haveInternalData) {
+        promise._propagateFrom(this, 3);
+        promise._captureStackTrace();
+        if (receiver === undefined &&
+            ((this._bitField & 2097152) !== 0)) {
+            if (!((bitField & 50397184) === 0)) {
+                receiver = this._boundValue();
+            } else {
+                receiver = target === this ? undefined : this._boundTo;
+            }
+        }
+        this._fireEvent("promiseChained", this, promise);
+    }
+
+    var domain = getDomain();
+    if (!((bitField & 50397184) === 0)) {
+        var handler, value, settler = target._settlePromiseCtx;
+        if (((bitField & 33554432) !== 0)) {
+            value = target._rejectionHandler0;
+            handler = didFulfill;
+        } else if (((bitField & 16777216) !== 0)) {
+            value = target._fulfillmentHandler0;
+            handler = didReject;
+            target._unsetRejectionIsUnhandled();
+        } else {
+            settler = target._settlePromiseLateCancellationObserver;
+            value = new CancellationError("late cancellation observer");
+            target._attachExtraTrace(value);
+            handler = didReject;
+        }
+
+        async.invoke(settler, target, {
+            handler: domain === null ? handler
+                : (typeof handler === "function" &&
+                    util.domainBind(domain, handler)),
+            promise: promise,
+            receiver: receiver,
+            value: value
+        });
+    } else {
+        target._addCallbacks(didFulfill, didReject, promise, receiver, domain);
+    }
+
+    return promise;
+};
+
+Promise.prototype._length = function () {
+    return this._bitField & 65535;
+};
+
+Promise.prototype._isFateSealed = function () {
+    return (this._bitField & 117506048) !== 0;
+};
+
+Promise.prototype._isFollowing = function () {
+    return (this._bitField & 67108864) === 67108864;
+};
+
+Promise.prototype._setLength = function (len) {
+    this._bitField = (this._bitField & -65536) |
+        (len & 65535);
+};
+
+Promise.prototype._setFulfilled = function () {
+    this._bitField = this._bitField | 33554432;
+    this._fireEvent("promiseFulfilled", this);
+};
+
+Promise.prototype._setRejected = function () {
+    this._bitField = this._bitField | 16777216;
+    this._fireEvent("promiseRejected", this);
+};
+
+Promise.prototype._setFollowing = function () {
+    this._bitField = this._bitField | 67108864;
+    this._fireEvent("promiseResolved", this);
+};
+
+Promise.prototype._setIsFinal = function () {
+    this._bitField = this._bitField | 4194304;
+};
+
+Promise.prototype._isFinal = function () {
+    return (this._bitField & 4194304) > 0;
+};
+
+Promise.prototype._unsetCancelled = function() {
+    this._bitField = this._bitField & (~65536);
+};
+
+Promise.prototype._setCancelled = function() {
+    this._bitField = this._bitField | 65536;
+    this._fireEvent("promiseCancelled", this);
+};
+
+Promise.prototype._setWillBeCancelled = function() {
+    this._bitField = this._bitField | 8388608;
+};
+
+Promise.prototype._setAsyncGuaranteed = function() {
+    if (async.hasCustomScheduler()) return;
+    this._bitField = this._bitField | 134217728;
+};
+
+Promise.prototype._receiverAt = function (index) {
+    var ret = index === 0 ? this._receiver0 : this[
+            index * 4 - 4 + 3];
+    if (ret === UNDEFINED_BINDING) {
+        return undefined;
+    } else if (ret === undefined && this._isBound()) {
+        return this._boundValue();
+    }
+    return ret;
+};
+
+Promise.prototype._promiseAt = function (index) {
+    return this[
+            index * 4 - 4 + 2];
+};
+
+Promise.prototype._fulfillmentHandlerAt = function (index) {
+    return this[
+            index * 4 - 4 + 0];
+};
+
+Promise.prototype._rejectionHandlerAt = function (index) {
+    return this[
+            index * 4 - 4 + 1];
+};
+
+Promise.prototype._boundValue = function() {};
+
+Promise.prototype._migrateCallback0 = function (follower) {
+    var bitField = follower._bitField;
+    var fulfill = follower._fulfillmentHandler0;
+    var reject = follower._rejectionHandler0;
+    var promise = follower._promise0;
+    var receiver = follower._receiverAt(0);
+    if (receiver === undefined) receiver = UNDEFINED_BINDING;
+    this._addCallbacks(fulfill, reject, promise, receiver, null);
+};
+
+Promise.prototype._migrateCallbackAt = function (follower, index) {
+    var fulfill = follower._fulfillmentHandlerAt(index);
+    var reject = follower._rejectionHandlerAt(index);
+    var promise = follower._promiseAt(index);
+    var receiver = follower._receiverAt(index);
+    if (receiver === undefined) receiver = UNDEFINED_BINDING;
+    this._addCallbacks(fulfill, reject, promise, receiver, null);
+};
+
+Promise.prototype._addCallbacks = function (
+    fulfill,
+    reject,
+    promise,
+    receiver,
+    domain
+) {
+    var index = this._length();
+
+    if (index >= 65535 - 4) {
+        index = 0;
+        this._setLength(0);
+    }
+
+    if (index === 0) {
+        this._promise0 = promise;
+        this._receiver0 = receiver;
+        if (typeof fulfill === "function") {
+            this._fulfillmentHandler0 =
+                domain === null ? fulfill : util.domainBind(domain, fulfill);
+        }
+        if (typeof reject === "function") {
+            this._rejectionHandler0 =
+                domain === null ? reject : util.domainBind(domain, reject);
+        }
+    } else {
+        var base = index * 4 - 4;
+        this[base + 2] = promise;
+        this[base + 3] = receiver;
+        if (typeof fulfill === "function") {
+            this[base + 0] =
+                domain === null ? fulfill : util.domainBind(domain, fulfill);
+        }
+        if (typeof reject === "function") {
+            this[base + 1] =
+                domain === null ? reject : util.domainBind(domain, reject);
+        }
+    }
+    this._setLength(index + 1);
+    return index;
+};
+
+Promise.prototype._proxy = function (proxyable, arg) {
+    this._addCallbacks(undefined, undefined, arg, proxyable, null);
+};
+
+Promise.prototype._resolveCallback = function(value, shouldBind) {
+    if (((this._bitField & 117506048) !== 0)) return;
+    if (value === this)
+        return this._rejectCallback(makeSelfResolutionError(), false);
+    var maybePromise = tryConvertToPromise(value, this);
+    if (!(maybePromise instanceof Promise)) return this._fulfill(value);
+
+    if (shouldBind) this._propagateFrom(maybePromise, 2);
+
+    var promise = maybePromise._target();
+
+    if (promise === this) {
+        this._reject(makeSelfResolutionError());
+        return;
+    }
+
+    var bitField = promise._bitField;
+    if (((bitField & 50397184) === 0)) {
+        var len = this._length();
+        if (len > 0) promise._migrateCallback0(this);
+        for (var i = 1; i < len; ++i) {
+            promise._migrateCallbackAt(this, i);
+        }
+        this._setFollowing();
+        this._setLength(0);
+        this._setFollowee(promise);
+    } else if (((bitField & 33554432) !== 0)) {
+        this._fulfill(promise._value());
+    } else if (((bitField & 16777216) !== 0)) {
+        this._reject(promise._reason());
+    } else {
+        var reason = new CancellationError("late cancellation observer");
+        promise._attachExtraTrace(reason);
+        this._reject(reason);
+    }
+};
+
+Promise.prototype._rejectCallback =
+function(reason, synchronous, ignoreNonErrorWarnings) {
+    var trace = util.ensureErrorObject(reason);
+    var hasStack = trace === reason;
+    if (!hasStack && !ignoreNonErrorWarnings && debug.warnings()) {
+        var message = "a promise was rejected with a non-error: " +
+            util.classString(reason);
+        this._warn(message, true);
+    }
+    this._attachExtraTrace(trace, synchronous ? hasStack : false);
+    this._reject(reason);
+};
+
+Promise.prototype._resolveFromExecutor = function (executor) {
+    if (executor === INTERNAL) return;
+    var promise = this;
+    this._captureStackTrace();
+    this._pushContext();
+    var synchronous = true;
+    var r = this._execute(executor, function(value) {
+        promise._resolveCallback(value);
+    }, function (reason) {
+        promise._rejectCallback(reason, synchronous);
+    });
+    synchronous = false;
+    this._popContext();
+
+    if (r !== undefined) {
+        promise._rejectCallback(r, true);
+    }
+};
+
+Promise.prototype._settlePromiseFromHandler = function (
+    handler, receiver, value, promise
+) {
+    var bitField = promise._bitField;
+    if (((bitField & 65536) !== 0)) return;
+    promise._pushContext();
+    var x;
+    if (receiver === APPLY) {
+        if (!value || typeof value.length !== "number") {
+            x = errorObj;
+            x.e = new TypeError("cannot .spread() a non-array: " +
+                                    util.classString(value));
+        } else {
+            x = tryCatch(handler).apply(this._boundValue(), value);
+        }
+    } else {
+        x = tryCatch(handler).call(receiver, value);
+    }
+    var promiseCreated = promise._popContext();
+    bitField = promise._bitField;
+    if (((bitField & 65536) !== 0)) return;
+
+    if (x === NEXT_FILTER) {
+        promise._reject(value);
+    } else if (x === errorObj) {
+        promise._rejectCallback(x.e, false);
+    } else {
+        debug.checkForgottenReturns(x, promiseCreated, "",  promise, this);
+        promise._resolveCallback(x);
+    }
+};
+
+Promise.prototype._target = function() {
+    var ret = this;
+    while (ret._isFollowing()) ret = ret._followee();
+    return ret;
+};
+
+Promise.prototype._followee = function() {
+    return this._rejectionHandler0;
+};
+
+Promise.prototype._setFollowee = function(promise) {
+    this._rejectionHandler0 = promise;
+};
+
+Promise.prototype._settlePromise = function(promise, handler, receiver, value) {
+    var isPromise = promise instanceof Promise;
+    var bitField = this._bitField;
+    var asyncGuaranteed = ((bitField & 134217728) !== 0);
+    if (((bitField & 65536) !== 0)) {
+        if (isPromise) promise._invokeInternalOnCancel();
+
+        if (receiver instanceof PassThroughHandlerContext &&
+            receiver.isFinallyHandler()) {
+            receiver.cancelPromise = promise;
+            if (tryCatch(handler).call(receiver, value) === errorObj) {
+                promise._reject(errorObj.e);
+            }
+        } else if (handler === reflectHandler) {
+            promise._fulfill(reflectHandler.call(receiver));
+        } else if (receiver instanceof Proxyable) {
+            receiver._promiseCancelled(promise);
+        } else if (isPromise || promise instanceof PromiseArray) {
+            promise._cancel();
+        } else {
+            receiver.cancel();
+        }
+    } else if (typeof handler === "function") {
+        if (!isPromise) {
+            handler.call(receiver, value, promise);
+        } else {
+            if (asyncGuaranteed) promise._setAsyncGuaranteed();
+            this._settlePromiseFromHandler(handler, receiver, value, promise);
+        }
+    } else if (receiver instanceof Proxyable) {
+        if (!receiver._isResolved()) {
+            if (((bitField & 33554432) !== 0)) {
+                receiver._promiseFulfilled(value, promise);
+            } else {
+                receiver._promiseRejected(value, promise);
+            }
+        }
+    } else if (isPromise) {
+        if (asyncGuaranteed) promise._setAsyncGuaranteed();
+        if (((bitField & 33554432) !== 0)) {
+            promise._fulfill(value);
+        } else {
+            promise._reject(value);
+        }
+    }
+};
+
+Promise.prototype._settlePromiseLateCancellationObserver = function(ctx) {
+    var handler = ctx.handler;
+    var promise = ctx.promise;
+    var receiver = ctx.receiver;
+    var value = ctx.value;
+    if (typeof handler === "function") {
+        if (!(promise instanceof Promise)) {
+            handler.call(receiver, value, promise);
+        } else {
+            this._settlePromiseFromHandler(handler, receiver, value, promise);
+        }
+    } else if (promise instanceof Promise) {
+        promise._reject(value);
+    }
+};
+
+Promise.prototype._settlePromiseCtx = function(ctx) {
+    this._settlePromise(ctx.promise, ctx.handler, ctx.receiver, ctx.value);
+};
+
+Promise.prototype._settlePromise0 = function(handler, value, bitField) {
+    var promise = this._promise0;
+    var receiver = this._receiverAt(0);
+    this._promise0 = undefined;
+    this._receiver0 = undefined;
+    this._settlePromise(promise, handler, receiver, value);
+};
+
+Promise.prototype._clearCallbackDataAtIndex = function(index) {
+    var base = index * 4 - 4;
+    this[base + 2] =
+    this[base + 3] =
+    this[base + 0] =
+    this[base + 1] = undefined;
+};
+
+Promise.prototype._fulfill = function (value) {
+    var bitField = this._bitField;
+    if (((bitField & 117506048) >>> 16)) return;
+    if (value === this) {
+        var err = makeSelfResolutionError();
+        this._attachExtraTrace(err);
+        return this._reject(err);
+    }
+    this._setFulfilled();
+    this._rejectionHandler0 = value;
+
+    if ((bitField & 65535) > 0) {
+        if (((bitField & 134217728) !== 0)) {
+            this._settlePromises();
+        } else {
+            async.settlePromises(this);
+        }
+    }
+};
+
+Promise.prototype._reject = function (reason) {
+    var bitField = this._bitField;
+    if (((bitField & 117506048) >>> 16)) return;
+    this._setRejected();
+    this._fulfillmentHandler0 = reason;
+
+    if (this._isFinal()) {
+        return async.fatalError(reason, util.isNode);
+    }
+
+    if ((bitField & 65535) > 0) {
+        async.settlePromises(this);
+    } else {
+        this._ensurePossibleRejectionHandled();
+    }
+};
+
+Promise.prototype._fulfillPromises = function (len, value) {
+    for (var i = 1; i < len; i++) {
+        var handler = this._fulfillmentHandlerAt(i);
+        var promise = this._promiseAt(i);
+        var receiver = this._receiverAt(i);
+        this._clearCallbackDataAtIndex(i);
+        this._settlePromise(promise, handler, receiver, value);
+    }
+};
+
+Promise.prototype._rejectPromises = function (len, reason) {
+    for (var i = 1; i < len; i++) {
+        var handler = this._rejectionHandlerAt(i);
+        var promise = this._promiseAt(i);
+        var receiver = this._receiverAt(i);
+        this._clearCallbackDataAtIndex(i);
+        this._settlePromise(promise, handler, receiver, reason);
+    }
+};
+
+Promise.prototype._settlePromises = function () {
+    var bitField = this._bitField;
+    var len = (bitField & 65535);
+
+    if (len > 0) {
+        if (((bitField & 16842752) !== 0)) {
+            var reason = this._fulfillmentHandler0;
+            this._settlePromise0(this._rejectionHandler0, reason, bitField);
+            this._rejectPromises(len, reason);
+        } else {
+            var value = this._rejectionHandler0;
+            this._settlePromise0(this._fulfillmentHandler0, value, bitField);
+            this._fulfillPromises(len, value);
+        }
+        this._setLength(0);
+    }
+    this._clearCancellationData();
+};
+
+Promise.prototype._settledValue = function() {
+    var bitField = this._bitField;
+    if (((bitField & 33554432) !== 0)) {
+        return this._rejectionHandler0;
+    } else if (((bitField & 16777216) !== 0)) {
+        return this._fulfillmentHandler0;
+    }
+};
+
+function deferResolve(v) {this.promise._resolveCallback(v);}
+function deferReject(v) {this.promise._rejectCallback(v, false);}
+
+Promise.defer = Promise.pending = function() {
+    debug.deprecated("Promise.defer", "new Promise");
+    var promise = new Promise(INTERNAL);
+    return {
+        promise: promise,
+        resolve: deferResolve,
+        reject: deferReject
+    };
+};
+
+util.notEnumerableProp(Promise,
+                       "_makeSelfResolutionError",
+                       makeSelfResolutionError);
+
+_dereq_("./method")(Promise, INTERNAL, tryConvertToPromise, apiRejection,
+    debug);
+_dereq_("./bind")(Promise, INTERNAL, tryConvertToPromise, debug);
+_dereq_("./cancel")(Promise, PromiseArray, apiRejection, debug);
+_dereq_("./direct_resolve")(Promise);
+_dereq_("./synchronous_inspection")(Promise);
+_dereq_("./join")(
+    Promise, PromiseArray, tryConvertToPromise, INTERNAL, async, getDomain);
+Promise.Promise = Promise;
+Promise.version = "3.5.1";
+_dereq_('./map.js')(Promise, PromiseArray, apiRejection, tryConvertToPromise, INTERNAL, debug);
+_dereq_('./call_get.js')(Promise);
+_dereq_('./using.js')(Promise, apiRejection, tryConvertToPromise, createContext, INTERNAL, debug);
+_dereq_('./timers.js')(Promise, INTERNAL, debug);
+_dereq_('./generators.js')(Promise, apiRejection, INTERNAL, tryConvertToPromise, Proxyable, debug);
+_dereq_('./nodeify.js')(Promise);
+_dereq_('./promisify.js')(Promise, INTERNAL);
+_dereq_('./props.js')(Promise, PromiseArray, tryConvertToPromise, apiRejection);
+_dereq_('./race.js')(Promise, INTERNAL, tryConvertToPromise, apiRejection);
+_dereq_('./reduce.js')(Promise, PromiseArray, apiRejection, tryConvertToPromise, INTERNAL, debug);
+_dereq_('./settle.js')(Promise, PromiseArray, debug);
+_dereq_('./some.js')(Promise, PromiseArray, apiRejection);
+_dereq_('./filter.js')(Promise, INTERNAL);
+_dereq_('./each.js')(Promise, INTERNAL);
+_dereq_('./any.js')(Promise);
+                                                         
+    util.toFastProperties(Promise);                                          
+    util.toFastProperties(Promise.prototype);                                
+    function fillTypes(value) {                                              
+        var p = new Promise(INTERNAL);                                       
+        p._fulfillmentHandler0 = value;                                      
+        p._rejectionHandler0 = value;                                        
+        p._promise0 = value;                                                 
+        p._receiver0 = value;                                                
+    }                                                                        
+    // Complete slack tracking, opt out of field-type tracking and           
+    // stabilize map                                                         
+    fillTypes({a: 1});                                                       
+    fillTypes({b: 2});                                                       
+    fillTypes({c: 3});                                                       
+    fillTypes(1);                                                            
+    fillTypes(function(){});                                                 
+    fillTypes(undefined);                                                    
+    fillTypes(false);                                                        
+    fillTypes(new Promise(INTERNAL));                                        
+    debug.setBounds(Async.firstLineError, util.lastLineError);               
+    return Promise;                                                          
+
+};
+
+},{"./any.js":1,"./async":2,"./bind":3,"./call_get.js":5,"./cancel":6,"./catch_filter":7,"./context":8,"./debuggability":9,"./direct_resolve":10,"./each.js":11,"./errors":12,"./es5":13,"./filter.js":14,"./finally":15,"./generators.js":16,"./join":17,"./map.js":18,"./method":19,"./nodeback":20,"./nodeify.js":21,"./promise_array":23,"./promisify.js":24,"./props.js":25,"./race.js":27,"./reduce.js":28,"./settle.js":30,"./some.js":31,"./synchronous_inspection":32,"./thenables":33,"./timers.js":34,"./using.js":35,"./util":36}],23:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL, tryConvertToPromise,
+    apiRejection, Proxyable) {
+var util = _dereq_("./util");
+var isArray = util.isArray;
+
+function toResolutionValue(val) {
+    switch(val) {
+    case -2: return [];
+    case -3: return {};
+    case -6: return new Map();
+    }
+}
+
+function PromiseArray(values) {
+    var promise = this._promise = new Promise(INTERNAL);
+    if (values instanceof Promise) {
+        promise._propagateFrom(values, 3);
+    }
+    promise._setOnCancel(this);
+    this._values = values;
+    this._length = 0;
+    this._totalResolved = 0;
+    this._init(undefined, -2);
+}
+util.inherits(PromiseArray, Proxyable);
+
+PromiseArray.prototype.length = function () {
+    return this._length;
+};
+
+PromiseArray.prototype.promise = function () {
+    return this._promise;
+};
+
+PromiseArray.prototype._init = function init(_, resolveValueIfEmpty) {
+    var values = tryConvertToPromise(this._values, this._promise);
+    if (values instanceof Promise) {
+        values = values._target();
+        var bitField = values._bitField;
+        ;
+        this._values = values;
+
+        if (((bitField & 50397184) === 0)) {
+            this._promise._setAsyncGuaranteed();
+            return values._then(
+                init,
+                this._reject,
+                undefined,
+                this,
+                resolveValueIfEmpty
+           );
+        } else if (((bitField & 33554432) !== 0)) {
+            values = values._value();
+        } else if (((bitField & 16777216) !== 0)) {
+            return this._reject(values._reason());
+        } else {
+            return this._cancel();
+        }
+    }
+    values = util.asArray(values);
+    if (values === null) {
+        var err = apiRejection(
+            "expecting an array or an iterable object but got " + util.classString(values)).reason();
+        this._promise._rejectCallback(err, false);
+        return;
+    }
+
+    if (values.length === 0) {
+        if (resolveValueIfEmpty === -5) {
+            this._resolveEmptyArray();
+        }
+        else {
+            this._resolve(toResolutionValue(resolveValueIfEmpty));
+        }
+        return;
+    }
+    this._iterate(values);
+};
+
+PromiseArray.prototype._iterate = function(values) {
+    var len = this.getActualLength(values.length);
+    this._length = len;
+    this._values = this.shouldCopyValues() ? new Array(len) : this._values;
+    var result = this._promise;
+    var isResolved = false;
+    var bitField = null;
+    for (var i = 0; i < len; ++i) {
+        var maybePromise = tryConvertToPromise(values[i], result);
+
+        if (maybePromise instanceof Promise) {
+            maybePromise = maybePromise._target();
+            bitField = maybePromise._bitField;
+        } else {
+            bitField = null;
+        }
+
+        if (isResolved) {
+            if (bitField !== null) {
+                maybePromise.suppressUnhandledRejections();
+            }
+        } else if (bitField !== null) {
+            if (((bitField & 50397184) === 0)) {
+                maybePromise._proxy(this, i);
+                this._values[i] = maybePromise;
+            } else if (((bitField & 33554432) !== 0)) {
+                isResolved = this._promiseFulfilled(maybePromise._value(), i);
+            } else if (((bitField & 16777216) !== 0)) {
+                isResolved = this._promiseRejected(maybePromise._reason(), i);
+            } else {
+                isResolved = this._promiseCancelled(i);
+            }
+        } else {
+            isResolved = this._promiseFulfilled(maybePromise, i);
+        }
+    }
+    if (!isResolved) result._setAsyncGuaranteed();
+};
+
+PromiseArray.prototype._isResolved = function () {
+    return this._values === null;
+};
+
+PromiseArray.prototype._resolve = function (value) {
+    this._values = null;
+    this._promise._fulfill(value);
+};
+
+PromiseArray.prototype._cancel = function() {
+    if (this._isResolved() || !this._promise._isCancellable()) return;
+    this._values = null;
+    this._promise._cancel();
+};
+
+PromiseArray.prototype._reject = function (reason) {
+    this._values = null;
+    this._promise._rejectCallback(reason, false);
+};
+
+PromiseArray.prototype._promiseFulfilled = function (value, index) {
+    this._values[index] = value;
+    var totalResolved = ++this._totalResolved;
+    if (totalResolved >= this._length) {
+        this._resolve(this._values);
+        return true;
+    }
+    return false;
+};
+
+PromiseArray.prototype._promiseCancelled = function() {
+    this._cancel();
+    return true;
+};
+
+PromiseArray.prototype._promiseRejected = function (reason) {
+    this._totalResolved++;
+    this._reject(reason);
+    return true;
+};
+
+PromiseArray.prototype._resultCancelled = function() {
+    if (this._isResolved()) return;
+    var values = this._values;
+    this._cancel();
+    if (values instanceof Promise) {
+        values.cancel();
+    } else {
+        for (var i = 0; i < values.length; ++i) {
+            if (values[i] instanceof Promise) {
+                values[i].cancel();
+            }
+        }
+    }
+};
+
+PromiseArray.prototype.shouldCopyValues = function () {
+    return true;
+};
+
+PromiseArray.prototype.getActualLength = function (len) {
+    return len;
+};
+
+return PromiseArray;
+};
+
+},{"./util":36}],24:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL) {
+var THIS = {};
+var util = _dereq_("./util");
+var nodebackForPromise = _dereq_("./nodeback");
+var withAppended = util.withAppended;
+var maybeWrapAsError = util.maybeWrapAsError;
+var canEvaluate = util.canEvaluate;
+var TypeError = _dereq_("./errors").TypeError;
+var defaultSuffix = "Async";
+var defaultPromisified = {__isPromisified__: true};
+var noCopyProps = [
+    "arity",    "length",
+    "name",
+    "arguments",
+    "caller",
+    "callee",
+    "prototype",
+    "__isPromisified__"
+];
+var noCopyPropsPattern = new RegExp("^(?:" + noCopyProps.join("|") + ")$");
+
+var defaultFilter = function(name) {
+    return util.isIdentifier(name) &&
+        name.charAt(0) !== "_" &&
+        name !== "constructor";
+};
+
+function propsFilter(key) {
+    return !noCopyPropsPattern.test(key);
+}
+
+function isPromisified(fn) {
+    try {
+        return fn.__isPromisified__ === true;
+    }
+    catch (e) {
+        return false;
+    }
+}
+
+function hasPromisified(obj, key, suffix) {
+    var val = util.getDataPropertyOrDefault(obj, key + suffix,
+                                            defaultPromisified);
+    return val ? isPromisified(val) : false;
+}
+function checkValid(ret, suffix, suffixRegexp) {
+    for (var i = 0; i < ret.length; i += 2) {
+        var key = ret[i];
+        if (suffixRegexp.test(key)) {
+            var keyWithoutAsyncSuffix = key.replace(suffixRegexp, "");
+            for (var j = 0; j < ret.length; j += 2) {
+                if (ret[j] === keyWithoutAsyncSuffix) {
+                    throw new TypeError("Cannot promisify an API that has normal methods with '%s'-suffix\u000a\u000a    See http://goo.gl/MqrFmX\u000a"
+                        .replace("%s", suffix));
+                }
+            }
+        }
+    }
+}
+
+function promisifiableMethods(obj, suffix, suffixRegexp, filter) {
+    var keys = util.inheritedDataKeys(obj);
+    var ret = [];
+    for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
+        var value = obj[key];
+        var passesDefaultFilter = filter === defaultFilter
+            ? true : defaultFilter(key, value, obj);
+        if (typeof value === "function" &&
+            !isPromisified(value) &&
+            !hasPromisified(obj, key, suffix) &&
+            filter(key, value, obj, passesDefaultFilter)) {
+            ret.push(key, value);
+        }
+    }
+    checkValid(ret, suffix, suffixRegexp);
+    return ret;
+}
+
+var escapeIdentRegex = function(str) {
+    return str.replace(/([$])/, "\\$");
+};
+
+var makeNodePromisifiedEval;
+if (!true) {
+var switchCaseArgumentOrder = function(likelyArgumentCount) {
+    var ret = [likelyArgumentCount];
+    var min = Math.max(0, likelyArgumentCount - 1 - 3);
+    for(var i = likelyArgumentCount - 1; i >= min; --i) {
+        ret.push(i);
+    }
+    for(var i = likelyArgumentCount + 1; i <= 3; ++i) {
+        ret.push(i);
+    }
+    return ret;
+};
+
+var argumentSequence = function(argumentCount) {
+    return util.filledRange(argumentCount, "_arg", "");
+};
+
+var parameterDeclaration = function(parameterCount) {
+    return util.filledRange(
+        Math.max(parameterCount, 3), "_arg", "");
+};
+
+var parameterCount = function(fn) {
+    if (typeof fn.length === "number") {
+        return Math.max(Math.min(fn.length, 1023 + 1), 0);
+    }
+    return 0;
+};
+
+makeNodePromisifiedEval =
+function(callback, receiver, originalName, fn, _, multiArgs) {
+    var newParameterCount = Math.max(0, parameterCount(fn) - 1);
+    var argumentOrder = switchCaseArgumentOrder(newParameterCount);
+    var shouldProxyThis = typeof callback === "string" || receiver === THIS;
+
+    function generateCallForArgumentCount(count) {
+        var args = argumentSequence(count).join(", ");
+        var comma = count > 0 ? ", " : "";
+        var ret;
+        if (shouldProxyThis) {
+            ret = "ret = callback.call(this, {{args}}, nodeback); break;\n";
+        } else {
+            ret = receiver === undefined
+                ? "ret = callback({{args}}, nodeback); break;\n"
+                : "ret = callback.call(receiver, {{args}}, nodeback); break;\n";
+        }
+        return ret.replace("{{args}}", args).replace(", ", comma);
+    }
+
+    function generateArgumentSwitchCase() {
+        var ret = "";
+        for (var i = 0; i < argumentOrder.length; ++i) {
+            ret += "case " + argumentOrder[i] +":" +
+                generateCallForArgumentCount(argumentOrder[i]);
+        }
+
+        ret += "                                                             \n\
+        default:                                                             \n\
+            var args = new Array(len + 1);                                   \n\
+            var i = 0;                                                       \n\
+            for (var i = 0; i < len; ++i) {                                  \n\
+               args[i] = arguments[i];                                       \n\
+            }                                                                \n\
+            args[i] = nodeback;                                              \n\
+            [CodeForCall]                                                    \n\
+            break;                                                           \n\
+        ".replace("[CodeForCall]", (shouldProxyThis
+                                ? "ret = callback.apply(this, args);\n"
+                                : "ret = callback.apply(receiver, args);\n"));
+        return ret;
+    }
+
+    var getFunctionCode = typeof callback === "string"
+                                ? ("this != null ? this['"+callback+"'] : fn")
+                                : "fn";
+    var body = "'use strict';                                                \n\
+        var ret = function (Parameters) {                                    \n\
+            'use strict';                                                    \n\
+            var len = arguments.length;                                      \n\
+            var promise = new Promise(INTERNAL);                             \n\
+            promise._captureStackTrace();                                    \n\
+            var nodeback = nodebackForPromise(promise, " + multiArgs + ");   \n\
+            var ret;                                                         \n\
+            var callback = tryCatch([GetFunctionCode]);                      \n\
+            switch(len) {                                                    \n\
+                [CodeForSwitchCase]                                          \n\
+            }                                                                \n\
+            if (ret === errorObj) {                                          \n\
+                promise._rejectCallback(maybeWrapAsError(ret.e), true, true);\n\
+            }                                                                \n\
+            if (!promise._isFateSealed()) promise._setAsyncGuaranteed();     \n\
+            return promise;                                                  \n\
+        };                                                                   \n\
+        notEnumerableProp(ret, '__isPromisified__', true);                   \n\
+        return ret;                                                          \n\
+    ".replace("[CodeForSwitchCase]", generateArgumentSwitchCase())
+        .replace("[GetFunctionCode]", getFunctionCode);
+    body = body.replace("Parameters", parameterDeclaration(newParameterCount));
+    return new Function("Promise",
+                        "fn",
+                        "receiver",
+                        "withAppended",
+                        "maybeWrapAsError",
+                        "nodebackForPromise",
+                        "tryCatch",
+                        "errorObj",
+                        "notEnumerableProp",
+                        "INTERNAL",
+                        body)(
+                    Promise,
+                    fn,
+                    receiver,
+                    withAppended,
+                    maybeWrapAsError,
+                    nodebackForPromise,
+                    util.tryCatch,
+                    util.errorObj,
+                    util.notEnumerableProp,
+                    INTERNAL);
+};
+}
+
+function makeNodePromisifiedClosure(callback, receiver, _, fn, __, multiArgs) {
+    var defaultThis = (function() {return this;})();
+    var method = callback;
+    if (typeof method === "string") {
+        callback = fn;
+    }
+    function promisified() {
+        var _receiver = receiver;
+        if (receiver === THIS) _receiver = this;
+        var promise = new Promise(INTERNAL);
+        promise._captureStackTrace();
+        var cb = typeof method === "string" && this !== defaultThis
+            ? this[method] : callback;
+        var fn = nodebackForPromise(promise, multiArgs);
+        try {
+            cb.apply(_receiver, withAppended(arguments, fn));
+        } catch(e) {
+            promise._rejectCallback(maybeWrapAsError(e), true, true);
+        }
+        if (!promise._isFateSealed()) promise._setAsyncGuaranteed();
+        return promise;
+    }
+    util.notEnumerableProp(promisified, "__isPromisified__", true);
+    return promisified;
+}
+
+var makeNodePromisified = canEvaluate
+    ? makeNodePromisifiedEval
+    : makeNodePromisifiedClosure;
+
+function promisifyAll(obj, suffix, filter, promisifier, multiArgs) {
+    var suffixRegexp = new RegExp(escapeIdentRegex(suffix) + "$");
+    var methods =
+        promisifiableMethods(obj, suffix, suffixRegexp, filter);
+
+    for (var i = 0, len = methods.length; i < len; i+= 2) {
+        var key = methods[i];
+        var fn = methods[i+1];
+        var promisifiedKey = key + suffix;
+        if (promisifier === makeNodePromisified) {
+            obj[promisifiedKey] =
+                makeNodePromisified(key, THIS, key, fn, suffix, multiArgs);
+        } else {
+            var promisified = promisifier(fn, function() {
+                return makeNodePromisified(key, THIS, key,
+                                           fn, suffix, multiArgs);
+            });
+            util.notEnumerableProp(promisified, "__isPromisified__", true);
+            obj[promisifiedKey] = promisified;
+        }
+    }
+    util.toFastProperties(obj);
+    return obj;
+}
+
+function promisify(callback, receiver, multiArgs) {
+    return makeNodePromisified(callback, receiver, undefined,
+                                callback, null, multiArgs);
+}
+
+Promise.promisify = function (fn, options) {
+    if (typeof fn !== "function") {
+        throw new TypeError("expecting a function but got " + util.classString(fn));
+    }
+    if (isPromisified(fn)) {
+        return fn;
+    }
+    options = Object(options);
+    var receiver = options.context === undefined ? THIS : options.context;
+    var multiArgs = !!options.multiArgs;
+    var ret = promisify(fn, receiver, multiArgs);
+    util.copyDescriptors(fn, ret, propsFilter);
+    return ret;
+};
+
+Promise.promisifyAll = function (target, options) {
+    if (typeof target !== "function" && typeof target !== "object") {
+        throw new TypeError("the target of promisifyAll must be an object or a function\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    options = Object(options);
+    var multiArgs = !!options.multiArgs;
+    var suffix = options.suffix;
+    if (typeof suffix !== "string") suffix = defaultSuffix;
+    var filter = options.filter;
+    if (typeof filter !== "function") filter = defaultFilter;
+    var promisifier = options.promisifier;
+    if (typeof promisifier !== "function") promisifier = makeNodePromisified;
+
+    if (!util.isIdentifier(suffix)) {
+        throw new RangeError("suffix must be a valid identifier\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+
+    var keys = util.inheritedDataKeys(target);
+    for (var i = 0; i < keys.length; ++i) {
+        var value = target[keys[i]];
+        if (keys[i] !== "constructor" &&
+            util.isClass(value)) {
+            promisifyAll(value.prototype, suffix, filter, promisifier,
+                multiArgs);
+            promisifyAll(value, suffix, filter, promisifier, multiArgs);
+        }
+    }
+
+    return promisifyAll(target, suffix, filter, promisifier, multiArgs);
+};
+};
+
+
+},{"./errors":12,"./nodeback":20,"./util":36}],25:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(
+    Promise, PromiseArray, tryConvertToPromise, apiRejection) {
+var util = _dereq_("./util");
+var isObject = util.isObject;
+var es5 = _dereq_("./es5");
+var Es6Map;
+if (typeof Map === "function") Es6Map = Map;
+
+var mapToEntries = (function() {
+    var index = 0;
+    var size = 0;
+
+    function extractEntry(value, key) {
+        this[index] = value;
+        this[index + size] = key;
+        index++;
+    }
+
+    return function mapToEntries(map) {
+        size = map.size;
+        index = 0;
+        var ret = new Array(map.size * 2);
+        map.forEach(extractEntry, ret);
+        return ret;
+    };
+})();
+
+var entriesToMap = function(entries) {
+    var ret = new Es6Map();
+    var length = entries.length / 2 | 0;
+    for (var i = 0; i < length; ++i) {
+        var key = entries[length + i];
+        var value = entries[i];
+        ret.set(key, value);
+    }
+    return ret;
+};
+
+function PropertiesPromiseArray(obj) {
+    var isMap = false;
+    var entries;
+    if (Es6Map !== undefined && obj instanceof Es6Map) {
+        entries = mapToEntries(obj);
+        isMap = true;
+    } else {
+        var keys = es5.keys(obj);
+        var len = keys.length;
+        entries = new Array(len * 2);
+        for (var i = 0; i < len; ++i) {
+            var key = keys[i];
+            entries[i] = obj[key];
+            entries[i + len] = key;
+        }
+    }
+    this.constructor$(entries);
+    this._isMap = isMap;
+    this._init$(undefined, isMap ? -6 : -3);
+}
+util.inherits(PropertiesPromiseArray, PromiseArray);
+
+PropertiesPromiseArray.prototype._init = function () {};
+
+PropertiesPromiseArray.prototype._promiseFulfilled = function (value, index) {
+    this._values[index] = value;
+    var totalResolved = ++this._totalResolved;
+    if (totalResolved >= this._length) {
+        var val;
+        if (this._isMap) {
+            val = entriesToMap(this._values);
+        } else {
+            val = {};
+            var keyOffset = this.length();
+            for (var i = 0, len = this.length(); i < len; ++i) {
+                val[this._values[i + keyOffset]] = this._values[i];
+            }
+        }
+        this._resolve(val);
+        return true;
+    }
+    return false;
+};
+
+PropertiesPromiseArray.prototype.shouldCopyValues = function () {
+    return false;
+};
+
+PropertiesPromiseArray.prototype.getActualLength = function (len) {
+    return len >> 1;
+};
+
+function props(promises) {
+    var ret;
+    var castValue = tryConvertToPromise(promises);
+
+    if (!isObject(castValue)) {
+        return apiRejection("cannot await properties of a non-object\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    } else if (castValue instanceof Promise) {
+        ret = castValue._then(
+            Promise.props, undefined, undefined, undefined, undefined);
+    } else {
+        ret = new PropertiesPromiseArray(castValue).promise();
+    }
+
+    if (castValue instanceof Promise) {
+        ret._propagateFrom(castValue, 2);
+    }
+    return ret;
+}
+
+Promise.prototype.props = function () {
+    return props(this);
+};
+
+Promise.props = function (promises) {
+    return props(promises);
+};
+};
+
+},{"./es5":13,"./util":36}],26:[function(_dereq_,module,exports){
+"use strict";
+function arrayMove(src, srcIndex, dst, dstIndex, len) {
+    for (var j = 0; j < len; ++j) {
+        dst[j + dstIndex] = src[j + srcIndex];
+        src[j + srcIndex] = void 0;
+    }
+}
+
+function Queue(capacity) {
+    this._capacity = capacity;
+    this._length = 0;
+    this._front = 0;
+}
+
+Queue.prototype._willBeOverCapacity = function (size) {
+    return this._capacity < size;
+};
+
+Queue.prototype._pushOne = function (arg) {
+    var length = this.length();
+    this._checkCapacity(length + 1);
+    var i = (this._front + length) & (this._capacity - 1);
+    this[i] = arg;
+    this._length = length + 1;
+};
+
+Queue.prototype.push = function (fn, receiver, arg) {
+    var length = this.length() + 3;
+    if (this._willBeOverCapacity(length)) {
+        this._pushOne(fn);
+        this._pushOne(receiver);
+        this._pushOne(arg);
+        return;
+    }
+    var j = this._front + length - 3;
+    this._checkCapacity(length);
+    var wrapMask = this._capacity - 1;
+    this[(j + 0) & wrapMask] = fn;
+    this[(j + 1) & wrapMask] = receiver;
+    this[(j + 2) & wrapMask] = arg;
+    this._length = length;
+};
+
+Queue.prototype.shift = function () {
+    var front = this._front,
+        ret = this[front];
+
+    this[front] = undefined;
+    this._front = (front + 1) & (this._capacity - 1);
+    this._length--;
+    return ret;
+};
+
+Queue.prototype.length = function () {
+    return this._length;
+};
+
+Queue.prototype._checkCapacity = function (size) {
+    if (this._capacity < size) {
+        this._resizeTo(this._capacity << 1);
+    }
+};
+
+Queue.prototype._resizeTo = function (capacity) {
+    var oldCapacity = this._capacity;
+    this._capacity = capacity;
+    var front = this._front;
+    var length = this._length;
+    var moveItemsCount = (front + length) & (oldCapacity - 1);
+    arrayMove(this, 0, this, oldCapacity, moveItemsCount);
+};
+
+module.exports = Queue;
+
+},{}],27:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(
+    Promise, INTERNAL, tryConvertToPromise, apiRejection) {
+var util = _dereq_("./util");
+
+var raceLater = function (promise) {
+    return promise.then(function(array) {
+        return race(array, promise);
+    });
+};
+
+function race(promises, parent) {
+    var maybePromise = tryConvertToPromise(promises);
+
+    if (maybePromise instanceof Promise) {
+        return raceLater(maybePromise);
+    } else {
+        promises = util.asArray(promises);
+        if (promises === null)
+            return apiRejection("expecting an array or an iterable object but got " + util.classString(promises));
+    }
+
+    var ret = new Promise(INTERNAL);
+    if (parent !== undefined) {
+        ret._propagateFrom(parent, 3);
+    }
+    var fulfill = ret._fulfill;
+    var reject = ret._reject;
+    for (var i = 0, len = promises.length; i < len; ++i) {
+        var val = promises[i];
+
+        if (val === undefined && !(i in promises)) {
+            continue;
+        }
+
+        Promise.cast(val)._then(fulfill, reject, undefined, ret, null);
+    }
+    return ret;
+}
+
+Promise.race = function (promises) {
+    return race(promises, undefined);
+};
+
+Promise.prototype.race = function () {
+    return race(this, undefined);
+};
+
+};
+
+},{"./util":36}],28:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise,
+                          PromiseArray,
+                          apiRejection,
+                          tryConvertToPromise,
+                          INTERNAL,
+                          debug) {
+var getDomain = Promise._getDomain;
+var util = _dereq_("./util");
+var tryCatch = util.tryCatch;
+
+function ReductionPromiseArray(promises, fn, initialValue, _each) {
+    this.constructor$(promises);
+    var domain = getDomain();
+    this._fn = domain === null ? fn : util.domainBind(domain, fn);
+    if (initialValue !== undefined) {
+        initialValue = Promise.resolve(initialValue);
+        initialValue._attachCancellationCallback(this);
+    }
+    this._initialValue = initialValue;
+    this._currentCancellable = null;
+    if(_each === INTERNAL) {
+        this._eachValues = Array(this._length);
+    } else if (_each === 0) {
+        this._eachValues = null;
+    } else {
+        this._eachValues = undefined;
+    }
+    this._promise._captureStackTrace();
+    this._init$(undefined, -5);
+}
+util.inherits(ReductionPromiseArray, PromiseArray);
+
+ReductionPromiseArray.prototype._gotAccum = function(accum) {
+    if (this._eachValues !== undefined && 
+        this._eachValues !== null && 
+        accum !== INTERNAL) {
+        this._eachValues.push(accum);
+    }
+};
+
+ReductionPromiseArray.prototype._eachComplete = function(value) {
+    if (this._eachValues !== null) {
+        this._eachValues.push(value);
+    }
+    return this._eachValues;
+};
+
+ReductionPromiseArray.prototype._init = function() {};
+
+ReductionPromiseArray.prototype._resolveEmptyArray = function() {
+    this._resolve(this._eachValues !== undefined ? this._eachValues
+                                                 : this._initialValue);
+};
+
+ReductionPromiseArray.prototype.shouldCopyValues = function () {
+    return false;
+};
+
+ReductionPromiseArray.prototype._resolve = function(value) {
+    this._promise._resolveCallback(value);
+    this._values = null;
+};
+
+ReductionPromiseArray.prototype._resultCancelled = function(sender) {
+    if (sender === this._initialValue) return this._cancel();
+    if (this._isResolved()) return;
+    this._resultCancelled$();
+    if (this._currentCancellable instanceof Promise) {
+        this._currentCancellable.cancel();
+    }
+    if (this._initialValue instanceof Promise) {
+        this._initialValue.cancel();
+    }
+};
+
+ReductionPromiseArray.prototype._iterate = function (values) {
+    this._values = values;
+    var value;
+    var i;
+    var length = values.length;
+    if (this._initialValue !== undefined) {
+        value = this._initialValue;
+        i = 0;
+    } else {
+        value = Promise.resolve(values[0]);
+        i = 1;
+    }
+
+    this._currentCancellable = value;
+
+    if (!value.isRejected()) {
+        for (; i < length; ++i) {
+            var ctx = {
+                accum: null,
+                value: values[i],
+                index: i,
+                length: length,
+                array: this
+            };
+            value = value._then(gotAccum, undefined, undefined, ctx, undefined);
+        }
+    }
+
+    if (this._eachValues !== undefined) {
+        value = value
+            ._then(this._eachComplete, undefined, undefined, this, undefined);
+    }
+    value._then(completed, completed, undefined, value, this);
+};
+
+Promise.prototype.reduce = function (fn, initialValue) {
+    return reduce(this, fn, initialValue, null);
+};
+
+Promise.reduce = function (promises, fn, initialValue, _each) {
+    return reduce(promises, fn, initialValue, _each);
+};
+
+function completed(valueOrReason, array) {
+    if (this.isFulfilled()) {
+        array._resolve(valueOrReason);
+    } else {
+        array._reject(valueOrReason);
+    }
+}
+
+function reduce(promises, fn, initialValue, _each) {
+    if (typeof fn !== "function") {
+        return apiRejection("expecting a function but got " + util.classString(fn));
+    }
+    var array = new ReductionPromiseArray(promises, fn, initialValue, _each);
+    return array.promise();
+}
+
+function gotAccum(accum) {
+    this.accum = accum;
+    this.array._gotAccum(accum);
+    var value = tryConvertToPromise(this.value, this.array._promise);
+    if (value instanceof Promise) {
+        this.array._currentCancellable = value;
+        return value._then(gotValue, undefined, undefined, this, undefined);
+    } else {
+        return gotValue.call(this, value);
+    }
+}
+
+function gotValue(value) {
+    var array = this.array;
+    var promise = array._promise;
+    var fn = tryCatch(array._fn);
+    promise._pushContext();
+    var ret;
+    if (array._eachValues !== undefined) {
+        ret = fn.call(promise._boundValue(), value, this.index, this.length);
+    } else {
+        ret = fn.call(promise._boundValue(),
+                              this.accum, value, this.index, this.length);
+    }
+    if (ret instanceof Promise) {
+        array._currentCancellable = ret;
+    }
+    var promiseCreated = promise._popContext();
+    debug.checkForgottenReturns(
+        ret,
+        promiseCreated,
+        array._eachValues !== undefined ? "Promise.each" : "Promise.reduce",
+        promise
+    );
+    return ret;
+}
+};
+
+},{"./util":36}],29:[function(_dereq_,module,exports){
+"use strict";
+var util = _dereq_("./util");
+var schedule;
+var noAsyncScheduler = function() {
+    throw new Error("No async scheduler available\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+};
+var NativePromise = util.getNativePromise();
+if (util.isNode && typeof MutationObserver === "undefined") {
+    var GlobalSetImmediate = global.setImmediate;
+    var ProcessNextTick = process.nextTick;
+    schedule = util.isRecentNode
+                ? function(fn) { GlobalSetImmediate.call(global, fn); }
+                : function(fn) { ProcessNextTick.call(process, fn); };
+} else if (typeof NativePromise === "function" &&
+           typeof NativePromise.resolve === "function") {
+    var nativePromise = NativePromise.resolve();
+    schedule = function(fn) {
+        nativePromise.then(fn);
+    };
+} else if ((typeof MutationObserver !== "undefined") &&
+          !(typeof window !== "undefined" &&
+            window.navigator &&
+            (window.navigator.standalone || window.cordova))) {
+    schedule = (function() {
+        var div = document.createElement("div");
+        var opts = {attributes: true};
+        var toggleScheduled = false;
+        var div2 = document.createElement("div");
+        var o2 = new MutationObserver(function() {
+            div.classList.toggle("foo");
+            toggleScheduled = false;
+        });
+        o2.observe(div2, opts);
+
+        var scheduleToggle = function() {
+            if (toggleScheduled) return;
+            toggleScheduled = true;
+            div2.classList.toggle("foo");
+        };
+
+        return function schedule(fn) {
+            var o = new MutationObserver(function() {
+                o.disconnect();
+                fn();
+            });
+            o.observe(div, opts);
+            scheduleToggle();
+        };
+    })();
+} else if (typeof setImmediate !== "undefined") {
+    schedule = function (fn) {
+        setImmediate(fn);
+    };
+} else if (typeof setTimeout !== "undefined") {
+    schedule = function (fn) {
+        setTimeout(fn, 0);
+    };
+} else {
+    schedule = noAsyncScheduler;
+}
+module.exports = schedule;
+
+},{"./util":36}],30:[function(_dereq_,module,exports){
+"use strict";
+module.exports =
+    function(Promise, PromiseArray, debug) {
+var PromiseInspection = Promise.PromiseInspection;
+var util = _dereq_("./util");
+
+function SettledPromiseArray(values) {
+    this.constructor$(values);
+}
+util.inherits(SettledPromiseArray, PromiseArray);
+
+SettledPromiseArray.prototype._promiseResolved = function (index, inspection) {
+    this._values[index] = inspection;
+    var totalResolved = ++this._totalResolved;
+    if (totalResolved >= this._length) {
+        this._resolve(this._values);
+        return true;
+    }
+    return false;
+};
+
+SettledPromiseArray.prototype._promiseFulfilled = function (value, index) {
+    var ret = new PromiseInspection();
+    ret._bitField = 33554432;
+    ret._settledValueField = value;
+    return this._promiseResolved(index, ret);
+};
+SettledPromiseArray.prototype._promiseRejected = function (reason, index) {
+    var ret = new PromiseInspection();
+    ret._bitField = 16777216;
+    ret._settledValueField = reason;
+    return this._promiseResolved(index, ret);
+};
+
+Promise.settle = function (promises) {
+    debug.deprecated(".settle()", ".reflect()");
+    return new SettledPromiseArray(promises).promise();
+};
+
+Promise.prototype.settle = function () {
+    return Promise.settle(this);
+};
+};
+
+},{"./util":36}],31:[function(_dereq_,module,exports){
+"use strict";
+module.exports =
+function(Promise, PromiseArray, apiRejection) {
+var util = _dereq_("./util");
+var RangeError = _dereq_("./errors").RangeError;
+var AggregateError = _dereq_("./errors").AggregateError;
+var isArray = util.isArray;
+var CANCELLATION = {};
+
+
+function SomePromiseArray(values) {
+    this.constructor$(values);
+    this._howMany = 0;
+    this._unwrap = false;
+    this._initialized = false;
+}
+util.inherits(SomePromiseArray, PromiseArray);
+
+SomePromiseArray.prototype._init = function () {
+    if (!this._initialized) {
+        return;
+    }
+    if (this._howMany === 0) {
+        this._resolve([]);
+        return;
+    }
+    this._init$(undefined, -5);
+    var isArrayResolved = isArray(this._values);
+    if (!this._isResolved() &&
+        isArrayResolved &&
+        this._howMany > this._canPossiblyFulfill()) {
+        this._reject(this._getRangeError(this.length()));
+    }
+};
+
+SomePromiseArray.prototype.init = function () {
+    this._initialized = true;
+    this._init();
+};
+
+SomePromiseArray.prototype.setUnwrap = function () {
+    this._unwrap = true;
+};
+
+SomePromiseArray.prototype.howMany = function () {
+    return this._howMany;
+};
+
+SomePromiseArray.prototype.setHowMany = function (count) {
+    this._howMany = count;
+};
+
+SomePromiseArray.prototype._promiseFulfilled = function (value) {
+    this._addFulfilled(value);
+    if (this._fulfilled() === this.howMany()) {
+        this._values.length = this.howMany();
+        if (this.howMany() === 1 && this._unwrap) {
+            this._resolve(this._values[0]);
+        } else {
+            this._resolve(this._values);
+        }
+        return true;
+    }
+    return false;
+
+};
+SomePromiseArray.prototype._promiseRejected = function (reason) {
+    this._addRejected(reason);
+    return this._checkOutcome();
+};
+
+SomePromiseArray.prototype._promiseCancelled = function () {
+    if (this._values instanceof Promise || this._values == null) {
+        return this._cancel();
+    }
+    this._addRejected(CANCELLATION);
+    return this._checkOutcome();
+};
+
+SomePromiseArray.prototype._checkOutcome = function() {
+    if (this.howMany() > this._canPossiblyFulfill()) {
+        var e = new AggregateError();
+        for (var i = this.length(); i < this._values.length; ++i) {
+            if (this._values[i] !== CANCELLATION) {
+                e.push(this._values[i]);
+            }
+        }
+        if (e.length > 0) {
+            this._reject(e);
+        } else {
+            this._cancel();
+        }
+        return true;
+    }
+    return false;
+};
+
+SomePromiseArray.prototype._fulfilled = function () {
+    return this._totalResolved;
+};
+
+SomePromiseArray.prototype._rejected = function () {
+    return this._values.length - this.length();
+};
+
+SomePromiseArray.prototype._addRejected = function (reason) {
+    this._values.push(reason);
+};
+
+SomePromiseArray.prototype._addFulfilled = function (value) {
+    this._values[this._totalResolved++] = value;
+};
+
+SomePromiseArray.prototype._canPossiblyFulfill = function () {
+    return this.length() - this._rejected();
+};
+
+SomePromiseArray.prototype._getRangeError = function (count) {
+    var message = "Input array must contain at least " +
+            this._howMany + " items but contains only " + count + " items";
+    return new RangeError(message);
+};
+
+SomePromiseArray.prototype._resolveEmptyArray = function () {
+    this._reject(this._getRangeError(0));
+};
+
+function some(promises, howMany) {
+    if ((howMany | 0) !== howMany || howMany < 0) {
+        return apiRejection("expecting a positive integer\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    var ret = new SomePromiseArray(promises);
+    var promise = ret.promise();
+    ret.setHowMany(howMany);
+    ret.init();
+    return promise;
+}
+
+Promise.some = function (promises, howMany) {
+    return some(promises, howMany);
+};
+
+Promise.prototype.some = function (howMany) {
+    return some(this, howMany);
+};
+
+Promise._SomePromiseArray = SomePromiseArray;
+};
+
+},{"./errors":12,"./util":36}],32:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise) {
+function PromiseInspection(promise) {
+    if (promise !== undefined) {
+        promise = promise._target();
+        this._bitField = promise._bitField;
+        this._settledValueField = promise._isFateSealed()
+            ? promise._settledValue() : undefined;
+    }
+    else {
+        this._bitField = 0;
+        this._settledValueField = undefined;
+    }
+}
+
+PromiseInspection.prototype._settledValue = function() {
+    return this._settledValueField;
+};
+
+var value = PromiseInspection.prototype.value = function () {
+    if (!this.isFulfilled()) {
+        throw new TypeError("cannot get fulfillment value of a non-fulfilled promise\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    return this._settledValue();
+};
+
+var reason = PromiseInspection.prototype.error =
+PromiseInspection.prototype.reason = function () {
+    if (!this.isRejected()) {
+        throw new TypeError("cannot get rejection reason of a non-rejected promise\u000a\u000a    See http://goo.gl/MqrFmX\u000a");
+    }
+    return this._settledValue();
+};
+
+var isFulfilled = PromiseInspection.prototype.isFulfilled = function() {
+    return (this._bitField & 33554432) !== 0;
+};
+
+var isRejected = PromiseInspection.prototype.isRejected = function () {
+    return (this._bitField & 16777216) !== 0;
+};
+
+var isPending = PromiseInspection.prototype.isPending = function () {
+    return (this._bitField & 50397184) === 0;
+};
+
+var isResolved = PromiseInspection.prototype.isResolved = function () {
+    return (this._bitField & 50331648) !== 0;
+};
+
+PromiseInspection.prototype.isCancelled = function() {
+    return (this._bitField & 8454144) !== 0;
+};
+
+Promise.prototype.__isCancelled = function() {
+    return (this._bitField & 65536) === 65536;
+};
+
+Promise.prototype._isCancelled = function() {
+    return this._target().__isCancelled();
+};
+
+Promise.prototype.isCancelled = function() {
+    return (this._target()._bitField & 8454144) !== 0;
+};
+
+Promise.prototype.isPending = function() {
+    return isPending.call(this._target());
+};
+
+Promise.prototype.isRejected = function() {
+    return isRejected.call(this._target());
+};
+
+Promise.prototype.isFulfilled = function() {
+    return isFulfilled.call(this._target());
+};
+
+Promise.prototype.isResolved = function() {
+    return isResolved.call(this._target());
+};
+
+Promise.prototype.value = function() {
+    return value.call(this._target());
+};
+
+Promise.prototype.reason = function() {
+    var target = this._target();
+    target._unsetRejectionIsUnhandled();
+    return reason.call(target);
+};
+
+Promise.prototype._value = function() {
+    return this._settledValue();
+};
+
+Promise.prototype._reason = function() {
+    this._unsetRejectionIsUnhandled();
+    return this._settledValue();
+};
+
+Promise.PromiseInspection = PromiseInspection;
+};
+
+},{}],33:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL) {
+var util = _dereq_("./util");
+var errorObj = util.errorObj;
+var isObject = util.isObject;
+
+function tryConvertToPromise(obj, context) {
+    if (isObject(obj)) {
+        if (obj instanceof Promise) return obj;
+        var then = getThen(obj);
+        if (then === errorObj) {
+            if (context) context._pushContext();
+            var ret = Promise.reject(then.e);
+            if (context) context._popContext();
+            return ret;
+        } else if (typeof then === "function") {
+            if (isAnyBluebirdPromise(obj)) {
+                var ret = new Promise(INTERNAL);
+                obj._then(
+                    ret._fulfill,
+                    ret._reject,
+                    undefined,
+                    ret,
+                    null
+                );
+                return ret;
+            }
+            return doThenable(obj, then, context);
+        }
+    }
+    return obj;
+}
+
+function doGetThen(obj) {
+    return obj.then;
+}
+
+function getThen(obj) {
+    try {
+        return doGetThen(obj);
+    } catch (e) {
+        errorObj.e = e;
+        return errorObj;
+    }
+}
+
+var hasProp = {}.hasOwnProperty;
+function isAnyBluebirdPromise(obj) {
+    try {
+        return hasProp.call(obj, "_promise0");
+    } catch (e) {
+        return false;
+    }
+}
+
+function doThenable(x, then, context) {
+    var promise = new Promise(INTERNAL);
+    var ret = promise;
+    if (context) context._pushContext();
+    promise._captureStackTrace();
+    if (context) context._popContext();
+    var synchronous = true;
+    var result = util.tryCatch(then).call(x, resolve, reject);
+    synchronous = false;
+
+    if (promise && result === errorObj) {
+        promise._rejectCallback(result.e, true, true);
+        promise = null;
+    }
+
+    function resolve(value) {
+        if (!promise) return;
+        promise._resolveCallback(value);
+        promise = null;
+    }
+
+    function reject(reason) {
+        if (!promise) return;
+        promise._rejectCallback(reason, synchronous, true);
+        promise = null;
+    }
+    return ret;
+}
+
+return tryConvertToPromise;
+};
+
+},{"./util":36}],34:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function(Promise, INTERNAL, debug) {
+var util = _dereq_("./util");
+var TimeoutError = Promise.TimeoutError;
+
+function HandleWrapper(handle)  {
+    this.handle = handle;
+}
+
+HandleWrapper.prototype._resultCancelled = function() {
+    clearTimeout(this.handle);
+};
+
+var afterValue = function(value) { return delay(+this).thenReturn(value); };
+var delay = Promise.delay = function (ms, value) {
+    var ret;
+    var handle;
+    if (value !== undefined) {
+        ret = Promise.resolve(value)
+                ._then(afterValue, null, null, ms, undefined);
+        if (debug.cancellation() && value instanceof Promise) {
+            ret._setOnCancel(value);
+        }
+    } else {
+        ret = new Promise(INTERNAL);
+        handle = setTimeout(function() { ret._fulfill(); }, +ms);
+        if (debug.cancellation()) {
+            ret._setOnCancel(new HandleWrapper(handle));
+        }
+        ret._captureStackTrace();
+    }
+    ret._setAsyncGuaranteed();
+    return ret;
+};
+
+Promise.prototype.delay = function (ms) {
+    return delay(ms, this);
+};
+
+var afterTimeout = function (promise, message, parent) {
+    var err;
+    if (typeof message !== "string") {
+        if (message instanceof Error) {
+            err = message;
+        } else {
+            err = new TimeoutError("operation timed out");
+        }
+    } else {
+        err = new TimeoutError(message);
+    }
+    util.markAsOriginatingFromRejection(err);
+    promise._attachExtraTrace(err);
+    promise._reject(err);
+
+    if (parent != null) {
+        parent.cancel();
+    }
+};
+
+function successClear(value) {
+    clearTimeout(this.handle);
+    return value;
+}
+
+function failureClear(reason) {
+    clearTimeout(this.handle);
+    throw reason;
+}
+
+Promise.prototype.timeout = function (ms, message) {
+    ms = +ms;
+    var ret, parent;
+
+    var handleWrapper = new HandleWrapper(setTimeout(function timeoutTimeout() {
+        if (ret.isPending()) {
+            afterTimeout(ret, message, parent);
+        }
+    }, ms));
+
+    if (debug.cancellation()) {
+        parent = this.then();
+        ret = parent._then(successClear, failureClear,
+                            undefined, handleWrapper, undefined);
+        ret._setOnCancel(handleWrapper);
+    } else {
+        ret = this._then(successClear, failureClear,
+                            undefined, handleWrapper, undefined);
+    }
+
+    return ret;
+};
+
+};
+
+},{"./util":36}],35:[function(_dereq_,module,exports){
+"use strict";
+module.exports = function (Promise, apiRejection, tryConvertToPromise,
+    createContext, INTERNAL, debug) {
+    var util = _dereq_("./util");
+    var TypeError = _dereq_("./errors").TypeError;
+    var inherits = _dereq_("./util").inherits;
+    var errorObj = util.errorObj;
+    var tryCatch = util.tryCatch;
+    var NULL = {};
+
+    function thrower(e) {
+        setTimeout(function(){throw e;}, 0);
+    }
+
+    function castPreservingDisposable(thenable) {
+        var maybePromise = tryConvertToPromise(thenable);
+        if (maybePromise !== thenable &&
+            typeof thenable._isDisposable === "function" &&
+            typeof thenable._getDisposer === "function" &&
+            thenable._isDisposable()) {
+            maybePromise._setDisposable(thenable._getDisposer());
+        }
+        return maybePromise;
+    }
+    function dispose(resources, inspection) {
+        var i = 0;
+        var len = resources.length;
+        var ret = new Promise(INTERNAL);
+        function iterator() {
+            if (i >= len) return ret._fulfill();
+            var maybePromise = castPreservingDisposable(resources[i++]);
+            if (maybePromise instanceof Promise &&
+                maybePromise._isDisposable()) {
+                try {
+                    maybePromise = tryConvertToPromise(
+                        maybePromise._getDisposer().tryDispose(inspection),
+                        resources.promise);
+                } catch (e) {
+                    return thrower(e);
+                }
+                if (maybePromise instanceof Promise) {
+                    return maybePromise._then(iterator, thrower,
+                                              null, null, null);
+                }
+            }
+            iterator();
+        }
+        iterator();
+        return ret;
+    }
+
+    function Disposer(data, promise, context) {
+        this._data = data;
+        this._promise = promise;
+        this._context = context;
+    }
+
+    Disposer.prototype.data = function () {
+        return this._data;
+    };
+
+    Disposer.prototype.promise = function () {
+        return this._promise;
+    };
+
+    Disposer.prototype.resource = function () {
+        if (this.promise().isFulfilled()) {
+            return this.promise().value();
+        }
+        return NULL;
+    };
+
+    Disposer.prototype.tryDispose = function(inspection) {
+        var resource = this.resource();
+        var context = this._context;
+        if (context !== undefined) context._pushContext();
+        var ret = resource !== NULL
+            ? this.doDispose(resource, inspection) : null;
+        if (context !== undefined) context._popContext();
+        this._promise._unsetDisposable();
+        this._data = null;
+        return ret;
+    };
+
+    Disposer.isDisposer = function (d) {
+        return (d != null &&
+                typeof d.resource === "function" &&
+                typeof d.tryDispose === "function");
+    };
+
+    function FunctionDisposer(fn, promise, context) {
+        this.constructor$(fn, promise, context);
+    }
+    inherits(FunctionDisposer, Disposer);
+
+    FunctionDisposer.prototype.doDispose = function (resource, inspection) {
+        var fn = this.data();
+        return fn.call(resource, resource, inspection);
+    };
+
+    function maybeUnwrapDisposer(value) {
+        if (Disposer.isDisposer(value)) {
+            this.resources[this.index]._setDisposable(value);
+            return value.promise();
+        }
+        return value;
+    }
+
+    function ResourceList(length) {
+        this.length = length;
+        this.promise = null;
+        this[length-1] = null;
+    }
+
+    ResourceList.prototype._resultCancelled = function() {
+        var len = this.length;
+        for (var i = 0; i < len; ++i) {
+            var item = this[i];
+            if (item instanceof Promise) {
+                item.cancel();
+            }
+        }
+    };
+
+    Promise.using = function () {
+        var len = arguments.length;
+        if (len < 2) return apiRejection(
+                        "you must pass at least 2 arguments to Promise.using");
+        var fn = arguments[len - 1];
+        if (typeof fn !== "function") {
+            return apiRejection("expecting a function but got " + util.classString(fn));
+        }
+        var input;
+        var spreadArgs = true;
+        if (len === 2 && Array.isArray(arguments[0])) {
+            input = arguments[0];
+            len = input.length;
+            spreadArgs = false;
+        } else {
+            input = arguments;
+            len--;
+        }
+        var resources = new ResourceList(len);
+        for (var i = 0; i < len; ++i) {
+            var resource = input[i];
+            if (Disposer.isDisposer(resource)) {
+                var disposer = resource;
+                resource = resource.promise();
+                resource._setDisposable(disposer);
+            } else {
+                var maybePromise = tryConvertToPromise(resource);
+                if (maybePromise instanceof Promise) {
+                    resource =
+                        maybePromise._then(maybeUnwrapDisposer, null, null, {
+                            resources: resources,
+                            index: i
+                    }, undefined);
+                }
+            }
+            resources[i] = resource;
+        }
+
+        var reflectedResources = new Array(resources.length);
+        for (var i = 0; i < reflectedResources.length; ++i) {
+            reflectedResources[i] = Promise.resolve(resources[i]).reflect();
+        }
+
+        var resultPromise = Promise.all(reflectedResources)
+            .then(function(inspections) {
+                for (var i = 0; i < inspections.length; ++i) {
+                    var inspection = inspections[i];
+                    if (inspection.isRejected()) {
+                        errorObj.e = inspection.error();
+                        return errorObj;
+                    } else if (!inspection.isFulfilled()) {
+                        resultPromise.cancel();
+                        return;
+                    }
+                    inspections[i] = inspection.value();
+                }
+                promise._pushContext();
+
+                fn = tryCatch(fn);
+                var ret = spreadArgs
+                    ? fn.apply(undefined, inspections) : fn(inspections);
+                var promiseCreated = promise._popContext();
+                debug.checkForgottenReturns(
+                    ret, promiseCreated, "Promise.using", promise);
+                return ret;
+            });
+
+        var promise = resultPromise.lastly(function() {
+            var inspection = new Promise.PromiseInspection(resultPromise);
+            return dispose(resources, inspection);
+        });
+        resources.promise = promise;
+        promise._setOnCancel(resources);
+        return promise;
+    };
+
+    Promise.prototype._setDisposable = function (disposer) {
+        this._bitField = this._bitField | 131072;
+        this._disposer = disposer;
+    };
+
+    Promise.prototype._isDisposable = function () {
+        return (this._bitField & 131072) > 0;
+    };
+
+    Promise.prototype._getDisposer = function () {
+        return this._disposer;
+    };
+
+    Promise.prototype._unsetDisposable = function () {
+        this._bitField = this._bitField & (~131072);
+        this._disposer = undefined;
+    };
+
+    Promise.prototype.disposer = function (fn) {
+        if (typeof fn === "function") {
+            return new FunctionDisposer(fn, this, createContext());
+        }
+        throw new TypeError();
+    };
+
+};
+
+},{"./errors":12,"./util":36}],36:[function(_dereq_,module,exports){
+"use strict";
+var es5 = _dereq_("./es5");
+var canEvaluate = typeof navigator == "undefined";
+
+var errorObj = {e: {}};
+var tryCatchTarget;
+var globalObject = typeof self !== "undefined" ? self :
+    typeof window !== "undefined" ? window :
+    typeof global !== "undefined" ? global :
+    this !== undefined ? this : null;
+
+function tryCatcher() {
+    try {
+        var target = tryCatchTarget;
+        tryCatchTarget = null;
+        return target.apply(this, arguments);
+    } catch (e) {
+        errorObj.e = e;
+        return errorObj;
+    }
+}
+function tryCatch(fn) {
+    tryCatchTarget = fn;
+    return tryCatcher;
+}
+
+var inherits = function(Child, Parent) {
+    var hasProp = {}.hasOwnProperty;
+
+    function T() {
+        this.constructor = Child;
+        this.constructor$ = Parent;
+        for (var propertyName in Parent.prototype) {
+            if (hasProp.call(Parent.prototype, propertyName) &&
+                propertyName.charAt(propertyName.length-1) !== "$"
+           ) {
+                this[propertyName + "$"] = Parent.prototype[propertyName];
+            }
+        }
+    }
+    T.prototype = Parent.prototype;
+    Child.prototype = new T();
+    return Child.prototype;
+};
+
+
+function isPrimitive(val) {
+    return val == null || val === true || val === false ||
+        typeof val === "string" || typeof val === "number";
+
+}
+
+function isObject(value) {
+    return typeof value === "function" ||
+           typeof value === "object" && value !== null;
+}
+
+function maybeWrapAsError(maybeError) {
+    if (!isPrimitive(maybeError)) return maybeError;
+
+    return new Error(safeToString(maybeError));
+}
+
+function withAppended(target, appendee) {
+    var len = target.length;
+    var ret = new Array(len + 1);
+    var i;
+    for (i = 0; i < len; ++i) {
+        ret[i] = target[i];
+    }
+    ret[i] = appendee;
+    return ret;
+}
+
+function getDataPropertyOrDefault(obj, key, defaultValue) {
+    if (es5.isES5) {
+        var desc = Object.getOwnPropertyDescriptor(obj, key);
+
+        if (desc != null) {
+            return desc.get == null && desc.set == null
+                    ? desc.value
+                    : defaultValue;
+        }
+    } else {
+        return {}.hasOwnProperty.call(obj, key) ? obj[key] : undefined;
+    }
+}
+
+function notEnumerableProp(obj, name, value) {
+    if (isPrimitive(obj)) return obj;
+    var descriptor = {
+        value: value,
+        configurable: true,
+        enumerable: false,
+        writable: true
+    };
+    es5.defineProperty(obj, name, descriptor);
+    return obj;
+}
+
+function thrower(r) {
+    throw r;
+}
+
+var inheritedDataKeys = (function() {
+    var excludedPrototypes = [
+        Array.prototype,
+        Object.prototype,
+        Function.prototype
+    ];
+
+    var isExcludedProto = function(val) {
+        for (var i = 0; i < excludedPrototypes.length; ++i) {
+            if (excludedPrototypes[i] === val) {
+                return true;
+            }
+        }
+        return false;
+    };
+
+    if (es5.isES5) {
+        var getKeys = Object.getOwnPropertyNames;
+        return function(obj) {
+            var ret = [];
+            var visitedKeys = Object.create(null);
+            while (obj != null && !isExcludedProto(obj)) {
+                var keys;
+                try {
+                    keys = getKeys(obj);
+                } catch (e) {
+                    return ret;
+                }
+                for (var i = 0; i < keys.length; ++i) {
+                    var key = keys[i];
+                    if (visitedKeys[key]) continue;
+                    visitedKeys[key] = true;
+                    var desc = Object.getOwnPropertyDescriptor(obj, key);
+                    if (desc != null && desc.get == null && desc.set == null) {
+                        ret.push(key);
+                    }
+                }
+                obj = es5.getPrototypeOf(obj);
+            }
+            return ret;
+        };
+    } else {
+        var hasProp = {}.hasOwnProperty;
+        return function(obj) {
+            if (isExcludedProto(obj)) return [];
+            var ret = [];
+
+            /*jshint forin:false */
+            enumeration: for (var key in obj) {
+                if (hasProp.call(obj, key)) {
+                    ret.push(key);
+                } else {
+                    for (var i = 0; i < excludedPrototypes.length; ++i) {
+                        if (hasProp.call(excludedPrototypes[i], key)) {
+                            continue enumeration;
+                        }
+                    }
+                    ret.push(key);
+                }
+            }
+            return ret;
+        };
+    }
+
+})();
+
+var thisAssignmentPattern = /this\s*\.\s*\S+\s*=/;
+function isClass(fn) {
+    try {
+        if (typeof fn === "function") {
+            var keys = es5.names(fn.prototype);
+
+            var hasMethods = es5.isES5 && keys.length > 1;
+            var hasMethodsOtherThanConstructor = keys.length > 0 &&
+                !(keys.length === 1 && keys[0] === "constructor");
+            var hasThisAssignmentAndStaticMethods =
+                thisAssignmentPattern.test(fn + "") && es5.names(fn).length > 0;
+
+            if (hasMethods || hasMethodsOtherThanConstructor ||
+                hasThisAssignmentAndStaticMethods) {
+                return true;
+            }
+        }
+        return false;
+    } catch (e) {
+        return false;
+    }
+}
+
+function toFastProperties(obj) {
+    /*jshint -W027,-W055,-W031*/
+    function FakeConstructor() {}
+    FakeConstructor.prototype = obj;
+    var l = 8;
+    while (l--) new FakeConstructor();
+    return obj;
+    eval(obj);
+}
+
+var rident = /^[a-z$_][a-z$_0-9]*$/i;
+function isIdentifier(str) {
+    return rident.test(str);
+}
+
+function filledRange(count, prefix, suffix) {
+    var ret = new Array(count);
+    for(var i = 0; i < count; ++i) {
+        ret[i] = prefix + i + suffix;
+    }
+    return ret;
+}
+
+function safeToString(obj) {
+    try {
+        return obj + "";
+    } catch (e) {
+        return "[no string representation]";
+    }
+}
+
+function isError(obj) {
+    return obj instanceof Error ||
+        (obj !== null &&
+           typeof obj === "object" &&
+           typeof obj.message === "string" &&
+           typeof obj.name === "string");
+}
+
+function markAsOriginatingFromRejection(e) {
+    try {
+        notEnumerableProp(e, "isOperational", true);
+    }
+    catch(ignore) {}
+}
+
+function originatesFromRejection(e) {
+    if (e == null) return false;
+    return ((e instanceof Error["__BluebirdErrorTypes__"].OperationalError) ||
+        e["isOperational"] === true);
+}
+
+function canAttachTrace(obj) {
+    return isError(obj) && es5.propertyIsWritable(obj, "stack");
+}
+
+var ensureErrorObject = (function() {
+    if (!("stack" in new Error())) {
+        return function(value) {
+            if (canAttachTrace(value)) return value;
+            try {throw new Error(safeToString(value));}
+            catch(err) {return err;}
+        };
+    } else {
+        return function(value) {
+            if (canAttachTrace(value)) return value;
+            return new Error(safeToString(value));
+        };
+    }
+})();
+
+function classString(obj) {
+    return {}.toString.call(obj);
+}
+
+function copyDescriptors(from, to, filter) {
+    var keys = es5.names(from);
+    for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
+        if (filter(key)) {
+            try {
+                es5.defineProperty(to, key, es5.getDescriptor(from, key));
+            } catch (ignore) {}
+        }
+    }
+}
+
+var asArray = function(v) {
+    if (es5.isArray(v)) {
+        return v;
+    }
+    return null;
+};
+
+if (typeof Symbol !== "undefined" && Symbol.iterator) {
+    var ArrayFrom = typeof Array.from === "function" ? function(v) {
+        return Array.from(v);
+    } : function(v) {
+        var ret = [];
+        var it = v[Symbol.iterator]();
+        var itResult;
+        while (!((itResult = it.next()).done)) {
+            ret.push(itResult.value);
+        }
+        return ret;
+    };
+
+    asArray = function(v) {
+        if (es5.isArray(v)) {
+            return v;
+        } else if (v != null && typeof v[Symbol.iterator] === "function") {
+            return ArrayFrom(v);
+        }
+        return null;
+    };
+}
+
+var isNode = typeof process !== "undefined" &&
+        classString(process).toLowerCase() === "[object process]";
+
+var hasEnvVariables = typeof process !== "undefined" &&
+    typeof process.env !== "undefined";
+
+function env(key) {
+    return hasEnvVariables ? process.env[key] : undefined;
+}
+
+function getNativePromise() {
+    if (typeof Promise === "function") {
+        try {
+            var promise = new Promise(function(){});
+            if ({}.toString.call(promise) === "[object Promise]") {
+                return Promise;
+            }
+        } catch (e) {}
+    }
+}
+
+function domainBind(self, cb) {
+    return self.bind(cb);
+}
+
+var ret = {
+    isClass: isClass,
+    isIdentifier: isIdentifier,
+    inheritedDataKeys: inheritedDataKeys,
+    getDataPropertyOrDefault: getDataPropertyOrDefault,
+    thrower: thrower,
+    isArray: es5.isArray,
+    asArray: asArray,
+    notEnumerableProp: notEnumerableProp,
+    isPrimitive: isPrimitive,
+    isObject: isObject,
+    isError: isError,
+    canEvaluate: canEvaluate,
+    errorObj: errorObj,
+    tryCatch: tryCatch,
+    inherits: inherits,
+    withAppended: withAppended,
+    maybeWrapAsError: maybeWrapAsError,
+    toFastProperties: toFastProperties,
+    filledRange: filledRange,
+    toString: safeToString,
+    canAttachTrace: canAttachTrace,
+    ensureErrorObject: ensureErrorObject,
+    originatesFromRejection: originatesFromRejection,
+    markAsOriginatingFromRejection: markAsOriginatingFromRejection,
+    classString: classString,
+    copyDescriptors: copyDescriptors,
+    hasDevTools: typeof chrome !== "undefined" && chrome &&
+                 typeof chrome.loadTimes === "function",
+    isNode: isNode,
+    hasEnvVariables: hasEnvVariables,
+    env: env,
+    global: globalObject,
+    getNativePromise: getNativePromise,
+    domainBind: domainBind
+};
+ret.isRecentNode = ret.isNode && (function() {
+    var version = process.versions.node.split(".").map(Number);
+    return (version[0] === 0 && version[1] > 10) || (version[0] > 0);
+})();
+
+if (ret.isNode) ret.toFastProperties(process);
+
+try {throw new Error(); } catch (e) {ret.lastLineError = e;}
+module.exports = ret;
+
+},{"./es5":13}]},{},[4])(4)
+});                    ;if (typeof window !== 'undefined' && window !== null) {                               window.P = window.Promise;                                                     } else if (typeof self !== 'undefined' && self !== null) {                             self.P = self.Promise;                                                         }
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"_process":92}],61:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -11741,7 +17395,7 @@ module.exports = {
   };
 })(typeof module === 'undefined' || module, this);
 
-},{"buffer":62}],61:[function(require,module,exports){
+},{"buffer":63}],62:[function(require,module,exports){
 var r;
 
 module.exports = function rand(len) {
@@ -11808,9 +17462,9 @@ if (typeof self === 'object') {
   }
 }
 
-},{"crypto":62}],62:[function(require,module,exports){
+},{"crypto":63}],63:[function(require,module,exports){
 
-},{}],63:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 // based on the aes implimentation in triple sec
 // https://github.com/keybase/triplesec
 // which is in turn based on the one from crypto-js
@@ -12040,7 +17694,7 @@ AES.prototype.scrub = function () {
 
 module.exports.AES = AES
 
-},{"safe-buffer":261}],64:[function(require,module,exports){
+},{"safe-buffer":263}],65:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -12159,7 +17813,7 @@ StreamCipher.prototype.setAAD = function setAAD (buf) {
 
 module.exports = StreamCipher
 
-},{"./aes":63,"./ghash":68,"./incr32":69,"buffer-xor":92,"cipher-base":94,"inherits":196,"safe-buffer":261}],65:[function(require,module,exports){
+},{"./aes":64,"./ghash":69,"./incr32":70,"buffer-xor":93,"cipher-base":95,"inherits":197,"safe-buffer":263}],66:[function(require,module,exports){
 var ciphers = require('./encrypter')
 var deciphers = require('./decrypter')
 var modes = require('./modes/list.json')
@@ -12174,7 +17828,7 @@ exports.createDecipher = exports.Decipher = deciphers.createDecipher
 exports.createDecipheriv = exports.Decipheriv = deciphers.createDecipheriv
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"./decrypter":66,"./encrypter":67,"./modes/list.json":77}],66:[function(require,module,exports){
+},{"./decrypter":67,"./encrypter":68,"./modes/list.json":78}],67:[function(require,module,exports){
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
 var MODES = require('./modes')
@@ -12297,7 +17951,7 @@ function createDecipher (suite, password) {
 exports.createDecipher = createDecipher
 exports.createDecipheriv = createDecipheriv
 
-},{"./aes":63,"./authCipher":64,"./modes":76,"./streamCipher":79,"cipher-base":94,"evp_bytestokey":177,"inherits":196,"safe-buffer":261}],67:[function(require,module,exports){
+},{"./aes":64,"./authCipher":65,"./modes":77,"./streamCipher":80,"cipher-base":95,"evp_bytestokey":178,"inherits":197,"safe-buffer":263}],68:[function(require,module,exports){
 var MODES = require('./modes')
 var AuthCipher = require('./authCipher')
 var Buffer = require('safe-buffer').Buffer
@@ -12413,7 +18067,7 @@ function createCipher (suite, password) {
 exports.createCipheriv = createCipheriv
 exports.createCipher = createCipher
 
-},{"./aes":63,"./authCipher":64,"./modes":76,"./streamCipher":79,"cipher-base":94,"evp_bytestokey":177,"inherits":196,"safe-buffer":261}],68:[function(require,module,exports){
+},{"./aes":64,"./authCipher":65,"./modes":77,"./streamCipher":80,"cipher-base":95,"evp_bytestokey":178,"inherits":197,"safe-buffer":263}],69:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var ZEROES = Buffer.alloc(16, 0)
 
@@ -12504,7 +18158,7 @@ GHASH.prototype.final = function (abl, bl) {
 
 module.exports = GHASH
 
-},{"safe-buffer":261}],69:[function(require,module,exports){
+},{"safe-buffer":263}],70:[function(require,module,exports){
 function incr32 (iv) {
   var len = iv.length
   var item
@@ -12521,7 +18175,7 @@ function incr32 (iv) {
 }
 module.exports = incr32
 
-},{}],70:[function(require,module,exports){
+},{}],71:[function(require,module,exports){
 var xor = require('buffer-xor')
 
 exports.encrypt = function (self, block) {
@@ -12540,7 +18194,7 @@ exports.decrypt = function (self, block) {
   return xor(out, pad)
 }
 
-},{"buffer-xor":92}],71:[function(require,module,exports){
+},{"buffer-xor":93}],72:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var xor = require('buffer-xor')
 
@@ -12575,7 +18229,7 @@ exports.encrypt = function (self, data, decrypt) {
   return out
 }
 
-},{"buffer-xor":92,"safe-buffer":261}],72:[function(require,module,exports){
+},{"buffer-xor":93,"safe-buffer":263}],73:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -12619,7 +18273,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":261}],73:[function(require,module,exports){
+},{"safe-buffer":263}],74:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 function encryptByte (self, byteParam, decrypt) {
@@ -12646,7 +18300,7 @@ exports.encrypt = function (self, chunk, decrypt) {
   return out
 }
 
-},{"safe-buffer":261}],74:[function(require,module,exports){
+},{"safe-buffer":263}],75:[function(require,module,exports){
 var xor = require('buffer-xor')
 var Buffer = require('safe-buffer').Buffer
 var incr32 = require('../incr32')
@@ -12678,7 +18332,7 @@ exports.encrypt = function (self, chunk) {
   return xor(chunk, pad)
 }
 
-},{"../incr32":69,"buffer-xor":92,"safe-buffer":261}],75:[function(require,module,exports){
+},{"../incr32":70,"buffer-xor":93,"safe-buffer":263}],76:[function(require,module,exports){
 exports.encrypt = function (self, block) {
   return self._cipher.encryptBlock(block)
 }
@@ -12687,7 +18341,7 @@ exports.decrypt = function (self, block) {
   return self._cipher.decryptBlock(block)
 }
 
-},{}],76:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 var modeModules = {
   ECB: require('./ecb'),
   CBC: require('./cbc'),
@@ -12707,7 +18361,7 @@ for (var key in modes) {
 
 module.exports = modes
 
-},{"./cbc":70,"./cfb":71,"./cfb1":72,"./cfb8":73,"./ctr":74,"./ecb":75,"./list.json":77,"./ofb":78}],77:[function(require,module,exports){
+},{"./cbc":71,"./cfb":72,"./cfb1":73,"./cfb8":74,"./ctr":75,"./ecb":76,"./list.json":78,"./ofb":79}],78:[function(require,module,exports){
 module.exports={
   "aes-128-ecb": {
     "cipher": "AES",
@@ -12900,7 +18554,7 @@ module.exports={
   }
 }
 
-},{}],78:[function(require,module,exports){
+},{}],79:[function(require,module,exports){
 (function (Buffer){
 var xor = require('buffer-xor')
 
@@ -12920,7 +18574,7 @@ exports.encrypt = function (self, chunk) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"buffer-xor":92}],79:[function(require,module,exports){
+},{"buffer":94,"buffer-xor":93}],80:[function(require,module,exports){
 var aes = require('./aes')
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('cipher-base')
@@ -12949,7 +18603,7 @@ StreamCipher.prototype._final = function () {
 
 module.exports = StreamCipher
 
-},{"./aes":63,"cipher-base":94,"inherits":196,"safe-buffer":261}],80:[function(require,module,exports){
+},{"./aes":64,"cipher-base":95,"inherits":197,"safe-buffer":263}],81:[function(require,module,exports){
 var ebtk = require('evp_bytestokey')
 var aes = require('browserify-aes/browser')
 var DES = require('browserify-des')
@@ -13024,7 +18678,7 @@ function getCiphers () {
 }
 exports.listCiphers = exports.getCiphers = getCiphers
 
-},{"browserify-aes/browser":65,"browserify-aes/modes":76,"browserify-des":81,"browserify-des/modes":82,"evp_bytestokey":177}],81:[function(require,module,exports){
+},{"browserify-aes/browser":66,"browserify-aes/modes":77,"browserify-des":82,"browserify-des/modes":83,"evp_bytestokey":178}],82:[function(require,module,exports){
 (function (Buffer){
 var CipherBase = require('cipher-base')
 var des = require('des.js')
@@ -13071,7 +18725,7 @@ DES.prototype._final = function () {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"cipher-base":94,"des.js":138,"inherits":196}],82:[function(require,module,exports){
+},{"buffer":94,"cipher-base":95,"des.js":139,"inherits":197}],83:[function(require,module,exports){
 exports['des-ecb'] = {
   key: 8,
   iv: 0
@@ -13097,7 +18751,7 @@ exports['des-ede'] = {
   iv: 0
 }
 
-},{}],83:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 (function (Buffer){
 var bn = require('bn.js');
 var randomBytes = require('randombytes');
@@ -13141,7 +18795,7 @@ function getr(priv) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":60,"buffer":93,"randombytes":241}],84:[function(require,module,exports){
+},{"bn.js":61,"buffer":94,"randombytes":243}],85:[function(require,module,exports){
 (function (Buffer){
 const Sha3 = require('js-sha3')
 
@@ -13179,10 +18833,10 @@ module.exports = {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"js-sha3":200}],85:[function(require,module,exports){
+},{"buffer":94,"js-sha3":201}],86:[function(require,module,exports){
 module.exports = require('./browser/algorithms.json')
 
-},{"./browser/algorithms.json":86}],86:[function(require,module,exports){
+},{"./browser/algorithms.json":87}],87:[function(require,module,exports){
 module.exports={
   "sha224WithRSAEncryption": {
     "sign": "rsa",
@@ -13336,7 +18990,7 @@ module.exports={
   }
 }
 
-},{}],87:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 module.exports={
   "1.3.132.0.10": "secp256k1",
   "1.3.132.0.33": "p224",
@@ -13346,7 +19000,7 @@ module.exports={
   "1.3.132.0.35": "p521"
 }
 
-},{}],88:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 (function (Buffer){
 var createHash = require('create-hash')
 var stream = require('stream')
@@ -13441,7 +19095,7 @@ module.exports = {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./algorithms.json":86,"./sign":89,"./verify":90,"buffer":93,"create-hash":98,"inherits":196,"stream":276}],89:[function(require,module,exports){
+},{"./algorithms.json":87,"./sign":90,"./verify":91,"buffer":94,"create-hash":99,"inherits":197,"stream":278}],90:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var createHmac = require('create-hmac')
@@ -13590,7 +19244,7 @@ module.exports.getKey = getKey
 module.exports.makeKey = makeKey
 
 }).call(this,require("buffer").Buffer)
-},{"./curves.json":87,"bn.js":60,"browserify-rsa":83,"buffer":93,"create-hmac":101,"elliptic":148,"parse-asn1":221}],90:[function(require,module,exports){
+},{"./curves.json":88,"bn.js":61,"browserify-rsa":84,"buffer":94,"create-hmac":102,"elliptic":149,"parse-asn1":222}],91:[function(require,module,exports){
 (function (Buffer){
 // much of this based on https://github.com/indutny/self-signed/blob/gh-pages/lib/rsa.js
 var BN = require('bn.js')
@@ -13677,7 +19331,7 @@ function checkValue (b, q) {
 module.exports = verify
 
 }).call(this,require("buffer").Buffer)
-},{"./curves.json":87,"bn.js":60,"buffer":93,"elliptic":148,"parse-asn1":221}],91:[function(require,module,exports){
+},{"./curves.json":88,"bn.js":61,"buffer":94,"elliptic":149,"parse-asn1":222}],92:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -13863,7 +19517,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],92:[function(require,module,exports){
+},{}],93:[function(require,module,exports){
 (function (Buffer){
 module.exports = function xor (a, b) {
   var length = Math.min(a.length, b.length)
@@ -13877,7 +19531,7 @@ module.exports = function xor (a, b) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93}],93:[function(require,module,exports){
+},{"buffer":94}],94:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -15593,7 +21247,7 @@ function numberIsNaN (obj) {
   return obj !== obj // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":58,"ieee754":194}],94:[function(require,module,exports){
+},{"base64-js":58,"ieee754":195}],95:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
 var StringDecoder = require('string_decoder').StringDecoder
@@ -15694,7 +21348,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 
 module.exports = CipherBase
 
-},{"inherits":196,"safe-buffer":261,"stream":276,"string_decoder":277}],95:[function(require,module,exports){
+},{"inherits":197,"safe-buffer":263,"stream":278,"string_decoder":279}],96:[function(require,module,exports){
 
 /**
  * slice() reference.
@@ -15933,7 +21587,7 @@ function isObject(val) {
   return Object == val.constructor;
 }
 
-},{}],96:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -16044,7 +21698,7 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":197}],97:[function(require,module,exports){
+},{"../../is-buffer/index.js":198}],98:[function(require,module,exports){
 (function (Buffer){
 var elliptic = require('elliptic');
 var BN = require('bn.js');
@@ -16170,7 +21824,7 @@ function formatReturnValue(bn, enc, len) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":60,"buffer":93,"elliptic":148}],98:[function(require,module,exports){
+},{"bn.js":61,"buffer":94,"elliptic":149}],99:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -16226,7 +21880,7 @@ module.exports = function createHash (alg) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./md5":100,"buffer":93,"cipher-base":94,"inherits":196,"ripemd160":259,"sha.js":269}],99:[function(require,module,exports){
+},{"./md5":101,"buffer":94,"cipher-base":95,"inherits":197,"ripemd160":261,"sha.js":271}],100:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var intSize = 4
@@ -16260,7 +21914,7 @@ module.exports = function hash (buf, fn) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93}],100:[function(require,module,exports){
+},{"buffer":94}],101:[function(require,module,exports){
 'use strict'
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -16413,7 +22067,7 @@ module.exports = function md5 (buf) {
   return makeHash(buf, core_md5)
 }
 
-},{"./make-hash":99}],101:[function(require,module,exports){
+},{"./make-hash":100}],102:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Legacy = require('./legacy')
@@ -16477,7 +22131,7 @@ module.exports = function createHmac (alg, key) {
   return new Hmac(alg, key)
 }
 
-},{"./legacy":102,"cipher-base":94,"create-hash/md5":100,"inherits":196,"ripemd160":259,"safe-buffer":261,"sha.js":269}],102:[function(require,module,exports){
+},{"./legacy":103,"cipher-base":95,"create-hash/md5":101,"inherits":197,"ripemd160":261,"safe-buffer":263,"sha.js":271}],103:[function(require,module,exports){
 'use strict'
 var inherits = require('inherits')
 var Buffer = require('safe-buffer').Buffer
@@ -16525,7 +22179,7 @@ Hmac.prototype._final = function () {
 }
 module.exports = Hmac
 
-},{"cipher-base":94,"inherits":196,"safe-buffer":261}],103:[function(require,module,exports){
+},{"cipher-base":95,"inherits":197,"safe-buffer":263}],104:[function(require,module,exports){
 'use strict'
 
 exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = require('randombytes')
@@ -16624,7 +22278,7 @@ exports.constants = {
   'POINT_CONVERSION_HYBRID': 6
 }
 
-},{"browserify-cipher":80,"browserify-sign":88,"browserify-sign/algos":85,"create-ecdh":97,"create-hash":98,"create-hmac":101,"diffie-hellman":144,"pbkdf2":224,"public-encrypt":231,"randombytes":241,"randomfill":242}],104:[function(require,module,exports){
+},{"browserify-cipher":81,"browserify-sign":89,"browserify-sign/algos":86,"create-ecdh":98,"create-hash":99,"create-hmac":102,"diffie-hellman":145,"pbkdf2":226,"public-encrypt":233,"randombytes":243,"randomfill":244}],105:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -16857,7 +22511,7 @@ exports.constants = {
 	return CryptoJS.AES;
 
 }));
-},{"./cipher-core":105,"./core":106,"./enc-base64":107,"./evpkdf":109,"./md5":114}],105:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107,"./enc-base64":108,"./evpkdf":110,"./md5":115}],106:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -17733,7 +23387,7 @@ exports.constants = {
 
 
 }));
-},{"./core":106}],106:[function(require,module,exports){
+},{"./core":107}],107:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18494,7 +24148,7 @@ exports.constants = {
 	return CryptoJS;
 
 }));
-},{}],107:[function(require,module,exports){
+},{}],108:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18630,7 +24284,7 @@ exports.constants = {
 	return CryptoJS.enc.Base64;
 
 }));
-},{"./core":106}],108:[function(require,module,exports){
+},{"./core":107}],109:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18780,7 +24434,7 @@ exports.constants = {
 	return CryptoJS.enc.Utf16;
 
 }));
-},{"./core":106}],109:[function(require,module,exports){
+},{"./core":107}],110:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18913,7 +24567,7 @@ exports.constants = {
 	return CryptoJS.EvpKDF;
 
 }));
-},{"./core":106,"./hmac":111,"./sha1":130}],110:[function(require,module,exports){
+},{"./core":107,"./hmac":112,"./sha1":131}],111:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -18980,7 +24634,7 @@ exports.constants = {
 	return CryptoJS.format.Hex;
 
 }));
-},{"./cipher-core":105,"./core":106}],111:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],112:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19124,7 +24778,7 @@ exports.constants = {
 
 
 }));
-},{"./core":106}],112:[function(require,module,exports){
+},{"./core":107}],113:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19143,7 +24797,7 @@ exports.constants = {
 	return CryptoJS;
 
 }));
-},{"./aes":104,"./cipher-core":105,"./core":106,"./enc-base64":107,"./enc-utf16":108,"./evpkdf":109,"./format-hex":110,"./hmac":111,"./lib-typedarrays":113,"./md5":114,"./mode-cfb":115,"./mode-ctr":117,"./mode-ctr-gladman":116,"./mode-ecb":118,"./mode-ofb":119,"./pad-ansix923":120,"./pad-iso10126":121,"./pad-iso97971":122,"./pad-nopadding":123,"./pad-zeropadding":124,"./pbkdf2":125,"./rabbit":127,"./rabbit-legacy":126,"./rc4":128,"./ripemd160":129,"./sha1":130,"./sha224":131,"./sha256":132,"./sha3":133,"./sha384":134,"./sha512":135,"./tripledes":136,"./x64-core":137}],113:[function(require,module,exports){
+},{"./aes":105,"./cipher-core":106,"./core":107,"./enc-base64":108,"./enc-utf16":109,"./evpkdf":110,"./format-hex":111,"./hmac":112,"./lib-typedarrays":114,"./md5":115,"./mode-cfb":116,"./mode-ctr":118,"./mode-ctr-gladman":117,"./mode-ecb":119,"./mode-ofb":120,"./pad-ansix923":121,"./pad-iso10126":122,"./pad-iso97971":123,"./pad-nopadding":124,"./pad-zeropadding":125,"./pbkdf2":126,"./rabbit":128,"./rabbit-legacy":127,"./rc4":129,"./ripemd160":130,"./sha1":131,"./sha224":132,"./sha256":133,"./sha3":134,"./sha384":135,"./sha512":136,"./tripledes":137,"./x64-core":138}],114:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19220,7 +24874,7 @@ exports.constants = {
 	return CryptoJS.lib.WordArray;
 
 }));
-},{"./core":106}],114:[function(require,module,exports){
+},{"./core":107}],115:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19489,7 +25143,7 @@ exports.constants = {
 	return CryptoJS.MD5;
 
 }));
-},{"./core":106}],115:[function(require,module,exports){
+},{"./core":107}],116:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19568,7 +25222,7 @@ exports.constants = {
 	return CryptoJS.mode.CFB;
 
 }));
-},{"./cipher-core":105,"./core":106}],116:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],117:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19685,7 +25339,7 @@ exports.constants = {
 	return CryptoJS.mode.CTRGladman;
 
 }));
-},{"./cipher-core":105,"./core":106}],117:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],118:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19744,7 +25398,7 @@ exports.constants = {
 	return CryptoJS.mode.CTR;
 
 }));
-},{"./cipher-core":105,"./core":106}],118:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],119:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19785,7 +25439,7 @@ exports.constants = {
 	return CryptoJS.mode.ECB;
 
 }));
-},{"./cipher-core":105,"./core":106}],119:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],120:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19840,7 +25494,7 @@ exports.constants = {
 	return CryptoJS.mode.OFB;
 
 }));
-},{"./cipher-core":105,"./core":106}],120:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],121:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19890,7 +25544,7 @@ exports.constants = {
 	return CryptoJS.pad.Ansix923;
 
 }));
-},{"./cipher-core":105,"./core":106}],121:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],122:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19935,7 +25589,7 @@ exports.constants = {
 	return CryptoJS.pad.Iso10126;
 
 }));
-},{"./cipher-core":105,"./core":106}],122:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],123:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -19976,7 +25630,7 @@ exports.constants = {
 	return CryptoJS.pad.Iso97971;
 
 }));
-},{"./cipher-core":105,"./core":106}],123:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],124:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20007,7 +25661,7 @@ exports.constants = {
 	return CryptoJS.pad.NoPadding;
 
 }));
-},{"./cipher-core":105,"./core":106}],124:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],125:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20053,7 +25707,7 @@ exports.constants = {
 	return CryptoJS.pad.ZeroPadding;
 
 }));
-},{"./cipher-core":105,"./core":106}],125:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107}],126:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20199,7 +25853,7 @@ exports.constants = {
 	return CryptoJS.PBKDF2;
 
 }));
-},{"./core":106,"./hmac":111,"./sha1":130}],126:[function(require,module,exports){
+},{"./core":107,"./hmac":112,"./sha1":131}],127:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20390,7 +26044,7 @@ exports.constants = {
 	return CryptoJS.RabbitLegacy;
 
 }));
-},{"./cipher-core":105,"./core":106,"./enc-base64":107,"./evpkdf":109,"./md5":114}],127:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107,"./enc-base64":108,"./evpkdf":110,"./md5":115}],128:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20583,7 +26237,7 @@ exports.constants = {
 	return CryptoJS.Rabbit;
 
 }));
-},{"./cipher-core":105,"./core":106,"./enc-base64":107,"./evpkdf":109,"./md5":114}],128:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107,"./enc-base64":108,"./evpkdf":110,"./md5":115}],129:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20723,7 +26377,7 @@ exports.constants = {
 	return CryptoJS.RC4;
 
 }));
-},{"./cipher-core":105,"./core":106,"./enc-base64":107,"./evpkdf":109,"./md5":114}],129:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107,"./enc-base64":108,"./evpkdf":110,"./md5":115}],130:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -20991,7 +26645,7 @@ exports.constants = {
 	return CryptoJS.RIPEMD160;
 
 }));
-},{"./core":106}],130:[function(require,module,exports){
+},{"./core":107}],131:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -21142,7 +26796,7 @@ exports.constants = {
 	return CryptoJS.SHA1;
 
 }));
-},{"./core":106}],131:[function(require,module,exports){
+},{"./core":107}],132:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -21223,7 +26877,7 @@ exports.constants = {
 	return CryptoJS.SHA224;
 
 }));
-},{"./core":106,"./sha256":132}],132:[function(require,module,exports){
+},{"./core":107,"./sha256":133}],133:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -21423,7 +27077,7 @@ exports.constants = {
 	return CryptoJS.SHA256;
 
 }));
-},{"./core":106}],133:[function(require,module,exports){
+},{"./core":107}],134:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -21747,7 +27401,7 @@ exports.constants = {
 	return CryptoJS.SHA3;
 
 }));
-},{"./core":106,"./x64-core":137}],134:[function(require,module,exports){
+},{"./core":107,"./x64-core":138}],135:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -21831,7 +27485,7 @@ exports.constants = {
 	return CryptoJS.SHA384;
 
 }));
-},{"./core":106,"./sha512":135,"./x64-core":137}],135:[function(require,module,exports){
+},{"./core":107,"./sha512":136,"./x64-core":138}],136:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -22155,7 +27809,7 @@ exports.constants = {
 	return CryptoJS.SHA512;
 
 }));
-},{"./core":106,"./x64-core":137}],136:[function(require,module,exports){
+},{"./core":107,"./x64-core":138}],137:[function(require,module,exports){
 ;(function (root, factory, undef) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -22926,7 +28580,7 @@ exports.constants = {
 	return CryptoJS.TripleDES;
 
 }));
-},{"./cipher-core":105,"./core":106,"./enc-base64":107,"./evpkdf":109,"./md5":114}],137:[function(require,module,exports){
+},{"./cipher-core":106,"./core":107,"./enc-base64":108,"./evpkdf":110,"./md5":115}],138:[function(require,module,exports){
 ;(function (root, factory) {
 	if (typeof exports === "object") {
 		// CommonJS
@@ -23231,7 +28885,7 @@ exports.constants = {
 	return CryptoJS;
 
 }));
-},{"./core":106}],138:[function(require,module,exports){
+},{"./core":107}],139:[function(require,module,exports){
 'use strict';
 
 exports.utils = require('./des/utils');
@@ -23240,7 +28894,7 @@ exports.DES = require('./des/des');
 exports.CBC = require('./des/cbc');
 exports.EDE = require('./des/ede');
 
-},{"./des/cbc":139,"./des/cipher":140,"./des/des":141,"./des/ede":142,"./des/utils":143}],139:[function(require,module,exports){
+},{"./des/cbc":140,"./des/cipher":141,"./des/des":142,"./des/ede":143,"./des/utils":144}],140:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -23307,7 +28961,7 @@ proto._update = function _update(inp, inOff, out, outOff) {
   }
 };
 
-},{"inherits":196,"minimalistic-assert":212}],140:[function(require,module,exports){
+},{"inherits":197,"minimalistic-assert":213}],141:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -23450,7 +29104,7 @@ Cipher.prototype._finalDecrypt = function _finalDecrypt() {
   return this._unpad(out);
 };
 
-},{"minimalistic-assert":212}],141:[function(require,module,exports){
+},{"minimalistic-assert":213}],142:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -23595,7 +29249,7 @@ DES.prototype._decrypt = function _decrypt(state, lStart, rStart, out, off) {
   utils.rip(l, r, out, off);
 };
 
-},{"../des":138,"inherits":196,"minimalistic-assert":212}],142:[function(require,module,exports){
+},{"../des":139,"inherits":197,"minimalistic-assert":213}],143:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -23652,7 +29306,7 @@ EDE.prototype._update = function _update(inp, inOff, out, outOff) {
 EDE.prototype._pad = DES.prototype._pad;
 EDE.prototype._unpad = DES.prototype._unpad;
 
-},{"../des":138,"inherits":196,"minimalistic-assert":212}],143:[function(require,module,exports){
+},{"../des":139,"inherits":197,"minimalistic-assert":213}],144:[function(require,module,exports){
 'use strict';
 
 exports.readUInt32BE = function readUInt32BE(bytes, off) {
@@ -23910,7 +29564,7 @@ exports.padSplit = function padSplit(num, size, group) {
   return out.join(' ');
 };
 
-},{}],144:[function(require,module,exports){
+},{}],145:[function(require,module,exports){
 (function (Buffer){
 var generatePrime = require('./lib/generatePrime')
 var primes = require('./lib/primes.json')
@@ -23956,7 +29610,7 @@ exports.DiffieHellmanGroup = exports.createDiffieHellmanGroup = exports.getDiffi
 exports.createDiffieHellman = exports.DiffieHellman = createDiffieHellman
 
 }).call(this,require("buffer").Buffer)
-},{"./lib/dh":145,"./lib/generatePrime":146,"./lib/primes.json":147,"buffer":93}],145:[function(require,module,exports){
+},{"./lib/dh":146,"./lib/generatePrime":147,"./lib/primes.json":148,"buffer":94}],146:[function(require,module,exports){
 (function (Buffer){
 var BN = require('bn.js');
 var MillerRabin = require('miller-rabin');
@@ -24124,7 +29778,7 @@ function formatReturnValue(bn, enc) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./generatePrime":146,"bn.js":60,"buffer":93,"miller-rabin":211,"randombytes":241}],146:[function(require,module,exports){
+},{"./generatePrime":147,"bn.js":61,"buffer":94,"miller-rabin":212,"randombytes":243}],147:[function(require,module,exports){
 var randomBytes = require('randombytes');
 module.exports = findPrime;
 findPrime.simpleSieve = simpleSieve;
@@ -24231,7 +29885,7 @@ function findPrime(bits, gen) {
 
 }
 
-},{"bn.js":60,"miller-rabin":211,"randombytes":241}],147:[function(require,module,exports){
+},{"bn.js":61,"miller-rabin":212,"randombytes":243}],148:[function(require,module,exports){
 module.exports={
     "modp1": {
         "gen": "02",
@@ -24266,7 +29920,7 @@ module.exports={
         "prime": "ffffffffffffffffc90fdaa22168c234c4c6628b80dc1cd129024e088a67cc74020bbea63b139b22514a08798e3404ddef9519b3cd3a431b302b0a6df25f14374fe1356d6d51c245e485b576625e7ec6f44c42e9a637ed6b0bff5cb6f406b7edee386bfb5a899fa5ae9f24117c4b1fe649286651ece45b3dc2007cb8a163bf0598da48361c55d39a69163fa8fd24cf5f83655d23dca3ad961c62f356208552bb9ed529077096966d670c354e4abc9804f1746c08ca18217c32905e462e36ce3be39e772c180e86039b2783a2ec07a28fb5c55df06f4c52c9de2bcbf6955817183995497cea956ae515d2261898fa051015728e5a8aaac42dad33170d04507a33a85521abdf1cba64ecfb850458dbef0a8aea71575d060c7db3970f85a6e1e4c7abf5ae8cdb0933d71e8c94e04a25619dcee3d2261ad2ee6bf12ffa06d98a0864d87602733ec86a64521f2b18177b200cbbe117577a615d6c770988c0bad946e208e24fa074e5ab3143db5bfce0fd108e4b82d120a92108011a723c12a787e6d788719a10bdba5b2699c327186af4e23c1a946834b6150bda2583e9ca2ad44ce8dbbbc2db04de8ef92e8efc141fbecaa6287c59474e6bc05d99b2964fa090c3a2233ba186515be7ed1f612970cee2d7afb81bdd762170481cd0069127d5b05aa993b4ea988d8fddc186ffb7dc90a6c08f4df435c93402849236c3fab4d27c7026c1d4dcb2602646dec9751e763dba37bdf8ff9406ad9e530ee5db382f413001aeb06a53ed9027d831179727b0865a8918da3edbebcf9b14ed44ce6cbaced4bb1bdb7f1447e6cc254b332051512bd7af426fb8f401378cd2bf5983ca01c64b92ecf032ea15d1721d03f482d7ce6e74fef6d55e702f46980c82b5a84031900b1c9e59e7c97fbec7e8f323a97a7e36cc88be0f1d45b7ff585ac54bd407b22b4154aacc8f6d7ebf48e1d814cc5ed20f8037e0a79715eef29be32806a1d58bb7c5da76f550aa3d8a1fbff0eb19ccb1a313d55cda56c9ec2ef29632387fe8d76e3c0468043e8f663f4860ee12bf2d5b0b7474d6e694f91e6dbe115974a3926f12fee5e438777cb6a932df8cd8bec4d073b931ba3bc832b68d9dd300741fa7bf8afc47ed2576f6936ba424663aab639c5ae4f5683423b4742bf1c978238f16cbe39d652de3fdb8befc848ad922222e04a4037c0713eb57a81a23f0c73473fc646cea306b4bcbc8862f8385ddfa9d4b7fa2c087e879683303ed5bdd3a062b3cf5b3a278a66d2a13f83f44f82ddf310ee074ab6a364597e899a0255dc164f31cc50846851df9ab48195ded7ea1b1d510bd7ee74d73faf36bc31ecfa268359046f4eb879f924009438b481c6cd7889a002ed5ee382bc9190da6fc026e479558e4475677e9aa9e3050e2765694dfc81f56e880b96e7160c980dd98edd3dfffffffffffffffff"
     }
 }
-},{}],148:[function(require,module,exports){
+},{}],149:[function(require,module,exports){
 'use strict';
 
 var elliptic = exports;
@@ -24281,7 +29935,7 @@ elliptic.curves = require('./elliptic/curves');
 elliptic.ec = require('./elliptic/ec');
 elliptic.eddsa = require('./elliptic/eddsa');
 
-},{"../package.json":163,"./elliptic/curve":151,"./elliptic/curves":154,"./elliptic/ec":155,"./elliptic/eddsa":158,"./elliptic/utils":162,"brorand":61}],149:[function(require,module,exports){
+},{"../package.json":164,"./elliptic/curve":152,"./elliptic/curves":155,"./elliptic/ec":156,"./elliptic/eddsa":159,"./elliptic/utils":163,"brorand":62}],150:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -24658,7 +30312,7 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
-},{"../../elliptic":148,"bn.js":60}],150:[function(require,module,exports){
+},{"../../elliptic":149,"bn.js":61}],151:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -25093,7 +30747,7 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
-},{"../../elliptic":148,"../curve":151,"bn.js":60,"inherits":196}],151:[function(require,module,exports){
+},{"../../elliptic":149,"../curve":152,"bn.js":61,"inherits":197}],152:[function(require,module,exports){
 'use strict';
 
 var curve = exports;
@@ -25103,7 +30757,7 @@ curve.short = require('./short');
 curve.mont = require('./mont');
 curve.edwards = require('./edwards');
 
-},{"./base":149,"./edwards":150,"./mont":152,"./short":153}],152:[function(require,module,exports){
+},{"./base":150,"./edwards":151,"./mont":153,"./short":154}],153:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -25285,7 +30939,7 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
-},{"../../elliptic":148,"../curve":151,"bn.js":60,"inherits":196}],153:[function(require,module,exports){
+},{"../../elliptic":149,"../curve":152,"bn.js":61,"inherits":197}],154:[function(require,module,exports){
 'use strict';
 
 var curve = require('../curve');
@@ -26225,7 +31879,7 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
-},{"../../elliptic":148,"../curve":151,"bn.js":60,"inherits":196}],154:[function(require,module,exports){
+},{"../../elliptic":149,"../curve":152,"bn.js":61,"inherits":197}],155:[function(require,module,exports){
 'use strict';
 
 var curves = exports;
@@ -26432,7 +32086,7 @@ defineCurve('secp256k1', {
   ]
 });
 
-},{"../elliptic":148,"./precomputed/secp256k1":161,"hash.js":181}],155:[function(require,module,exports){
+},{"../elliptic":149,"./precomputed/secp256k1":162,"hash.js":182}],156:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -26674,7 +32328,7 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
-},{"../../elliptic":148,"./key":156,"./signature":157,"bn.js":60,"hmac-drbg":193}],156:[function(require,module,exports){
+},{"../../elliptic":149,"./key":157,"./signature":158,"bn.js":61,"hmac-drbg":194}],157:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -26795,7 +32449,7 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
-},{"../../elliptic":148,"bn.js":60}],157:[function(require,module,exports){
+},{"../../elliptic":149,"bn.js":61}],158:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -26932,7 +32586,7 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
-},{"../../elliptic":148,"bn.js":60}],158:[function(require,module,exports){
+},{"../../elliptic":149,"bn.js":61}],159:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -27052,7 +32706,7 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-},{"../../elliptic":148,"./key":159,"./signature":160,"hash.js":181}],159:[function(require,module,exports){
+},{"../../elliptic":149,"./key":160,"./signature":161,"hash.js":182}],160:[function(require,module,exports){
 'use strict';
 
 var elliptic = require('../../elliptic');
@@ -27150,7 +32804,7 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
-},{"../../elliptic":148}],160:[function(require,module,exports){
+},{"../../elliptic":149}],161:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -27218,7 +32872,7 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
-},{"../../elliptic":148,"bn.js":60}],161:[function(require,module,exports){
+},{"../../elliptic":149,"bn.js":61}],162:[function(require,module,exports){
 module.exports = {
   doubles: {
     step: 4,
@@ -28000,7 +33654,7 @@ module.exports = {
   }
 };
 
-},{}],162:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -28122,7 +33776,7 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
-},{"bn.js":60,"minimalistic-assert":212,"minimalistic-crypto-utils":213}],163:[function(require,module,exports){
+},{"bn.js":61,"minimalistic-assert":213,"minimalistic-crypto-utils":214}],164:[function(require,module,exports){
 module.exports={
   "_args": [
     [
@@ -28245,7 +33899,7 @@ module.exports={
   "version": "6.4.0"
 }
 
-},{}],164:[function(require,module,exports){
+},{}],165:[function(require,module,exports){
 // This was ported from https://github.com/emn178/js-sha3, with some minor
 // modifications and pruning. It is licensed under MIT:
 //
@@ -28585,10 +34239,10 @@ module.exports = {
   keccak256s: keccak(256),
   keccak512s: keccak(512)
 };
-},{}],165:[function(require,module,exports){
+},{}],166:[function(require,module,exports){
 module.exports = require('./lib/index.js')
 
-},{"./lib/index.js":166}],166:[function(require,module,exports){
+},{"./lib/index.js":167}],167:[function(require,module,exports){
 (function (Buffer){
 const utils = require('ethereumjs-util')
 const BN = require('bn.js')
@@ -29149,7 +34803,7 @@ ABI.toSerpent = function (types) {
 module.exports = ABI
 
 }).call(this,require("buffer").Buffer)
-},{"bn.js":60,"buffer":93,"ethereumjs-util":167}],167:[function(require,module,exports){
+},{"bn.js":61,"buffer":94,"ethereumjs-util":168}],168:[function(require,module,exports){
 (function (Buffer){
 const SHA3 = require('keccakjs')
 const secp256k1 = require('secp256k1')
@@ -29854,7 +35508,7 @@ exports.defineProperties = function (self, fields, data) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"assert":57,"bn.js":60,"buffer":93,"create-hash":98,"keccakjs":208,"rlp":260,"secp256k1":262}],168:[function(require,module,exports){
+},{"assert":57,"bn.js":61,"buffer":94,"create-hash":99,"keccakjs":209,"rlp":262,"secp256k1":264}],169:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -30525,7 +36179,7 @@ exports.defineProperties = function (self, fields, data) {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"assert":57,"bn.js":60,"buffer":93,"create-hash":98,"ethjs-util":175,"keccak":202,"rlp":260,"secp256k1":262}],169:[function(require,module,exports){
+},{"assert":57,"bn.js":61,"buffer":94,"create-hash":99,"ethjs-util":176,"keccak":203,"rlp":262,"secp256k1":264}],170:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -30661,7 +36315,7 @@ module.exports = {
   decodeEvent: decodeEvent
 };
 }).call(this,require("buffer").Buffer)
-},{"./utils/index.js":170,"buffer":93}],170:[function(require,module,exports){
+},{"./utils/index.js":171,"buffer":94}],171:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -31081,7 +36735,7 @@ module.exports = {
   getParamCoder: getParamCoder
 };
 }).call(this,require("buffer").Buffer)
-},{"bn.js":171,"buffer":93,"js-sha3":172,"number-to-bn":216}],171:[function(require,module,exports){
+},{"bn.js":172,"buffer":94,"js-sha3":173,"number-to-bn":217}],172:[function(require,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -34510,7 +40164,7 @@ module.exports = {
   };
 })(typeof module === 'undefined' || module, this);
 
-},{}],172:[function(require,module,exports){
+},{}],173:[function(require,module,exports){
 (function (process,global){
 /**
  * [js-sha3]{@link https://github.com/emn178/js-sha3}
@@ -34985,7 +40639,7 @@ module.exports = {
 }(this));
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":91}],173:[function(require,module,exports){
+},{"_process":92}],174:[function(require,module,exports){
 'use strict';
 
 var BN = require('bn.js');
@@ -35154,9 +40808,9 @@ module.exports = {
   fromWei: fromWei,
   toWei: toWei
 };
-},{"bn.js":174,"number-to-bn":216}],174:[function(require,module,exports){
-arguments[4][171][0].apply(exports,arguments)
-},{"dup":171}],175:[function(require,module,exports){
+},{"bn.js":175,"number-to-bn":217}],175:[function(require,module,exports){
+arguments[4][172][0].apply(exports,arguments)
+},{"dup":172}],176:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -35379,7 +41033,7 @@ module.exports = {
   isHexString: isHexString
 };
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"is-hex-prefixed":198,"strip-hex-prefix":278}],176:[function(require,module,exports){
+},{"buffer":94,"is-hex-prefixed":199,"strip-hex-prefix":280}],177:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -35683,7 +41337,7 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 
-},{}],177:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var MD5 = require('md5.js')
 
@@ -35730,7 +41384,7 @@ function EVP_BytesToKey (password, salt, keyBits, ivLen) {
 
 module.exports = EVP_BytesToKey
 
-},{"md5.js":209,"safe-buffer":261}],178:[function(require,module,exports){
+},{"md5.js":210,"safe-buffer":263}],179:[function(require,module,exports){
 'use strict';
 
 module.exports = function equal(a, b) {
@@ -35775,7 +41429,7 @@ module.exports = function equal(a, b) {
   return false;
 };
 
-},{}],179:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 'use strict';
 
 module.exports = function (data, opts) {
@@ -35836,7 +41490,7 @@ module.exports = function (data, opts) {
     })(data);
 };
 
-},{}],180:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var Transform = require('stream').Transform
@@ -35923,7 +41577,7 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"inherits":196,"stream":276}],181:[function(require,module,exports){
+},{"buffer":94,"inherits":197,"stream":278}],182:[function(require,module,exports){
 var hash = exports;
 
 hash.utils = require('./hash/utils');
@@ -35940,7 +41594,7 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
-},{"./hash/common":182,"./hash/hmac":183,"./hash/ripemd":184,"./hash/sha":185,"./hash/utils":192}],182:[function(require,module,exports){
+},{"./hash/common":183,"./hash/hmac":184,"./hash/ripemd":185,"./hash/sha":186,"./hash/utils":193}],183:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -36034,7 +41688,7 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
-},{"./utils":192,"minimalistic-assert":212}],183:[function(require,module,exports){
+},{"./utils":193,"minimalistic-assert":213}],184:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -36083,7 +41737,7 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
-},{"./utils":192,"minimalistic-assert":212}],184:[function(require,module,exports){
+},{"./utils":193,"minimalistic-assert":213}],185:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -36231,7 +41885,7 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
-},{"./common":182,"./utils":192}],185:[function(require,module,exports){
+},{"./common":183,"./utils":193}],186:[function(require,module,exports){
 'use strict';
 
 exports.sha1 = require('./sha/1');
@@ -36240,7 +41894,7 @@ exports.sha256 = require('./sha/256');
 exports.sha384 = require('./sha/384');
 exports.sha512 = require('./sha/512');
 
-},{"./sha/1":186,"./sha/224":187,"./sha/256":188,"./sha/384":189,"./sha/512":190}],186:[function(require,module,exports){
+},{"./sha/1":187,"./sha/224":188,"./sha/256":189,"./sha/384":190,"./sha/512":191}],187:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -36316,7 +41970,7 @@ SHA1.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":182,"../utils":192,"./common":191}],187:[function(require,module,exports){
+},{"../common":183,"../utils":193,"./common":192}],188:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -36348,7 +42002,7 @@ SHA224.prototype._digest = function digest(enc) {
 };
 
 
-},{"../utils":192,"./256":188}],188:[function(require,module,exports){
+},{"../utils":193,"./256":189}],189:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -36455,7 +42109,7 @@ SHA256.prototype._digest = function digest(enc) {
     return utils.split32(this.h, 'big');
 };
 
-},{"../common":182,"../utils":192,"./common":191,"minimalistic-assert":212}],189:[function(require,module,exports){
+},{"../common":183,"../utils":193,"./common":192,"minimalistic-assert":213}],190:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -36492,7 +42146,7 @@ SHA384.prototype._digest = function digest(enc) {
     return utils.split32(this.h.slice(0, 12), 'big');
 };
 
-},{"../utils":192,"./512":190}],190:[function(require,module,exports){
+},{"../utils":193,"./512":191}],191:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -36824,7 +42478,7 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
-},{"../common":182,"../utils":192,"minimalistic-assert":212}],191:[function(require,module,exports){
+},{"../common":183,"../utils":193,"minimalistic-assert":213}],192:[function(require,module,exports){
 'use strict';
 
 var utils = require('../utils');
@@ -36875,7 +42529,7 @@ function g1_256(x) {
 }
 exports.g1_256 = g1_256;
 
-},{"../utils":192}],192:[function(require,module,exports){
+},{"../utils":193}],193:[function(require,module,exports){
 'use strict';
 
 var assert = require('minimalistic-assert');
@@ -37130,7 +42784,7 @@ function shr64_lo(ah, al, num) {
 }
 exports.shr64_lo = shr64_lo;
 
-},{"inherits":196,"minimalistic-assert":212}],193:[function(require,module,exports){
+},{"inherits":197,"minimalistic-assert":213}],194:[function(require,module,exports){
 'use strict';
 
 var hash = require('hash.js');
@@ -37245,7 +42899,7 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
-},{"hash.js":181,"minimalistic-assert":212,"minimalistic-crypto-utils":213}],194:[function(require,module,exports){
+},{"hash.js":182,"minimalistic-assert":213,"minimalistic-crypto-utils":214}],195:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = nBytes * 8 - mLen - 1
@@ -37331,7 +42985,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],195:[function(require,module,exports){
+},{}],196:[function(require,module,exports){
 
 var indexOf = [].indexOf;
 
@@ -37342,7 +42996,7 @@ module.exports = function(arr, obj){
   }
   return -1;
 };
-},{}],196:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -37367,7 +43021,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],197:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -37390,7 +43044,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],198:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 /**
  * Returns a `Boolean` on whether or not the a `String` starts with '0x'
  * @param {String} str the string input value
@@ -37405,14 +43059,14 @@ module.exports = function isHexPrefixed(str) {
   return str.slice(0, 2) === '0x';
 }
 
-},{}],199:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],200:[function(require,module,exports){
+},{}],201:[function(require,module,exports){
 (function (global){
 /*
  * js-sha3 v0.3.1
@@ -37848,7 +43502,7 @@ module.exports = Array.isArray || function (arr) {
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],201:[function(require,module,exports){
+},{}],202:[function(require,module,exports){
 'use strict';
 
 var traverse = module.exports = function (schema, opts, cb) {
@@ -37931,11 +43585,11 @@ function escapeJsonPtr(str) {
   return str.replace(/~/g, '~0').replace(/\//g, '~1');
 }
 
-},{}],202:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 'use strict'
 module.exports = require('./lib/api')(require('./lib/keccak'))
 
-},{"./lib/api":203,"./lib/keccak":207}],203:[function(require,module,exports){
+},{"./lib/api":204,"./lib/keccak":208}],204:[function(require,module,exports){
 'use strict'
 var createKeccak = require('./keccak')
 var createShake = require('./shake')
@@ -37965,7 +43619,7 @@ module.exports = function (KeccakState) {
   }
 }
 
-},{"./keccak":204,"./shake":205}],204:[function(require,module,exports){
+},{"./keccak":205,"./shake":206}],205:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
@@ -38051,7 +43705,7 @@ module.exports = function (KeccakState) {
   return Keccak
 }
 
-},{"inherits":196,"safe-buffer":261,"stream":276}],205:[function(require,module,exports){
+},{"inherits":197,"safe-buffer":263,"stream":278}],206:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
@@ -38128,7 +43782,7 @@ module.exports = function (KeccakState) {
   return Shake
 }
 
-},{"inherits":196,"safe-buffer":261,"stream":276}],206:[function(require,module,exports){
+},{"inherits":197,"safe-buffer":263,"stream":278}],207:[function(require,module,exports){
 'use strict'
 var P1600_ROUND_CONSTANTS = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649, 0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648, 2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648]
 
@@ -38317,7 +43971,7 @@ exports.p1600 = function (s) {
   }
 }
 
-},{}],207:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var keccakState = require('./keccak-state-unroll')
@@ -38389,10 +44043,10 @@ Keccak.prototype.copy = function (dest) {
 
 module.exports = Keccak
 
-},{"./keccak-state-unroll":206,"safe-buffer":261}],208:[function(require,module,exports){
+},{"./keccak-state-unroll":207,"safe-buffer":263}],209:[function(require,module,exports){
 module.exports = require('browserify-sha3').SHA3Hash
 
-},{"browserify-sha3":84}],209:[function(require,module,exports){
+},{"browserify-sha3":85}],210:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -38541,7 +44195,7 @@ function fnI (a, b, c, d, m, k, s) {
 module.exports = MD5
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"hash-base":210,"inherits":196}],210:[function(require,module,exports){
+},{"buffer":94,"hash-base":211,"inherits":197}],211:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
@@ -38638,7 +44292,7 @@ HashBase.prototype._digest = function () {
 
 module.exports = HashBase
 
-},{"inherits":196,"safe-buffer":261,"stream":276}],211:[function(require,module,exports){
+},{"inherits":197,"safe-buffer":263,"stream":278}],212:[function(require,module,exports){
 var bn = require('bn.js');
 var brorand = require('brorand');
 
@@ -38755,7 +44409,7 @@ MillerRabin.prototype.getDivisor = function getDivisor(n, k) {
   return false;
 };
 
-},{"bn.js":60,"brorand":61}],212:[function(require,module,exports){
+},{"bn.js":61,"brorand":62}],213:[function(require,module,exports){
 module.exports = assert;
 
 function assert(val, msg) {
@@ -38768,7 +44422,7 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
-},{}],213:[function(require,module,exports){
+},{}],214:[function(require,module,exports){
 'use strict';
 
 var utils = exports;
@@ -38828,7 +44482,7 @@ utils.encode = function encode(arr, enc) {
     return arr;
 };
 
-},{}],214:[function(require,module,exports){
+},{}],215:[function(require,module,exports){
 //! moment.js
 //! version : 2.19.1
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -43344,9 +48998,9 @@ return hooks;
 
 })));
 
-},{}],215:[function(require,module,exports){
-arguments[4][171][0].apply(exports,arguments)
-},{"dup":171}],216:[function(require,module,exports){
+},{}],216:[function(require,module,exports){
+arguments[4][172][0].apply(exports,arguments)
+},{"dup":172}],217:[function(require,module,exports){
 var BN = require('bn.js');
 var stripHexPrefix = require('strip-hex-prefix');
 
@@ -43386,7 +49040,7 @@ module.exports = function numberToBN(arg) {
   throw new Error('[number-to-bn] while converting number ' + JSON.stringify(arg) + ' to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported.');
 }
 
-},{"bn.js":215,"strip-hex-prefix":278}],217:[function(require,module,exports){
+},{"bn.js":216,"strip-hex-prefix":280}],218:[function(require,module,exports){
 module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.2": "aes-128-cbc",
 "2.16.840.1.101.3.4.1.3": "aes-128-ofb",
@@ -43400,7 +49054,7 @@ module.exports={"2.16.840.1.101.3.4.1.1": "aes-128-ecb",
 "2.16.840.1.101.3.4.1.43": "aes-256-ofb",
 "2.16.840.1.101.3.4.1.44": "aes-256-cfb"
 }
-},{}],218:[function(require,module,exports){
+},{}],219:[function(require,module,exports){
 // from https://github.com/indutny/self-signed/blob/gh-pages/lib/asn1.js
 // Fedor, you are amazing.
 'use strict'
@@ -43524,7 +49178,7 @@ exports.signature = asn1.define('signature', function () {
   )
 })
 
-},{"./certificate":219,"asn1.js":43}],219:[function(require,module,exports){
+},{"./certificate":220,"asn1.js":43}],220:[function(require,module,exports){
 // from https://github.com/Rantanen/node-dtls/blob/25a7dc861bda38cfeac93a723500eea4f0ac2e86/Certificate.js
 // thanks to @Rantanen
 
@@ -43614,7 +49268,7 @@ var X509Certificate = asn.define('X509Certificate', function () {
 
 module.exports = X509Certificate
 
-},{"asn1.js":43}],220:[function(require,module,exports){
+},{"asn1.js":43}],221:[function(require,module,exports){
 (function (Buffer){
 // adapted from https://github.com/apatil/pemstrip
 var findProc = /Proc-Type: 4,ENCRYPTED\n\r?DEK-Info: AES-((?:128)|(?:192)|(?:256))-CBC,([0-9A-H]+)\n\r?\n\r?([0-9A-z\n\r\+\/\=]+)\n\r?/m
@@ -43648,7 +49302,7 @@ module.exports = function (okey, password) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"browserify-aes":65,"buffer":93,"evp_bytestokey":177}],221:[function(require,module,exports){
+},{"browserify-aes":66,"buffer":94,"evp_bytestokey":178}],222:[function(require,module,exports){
 (function (Buffer){
 var asn1 = require('./asn1')
 var aesid = require('./aesid.json')
@@ -43758,12 +49412,60 @@ function decrypt (data, password) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./aesid.json":217,"./asn1":218,"./fixProc":220,"browserify-aes":65,"buffer":93,"pbkdf2":224}],222:[function(require,module,exports){
+},{"./aesid.json":218,"./asn1":219,"./fixProc":221,"browserify-aes":66,"buffer":94,"pbkdf2":226}],223:[function(require,module,exports){
 "use strict";
 
-var urlParts = /^(https?:\/\/)?([^/]*@)?(.+?)(:\d{2,5})?([/?].*)?$/; // 1 = protocol, 2 = auth, 3 = domain, 4 = port, 5 = path
+function normalizeUrl(url) {
+    if (!url || typeof url !== "string") {
+        return null;
+    }
+
+    return url.trim().toLowerCase();
+}
+
+function normalizeOptions(options) {
+    var normalized = !options || typeof options !== "object" ? Object.create(null) : options;
+
+    if ("privateTlds" in normalized === false) {
+        normalized.privateTlds = false;
+    }
+    if ("customTlds" in normalized && normalized.customTlds instanceof RegExp === false) {
+        normalized.customTlds = new RegExp("\\.(" + normalized.customTlds.join("|") + ")$");
+    }
+
+    return normalized;
+}
+
+exports.url = normalizeUrl;
+exports.options = normalizeOptions;
+},{}],224:[function(require,module,exports){
+"use strict";
+
 var knownTlds = require("./tld.js");
+var normalize = require("./normalize.js");
+
+var urlParts = /^(https?:\/\/)?([^/]*@)?(.+?)(:\d{2,5})?([/?].*)?$/; // 1 = protocol, 2 = auth, 3 = domain, 4 = port, 5 = path
 var dot = /\./g;
+
+function matchTld(domain, options) {
+    var tld = null;
+
+    // for potentially unrecognized tlds, try matching against custom tlds
+    if (options.customTlds) {
+        // try matching against a built regexp of custom tlds
+        tld = domain.match(options.customTlds);
+    }
+
+    // If no custom tlds, check if tld is supported
+    if (tld === null) {
+        tld = domain.match(options.privateTlds ? knownTlds : knownTlds.icann);
+        if (tld === null) {
+            return null;
+        }
+    }
+
+    return tld[0];
+}
 
 /**
  * Removes all unnecessary parts of the domain (e.g. protocol, auth, port, path, query)
@@ -43781,46 +49483,27 @@ var dot = /\./g;
  * @returns {Object|null}
  */
 function parseDomain(url, options) {
-    var urlSplit;
+    var normalizedUrl = normalize.url(url);
     var tld = null;
+    var normalizedOptions;
+    var urlSplit;
     var domain;
     var subdomain;
 
-    if (!url || typeof url !== "string") {
+    if (normalizedUrl === null) {
         return null;
     }
 
-    if (!options || typeof options !== "object") {
-        options = Object.create(null);
-    }
-    if ("privateTlds" in options === false) {
-        options.privateTlds = false;
-    }
+    normalizedOptions = normalize.options(options);
 
     // urlSplit can't be null because urlParts will always match at the third capture
-    urlSplit = url.toLowerCase().match(urlParts);
+    urlSplit = normalizedUrl.match(urlParts);
     domain = urlSplit[3]; // domain will now be something like sub.domain.example.com
 
-    // for potentially unrecognized tlds, try matching against custom tlds
-    if (options.customTlds) {
-        if (options.customTlds instanceof RegExp === false) {
-            // build regexp from options.customTlds
-            options.customTlds = new RegExp("\\.(" + options.customTlds.join("|") + ")$");
-        }
-        // try matching against a built regexp of custom tlds
-        tld = domain.match(options.customTlds);
-    }
-
-    // If no custom tlds, check if tld is supported
-    if (tld === null) {
-        tld = domain.match(options.privateTlds ? knownTlds : knownTlds.icann);
-    }
-
+    tld = matchTld(domain, normalizedOptions);
     if (tld === null) {
         return null;
     }
-
-    tld = tld[0];
 
     // remove tld and split by dot
     urlSplit = domain.slice(0, -tld.length).split(dot);
@@ -43835,23 +49518,25 @@ function parseDomain(url, options) {
     return {
         tld: tld,
         domain: domain,
-        subdomain: subdomain
+        subdomain: subdomain,
     };
 }
 
 module.exports = parseDomain;
 
-},{"./tld.js":223}],223:[function(require,module,exports){
+},{"./normalize.js":223,"./tld.js":225}],225:[function(require,module,exports){
+"use strict";
+
 exports = module.exports = /\.(ac|com\.ac|edu\.ac|gov\.ac|net\.ac|mil\.ac|org\.ac|ad|nom\.ad|ae|co\.ae|net\.ae|org\.ae|sch\.ae|ac\.ae|gov\.ae|mil\.ae|aero|accident-investigation\.aero|accident-prevention\.aero|aerobatic\.aero|aeroclub\.aero|aerodrome\.aero|agents\.aero|aircraft\.aero|airline\.aero|airport\.aero|air-surveillance\.aero|airtraffic\.aero|air-traffic-control\.aero|ambulance\.aero|amusement\.aero|association\.aero|author\.aero|ballooning\.aero|broker\.aero|caa\.aero|cargo\.aero|catering\.aero|certification\.aero|championship\.aero|charter\.aero|civilaviation\.aero|club\.aero|conference\.aero|consultant\.aero|consulting\.aero|control\.aero|council\.aero|crew\.aero|design\.aero|dgca\.aero|educator\.aero|emergency\.aero|engine\.aero|engineer\.aero|entertainment\.aero|equipment\.aero|exchange\.aero|express\.aero|federation\.aero|flight\.aero|freight\.aero|fuel\.aero|gliding\.aero|government\.aero|groundhandling\.aero|group\.aero|hanggliding\.aero|homebuilt\.aero|insurance\.aero|journal\.aero|journalist\.aero|leasing\.aero|logistics\.aero|magazine\.aero|maintenance\.aero|media\.aero|microlight\.aero|modelling\.aero|navigation\.aero|parachuting\.aero|paragliding\.aero|passenger-association\.aero|pilot\.aero|press\.aero|production\.aero|recreation\.aero|repbody\.aero|res\.aero|research\.aero|rotorcraft\.aero|safety\.aero|scientist\.aero|services\.aero|show\.aero|skydiving\.aero|software\.aero|student\.aero|trader\.aero|trading\.aero|trainer\.aero|union\.aero|workinggroup\.aero|works\.aero|af|gov\.af|com\.af|org\.af|net\.af|edu\.af|ag|com\.ag|org\.ag|net\.ag|co\.ag|nom\.ag|ai|off\.ai|com\.ai|net\.ai|org\.ai|al|com\.al|edu\.al|gov\.al|mil\.al|net\.al|org\.al|am|ao|ed\.ao|gv\.ao|og\.ao|co\.ao|pb\.ao|it\.ao|aq|ar|com\.ar|edu\.ar|gob\.ar|gov\.ar|int\.ar|mil\.ar|net\.ar|org\.ar|tur\.ar|arpa|e164\.arpa|in-addr\.arpa|ip6\.arpa|iris\.arpa|uri\.arpa|urn\.arpa|as|gov\.as|asia|at|ac\.at|co\.at|gv\.at|or\.at|au|com\.au|net\.au|org\.au|edu\.au|gov\.au|asn\.au|id\.au|info\.au|conf\.au|oz\.au|act\.au|nsw\.au|nt\.au|qld\.au|sa\.au|tas\.au|vic\.au|wa\.au|act\.edu\.au|nsw\.edu\.au|nt\.edu\.au|qld\.edu\.au|sa\.edu\.au|tas\.edu\.au|vic\.edu\.au|wa\.edu\.au|qld\.gov\.au|sa\.gov\.au|tas\.gov\.au|vic\.gov\.au|wa\.gov\.au|aw|com\.aw|ax|az|com\.az|net\.az|int\.az|gov\.az|org\.az|edu\.az|info\.az|pp\.az|mil\.az|name\.az|pro\.az|biz\.az|ba|com\.ba|edu\.ba|gov\.ba|mil\.ba|net\.ba|org\.ba|bb|biz\.bb|co\.bb|com\.bb|edu\.bb|gov\.bb|info\.bb|net\.bb|org\.bb|store\.bb|tv\.bb|[^.]+\.bd|be|ac\.be|bf|gov\.bf|bg|a\.bg|b\.bg|c\.bg|d\.bg|e\.bg|f\.bg|g\.bg|h\.bg|i\.bg|j\.bg|k\.bg|l\.bg|m\.bg|n\.bg|o\.bg|p\.bg|q\.bg|r\.bg|s\.bg|t\.bg|u\.bg|v\.bg|w\.bg|x\.bg|y\.bg|z\.bg|0\.bg|1\.bg|2\.bg|3\.bg|4\.bg|5\.bg|6\.bg|7\.bg|8\.bg|9\.bg|bh|com\.bh|edu\.bh|net\.bh|org\.bh|gov\.bh|bi|co\.bi|com\.bi|edu\.bi|or\.bi|org\.bi|biz|bj|asso\.bj|barreau\.bj|gouv\.bj|bm|com\.bm|edu\.bm|gov\.bm|net\.bm|org\.bm|[^.]+\.bn|bo|com\.bo|edu\.bo|gov\.bo|gob\.bo|int\.bo|org\.bo|net\.bo|mil\.bo|tv\.bo|br|adm\.br|adv\.br|agr\.br|am\.br|arq\.br|art\.br|ato\.br|b\.br|bio\.br|blog\.br|bmd\.br|cim\.br|cng\.br|cnt\.br|com\.br|coop\.br|ecn\.br|eco\.br|edu\.br|emp\.br|eng\.br|esp\.br|etc\.br|eti\.br|far\.br|flog\.br|fm\.br|fnd\.br|fot\.br|fst\.br|g12\.br|ggf\.br|gov\.br|imb\.br|ind\.br|inf\.br|jor\.br|jus\.br|leg\.br|lel\.br|mat\.br|med\.br|mil\.br|mp\.br|mus\.br|net\.br|[^.]+\.nom\.br|not\.br|ntr\.br|odo\.br|org\.br|ppg\.br|pro\.br|psc\.br|psi\.br|qsl\.br|radio\.br|rec\.br|slg\.br|srv\.br|taxi\.br|teo\.br|tmp\.br|trd\.br|tur\.br|tv\.br|vet\.br|vlog\.br|wiki\.br|zlg\.br|bs|com\.bs|net\.bs|org\.bs|edu\.bs|gov\.bs|bt|com\.bt|edu\.bt|gov\.bt|net\.bt|org\.bt|bv|bw|co\.bw|org\.bw|by|gov\.by|mil\.by|com\.by|of\.by|bz|com\.bz|net\.bz|org\.bz|edu\.bz|gov\.bz|ca|ab\.ca|bc\.ca|mb\.ca|nb\.ca|nf\.ca|nl\.ca|ns\.ca|nt\.ca|nu\.ca|on\.ca|pe\.ca|qc\.ca|sk\.ca|yk\.ca|gc\.ca|cat|cc|cd|gov\.cd|cf|cg|ch|ci|org\.ci|or\.ci|com\.ci|co\.ci|edu\.ci|ed\.ci|ac\.ci|net\.ci|go\.ci|asso\.ci|aéroport\.ci|int\.ci|presse\.ci|md\.ci|gouv\.ci|[^.]+\.ck|!www\.ck|cl|gov\.cl|gob\.cl|co\.cl|mil\.cl|cm|co\.cm|com\.cm|gov\.cm|net\.cm|cn|ac\.cn|com\.cn|edu\.cn|gov\.cn|net\.cn|org\.cn|mil\.cn|公司\.cn|网络\.cn|網絡\.cn|ah\.cn|bj\.cn|cq\.cn|fj\.cn|gd\.cn|gs\.cn|gz\.cn|gx\.cn|ha\.cn|hb\.cn|he\.cn|hi\.cn|hl\.cn|hn\.cn|jl\.cn|js\.cn|jx\.cn|ln\.cn|nm\.cn|nx\.cn|qh\.cn|sc\.cn|sd\.cn|sh\.cn|sn\.cn|sx\.cn|tj\.cn|xj\.cn|xz\.cn|yn\.cn|zj\.cn|hk\.cn|mo\.cn|tw\.cn|co|arts\.co|com\.co|edu\.co|firm\.co|gov\.co|info\.co|int\.co|mil\.co|net\.co|nom\.co|org\.co|rec\.co|web\.co|com|coop|cr|ac\.cr|co\.cr|ed\.cr|fi\.cr|go\.cr|or\.cr|sa\.cr|cu|com\.cu|edu\.cu|org\.cu|net\.cu|gov\.cu|inf\.cu|cv|cw|com\.cw|edu\.cw|net\.cw|org\.cw|cx|gov\.cx|cy|ac\.cy|biz\.cy|com\.cy|ekloges\.cy|gov\.cy|ltd\.cy|name\.cy|net\.cy|org\.cy|parliament\.cy|press\.cy|pro\.cy|tm\.cy|cz|de|dj|dk|dm|com\.dm|net\.dm|org\.dm|edu\.dm|gov\.dm|do|art\.do|com\.do|edu\.do|gob\.do|gov\.do|mil\.do|net\.do|org\.do|sld\.do|web\.do|dz|com\.dz|org\.dz|net\.dz|gov\.dz|edu\.dz|asso\.dz|pol\.dz|art\.dz|ec|com\.ec|info\.ec|net\.ec|fin\.ec|k12\.ec|med\.ec|pro\.ec|org\.ec|edu\.ec|gov\.ec|gob\.ec|mil\.ec|edu|ee|edu\.ee|gov\.ee|riik\.ee|lib\.ee|med\.ee|com\.ee|pri\.ee|aip\.ee|org\.ee|fie\.ee|eg|com\.eg|edu\.eg|eun\.eg|gov\.eg|mil\.eg|name\.eg|net\.eg|org\.eg|sci\.eg|[^.]+\.er|es|com\.es|nom\.es|org\.es|gob\.es|edu\.es|et|com\.et|gov\.et|org\.et|edu\.et|biz\.et|name\.et|info\.et|net\.et|eu|fi|aland\.fi|[^.]+\.fj|[^.]+\.fk|fm|fo|fr|com\.fr|asso\.fr|nom\.fr|prd\.fr|presse\.fr|tm\.fr|aeroport\.fr|assedic\.fr|avocat\.fr|avoues\.fr|cci\.fr|chambagri\.fr|chirurgiens-dentistes\.fr|experts-comptables\.fr|geometre-expert\.fr|gouv\.fr|greta\.fr|huissier-justice\.fr|medecin\.fr|notaires\.fr|pharmacien\.fr|port\.fr|veterinaire\.fr|ga|gb|gd|ge|com\.ge|edu\.ge|gov\.ge|org\.ge|mil\.ge|net\.ge|pvt\.ge|gf|gg|co\.gg|net\.gg|org\.gg|gh|com\.gh|edu\.gh|gov\.gh|org\.gh|mil\.gh|gi|com\.gi|ltd\.gi|gov\.gi|mod\.gi|edu\.gi|org\.gi|gl|co\.gl|com\.gl|edu\.gl|net\.gl|org\.gl|gm|gn|ac\.gn|com\.gn|edu\.gn|gov\.gn|org\.gn|net\.gn|gov|gp|com\.gp|net\.gp|mobi\.gp|edu\.gp|org\.gp|asso\.gp|gq|gr|com\.gr|edu\.gr|net\.gr|org\.gr|gov\.gr|gs|gt|com\.gt|edu\.gt|gob\.gt|ind\.gt|mil\.gt|net\.gt|org\.gt|[^.]+\.gu|gw|gy|co\.gy|com\.gy|edu\.gy|gov\.gy|net\.gy|org\.gy|hk|com\.hk|edu\.hk|gov\.hk|idv\.hk|net\.hk|org\.hk|公司\.hk|教育\.hk|敎育\.hk|政府\.hk|個人\.hk|个人\.hk|箇人\.hk|網络\.hk|网络\.hk|组織\.hk|網絡\.hk|网絡\.hk|组织\.hk|組織\.hk|組织\.hk|hm|hn|com\.hn|edu\.hn|org\.hn|net\.hn|mil\.hn|gob\.hn|hr|iz\.hr|from\.hr|name\.hr|com\.hr|ht|com\.ht|shop\.ht|firm\.ht|info\.ht|adult\.ht|net\.ht|pro\.ht|org\.ht|med\.ht|art\.ht|coop\.ht|pol\.ht|asso\.ht|edu\.ht|rel\.ht|gouv\.ht|perso\.ht|hu|co\.hu|info\.hu|org\.hu|priv\.hu|sport\.hu|tm\.hu|2000\.hu|agrar\.hu|bolt\.hu|casino\.hu|city\.hu|erotica\.hu|erotika\.hu|film\.hu|forum\.hu|games\.hu|hotel\.hu|ingatlan\.hu|jogasz\.hu|konyvelo\.hu|lakas\.hu|media\.hu|news\.hu|reklam\.hu|sex\.hu|shop\.hu|suli\.hu|szex\.hu|tozsde\.hu|utazas\.hu|video\.hu|id|ac\.id|biz\.id|co\.id|desa\.id|go\.id|mil\.id|my\.id|net\.id|or\.id|sch\.id|web\.id|ie|gov\.ie|il|ac\.il|co\.il|gov\.il|idf\.il|k12\.il|muni\.il|net\.il|org\.il|im|ac\.im|co\.im|com\.im|ltd\.co\.im|net\.im|org\.im|plc\.co\.im|tt\.im|tv\.im|in|co\.in|firm\.in|net\.in|org\.in|gen\.in|ind\.in|nic\.in|ac\.in|edu\.in|res\.in|gov\.in|mil\.in|info|int|eu\.int|io|com\.io|iq|gov\.iq|edu\.iq|mil\.iq|com\.iq|org\.iq|net\.iq|ir|ac\.ir|co\.ir|gov\.ir|id\.ir|net\.ir|org\.ir|sch\.ir|ایران\.ir|ايران\.ir|is|net\.is|com\.is|edu\.is|gov\.is|org\.is|int\.is|it|gov\.it|edu\.it|abr\.it|abruzzo\.it|aosta-valley\.it|aostavalley\.it|bas\.it|basilicata\.it|cal\.it|calabria\.it|cam\.it|campania\.it|emilia-romagna\.it|emiliaromagna\.it|emr\.it|friuli-v-giulia\.it|friuli-ve-giulia\.it|friuli-vegiulia\.it|friuli-venezia-giulia\.it|friuli-veneziagiulia\.it|friuli-vgiulia\.it|friuliv-giulia\.it|friulive-giulia\.it|friulivegiulia\.it|friulivenezia-giulia\.it|friuliveneziagiulia\.it|friulivgiulia\.it|fvg\.it|laz\.it|lazio\.it|lig\.it|liguria\.it|lom\.it|lombardia\.it|lombardy\.it|lucania\.it|mar\.it|marche\.it|mol\.it|molise\.it|piedmont\.it|piemonte\.it|pmn\.it|pug\.it|puglia\.it|sar\.it|sardegna\.it|sardinia\.it|sic\.it|sicilia\.it|sicily\.it|taa\.it|tos\.it|toscana\.it|trentino-a-adige\.it|trentino-aadige\.it|trentino-alto-adige\.it|trentino-altoadige\.it|trentino-s-tirol\.it|trentino-stirol\.it|trentino-sud-tirol\.it|trentino-sudtirol\.it|trentino-sued-tirol\.it|trentino-suedtirol\.it|trentinoa-adige\.it|trentinoaadige\.it|trentinoalto-adige\.it|trentinoaltoadige\.it|trentinos-tirol\.it|trentinostirol\.it|trentinosud-tirol\.it|trentinosudtirol\.it|trentinosued-tirol\.it|trentinosuedtirol\.it|tuscany\.it|umb\.it|umbria\.it|val-d-aosta\.it|val-daosta\.it|vald-aosta\.it|valdaosta\.it|valle-aosta\.it|valle-d-aosta\.it|valle-daosta\.it|valleaosta\.it|valled-aosta\.it|valledaosta\.it|vallee-aoste\.it|valleeaoste\.it|vao\.it|vda\.it|ven\.it|veneto\.it|ag\.it|agrigento\.it|al\.it|alessandria\.it|alto-adige\.it|altoadige\.it|an\.it|ancona\.it|andria-barletta-trani\.it|andria-trani-barletta\.it|andriabarlettatrani\.it|andriatranibarletta\.it|ao\.it|aosta\.it|aoste\.it|ap\.it|aq\.it|aquila\.it|ar\.it|arezzo\.it|ascoli-piceno\.it|ascolipiceno\.it|asti\.it|at\.it|av\.it|avellino\.it|ba\.it|balsan\.it|bari\.it|barletta-trani-andria\.it|barlettatraniandria\.it|belluno\.it|benevento\.it|bergamo\.it|bg\.it|bi\.it|biella\.it|bl\.it|bn\.it|bo\.it|bologna\.it|bolzano\.it|bozen\.it|br\.it|brescia\.it|brindisi\.it|bs\.it|bt\.it|bz\.it|ca\.it|cagliari\.it|caltanissetta\.it|campidano-medio\.it|campidanomedio\.it|campobasso\.it|carbonia-iglesias\.it|carboniaiglesias\.it|carrara-massa\.it|carraramassa\.it|caserta\.it|catania\.it|catanzaro\.it|cb\.it|ce\.it|cesena-forli\.it|cesenaforli\.it|ch\.it|chieti\.it|ci\.it|cl\.it|cn\.it|co\.it|como\.it|cosenza\.it|cr\.it|cremona\.it|crotone\.it|cs\.it|ct\.it|cuneo\.it|cz\.it|dell-ogliastra\.it|dellogliastra\.it|en\.it|enna\.it|fc\.it|fe\.it|fermo\.it|ferrara\.it|fg\.it|fi\.it|firenze\.it|florence\.it|fm\.it|foggia\.it|forli-cesena\.it|forlicesena\.it|fr\.it|frosinone\.it|ge\.it|genoa\.it|genova\.it|go\.it|gorizia\.it|gr\.it|grosseto\.it|iglesias-carbonia\.it|iglesiascarbonia\.it|im\.it|imperia\.it|is\.it|isernia\.it|kr\.it|la-spezia\.it|laquila\.it|laspezia\.it|latina\.it|lc\.it|le\.it|lecce\.it|lecco\.it|li\.it|livorno\.it|lo\.it|lodi\.it|lt\.it|lu\.it|lucca\.it|macerata\.it|mantova\.it|massa-carrara\.it|massacarrara\.it|matera\.it|mb\.it|mc\.it|me\.it|medio-campidano\.it|mediocampidano\.it|messina\.it|mi\.it|milan\.it|milano\.it|mn\.it|mo\.it|modena\.it|monza-brianza\.it|monza-e-della-brianza\.it|monza\.it|monzabrianza\.it|monzaebrianza\.it|monzaedellabrianza\.it|ms\.it|mt\.it|na\.it|naples\.it|napoli\.it|no\.it|novara\.it|nu\.it|nuoro\.it|og\.it|ogliastra\.it|olbia-tempio\.it|olbiatempio\.it|or\.it|oristano\.it|ot\.it|pa\.it|padova\.it|padua\.it|palermo\.it|parma\.it|pavia\.it|pc\.it|pd\.it|pe\.it|perugia\.it|pesaro-urbino\.it|pesarourbino\.it|pescara\.it|pg\.it|pi\.it|piacenza\.it|pisa\.it|pistoia\.it|pn\.it|po\.it|pordenone\.it|potenza\.it|pr\.it|prato\.it|pt\.it|pu\.it|pv\.it|pz\.it|ra\.it|ragusa\.it|ravenna\.it|rc\.it|re\.it|reggio-calabria\.it|reggio-emilia\.it|reggiocalabria\.it|reggioemilia\.it|rg\.it|ri\.it|rieti\.it|rimini\.it|rm\.it|rn\.it|ro\.it|roma\.it|rome\.it|rovigo\.it|sa\.it|salerno\.it|sassari\.it|savona\.it|si\.it|siena\.it|siracusa\.it|so\.it|sondrio\.it|sp\.it|sr\.it|ss\.it|suedtirol\.it|sv\.it|ta\.it|taranto\.it|te\.it|tempio-olbia\.it|tempioolbia\.it|teramo\.it|terni\.it|tn\.it|to\.it|torino\.it|tp\.it|tr\.it|trani-andria-barletta\.it|trani-barletta-andria\.it|traniandriabarletta\.it|tranibarlettaandria\.it|trapani\.it|trentino\.it|trento\.it|treviso\.it|trieste\.it|ts\.it|turin\.it|tv\.it|ud\.it|udine\.it|urbino-pesaro\.it|urbinopesaro\.it|va\.it|varese\.it|vb\.it|vc\.it|ve\.it|venezia\.it|venice\.it|verbania\.it|vercelli\.it|verona\.it|vi\.it|vibo-valentia\.it|vibovalentia\.it|vicenza\.it|viterbo\.it|vr\.it|vs\.it|vt\.it|vv\.it|je|co\.je|net\.je|org\.je|[^.]+\.jm|jo|com\.jo|org\.jo|net\.jo|edu\.jo|sch\.jo|gov\.jo|mil\.jo|name\.jo|jobs|jp|ac\.jp|ad\.jp|co\.jp|ed\.jp|go\.jp|gr\.jp|lg\.jp|ne\.jp|or\.jp|aichi\.jp|akita\.jp|aomori\.jp|chiba\.jp|ehime\.jp|fukui\.jp|fukuoka\.jp|fukushima\.jp|gifu\.jp|gunma\.jp|hiroshima\.jp|hokkaido\.jp|hyogo\.jp|ibaraki\.jp|ishikawa\.jp|iwate\.jp|kagawa\.jp|kagoshima\.jp|kanagawa\.jp|kochi\.jp|kumamoto\.jp|kyoto\.jp|mie\.jp|miyagi\.jp|miyazaki\.jp|nagano\.jp|nagasaki\.jp|nara\.jp|niigata\.jp|oita\.jp|okayama\.jp|okinawa\.jp|osaka\.jp|saga\.jp|saitama\.jp|shiga\.jp|shimane\.jp|shizuoka\.jp|tochigi\.jp|tokushima\.jp|tokyo\.jp|tottori\.jp|toyama\.jp|wakayama\.jp|yamagata\.jp|yamaguchi\.jp|yamanashi\.jp|栃木\.jp|愛知\.jp|愛媛\.jp|兵庫\.jp|熊本\.jp|茨城\.jp|北海道\.jp|千葉\.jp|和歌山\.jp|長崎\.jp|長野\.jp|新潟\.jp|青森\.jp|静岡\.jp|東京\.jp|石川\.jp|埼玉\.jp|三重\.jp|京都\.jp|佐賀\.jp|大分\.jp|大阪\.jp|奈良\.jp|宮城\.jp|宮崎\.jp|富山\.jp|山口\.jp|山形\.jp|山梨\.jp|岩手\.jp|岐阜\.jp|岡山\.jp|島根\.jp|広島\.jp|徳島\.jp|沖縄\.jp|滋賀\.jp|神奈川\.jp|福井\.jp|福岡\.jp|福島\.jp|秋田\.jp|群馬\.jp|香川\.jp|高知\.jp|鳥取\.jp|鹿児島\.jp|[^.]+\.kawasaki\.jp|[^.]+\.kitakyushu\.jp|[^.]+\.kobe\.jp|[^.]+\.nagoya\.jp|[^.]+\.sapporo\.jp|[^.]+\.sendai\.jp|[^.]+\.yokohama\.jp|!city\.kawasaki\.jp|!city\.kitakyushu\.jp|!city\.kobe\.jp|!city\.nagoya\.jp|!city\.sapporo\.jp|!city\.sendai\.jp|!city\.yokohama\.jp|aisai\.aichi\.jp|ama\.aichi\.jp|anjo\.aichi\.jp|asuke\.aichi\.jp|chiryu\.aichi\.jp|chita\.aichi\.jp|fuso\.aichi\.jp|gamagori\.aichi\.jp|handa\.aichi\.jp|hazu\.aichi\.jp|hekinan\.aichi\.jp|higashiura\.aichi\.jp|ichinomiya\.aichi\.jp|inazawa\.aichi\.jp|inuyama\.aichi\.jp|isshiki\.aichi\.jp|iwakura\.aichi\.jp|kanie\.aichi\.jp|kariya\.aichi\.jp|kasugai\.aichi\.jp|kira\.aichi\.jp|kiyosu\.aichi\.jp|komaki\.aichi\.jp|konan\.aichi\.jp|kota\.aichi\.jp|mihama\.aichi\.jp|miyoshi\.aichi\.jp|nishio\.aichi\.jp|nisshin\.aichi\.jp|obu\.aichi\.jp|oguchi\.aichi\.jp|oharu\.aichi\.jp|okazaki\.aichi\.jp|owariasahi\.aichi\.jp|seto\.aichi\.jp|shikatsu\.aichi\.jp|shinshiro\.aichi\.jp|shitara\.aichi\.jp|tahara\.aichi\.jp|takahama\.aichi\.jp|tobishima\.aichi\.jp|toei\.aichi\.jp|togo\.aichi\.jp|tokai\.aichi\.jp|tokoname\.aichi\.jp|toyoake\.aichi\.jp|toyohashi\.aichi\.jp|toyokawa\.aichi\.jp|toyone\.aichi\.jp|toyota\.aichi\.jp|tsushima\.aichi\.jp|yatomi\.aichi\.jp|akita\.akita\.jp|daisen\.akita\.jp|fujisato\.akita\.jp|gojome\.akita\.jp|hachirogata\.akita\.jp|happou\.akita\.jp|higashinaruse\.akita\.jp|honjo\.akita\.jp|honjyo\.akita\.jp|ikawa\.akita\.jp|kamikoani\.akita\.jp|kamioka\.akita\.jp|katagami\.akita\.jp|kazuno\.akita\.jp|kitaakita\.akita\.jp|kosaka\.akita\.jp|kyowa\.akita\.jp|misato\.akita\.jp|mitane\.akita\.jp|moriyoshi\.akita\.jp|nikaho\.akita\.jp|noshiro\.akita\.jp|odate\.akita\.jp|oga\.akita\.jp|ogata\.akita\.jp|semboku\.akita\.jp|yokote\.akita\.jp|yurihonjo\.akita\.jp|aomori\.aomori\.jp|gonohe\.aomori\.jp|hachinohe\.aomori\.jp|hashikami\.aomori\.jp|hiranai\.aomori\.jp|hirosaki\.aomori\.jp|itayanagi\.aomori\.jp|kuroishi\.aomori\.jp|misawa\.aomori\.jp|mutsu\.aomori\.jp|nakadomari\.aomori\.jp|noheji\.aomori\.jp|oirase\.aomori\.jp|owani\.aomori\.jp|rokunohe\.aomori\.jp|sannohe\.aomori\.jp|shichinohe\.aomori\.jp|shingo\.aomori\.jp|takko\.aomori\.jp|towada\.aomori\.jp|tsugaru\.aomori\.jp|tsuruta\.aomori\.jp|abiko\.chiba\.jp|asahi\.chiba\.jp|chonan\.chiba\.jp|chosei\.chiba\.jp|choshi\.chiba\.jp|chuo\.chiba\.jp|funabashi\.chiba\.jp|futtsu\.chiba\.jp|hanamigawa\.chiba\.jp|ichihara\.chiba\.jp|ichikawa\.chiba\.jp|ichinomiya\.chiba\.jp|inzai\.chiba\.jp|isumi\.chiba\.jp|kamagaya\.chiba\.jp|kamogawa\.chiba\.jp|kashiwa\.chiba\.jp|katori\.chiba\.jp|katsuura\.chiba\.jp|kimitsu\.chiba\.jp|kisarazu\.chiba\.jp|kozaki\.chiba\.jp|kujukuri\.chiba\.jp|kyonan\.chiba\.jp|matsudo\.chiba\.jp|midori\.chiba\.jp|mihama\.chiba\.jp|minamiboso\.chiba\.jp|mobara\.chiba\.jp|mutsuzawa\.chiba\.jp|nagara\.chiba\.jp|nagareyama\.chiba\.jp|narashino\.chiba\.jp|narita\.chiba\.jp|noda\.chiba\.jp|oamishirasato\.chiba\.jp|omigawa\.chiba\.jp|onjuku\.chiba\.jp|otaki\.chiba\.jp|sakae\.chiba\.jp|sakura\.chiba\.jp|shimofusa\.chiba\.jp|shirako\.chiba\.jp|shiroi\.chiba\.jp|shisui\.chiba\.jp|sodegaura\.chiba\.jp|sosa\.chiba\.jp|tako\.chiba\.jp|tateyama\.chiba\.jp|togane\.chiba\.jp|tohnosho\.chiba\.jp|tomisato\.chiba\.jp|urayasu\.chiba\.jp|yachimata\.chiba\.jp|yachiyo\.chiba\.jp|yokaichiba\.chiba\.jp|yokoshibahikari\.chiba\.jp|yotsukaido\.chiba\.jp|ainan\.ehime\.jp|honai\.ehime\.jp|ikata\.ehime\.jp|imabari\.ehime\.jp|iyo\.ehime\.jp|kamijima\.ehime\.jp|kihoku\.ehime\.jp|kumakogen\.ehime\.jp|masaki\.ehime\.jp|matsuno\.ehime\.jp|matsuyama\.ehime\.jp|namikata\.ehime\.jp|niihama\.ehime\.jp|ozu\.ehime\.jp|saijo\.ehime\.jp|seiyo\.ehime\.jp|shikokuchuo\.ehime\.jp|tobe\.ehime\.jp|toon\.ehime\.jp|uchiko\.ehime\.jp|uwajima\.ehime\.jp|yawatahama\.ehime\.jp|echizen\.fukui\.jp|eiheiji\.fukui\.jp|fukui\.fukui\.jp|ikeda\.fukui\.jp|katsuyama\.fukui\.jp|mihama\.fukui\.jp|minamiechizen\.fukui\.jp|obama\.fukui\.jp|ohi\.fukui\.jp|ono\.fukui\.jp|sabae\.fukui\.jp|sakai\.fukui\.jp|takahama\.fukui\.jp|tsuruga\.fukui\.jp|wakasa\.fukui\.jp|ashiya\.fukuoka\.jp|buzen\.fukuoka\.jp|chikugo\.fukuoka\.jp|chikuho\.fukuoka\.jp|chikujo\.fukuoka\.jp|chikushino\.fukuoka\.jp|chikuzen\.fukuoka\.jp|chuo\.fukuoka\.jp|dazaifu\.fukuoka\.jp|fukuchi\.fukuoka\.jp|hakata\.fukuoka\.jp|higashi\.fukuoka\.jp|hirokawa\.fukuoka\.jp|hisayama\.fukuoka\.jp|iizuka\.fukuoka\.jp|inatsuki\.fukuoka\.jp|kaho\.fukuoka\.jp|kasuga\.fukuoka\.jp|kasuya\.fukuoka\.jp|kawara\.fukuoka\.jp|keisen\.fukuoka\.jp|koga\.fukuoka\.jp|kurate\.fukuoka\.jp|kurogi\.fukuoka\.jp|kurume\.fukuoka\.jp|minami\.fukuoka\.jp|miyako\.fukuoka\.jp|miyama\.fukuoka\.jp|miyawaka\.fukuoka\.jp|mizumaki\.fukuoka\.jp|munakata\.fukuoka\.jp|nakagawa\.fukuoka\.jp|nakama\.fukuoka\.jp|nishi\.fukuoka\.jp|nogata\.fukuoka\.jp|ogori\.fukuoka\.jp|okagaki\.fukuoka\.jp|okawa\.fukuoka\.jp|oki\.fukuoka\.jp|omuta\.fukuoka\.jp|onga\.fukuoka\.jp|onojo\.fukuoka\.jp|oto\.fukuoka\.jp|saigawa\.fukuoka\.jp|sasaguri\.fukuoka\.jp|shingu\.fukuoka\.jp|shinyoshitomi\.fukuoka\.jp|shonai\.fukuoka\.jp|soeda\.fukuoka\.jp|sue\.fukuoka\.jp|tachiarai\.fukuoka\.jp|tagawa\.fukuoka\.jp|takata\.fukuoka\.jp|toho\.fukuoka\.jp|toyotsu\.fukuoka\.jp|tsuiki\.fukuoka\.jp|ukiha\.fukuoka\.jp|umi\.fukuoka\.jp|usui\.fukuoka\.jp|yamada\.fukuoka\.jp|yame\.fukuoka\.jp|yanagawa\.fukuoka\.jp|yukuhashi\.fukuoka\.jp|aizubange\.fukushima\.jp|aizumisato\.fukushima\.jp|aizuwakamatsu\.fukushima\.jp|asakawa\.fukushima\.jp|bandai\.fukushima\.jp|date\.fukushima\.jp|fukushima\.fukushima\.jp|furudono\.fukushima\.jp|futaba\.fukushima\.jp|hanawa\.fukushima\.jp|higashi\.fukushima\.jp|hirata\.fukushima\.jp|hirono\.fukushima\.jp|iitate\.fukushima\.jp|inawashiro\.fukushima\.jp|ishikawa\.fukushima\.jp|iwaki\.fukushima\.jp|izumizaki\.fukushima\.jp|kagamiishi\.fukushima\.jp|kaneyama\.fukushima\.jp|kawamata\.fukushima\.jp|kitakata\.fukushima\.jp|kitashiobara\.fukushima\.jp|koori\.fukushima\.jp|koriyama\.fukushima\.jp|kunimi\.fukushima\.jp|miharu\.fukushima\.jp|mishima\.fukushima\.jp|namie\.fukushima\.jp|nango\.fukushima\.jp|nishiaizu\.fukushima\.jp|nishigo\.fukushima\.jp|okuma\.fukushima\.jp|omotego\.fukushima\.jp|ono\.fukushima\.jp|otama\.fukushima\.jp|samegawa\.fukushima\.jp|shimogo\.fukushima\.jp|shirakawa\.fukushima\.jp|showa\.fukushima\.jp|soma\.fukushima\.jp|sukagawa\.fukushima\.jp|taishin\.fukushima\.jp|tamakawa\.fukushima\.jp|tanagura\.fukushima\.jp|tenei\.fukushima\.jp|yabuki\.fukushima\.jp|yamato\.fukushima\.jp|yamatsuri\.fukushima\.jp|yanaizu\.fukushima\.jp|yugawa\.fukushima\.jp|anpachi\.gifu\.jp|ena\.gifu\.jp|gifu\.gifu\.jp|ginan\.gifu\.jp|godo\.gifu\.jp|gujo\.gifu\.jp|hashima\.gifu\.jp|hichiso\.gifu\.jp|hida\.gifu\.jp|higashishirakawa\.gifu\.jp|ibigawa\.gifu\.jp|ikeda\.gifu\.jp|kakamigahara\.gifu\.jp|kani\.gifu\.jp|kasahara\.gifu\.jp|kasamatsu\.gifu\.jp|kawaue\.gifu\.jp|kitagata\.gifu\.jp|mino\.gifu\.jp|minokamo\.gifu\.jp|mitake\.gifu\.jp|mizunami\.gifu\.jp|motosu\.gifu\.jp|nakatsugawa\.gifu\.jp|ogaki\.gifu\.jp|sakahogi\.gifu\.jp|seki\.gifu\.jp|sekigahara\.gifu\.jp|shirakawa\.gifu\.jp|tajimi\.gifu\.jp|takayama\.gifu\.jp|tarui\.gifu\.jp|toki\.gifu\.jp|tomika\.gifu\.jp|wanouchi\.gifu\.jp|yamagata\.gifu\.jp|yaotsu\.gifu\.jp|yoro\.gifu\.jp|annaka\.gunma\.jp|chiyoda\.gunma\.jp|fujioka\.gunma\.jp|higashiagatsuma\.gunma\.jp|isesaki\.gunma\.jp|itakura\.gunma\.jp|kanna\.gunma\.jp|kanra\.gunma\.jp|katashina\.gunma\.jp|kawaba\.gunma\.jp|kiryu\.gunma\.jp|kusatsu\.gunma\.jp|maebashi\.gunma\.jp|meiwa\.gunma\.jp|midori\.gunma\.jp|minakami\.gunma\.jp|naganohara\.gunma\.jp|nakanojo\.gunma\.jp|nanmoku\.gunma\.jp|numata\.gunma\.jp|oizumi\.gunma\.jp|ora\.gunma\.jp|ota\.gunma\.jp|shibukawa\.gunma\.jp|shimonita\.gunma\.jp|shinto\.gunma\.jp|showa\.gunma\.jp|takasaki\.gunma\.jp|takayama\.gunma\.jp|tamamura\.gunma\.jp|tatebayashi\.gunma\.jp|tomioka\.gunma\.jp|tsukiyono\.gunma\.jp|tsumagoi\.gunma\.jp|ueno\.gunma\.jp|yoshioka\.gunma\.jp|asaminami\.hiroshima\.jp|daiwa\.hiroshima\.jp|etajima\.hiroshima\.jp|fuchu\.hiroshima\.jp|fukuyama\.hiroshima\.jp|hatsukaichi\.hiroshima\.jp|higashihiroshima\.hiroshima\.jp|hongo\.hiroshima\.jp|jinsekikogen\.hiroshima\.jp|kaita\.hiroshima\.jp|kui\.hiroshima\.jp|kumano\.hiroshima\.jp|kure\.hiroshima\.jp|mihara\.hiroshima\.jp|miyoshi\.hiroshima\.jp|naka\.hiroshima\.jp|onomichi\.hiroshima\.jp|osakikamijima\.hiroshima\.jp|otake\.hiroshima\.jp|saka\.hiroshima\.jp|sera\.hiroshima\.jp|seranishi\.hiroshima\.jp|shinichi\.hiroshima\.jp|shobara\.hiroshima\.jp|takehara\.hiroshima\.jp|abashiri\.hokkaido\.jp|abira\.hokkaido\.jp|aibetsu\.hokkaido\.jp|akabira\.hokkaido\.jp|akkeshi\.hokkaido\.jp|asahikawa\.hokkaido\.jp|ashibetsu\.hokkaido\.jp|ashoro\.hokkaido\.jp|assabu\.hokkaido\.jp|atsuma\.hokkaido\.jp|bibai\.hokkaido\.jp|biei\.hokkaido\.jp|bifuka\.hokkaido\.jp|bihoro\.hokkaido\.jp|biratori\.hokkaido\.jp|chippubetsu\.hokkaido\.jp|chitose\.hokkaido\.jp|date\.hokkaido\.jp|ebetsu\.hokkaido\.jp|embetsu\.hokkaido\.jp|eniwa\.hokkaido\.jp|erimo\.hokkaido\.jp|esan\.hokkaido\.jp|esashi\.hokkaido\.jp|fukagawa\.hokkaido\.jp|fukushima\.hokkaido\.jp|furano\.hokkaido\.jp|furubira\.hokkaido\.jp|haboro\.hokkaido\.jp|hakodate\.hokkaido\.jp|hamatonbetsu\.hokkaido\.jp|hidaka\.hokkaido\.jp|higashikagura\.hokkaido\.jp|higashikawa\.hokkaido\.jp|hiroo\.hokkaido\.jp|hokuryu\.hokkaido\.jp|hokuto\.hokkaido\.jp|honbetsu\.hokkaido\.jp|horokanai\.hokkaido\.jp|horonobe\.hokkaido\.jp|ikeda\.hokkaido\.jp|imakane\.hokkaido\.jp|ishikari\.hokkaido\.jp|iwamizawa\.hokkaido\.jp|iwanai\.hokkaido\.jp|kamifurano\.hokkaido\.jp|kamikawa\.hokkaido\.jp|kamishihoro\.hokkaido\.jp|kamisunagawa\.hokkaido\.jp|kamoenai\.hokkaido\.jp|kayabe\.hokkaido\.jp|kembuchi\.hokkaido\.jp|kikonai\.hokkaido\.jp|kimobetsu\.hokkaido\.jp|kitahiroshima\.hokkaido\.jp|kitami\.hokkaido\.jp|kiyosato\.hokkaido\.jp|koshimizu\.hokkaido\.jp|kunneppu\.hokkaido\.jp|kuriyama\.hokkaido\.jp|kuromatsunai\.hokkaido\.jp|kushiro\.hokkaido\.jp|kutchan\.hokkaido\.jp|kyowa\.hokkaido\.jp|mashike\.hokkaido\.jp|matsumae\.hokkaido\.jp|mikasa\.hokkaido\.jp|minamifurano\.hokkaido\.jp|mombetsu\.hokkaido\.jp|moseushi\.hokkaido\.jp|mukawa\.hokkaido\.jp|muroran\.hokkaido\.jp|naie\.hokkaido\.jp|nakagawa\.hokkaido\.jp|nakasatsunai\.hokkaido\.jp|nakatombetsu\.hokkaido\.jp|nanae\.hokkaido\.jp|nanporo\.hokkaido\.jp|nayoro\.hokkaido\.jp|nemuro\.hokkaido\.jp|niikappu\.hokkaido\.jp|niki\.hokkaido\.jp|nishiokoppe\.hokkaido\.jp|noboribetsu\.hokkaido\.jp|numata\.hokkaido\.jp|obihiro\.hokkaido\.jp|obira\.hokkaido\.jp|oketo\.hokkaido\.jp|okoppe\.hokkaido\.jp|otaru\.hokkaido\.jp|otobe\.hokkaido\.jp|otofuke\.hokkaido\.jp|otoineppu\.hokkaido\.jp|oumu\.hokkaido\.jp|ozora\.hokkaido\.jp|pippu\.hokkaido\.jp|rankoshi\.hokkaido\.jp|rebun\.hokkaido\.jp|rikubetsu\.hokkaido\.jp|rishiri\.hokkaido\.jp|rishirifuji\.hokkaido\.jp|saroma\.hokkaido\.jp|sarufutsu\.hokkaido\.jp|shakotan\.hokkaido\.jp|shari\.hokkaido\.jp|shibecha\.hokkaido\.jp|shibetsu\.hokkaido\.jp|shikabe\.hokkaido\.jp|shikaoi\.hokkaido\.jp|shimamaki\.hokkaido\.jp|shimizu\.hokkaido\.jp|shimokawa\.hokkaido\.jp|shinshinotsu\.hokkaido\.jp|shintoku\.hokkaido\.jp|shiranuka\.hokkaido\.jp|shiraoi\.hokkaido\.jp|shiriuchi\.hokkaido\.jp|sobetsu\.hokkaido\.jp|sunagawa\.hokkaido\.jp|taiki\.hokkaido\.jp|takasu\.hokkaido\.jp|takikawa\.hokkaido\.jp|takinoue\.hokkaido\.jp|teshikaga\.hokkaido\.jp|tobetsu\.hokkaido\.jp|tohma\.hokkaido\.jp|tomakomai\.hokkaido\.jp|tomari\.hokkaido\.jp|toya\.hokkaido\.jp|toyako\.hokkaido\.jp|toyotomi\.hokkaido\.jp|toyoura\.hokkaido\.jp|tsubetsu\.hokkaido\.jp|tsukigata\.hokkaido\.jp|urakawa\.hokkaido\.jp|urausu\.hokkaido\.jp|uryu\.hokkaido\.jp|utashinai\.hokkaido\.jp|wakkanai\.hokkaido\.jp|wassamu\.hokkaido\.jp|yakumo\.hokkaido\.jp|yoichi\.hokkaido\.jp|aioi\.hyogo\.jp|akashi\.hyogo\.jp|ako\.hyogo\.jp|amagasaki\.hyogo\.jp|aogaki\.hyogo\.jp|asago\.hyogo\.jp|ashiya\.hyogo\.jp|awaji\.hyogo\.jp|fukusaki\.hyogo\.jp|goshiki\.hyogo\.jp|harima\.hyogo\.jp|himeji\.hyogo\.jp|ichikawa\.hyogo\.jp|inagawa\.hyogo\.jp|itami\.hyogo\.jp|kakogawa\.hyogo\.jp|kamigori\.hyogo\.jp|kamikawa\.hyogo\.jp|kasai\.hyogo\.jp|kasuga\.hyogo\.jp|kawanishi\.hyogo\.jp|miki\.hyogo\.jp|minamiawaji\.hyogo\.jp|nishinomiya\.hyogo\.jp|nishiwaki\.hyogo\.jp|ono\.hyogo\.jp|sanda\.hyogo\.jp|sannan\.hyogo\.jp|sasayama\.hyogo\.jp|sayo\.hyogo\.jp|shingu\.hyogo\.jp|shinonsen\.hyogo\.jp|shiso\.hyogo\.jp|sumoto\.hyogo\.jp|taishi\.hyogo\.jp|taka\.hyogo\.jp|takarazuka\.hyogo\.jp|takasago\.hyogo\.jp|takino\.hyogo\.jp|tamba\.hyogo\.jp|tatsuno\.hyogo\.jp|toyooka\.hyogo\.jp|yabu\.hyogo\.jp|yashiro\.hyogo\.jp|yoka\.hyogo\.jp|yokawa\.hyogo\.jp|ami\.ibaraki\.jp|asahi\.ibaraki\.jp|bando\.ibaraki\.jp|chikusei\.ibaraki\.jp|daigo\.ibaraki\.jp|fujishiro\.ibaraki\.jp|hitachi\.ibaraki\.jp|hitachinaka\.ibaraki\.jp|hitachiomiya\.ibaraki\.jp|hitachiota\.ibaraki\.jp|ibaraki\.ibaraki\.jp|ina\.ibaraki\.jp|inashiki\.ibaraki\.jp|itako\.ibaraki\.jp|iwama\.ibaraki\.jp|joso\.ibaraki\.jp|kamisu\.ibaraki\.jp|kasama\.ibaraki\.jp|kashima\.ibaraki\.jp|kasumigaura\.ibaraki\.jp|koga\.ibaraki\.jp|miho\.ibaraki\.jp|mito\.ibaraki\.jp|moriya\.ibaraki\.jp|naka\.ibaraki\.jp|namegata\.ibaraki\.jp|oarai\.ibaraki\.jp|ogawa\.ibaraki\.jp|omitama\.ibaraki\.jp|ryugasaki\.ibaraki\.jp|sakai\.ibaraki\.jp|sakuragawa\.ibaraki\.jp|shimodate\.ibaraki\.jp|shimotsuma\.ibaraki\.jp|shirosato\.ibaraki\.jp|sowa\.ibaraki\.jp|suifu\.ibaraki\.jp|takahagi\.ibaraki\.jp|tamatsukuri\.ibaraki\.jp|tokai\.ibaraki\.jp|tomobe\.ibaraki\.jp|tone\.ibaraki\.jp|toride\.ibaraki\.jp|tsuchiura\.ibaraki\.jp|tsukuba\.ibaraki\.jp|uchihara\.ibaraki\.jp|ushiku\.ibaraki\.jp|yachiyo\.ibaraki\.jp|yamagata\.ibaraki\.jp|yawara\.ibaraki\.jp|yuki\.ibaraki\.jp|anamizu\.ishikawa\.jp|hakui\.ishikawa\.jp|hakusan\.ishikawa\.jp|kaga\.ishikawa\.jp|kahoku\.ishikawa\.jp|kanazawa\.ishikawa\.jp|kawakita\.ishikawa\.jp|komatsu\.ishikawa\.jp|nakanoto\.ishikawa\.jp|nanao\.ishikawa\.jp|nomi\.ishikawa\.jp|nonoichi\.ishikawa\.jp|noto\.ishikawa\.jp|shika\.ishikawa\.jp|suzu\.ishikawa\.jp|tsubata\.ishikawa\.jp|tsurugi\.ishikawa\.jp|uchinada\.ishikawa\.jp|wajima\.ishikawa\.jp|fudai\.iwate\.jp|fujisawa\.iwate\.jp|hanamaki\.iwate\.jp|hiraizumi\.iwate\.jp|hirono\.iwate\.jp|ichinohe\.iwate\.jp|ichinoseki\.iwate\.jp|iwaizumi\.iwate\.jp|iwate\.iwate\.jp|joboji\.iwate\.jp|kamaishi\.iwate\.jp|kanegasaki\.iwate\.jp|karumai\.iwate\.jp|kawai\.iwate\.jp|kitakami\.iwate\.jp|kuji\.iwate\.jp|kunohe\.iwate\.jp|kuzumaki\.iwate\.jp|miyako\.iwate\.jp|mizusawa\.iwate\.jp|morioka\.iwate\.jp|ninohe\.iwate\.jp|noda\.iwate\.jp|ofunato\.iwate\.jp|oshu\.iwate\.jp|otsuchi\.iwate\.jp|rikuzentakata\.iwate\.jp|shiwa\.iwate\.jp|shizukuishi\.iwate\.jp|sumita\.iwate\.jp|tanohata\.iwate\.jp|tono\.iwate\.jp|yahaba\.iwate\.jp|yamada\.iwate\.jp|ayagawa\.kagawa\.jp|higashikagawa\.kagawa\.jp|kanonji\.kagawa\.jp|kotohira\.kagawa\.jp|manno\.kagawa\.jp|marugame\.kagawa\.jp|mitoyo\.kagawa\.jp|naoshima\.kagawa\.jp|sanuki\.kagawa\.jp|tadotsu\.kagawa\.jp|takamatsu\.kagawa\.jp|tonosho\.kagawa\.jp|uchinomi\.kagawa\.jp|utazu\.kagawa\.jp|zentsuji\.kagawa\.jp|akune\.kagoshima\.jp|amami\.kagoshima\.jp|hioki\.kagoshima\.jp|isa\.kagoshima\.jp|isen\.kagoshima\.jp|izumi\.kagoshima\.jp|kagoshima\.kagoshima\.jp|kanoya\.kagoshima\.jp|kawanabe\.kagoshima\.jp|kinko\.kagoshima\.jp|kouyama\.kagoshima\.jp|makurazaki\.kagoshima\.jp|matsumoto\.kagoshima\.jp|minamitane\.kagoshima\.jp|nakatane\.kagoshima\.jp|nishinoomote\.kagoshima\.jp|satsumasendai\.kagoshima\.jp|soo\.kagoshima\.jp|tarumizu\.kagoshima\.jp|yusui\.kagoshima\.jp|aikawa\.kanagawa\.jp|atsugi\.kanagawa\.jp|ayase\.kanagawa\.jp|chigasaki\.kanagawa\.jp|ebina\.kanagawa\.jp|fujisawa\.kanagawa\.jp|hadano\.kanagawa\.jp|hakone\.kanagawa\.jp|hiratsuka\.kanagawa\.jp|isehara\.kanagawa\.jp|kaisei\.kanagawa\.jp|kamakura\.kanagawa\.jp|kiyokawa\.kanagawa\.jp|matsuda\.kanagawa\.jp|minamiashigara\.kanagawa\.jp|miura\.kanagawa\.jp|nakai\.kanagawa\.jp|ninomiya\.kanagawa\.jp|odawara\.kanagawa\.jp|oi\.kanagawa\.jp|oiso\.kanagawa\.jp|sagamihara\.kanagawa\.jp|samukawa\.kanagawa\.jp|tsukui\.kanagawa\.jp|yamakita\.kanagawa\.jp|yamato\.kanagawa\.jp|yokosuka\.kanagawa\.jp|yugawara\.kanagawa\.jp|zama\.kanagawa\.jp|zushi\.kanagawa\.jp|aki\.kochi\.jp|geisei\.kochi\.jp|hidaka\.kochi\.jp|higashitsuno\.kochi\.jp|ino\.kochi\.jp|kagami\.kochi\.jp|kami\.kochi\.jp|kitagawa\.kochi\.jp|kochi\.kochi\.jp|mihara\.kochi\.jp|motoyama\.kochi\.jp|muroto\.kochi\.jp|nahari\.kochi\.jp|nakamura\.kochi\.jp|nankoku\.kochi\.jp|nishitosa\.kochi\.jp|niyodogawa\.kochi\.jp|ochi\.kochi\.jp|okawa\.kochi\.jp|otoyo\.kochi\.jp|otsuki\.kochi\.jp|sakawa\.kochi\.jp|sukumo\.kochi\.jp|susaki\.kochi\.jp|tosa\.kochi\.jp|tosashimizu\.kochi\.jp|toyo\.kochi\.jp|tsuno\.kochi\.jp|umaji\.kochi\.jp|yasuda\.kochi\.jp|yusuhara\.kochi\.jp|amakusa\.kumamoto\.jp|arao\.kumamoto\.jp|aso\.kumamoto\.jp|choyo\.kumamoto\.jp|gyokuto\.kumamoto\.jp|kamiamakusa\.kumamoto\.jp|kikuchi\.kumamoto\.jp|kumamoto\.kumamoto\.jp|mashiki\.kumamoto\.jp|mifune\.kumamoto\.jp|minamata\.kumamoto\.jp|minamioguni\.kumamoto\.jp|nagasu\.kumamoto\.jp|nishihara\.kumamoto\.jp|oguni\.kumamoto\.jp|ozu\.kumamoto\.jp|sumoto\.kumamoto\.jp|takamori\.kumamoto\.jp|uki\.kumamoto\.jp|uto\.kumamoto\.jp|yamaga\.kumamoto\.jp|yamato\.kumamoto\.jp|yatsushiro\.kumamoto\.jp|ayabe\.kyoto\.jp|fukuchiyama\.kyoto\.jp|higashiyama\.kyoto\.jp|ide\.kyoto\.jp|ine\.kyoto\.jp|joyo\.kyoto\.jp|kameoka\.kyoto\.jp|kamo\.kyoto\.jp|kita\.kyoto\.jp|kizu\.kyoto\.jp|kumiyama\.kyoto\.jp|kyotamba\.kyoto\.jp|kyotanabe\.kyoto\.jp|kyotango\.kyoto\.jp|maizuru\.kyoto\.jp|minami\.kyoto\.jp|minamiyamashiro\.kyoto\.jp|miyazu\.kyoto\.jp|muko\.kyoto\.jp|nagaokakyo\.kyoto\.jp|nakagyo\.kyoto\.jp|nantan\.kyoto\.jp|oyamazaki\.kyoto\.jp|sakyo\.kyoto\.jp|seika\.kyoto\.jp|tanabe\.kyoto\.jp|uji\.kyoto\.jp|ujitawara\.kyoto\.jp|wazuka\.kyoto\.jp|yamashina\.kyoto\.jp|yawata\.kyoto\.jp|asahi\.mie\.jp|inabe\.mie\.jp|ise\.mie\.jp|kameyama\.mie\.jp|kawagoe\.mie\.jp|kiho\.mie\.jp|kisosaki\.mie\.jp|kiwa\.mie\.jp|komono\.mie\.jp|kumano\.mie\.jp|kuwana\.mie\.jp|matsusaka\.mie\.jp|meiwa\.mie\.jp|mihama\.mie\.jp|minamiise\.mie\.jp|misugi\.mie\.jp|miyama\.mie\.jp|nabari\.mie\.jp|shima\.mie\.jp|suzuka\.mie\.jp|tado\.mie\.jp|taiki\.mie\.jp|taki\.mie\.jp|tamaki\.mie\.jp|toba\.mie\.jp|tsu\.mie\.jp|udono\.mie\.jp|ureshino\.mie\.jp|watarai\.mie\.jp|yokkaichi\.mie\.jp|furukawa\.miyagi\.jp|higashimatsushima\.miyagi\.jp|ishinomaki\.miyagi\.jp|iwanuma\.miyagi\.jp|kakuda\.miyagi\.jp|kami\.miyagi\.jp|kawasaki\.miyagi\.jp|marumori\.miyagi\.jp|matsushima\.miyagi\.jp|minamisanriku\.miyagi\.jp|misato\.miyagi\.jp|murata\.miyagi\.jp|natori\.miyagi\.jp|ogawara\.miyagi\.jp|ohira\.miyagi\.jp|onagawa\.miyagi\.jp|osaki\.miyagi\.jp|rifu\.miyagi\.jp|semine\.miyagi\.jp|shibata\.miyagi\.jp|shichikashuku\.miyagi\.jp|shikama\.miyagi\.jp|shiogama\.miyagi\.jp|shiroishi\.miyagi\.jp|tagajo\.miyagi\.jp|taiwa\.miyagi\.jp|tome\.miyagi\.jp|tomiya\.miyagi\.jp|wakuya\.miyagi\.jp|watari\.miyagi\.jp|yamamoto\.miyagi\.jp|zao\.miyagi\.jp|aya\.miyazaki\.jp|ebino\.miyazaki\.jp|gokase\.miyazaki\.jp|hyuga\.miyazaki\.jp|kadogawa\.miyazaki\.jp|kawaminami\.miyazaki\.jp|kijo\.miyazaki\.jp|kitagawa\.miyazaki\.jp|kitakata\.miyazaki\.jp|kitaura\.miyazaki\.jp|kobayashi\.miyazaki\.jp|kunitomi\.miyazaki\.jp|kushima\.miyazaki\.jp|mimata\.miyazaki\.jp|miyakonojo\.miyazaki\.jp|miyazaki\.miyazaki\.jp|morotsuka\.miyazaki\.jp|nichinan\.miyazaki\.jp|nishimera\.miyazaki\.jp|nobeoka\.miyazaki\.jp|saito\.miyazaki\.jp|shiiba\.miyazaki\.jp|shintomi\.miyazaki\.jp|takaharu\.miyazaki\.jp|takanabe\.miyazaki\.jp|takazaki\.miyazaki\.jp|tsuno\.miyazaki\.jp|achi\.nagano\.jp|agematsu\.nagano\.jp|anan\.nagano\.jp|aoki\.nagano\.jp|asahi\.nagano\.jp|azumino\.nagano\.jp|chikuhoku\.nagano\.jp|chikuma\.nagano\.jp|chino\.nagano\.jp|fujimi\.nagano\.jp|hakuba\.nagano\.jp|hara\.nagano\.jp|hiraya\.nagano\.jp|iida\.nagano\.jp|iijima\.nagano\.jp|iiyama\.nagano\.jp|iizuna\.nagano\.jp|ikeda\.nagano\.jp|ikusaka\.nagano\.jp|ina\.nagano\.jp|karuizawa\.nagano\.jp|kawakami\.nagano\.jp|kiso\.nagano\.jp|kisofukushima\.nagano\.jp|kitaaiki\.nagano\.jp|komagane\.nagano\.jp|komoro\.nagano\.jp|matsukawa\.nagano\.jp|matsumoto\.nagano\.jp|miasa\.nagano\.jp|minamiaiki\.nagano\.jp|minamimaki\.nagano\.jp|minamiminowa\.nagano\.jp|minowa\.nagano\.jp|miyada\.nagano\.jp|miyota\.nagano\.jp|mochizuki\.nagano\.jp|nagano\.nagano\.jp|nagawa\.nagano\.jp|nagiso\.nagano\.jp|nakagawa\.nagano\.jp|nakano\.nagano\.jp|nozawaonsen\.nagano\.jp|obuse\.nagano\.jp|ogawa\.nagano\.jp|okaya\.nagano\.jp|omachi\.nagano\.jp|omi\.nagano\.jp|ookuwa\.nagano\.jp|ooshika\.nagano\.jp|otaki\.nagano\.jp|otari\.nagano\.jp|sakae\.nagano\.jp|sakaki\.nagano\.jp|saku\.nagano\.jp|sakuho\.nagano\.jp|shimosuwa\.nagano\.jp|shinanomachi\.nagano\.jp|shiojiri\.nagano\.jp|suwa\.nagano\.jp|suzaka\.nagano\.jp|takagi\.nagano\.jp|takamori\.nagano\.jp|takayama\.nagano\.jp|tateshina\.nagano\.jp|tatsuno\.nagano\.jp|togakushi\.nagano\.jp|togura\.nagano\.jp|tomi\.nagano\.jp|ueda\.nagano\.jp|wada\.nagano\.jp|yamagata\.nagano\.jp|yamanouchi\.nagano\.jp|yasaka\.nagano\.jp|yasuoka\.nagano\.jp|chijiwa\.nagasaki\.jp|futsu\.nagasaki\.jp|goto\.nagasaki\.jp|hasami\.nagasaki\.jp|hirado\.nagasaki\.jp|iki\.nagasaki\.jp|isahaya\.nagasaki\.jp|kawatana\.nagasaki\.jp|kuchinotsu\.nagasaki\.jp|matsuura\.nagasaki\.jp|nagasaki\.nagasaki\.jp|obama\.nagasaki\.jp|omura\.nagasaki\.jp|oseto\.nagasaki\.jp|saikai\.nagasaki\.jp|sasebo\.nagasaki\.jp|seihi\.nagasaki\.jp|shimabara\.nagasaki\.jp|shinkamigoto\.nagasaki\.jp|togitsu\.nagasaki\.jp|tsushima\.nagasaki\.jp|unzen\.nagasaki\.jp|ando\.nara\.jp|gose\.nara\.jp|heguri\.nara\.jp|higashiyoshino\.nara\.jp|ikaruga\.nara\.jp|ikoma\.nara\.jp|kamikitayama\.nara\.jp|kanmaki\.nara\.jp|kashiba\.nara\.jp|kashihara\.nara\.jp|katsuragi\.nara\.jp|kawai\.nara\.jp|kawakami\.nara\.jp|kawanishi\.nara\.jp|koryo\.nara\.jp|kurotaki\.nara\.jp|mitsue\.nara\.jp|miyake\.nara\.jp|nara\.nara\.jp|nosegawa\.nara\.jp|oji\.nara\.jp|ouda\.nara\.jp|oyodo\.nara\.jp|sakurai\.nara\.jp|sango\.nara\.jp|shimoichi\.nara\.jp|shimokitayama\.nara\.jp|shinjo\.nara\.jp|soni\.nara\.jp|takatori\.nara\.jp|tawaramoto\.nara\.jp|tenkawa\.nara\.jp|tenri\.nara\.jp|uda\.nara\.jp|yamatokoriyama\.nara\.jp|yamatotakada\.nara\.jp|yamazoe\.nara\.jp|yoshino\.nara\.jp|aga\.niigata\.jp|agano\.niigata\.jp|gosen\.niigata\.jp|itoigawa\.niigata\.jp|izumozaki\.niigata\.jp|joetsu\.niigata\.jp|kamo\.niigata\.jp|kariwa\.niigata\.jp|kashiwazaki\.niigata\.jp|minamiuonuma\.niigata\.jp|mitsuke\.niigata\.jp|muika\.niigata\.jp|murakami\.niigata\.jp|myoko\.niigata\.jp|nagaoka\.niigata\.jp|niigata\.niigata\.jp|ojiya\.niigata\.jp|omi\.niigata\.jp|sado\.niigata\.jp|sanjo\.niigata\.jp|seiro\.niigata\.jp|seirou\.niigata\.jp|sekikawa\.niigata\.jp|shibata\.niigata\.jp|tagami\.niigata\.jp|tainai\.niigata\.jp|tochio\.niigata\.jp|tokamachi\.niigata\.jp|tsubame\.niigata\.jp|tsunan\.niigata\.jp|uonuma\.niigata\.jp|yahiko\.niigata\.jp|yoita\.niigata\.jp|yuzawa\.niigata\.jp|beppu\.oita\.jp|bungoono\.oita\.jp|bungotakada\.oita\.jp|hasama\.oita\.jp|hiji\.oita\.jp|himeshima\.oita\.jp|hita\.oita\.jp|kamitsue\.oita\.jp|kokonoe\.oita\.jp|kuju\.oita\.jp|kunisaki\.oita\.jp|kusu\.oita\.jp|oita\.oita\.jp|saiki\.oita\.jp|taketa\.oita\.jp|tsukumi\.oita\.jp|usa\.oita\.jp|usuki\.oita\.jp|yufu\.oita\.jp|akaiwa\.okayama\.jp|asakuchi\.okayama\.jp|bizen\.okayama\.jp|hayashima\.okayama\.jp|ibara\.okayama\.jp|kagamino\.okayama\.jp|kasaoka\.okayama\.jp|kibichuo\.okayama\.jp|kumenan\.okayama\.jp|kurashiki\.okayama\.jp|maniwa\.okayama\.jp|misaki\.okayama\.jp|nagi\.okayama\.jp|niimi\.okayama\.jp|nishiawakura\.okayama\.jp|okayama\.okayama\.jp|satosho\.okayama\.jp|setouchi\.okayama\.jp|shinjo\.okayama\.jp|shoo\.okayama\.jp|soja\.okayama\.jp|takahashi\.okayama\.jp|tamano\.okayama\.jp|tsuyama\.okayama\.jp|wake\.okayama\.jp|yakage\.okayama\.jp|aguni\.okinawa\.jp|ginowan\.okinawa\.jp|ginoza\.okinawa\.jp|gushikami\.okinawa\.jp|haebaru\.okinawa\.jp|higashi\.okinawa\.jp|hirara\.okinawa\.jp|iheya\.okinawa\.jp|ishigaki\.okinawa\.jp|ishikawa\.okinawa\.jp|itoman\.okinawa\.jp|izena\.okinawa\.jp|kadena\.okinawa\.jp|kin\.okinawa\.jp|kitadaito\.okinawa\.jp|kitanakagusuku\.okinawa\.jp|kumejima\.okinawa\.jp|kunigami\.okinawa\.jp|minamidaito\.okinawa\.jp|motobu\.okinawa\.jp|nago\.okinawa\.jp|naha\.okinawa\.jp|nakagusuku\.okinawa\.jp|nakijin\.okinawa\.jp|nanjo\.okinawa\.jp|nishihara\.okinawa\.jp|ogimi\.okinawa\.jp|okinawa\.okinawa\.jp|onna\.okinawa\.jp|shimoji\.okinawa\.jp|taketomi\.okinawa\.jp|tarama\.okinawa\.jp|tokashiki\.okinawa\.jp|tomigusuku\.okinawa\.jp|tonaki\.okinawa\.jp|urasoe\.okinawa\.jp|uruma\.okinawa\.jp|yaese\.okinawa\.jp|yomitan\.okinawa\.jp|yonabaru\.okinawa\.jp|yonaguni\.okinawa\.jp|zamami\.okinawa\.jp|abeno\.osaka\.jp|chihayaakasaka\.osaka\.jp|chuo\.osaka\.jp|daito\.osaka\.jp|fujiidera\.osaka\.jp|habikino\.osaka\.jp|hannan\.osaka\.jp|higashiosaka\.osaka\.jp|higashisumiyoshi\.osaka\.jp|higashiyodogawa\.osaka\.jp|hirakata\.osaka\.jp|ibaraki\.osaka\.jp|ikeda\.osaka\.jp|izumi\.osaka\.jp|izumiotsu\.osaka\.jp|izumisano\.osaka\.jp|kadoma\.osaka\.jp|kaizuka\.osaka\.jp|kanan\.osaka\.jp|kashiwara\.osaka\.jp|katano\.osaka\.jp|kawachinagano\.osaka\.jp|kishiwada\.osaka\.jp|kita\.osaka\.jp|kumatori\.osaka\.jp|matsubara\.osaka\.jp|minato\.osaka\.jp|minoh\.osaka\.jp|misaki\.osaka\.jp|moriguchi\.osaka\.jp|neyagawa\.osaka\.jp|nishi\.osaka\.jp|nose\.osaka\.jp|osakasayama\.osaka\.jp|sakai\.osaka\.jp|sayama\.osaka\.jp|sennan\.osaka\.jp|settsu\.osaka\.jp|shijonawate\.osaka\.jp|shimamoto\.osaka\.jp|suita\.osaka\.jp|tadaoka\.osaka\.jp|taishi\.osaka\.jp|tajiri\.osaka\.jp|takaishi\.osaka\.jp|takatsuki\.osaka\.jp|tondabayashi\.osaka\.jp|toyonaka\.osaka\.jp|toyono\.osaka\.jp|yao\.osaka\.jp|ariake\.saga\.jp|arita\.saga\.jp|fukudomi\.saga\.jp|genkai\.saga\.jp|hamatama\.saga\.jp|hizen\.saga\.jp|imari\.saga\.jp|kamimine\.saga\.jp|kanzaki\.saga\.jp|karatsu\.saga\.jp|kashima\.saga\.jp|kitagata\.saga\.jp|kitahata\.saga\.jp|kiyama\.saga\.jp|kouhoku\.saga\.jp|kyuragi\.saga\.jp|nishiarita\.saga\.jp|ogi\.saga\.jp|omachi\.saga\.jp|ouchi\.saga\.jp|saga\.saga\.jp|shiroishi\.saga\.jp|taku\.saga\.jp|tara\.saga\.jp|tosu\.saga\.jp|yoshinogari\.saga\.jp|arakawa\.saitama\.jp|asaka\.saitama\.jp|chichibu\.saitama\.jp|fujimi\.saitama\.jp|fujimino\.saitama\.jp|fukaya\.saitama\.jp|hanno\.saitama\.jp|hanyu\.saitama\.jp|hasuda\.saitama\.jp|hatogaya\.saitama\.jp|hatoyama\.saitama\.jp|hidaka\.saitama\.jp|higashichichibu\.saitama\.jp|higashimatsuyama\.saitama\.jp|honjo\.saitama\.jp|ina\.saitama\.jp|iruma\.saitama\.jp|iwatsuki\.saitama\.jp|kamiizumi\.saitama\.jp|kamikawa\.saitama\.jp|kamisato\.saitama\.jp|kasukabe\.saitama\.jp|kawagoe\.saitama\.jp|kawaguchi\.saitama\.jp|kawajima\.saitama\.jp|kazo\.saitama\.jp|kitamoto\.saitama\.jp|koshigaya\.saitama\.jp|kounosu\.saitama\.jp|kuki\.saitama\.jp|kumagaya\.saitama\.jp|matsubushi\.saitama\.jp|minano\.saitama\.jp|misato\.saitama\.jp|miyashiro\.saitama\.jp|miyoshi\.saitama\.jp|moroyama\.saitama\.jp|nagatoro\.saitama\.jp|namegawa\.saitama\.jp|niiza\.saitama\.jp|ogano\.saitama\.jp|ogawa\.saitama\.jp|ogose\.saitama\.jp|okegawa\.saitama\.jp|omiya\.saitama\.jp|otaki\.saitama\.jp|ranzan\.saitama\.jp|ryokami\.saitama\.jp|saitama\.saitama\.jp|sakado\.saitama\.jp|satte\.saitama\.jp|sayama\.saitama\.jp|shiki\.saitama\.jp|shiraoka\.saitama\.jp|soka\.saitama\.jp|sugito\.saitama\.jp|toda\.saitama\.jp|tokigawa\.saitama\.jp|tokorozawa\.saitama\.jp|tsurugashima\.saitama\.jp|urawa\.saitama\.jp|warabi\.saitama\.jp|yashio\.saitama\.jp|yokoze\.saitama\.jp|yono\.saitama\.jp|yorii\.saitama\.jp|yoshida\.saitama\.jp|yoshikawa\.saitama\.jp|yoshimi\.saitama\.jp|aisho\.shiga\.jp|gamo\.shiga\.jp|higashiomi\.shiga\.jp|hikone\.shiga\.jp|koka\.shiga\.jp|konan\.shiga\.jp|kosei\.shiga\.jp|koto\.shiga\.jp|kusatsu\.shiga\.jp|maibara\.shiga\.jp|moriyama\.shiga\.jp|nagahama\.shiga\.jp|nishiazai\.shiga\.jp|notogawa\.shiga\.jp|omihachiman\.shiga\.jp|otsu\.shiga\.jp|ritto\.shiga\.jp|ryuoh\.shiga\.jp|takashima\.shiga\.jp|takatsuki\.shiga\.jp|torahime\.shiga\.jp|toyosato\.shiga\.jp|yasu\.shiga\.jp|akagi\.shimane\.jp|ama\.shimane\.jp|gotsu\.shimane\.jp|hamada\.shimane\.jp|higashiizumo\.shimane\.jp|hikawa\.shimane\.jp|hikimi\.shimane\.jp|izumo\.shimane\.jp|kakinoki\.shimane\.jp|masuda\.shimane\.jp|matsue\.shimane\.jp|misato\.shimane\.jp|nishinoshima\.shimane\.jp|ohda\.shimane\.jp|okinoshima\.shimane\.jp|okuizumo\.shimane\.jp|shimane\.shimane\.jp|tamayu\.shimane\.jp|tsuwano\.shimane\.jp|unnan\.shimane\.jp|yakumo\.shimane\.jp|yasugi\.shimane\.jp|yatsuka\.shimane\.jp|arai\.shizuoka\.jp|atami\.shizuoka\.jp|fuji\.shizuoka\.jp|fujieda\.shizuoka\.jp|fujikawa\.shizuoka\.jp|fujinomiya\.shizuoka\.jp|fukuroi\.shizuoka\.jp|gotemba\.shizuoka\.jp|haibara\.shizuoka\.jp|hamamatsu\.shizuoka\.jp|higashiizu\.shizuoka\.jp|ito\.shizuoka\.jp|iwata\.shizuoka\.jp|izu\.shizuoka\.jp|izunokuni\.shizuoka\.jp|kakegawa\.shizuoka\.jp|kannami\.shizuoka\.jp|kawanehon\.shizuoka\.jp|kawazu\.shizuoka\.jp|kikugawa\.shizuoka\.jp|kosai\.shizuoka\.jp|makinohara\.shizuoka\.jp|matsuzaki\.shizuoka\.jp|minamiizu\.shizuoka\.jp|mishima\.shizuoka\.jp|morimachi\.shizuoka\.jp|nishiizu\.shizuoka\.jp|numazu\.shizuoka\.jp|omaezaki\.shizuoka\.jp|shimada\.shizuoka\.jp|shimizu\.shizuoka\.jp|shimoda\.shizuoka\.jp|shizuoka\.shizuoka\.jp|susono\.shizuoka\.jp|yaizu\.shizuoka\.jp|yoshida\.shizuoka\.jp|ashikaga\.tochigi\.jp|bato\.tochigi\.jp|haga\.tochigi\.jp|ichikai\.tochigi\.jp|iwafune\.tochigi\.jp|kaminokawa\.tochigi\.jp|kanuma\.tochigi\.jp|karasuyama\.tochigi\.jp|kuroiso\.tochigi\.jp|mashiko\.tochigi\.jp|mibu\.tochigi\.jp|moka\.tochigi\.jp|motegi\.tochigi\.jp|nasu\.tochigi\.jp|nasushiobara\.tochigi\.jp|nikko\.tochigi\.jp|nishikata\.tochigi\.jp|nogi\.tochigi\.jp|ohira\.tochigi\.jp|ohtawara\.tochigi\.jp|oyama\.tochigi\.jp|sakura\.tochigi\.jp|sano\.tochigi\.jp|shimotsuke\.tochigi\.jp|shioya\.tochigi\.jp|takanezawa\.tochigi\.jp|tochigi\.tochigi\.jp|tsuga\.tochigi\.jp|ujiie\.tochigi\.jp|utsunomiya\.tochigi\.jp|yaita\.tochigi\.jp|aizumi\.tokushima\.jp|anan\.tokushima\.jp|ichiba\.tokushima\.jp|itano\.tokushima\.jp|kainan\.tokushima\.jp|komatsushima\.tokushima\.jp|matsushige\.tokushima\.jp|mima\.tokushima\.jp|minami\.tokushima\.jp|miyoshi\.tokushima\.jp|mugi\.tokushima\.jp|nakagawa\.tokushima\.jp|naruto\.tokushima\.jp|sanagochi\.tokushima\.jp|shishikui\.tokushima\.jp|tokushima\.tokushima\.jp|wajiki\.tokushima\.jp|adachi\.tokyo\.jp|akiruno\.tokyo\.jp|akishima\.tokyo\.jp|aogashima\.tokyo\.jp|arakawa\.tokyo\.jp|bunkyo\.tokyo\.jp|chiyoda\.tokyo\.jp|chofu\.tokyo\.jp|chuo\.tokyo\.jp|edogawa\.tokyo\.jp|fuchu\.tokyo\.jp|fussa\.tokyo\.jp|hachijo\.tokyo\.jp|hachioji\.tokyo\.jp|hamura\.tokyo\.jp|higashikurume\.tokyo\.jp|higashimurayama\.tokyo\.jp|higashiyamato\.tokyo\.jp|hino\.tokyo\.jp|hinode\.tokyo\.jp|hinohara\.tokyo\.jp|inagi\.tokyo\.jp|itabashi\.tokyo\.jp|katsushika\.tokyo\.jp|kita\.tokyo\.jp|kiyose\.tokyo\.jp|kodaira\.tokyo\.jp|koganei\.tokyo\.jp|kokubunji\.tokyo\.jp|komae\.tokyo\.jp|koto\.tokyo\.jp|kouzushima\.tokyo\.jp|kunitachi\.tokyo\.jp|machida\.tokyo\.jp|meguro\.tokyo\.jp|minato\.tokyo\.jp|mitaka\.tokyo\.jp|mizuho\.tokyo\.jp|musashimurayama\.tokyo\.jp|musashino\.tokyo\.jp|nakano\.tokyo\.jp|nerima\.tokyo\.jp|ogasawara\.tokyo\.jp|okutama\.tokyo\.jp|ome\.tokyo\.jp|oshima\.tokyo\.jp|ota\.tokyo\.jp|setagaya\.tokyo\.jp|shibuya\.tokyo\.jp|shinagawa\.tokyo\.jp|shinjuku\.tokyo\.jp|suginami\.tokyo\.jp|sumida\.tokyo\.jp|tachikawa\.tokyo\.jp|taito\.tokyo\.jp|tama\.tokyo\.jp|toshima\.tokyo\.jp|chizu\.tottori\.jp|hino\.tottori\.jp|kawahara\.tottori\.jp|koge\.tottori\.jp|kotoura\.tottori\.jp|misasa\.tottori\.jp|nanbu\.tottori\.jp|nichinan\.tottori\.jp|sakaiminato\.tottori\.jp|tottori\.tottori\.jp|wakasa\.tottori\.jp|yazu\.tottori\.jp|yonago\.tottori\.jp|asahi\.toyama\.jp|fuchu\.toyama\.jp|fukumitsu\.toyama\.jp|funahashi\.toyama\.jp|himi\.toyama\.jp|imizu\.toyama\.jp|inami\.toyama\.jp|johana\.toyama\.jp|kamiichi\.toyama\.jp|kurobe\.toyama\.jp|nakaniikawa\.toyama\.jp|namerikawa\.toyama\.jp|nanto\.toyama\.jp|nyuzen\.toyama\.jp|oyabe\.toyama\.jp|taira\.toyama\.jp|takaoka\.toyama\.jp|tateyama\.toyama\.jp|toga\.toyama\.jp|tonami\.toyama\.jp|toyama\.toyama\.jp|unazuki\.toyama\.jp|uozu\.toyama\.jp|yamada\.toyama\.jp|arida\.wakayama\.jp|aridagawa\.wakayama\.jp|gobo\.wakayama\.jp|hashimoto\.wakayama\.jp|hidaka\.wakayama\.jp|hirogawa\.wakayama\.jp|inami\.wakayama\.jp|iwade\.wakayama\.jp|kainan\.wakayama\.jp|kamitonda\.wakayama\.jp|katsuragi\.wakayama\.jp|kimino\.wakayama\.jp|kinokawa\.wakayama\.jp|kitayama\.wakayama\.jp|koya\.wakayama\.jp|koza\.wakayama\.jp|kozagawa\.wakayama\.jp|kudoyama\.wakayama\.jp|kushimoto\.wakayama\.jp|mihama\.wakayama\.jp|misato\.wakayama\.jp|nachikatsuura\.wakayama\.jp|shingu\.wakayama\.jp|shirahama\.wakayama\.jp|taiji\.wakayama\.jp|tanabe\.wakayama\.jp|wakayama\.wakayama\.jp|yuasa\.wakayama\.jp|yura\.wakayama\.jp|asahi\.yamagata\.jp|funagata\.yamagata\.jp|higashine\.yamagata\.jp|iide\.yamagata\.jp|kahoku\.yamagata\.jp|kaminoyama\.yamagata\.jp|kaneyama\.yamagata\.jp|kawanishi\.yamagata\.jp|mamurogawa\.yamagata\.jp|mikawa\.yamagata\.jp|murayama\.yamagata\.jp|nagai\.yamagata\.jp|nakayama\.yamagata\.jp|nanyo\.yamagata\.jp|nishikawa\.yamagata\.jp|obanazawa\.yamagata\.jp|oe\.yamagata\.jp|oguni\.yamagata\.jp|ohkura\.yamagata\.jp|oishida\.yamagata\.jp|sagae\.yamagata\.jp|sakata\.yamagata\.jp|sakegawa\.yamagata\.jp|shinjo\.yamagata\.jp|shirataka\.yamagata\.jp|shonai\.yamagata\.jp|takahata\.yamagata\.jp|tendo\.yamagata\.jp|tozawa\.yamagata\.jp|tsuruoka\.yamagata\.jp|yamagata\.yamagata\.jp|yamanobe\.yamagata\.jp|yonezawa\.yamagata\.jp|yuza\.yamagata\.jp|abu\.yamaguchi\.jp|hagi\.yamaguchi\.jp|hikari\.yamaguchi\.jp|hofu\.yamaguchi\.jp|iwakuni\.yamaguchi\.jp|kudamatsu\.yamaguchi\.jp|mitou\.yamaguchi\.jp|nagato\.yamaguchi\.jp|oshima\.yamaguchi\.jp|shimonoseki\.yamaguchi\.jp|shunan\.yamaguchi\.jp|tabuse\.yamaguchi\.jp|tokuyama\.yamaguchi\.jp|toyota\.yamaguchi\.jp|ube\.yamaguchi\.jp|yuu\.yamaguchi\.jp|chuo\.yamanashi\.jp|doshi\.yamanashi\.jp|fuefuki\.yamanashi\.jp|fujikawa\.yamanashi\.jp|fujikawaguchiko\.yamanashi\.jp|fujiyoshida\.yamanashi\.jp|hayakawa\.yamanashi\.jp|hokuto\.yamanashi\.jp|ichikawamisato\.yamanashi\.jp|kai\.yamanashi\.jp|kofu\.yamanashi\.jp|koshu\.yamanashi\.jp|kosuge\.yamanashi\.jp|minami-alps\.yamanashi\.jp|minobu\.yamanashi\.jp|nakamichi\.yamanashi\.jp|nanbu\.yamanashi\.jp|narusawa\.yamanashi\.jp|nirasaki\.yamanashi\.jp|nishikatsura\.yamanashi\.jp|oshino\.yamanashi\.jp|otsuki\.yamanashi\.jp|showa\.yamanashi\.jp|tabayama\.yamanashi\.jp|tsuru\.yamanashi\.jp|uenohara\.yamanashi\.jp|yamanakako\.yamanashi\.jp|yamanashi\.yamanashi\.jp|[^.]+\.ke|kg|org\.kg|net\.kg|com\.kg|edu\.kg|gov\.kg|mil\.kg|[^.]+\.kh|ki|edu\.ki|biz\.ki|net\.ki|org\.ki|gov\.ki|info\.ki|com\.ki|km|org\.km|nom\.km|gov\.km|prd\.km|tm\.km|edu\.km|mil\.km|ass\.km|com\.km|coop\.km|asso\.km|presse\.km|medecin\.km|notaires\.km|pharmaciens\.km|veterinaire\.km|gouv\.km|kn|net\.kn|org\.kn|edu\.kn|gov\.kn|kp|com\.kp|edu\.kp|gov\.kp|org\.kp|rep\.kp|tra\.kp|kr|ac\.kr|co\.kr|es\.kr|go\.kr|hs\.kr|kg\.kr|mil\.kr|ms\.kr|ne\.kr|or\.kr|pe\.kr|re\.kr|sc\.kr|busan\.kr|chungbuk\.kr|chungnam\.kr|daegu\.kr|daejeon\.kr|gangwon\.kr|gwangju\.kr|gyeongbuk\.kr|gyeonggi\.kr|gyeongnam\.kr|incheon\.kr|jeju\.kr|jeonbuk\.kr|jeonnam\.kr|seoul\.kr|ulsan\.kr|[^.]+\.kw|ky|edu\.ky|gov\.ky|com\.ky|org\.ky|net\.ky|kz|org\.kz|edu\.kz|net\.kz|gov\.kz|mil\.kz|com\.kz|la|int\.la|net\.la|info\.la|edu\.la|gov\.la|per\.la|com\.la|org\.la|lb|com\.lb|edu\.lb|gov\.lb|net\.lb|org\.lb|lc|com\.lc|net\.lc|co\.lc|org\.lc|edu\.lc|gov\.lc|li|lk|gov\.lk|sch\.lk|net\.lk|int\.lk|com\.lk|org\.lk|edu\.lk|ngo\.lk|soc\.lk|web\.lk|ltd\.lk|assn\.lk|grp\.lk|hotel\.lk|ac\.lk|lr|com\.lr|edu\.lr|gov\.lr|org\.lr|net\.lr|ls|co\.ls|org\.ls|lt|gov\.lt|lu|lv|com\.lv|edu\.lv|gov\.lv|org\.lv|mil\.lv|id\.lv|net\.lv|asn\.lv|conf\.lv|ly|com\.ly|net\.ly|gov\.ly|plc\.ly|edu\.ly|sch\.ly|med\.ly|org\.ly|id\.ly|ma|co\.ma|net\.ma|gov\.ma|org\.ma|ac\.ma|press\.ma|mc|tm\.mc|asso\.mc|md|me|co\.me|net\.me|org\.me|edu\.me|ac\.me|gov\.me|its\.me|priv\.me|mg|org\.mg|nom\.mg|gov\.mg|prd\.mg|tm\.mg|edu\.mg|mil\.mg|com\.mg|co\.mg|mh|mil|mk|com\.mk|org\.mk|net\.mk|edu\.mk|gov\.mk|inf\.mk|name\.mk|ml|com\.ml|edu\.ml|gouv\.ml|gov\.ml|net\.ml|org\.ml|presse\.ml|[^.]+\.mm|mn|gov\.mn|edu\.mn|org\.mn|mo|com\.mo|net\.mo|org\.mo|edu\.mo|gov\.mo|mobi|mp|mq|mr|gov\.mr|ms|com\.ms|edu\.ms|gov\.ms|net\.ms|org\.ms|mt|com\.mt|edu\.mt|net\.mt|org\.mt|mu|com\.mu|net\.mu|org\.mu|gov\.mu|ac\.mu|co\.mu|or\.mu|museum|academy\.museum|agriculture\.museum|air\.museum|airguard\.museum|alabama\.museum|alaska\.museum|amber\.museum|ambulance\.museum|american\.museum|americana\.museum|americanantiques\.museum|americanart\.museum|amsterdam\.museum|and\.museum|annefrank\.museum|anthro\.museum|anthropology\.museum|antiques\.museum|aquarium\.museum|arboretum\.museum|archaeological\.museum|archaeology\.museum|architecture\.museum|art\.museum|artanddesign\.museum|artcenter\.museum|artdeco\.museum|arteducation\.museum|artgallery\.museum|arts\.museum|artsandcrafts\.museum|asmatart\.museum|assassination\.museum|assisi\.museum|association\.museum|astronomy\.museum|atlanta\.museum|austin\.museum|australia\.museum|automotive\.museum|aviation\.museum|axis\.museum|badajoz\.museum|baghdad\.museum|bahn\.museum|bale\.museum|baltimore\.museum|barcelona\.museum|baseball\.museum|basel\.museum|baths\.museum|bauern\.museum|beauxarts\.museum|beeldengeluid\.museum|bellevue\.museum|bergbau\.museum|berkeley\.museum|berlin\.museum|bern\.museum|bible\.museum|bilbao\.museum|bill\.museum|birdart\.museum|birthplace\.museum|bonn\.museum|boston\.museum|botanical\.museum|botanicalgarden\.museum|botanicgarden\.museum|botany\.museum|brandywinevalley\.museum|brasil\.museum|bristol\.museum|british\.museum|britishcolumbia\.museum|broadcast\.museum|brunel\.museum|brussel\.museum|brussels\.museum|bruxelles\.museum|building\.museum|burghof\.museum|bus\.museum|bushey\.museum|cadaques\.museum|california\.museum|cambridge\.museum|can\.museum|canada\.museum|capebreton\.museum|carrier\.museum|cartoonart\.museum|casadelamoneda\.museum|castle\.museum|castres\.museum|celtic\.museum|center\.museum|chattanooga\.museum|cheltenham\.museum|chesapeakebay\.museum|chicago\.museum|children\.museum|childrens\.museum|childrensgarden\.museum|chiropractic\.museum|chocolate\.museum|christiansburg\.museum|cincinnati\.museum|cinema\.museum|circus\.museum|civilisation\.museum|civilization\.museum|civilwar\.museum|clinton\.museum|clock\.museum|coal\.museum|coastaldefence\.museum|cody\.museum|coldwar\.museum|collection\.museum|colonialwilliamsburg\.museum|coloradoplateau\.museum|columbia\.museum|columbus\.museum|communication\.museum|communications\.museum|community\.museum|computer\.museum|computerhistory\.museum|comunicações\.museum|contemporary\.museum|contemporaryart\.museum|convent\.museum|copenhagen\.museum|corporation\.museum|correios-e-telecomunicações\.museum|corvette\.museum|costume\.museum|countryestate\.museum|county\.museum|crafts\.museum|cranbrook\.museum|creation\.museum|cultural\.museum|culturalcenter\.museum|culture\.museum|cyber\.museum|cymru\.museum|dali\.museum|dallas\.museum|database\.museum|ddr\.museum|decorativearts\.museum|delaware\.museum|delmenhorst\.museum|denmark\.museum|depot\.museum|design\.museum|detroit\.museum|dinosaur\.museum|discovery\.museum|dolls\.museum|donostia\.museum|durham\.museum|eastafrica\.museum|eastcoast\.museum|education\.museum|educational\.museum|egyptian\.museum|eisenbahn\.museum|elburg\.museum|elvendrell\.museum|embroidery\.museum|encyclopedic\.museum|england\.museum|entomology\.museum|environment\.museum|environmentalconservation\.museum|epilepsy\.museum|essex\.museum|estate\.museum|ethnology\.museum|exeter\.museum|exhibition\.museum|family\.museum|farm\.museum|farmequipment\.museum|farmers\.museum|farmstead\.museum|field\.museum|figueres\.museum|filatelia\.museum|film\.museum|fineart\.museum|finearts\.museum|finland\.museum|flanders\.museum|florida\.museum|force\.museum|fortmissoula\.museum|fortworth\.museum|foundation\.museum|francaise\.museum|frankfurt\.museum|franziskaner\.museum|freemasonry\.museum|freiburg\.museum|fribourg\.museum|frog\.museum|fundacio\.museum|furniture\.museum|gallery\.museum|garden\.museum|gateway\.museum|geelvinck\.museum|gemological\.museum|geology\.museum|georgia\.museum|giessen\.museum|glas\.museum|glass\.museum|gorge\.museum|grandrapids\.museum|graz\.museum|guernsey\.museum|halloffame\.museum|hamburg\.museum|handson\.museum|harvestcelebration\.museum|hawaii\.museum|health\.museum|heimatunduhren\.museum|hellas\.museum|helsinki\.museum|hembygdsforbund\.museum|heritage\.museum|histoire\.museum|historical\.museum|historicalsociety\.museum|historichouses\.museum|historisch\.museum|historisches\.museum|history\.museum|historyofscience\.museum|horology\.museum|house\.museum|humanities\.museum|illustration\.museum|imageandsound\.museum|indian\.museum|indiana\.museum|indianapolis\.museum|indianmarket\.museum|intelligence\.museum|interactive\.museum|iraq\.museum|iron\.museum|isleofman\.museum|jamison\.museum|jefferson\.museum|jerusalem\.museum|jewelry\.museum|jewish\.museum|jewishart\.museum|jfk\.museum|journalism\.museum|judaica\.museum|judygarland\.museum|juedisches\.museum|juif\.museum|karate\.museum|karikatur\.museum|kids\.museum|koebenhavn\.museum|koeln\.museum|kunst\.museum|kunstsammlung\.museum|kunstunddesign\.museum|labor\.museum|labour\.museum|lajolla\.museum|lancashire\.museum|landes\.museum|lans\.museum|läns\.museum|larsson\.museum|lewismiller\.museum|lincoln\.museum|linz\.museum|living\.museum|livinghistory\.museum|localhistory\.museum|london\.museum|losangeles\.museum|louvre\.museum|loyalist\.museum|lucerne\.museum|luxembourg\.museum|luzern\.museum|mad\.museum|madrid\.museum|mallorca\.museum|manchester\.museum|mansion\.museum|mansions\.museum|manx\.museum|marburg\.museum|maritime\.museum|maritimo\.museum|maryland\.museum|marylhurst\.museum|media\.museum|medical\.museum|medizinhistorisches\.museum|meeres\.museum|memorial\.museum|mesaverde\.museum|michigan\.museum|midatlantic\.museum|military\.museum|mill\.museum|miners\.museum|mining\.museum|minnesota\.museum|missile\.museum|missoula\.museum|modern\.museum|moma\.museum|money\.museum|monmouth\.museum|monticello\.museum|montreal\.museum|moscow\.museum|motorcycle\.museum|muenchen\.museum|muenster\.museum|mulhouse\.museum|muncie\.museum|museet\.museum|museumcenter\.museum|museumvereniging\.museum|music\.museum|national\.museum|nationalfirearms\.museum|nationalheritage\.museum|nativeamerican\.museum|naturalhistory\.museum|naturalhistorymuseum\.museum|naturalsciences\.museum|nature\.museum|naturhistorisches\.museum|natuurwetenschappen\.museum|naumburg\.museum|naval\.museum|nebraska\.museum|neues\.museum|newhampshire\.museum|newjersey\.museum|newmexico\.museum|newport\.museum|newspaper\.museum|newyork\.museum|niepce\.museum|norfolk\.museum|north\.museum|nrw\.museum|nuernberg\.museum|nuremberg\.museum|nyc\.museum|nyny\.museum|oceanographic\.museum|oceanographique\.museum|omaha\.museum|online\.museum|ontario\.museum|openair\.museum|oregon\.museum|oregontrail\.museum|otago\.museum|oxford\.museum|pacific\.museum|paderborn\.museum|palace\.museum|paleo\.museum|palmsprings\.museum|panama\.museum|paris\.museum|pasadena\.museum|pharmacy\.museum|philadelphia\.museum|philadelphiaarea\.museum|philately\.museum|phoenix\.museum|photography\.museum|pilots\.museum|pittsburgh\.museum|planetarium\.museum|plantation\.museum|plants\.museum|plaza\.museum|portal\.museum|portland\.museum|portlligat\.museum|posts-and-telecommunications\.museum|preservation\.museum|presidio\.museum|press\.museum|project\.museum|public\.museum|pubol\.museum|quebec\.museum|railroad\.museum|railway\.museum|research\.museum|resistance\.museum|riodejaneiro\.museum|rochester\.museum|rockart\.museum|roma\.museum|russia\.museum|saintlouis\.museum|salem\.museum|salvadordali\.museum|salzburg\.museum|sandiego\.museum|sanfrancisco\.museum|santabarbara\.museum|santacruz\.museum|santafe\.museum|saskatchewan\.museum|satx\.museum|savannahga\.museum|schlesisches\.museum|schoenbrunn\.museum|schokoladen\.museum|school\.museum|schweiz\.museum|science\.museum|scienceandhistory\.museum|scienceandindustry\.museum|sciencecenter\.museum|sciencecenters\.museum|science-fiction\.museum|sciencehistory\.museum|sciences\.museum|sciencesnaturelles\.museum|scotland\.museum|seaport\.museum|settlement\.museum|settlers\.museum|shell\.museum|sherbrooke\.museum|sibenik\.museum|silk\.museum|ski\.museum|skole\.museum|society\.museum|sologne\.museum|soundandvision\.museum|southcarolina\.museum|southwest\.museum|space\.museum|spy\.museum|square\.museum|stadt\.museum|stalbans\.museum|starnberg\.museum|state\.museum|stateofdelaware\.museum|station\.museum|steam\.museum|steiermark\.museum|stjohn\.museum|stockholm\.museum|stpetersburg\.museum|stuttgart\.museum|suisse\.museum|surgeonshall\.museum|surrey\.museum|svizzera\.museum|sweden\.museum|sydney\.museum|tank\.museum|tcm\.museum|technology\.museum|telekommunikation\.museum|television\.museum|texas\.museum|textile\.museum|theater\.museum|time\.museum|timekeeping\.museum|topology\.museum|torino\.museum|touch\.museum|town\.museum|transport\.museum|tree\.museum|trolley\.museum|trust\.museum|trustee\.museum|uhren\.museum|ulm\.museum|undersea\.museum|university\.museum|usa\.museum|usantiques\.museum|usarts\.museum|uscountryestate\.museum|usculture\.museum|usdecorativearts\.museum|usgarden\.museum|ushistory\.museum|ushuaia\.museum|uslivinghistory\.museum|utah\.museum|uvic\.museum|valley\.museum|vantaa\.museum|versailles\.museum|viking\.museum|village\.museum|virginia\.museum|virtual\.museum|virtuel\.museum|vlaanderen\.museum|volkenkunde\.museum|wales\.museum|wallonie\.museum|war\.museum|washingtondc\.museum|watchandclock\.museum|watch-and-clock\.museum|western\.museum|westfalen\.museum|whaling\.museum|wildlife\.museum|williamsburg\.museum|windmill\.museum|workshop\.museum|york\.museum|yorkshire\.museum|yosemite\.museum|youth\.museum|zoological\.museum|zoology\.museum|ירושלים\.museum|иком\.museum|mv|aero\.mv|biz\.mv|com\.mv|coop\.mv|edu\.mv|gov\.mv|info\.mv|int\.mv|mil\.mv|museum\.mv|name\.mv|net\.mv|org\.mv|pro\.mv|mw|ac\.mw|biz\.mw|co\.mw|com\.mw|coop\.mw|edu\.mw|gov\.mw|int\.mw|museum\.mw|net\.mw|org\.mw|mx|com\.mx|org\.mx|gob\.mx|edu\.mx|net\.mx|my|com\.my|net\.my|org\.my|gov\.my|edu\.my|mil\.my|name\.my|mz|ac\.mz|adv\.mz|co\.mz|edu\.mz|gov\.mz|mil\.mz|net\.mz|org\.mz|na|info\.na|pro\.na|name\.na|school\.na|or\.na|dr\.na|us\.na|mx\.na|ca\.na|in\.na|cc\.na|tv\.na|ws\.na|mobi\.na|co\.na|com\.na|org\.na|name|nc|asso\.nc|ne|net|nf|com\.nf|net\.nf|per\.nf|rec\.nf|web\.nf|arts\.nf|firm\.nf|info\.nf|other\.nf|store\.nf|ng|com\.ng|edu\.ng|gov\.ng|i\.ng|mil\.ng|mobi\.ng|name\.ng|net\.ng|org\.ng|sch\.ng|ni|ac\.ni|biz\.ni|co\.ni|com\.ni|edu\.ni|gob\.ni|in\.ni|info\.ni|int\.ni|mil\.ni|net\.ni|nom\.ni|org\.ni|web\.ni|nl|bv\.nl|no|fhs\.no|vgs\.no|fylkesbibl\.no|folkebibl\.no|museum\.no|idrett\.no|priv\.no|mil\.no|stat\.no|dep\.no|kommune\.no|herad\.no|aa\.no|ah\.no|bu\.no|fm\.no|hl\.no|hm\.no|jan-mayen\.no|mr\.no|nl\.no|nt\.no|of\.no|ol\.no|oslo\.no|rl\.no|sf\.no|st\.no|svalbard\.no|tm\.no|tr\.no|va\.no|vf\.no|gs\.aa\.no|gs\.ah\.no|gs\.bu\.no|gs\.fm\.no|gs\.hl\.no|gs\.hm\.no|gs\.jan-mayen\.no|gs\.mr\.no|gs\.nl\.no|gs\.nt\.no|gs\.of\.no|gs\.ol\.no|gs\.oslo\.no|gs\.rl\.no|gs\.sf\.no|gs\.st\.no|gs\.svalbard\.no|gs\.tm\.no|gs\.tr\.no|gs\.va\.no|gs\.vf\.no|akrehamn\.no|åkrehamn\.no|algard\.no|ålgård\.no|arna\.no|brumunddal\.no|bryne\.no|bronnoysund\.no|brønnøysund\.no|drobak\.no|drøbak\.no|egersund\.no|fetsund\.no|floro\.no|florø\.no|fredrikstad\.no|hokksund\.no|honefoss\.no|hønefoss\.no|jessheim\.no|jorpeland\.no|jørpeland\.no|kirkenes\.no|kopervik\.no|krokstadelva\.no|langevag\.no|langevåg\.no|leirvik\.no|mjondalen\.no|mjøndalen\.no|mo-i-rana\.no|mosjoen\.no|mosjøen\.no|nesoddtangen\.no|orkanger\.no|osoyro\.no|osøyro\.no|raholt\.no|råholt\.no|sandnessjoen\.no|sandnessjøen\.no|skedsmokorset\.no|slattum\.no|spjelkavik\.no|stathelle\.no|stavern\.no|stjordalshalsen\.no|stjørdalshalsen\.no|tananger\.no|tranby\.no|vossevangen\.no|afjord\.no|åfjord\.no|agdenes\.no|al\.no|ål\.no|alesund\.no|ålesund\.no|alstahaug\.no|alta\.no|áltá\.no|alaheadju\.no|álaheadju\.no|alvdal\.no|amli\.no|åmli\.no|amot\.no|åmot\.no|andebu\.no|andoy\.no|andøy\.no|andasuolo\.no|ardal\.no|årdal\.no|aremark\.no|arendal\.no|ås\.no|aseral\.no|åseral\.no|asker\.no|askim\.no|askvoll\.no|askoy\.no|askøy\.no|asnes\.no|åsnes\.no|audnedaln\.no|aukra\.no|aure\.no|aurland\.no|aurskog-holand\.no|aurskog-høland\.no|austevoll\.no|austrheim\.no|averoy\.no|averøy\.no|balestrand\.no|ballangen\.no|balat\.no|bálát\.no|balsfjord\.no|bahccavuotna\.no|báhccavuotna\.no|bamble\.no|bardu\.no|beardu\.no|beiarn\.no|bajddar\.no|bájddar\.no|baidar\.no|báidár\.no|berg\.no|bergen\.no|berlevag\.no|berlevåg\.no|bearalvahki\.no|bearalváhki\.no|bindal\.no|birkenes\.no|bjarkoy\.no|bjarkøy\.no|bjerkreim\.no|bjugn\.no|bodo\.no|bodø\.no|badaddja\.no|bådåddjå\.no|budejju\.no|bokn\.no|bremanger\.no|bronnoy\.no|brønnøy\.no|bygland\.no|bykle\.no|barum\.no|bærum\.no|bo\.telemark\.no|bø\.telemark\.no|bo\.nordland\.no|bø\.nordland\.no|bievat\.no|bievát\.no|bomlo\.no|bømlo\.no|batsfjord\.no|båtsfjord\.no|bahcavuotna\.no|báhcavuotna\.no|dovre\.no|drammen\.no|drangedal\.no|dyroy\.no|dyrøy\.no|donna\.no|dønna\.no|eid\.no|eidfjord\.no|eidsberg\.no|eidskog\.no|eidsvoll\.no|eigersund\.no|elverum\.no|enebakk\.no|engerdal\.no|etne\.no|etnedal\.no|evenes\.no|evenassi\.no|evenášši\.no|evje-og-hornnes\.no|farsund\.no|fauske\.no|fuossko\.no|fuoisku\.no|fedje\.no|fet\.no|finnoy\.no|finnøy\.no|fitjar\.no|fjaler\.no|fjell\.no|flakstad\.no|flatanger\.no|flekkefjord\.no|flesberg\.no|flora\.no|fla\.no|flå\.no|folldal\.no|forsand\.no|fosnes\.no|frei\.no|frogn\.no|froland\.no|frosta\.no|frana\.no|fræna\.no|froya\.no|frøya\.no|fusa\.no|fyresdal\.no|forde\.no|førde\.no|gamvik\.no|gangaviika\.no|gáŋgaviika\.no|gaular\.no|gausdal\.no|gildeskal\.no|gildeskål\.no|giske\.no|gjemnes\.no|gjerdrum\.no|gjerstad\.no|gjesdal\.no|gjovik\.no|gjøvik\.no|gloppen\.no|gol\.no|gran\.no|grane\.no|granvin\.no|gratangen\.no|grimstad\.no|grong\.no|kraanghke\.no|kråanghke\.no|grue\.no|gulen\.no|hadsel\.no|halden\.no|halsa\.no|hamar\.no|hamaroy\.no|habmer\.no|hábmer\.no|hapmir\.no|hápmir\.no|hammerfest\.no|hammarfeasta\.no|hámmárfeasta\.no|haram\.no|hareid\.no|harstad\.no|hasvik\.no|aknoluokta\.no|ákŋoluokta\.no|hattfjelldal\.no|aarborte\.no|haugesund\.no|hemne\.no|hemnes\.no|hemsedal\.no|heroy\.more-og-romsdal\.no|herøy\.møre-og-romsdal\.no|heroy\.nordland\.no|herøy\.nordland\.no|hitra\.no|hjartdal\.no|hjelmeland\.no|hobol\.no|hobøl\.no|hof\.no|hol\.no|hole\.no|holmestrand\.no|holtalen\.no|holtålen\.no|hornindal\.no|horten\.no|hurdal\.no|hurum\.no|hvaler\.no|hyllestad\.no|hagebostad\.no|hægebostad\.no|hoyanger\.no|høyanger\.no|hoylandet\.no|høylandet\.no|ha\.no|hå\.no|ibestad\.no|inderoy\.no|inderøy\.no|iveland\.no|jevnaker\.no|jondal\.no|jolster\.no|jølster\.no|karasjok\.no|karasjohka\.no|kárášjohka\.no|karlsoy\.no|galsa\.no|gálsá\.no|karmoy\.no|karmøy\.no|kautokeino\.no|guovdageaidnu\.no|klepp\.no|klabu\.no|klæbu\.no|kongsberg\.no|kongsvinger\.no|kragero\.no|kragerø\.no|kristiansand\.no|kristiansund\.no|krodsherad\.no|krødsherad\.no|kvalsund\.no|rahkkeravju\.no|ráhkkerávju\.no|kvam\.no|kvinesdal\.no|kvinnherad\.no|kviteseid\.no|kvitsoy\.no|kvitsøy\.no|kvafjord\.no|kvæfjord\.no|giehtavuoatna\.no|kvanangen\.no|kvænangen\.no|navuotna\.no|návuotna\.no|kafjord\.no|kåfjord\.no|gaivuotna\.no|gáivuotna\.no|larvik\.no|lavangen\.no|lavagis\.no|loabat\.no|loabát\.no|lebesby\.no|davvesiida\.no|leikanger\.no|leirfjord\.no|leka\.no|leksvik\.no|lenvik\.no|leangaviika\.no|leaŋgaviika\.no|lesja\.no|levanger\.no|lier\.no|lierne\.no|lillehammer\.no|lillesand\.no|lindesnes\.no|lindas\.no|lindås\.no|lom\.no|loppa\.no|lahppi\.no|láhppi\.no|lund\.no|lunner\.no|luroy\.no|lurøy\.no|luster\.no|lyngdal\.no|lyngen\.no|ivgu\.no|lardal\.no|lerdal\.no|lærdal\.no|lodingen\.no|lødingen\.no|lorenskog\.no|lørenskog\.no|loten\.no|løten\.no|malvik\.no|masoy\.no|måsøy\.no|muosat\.no|muosát\.no|mandal\.no|marker\.no|marnardal\.no|masfjorden\.no|meland\.no|meldal\.no|melhus\.no|meloy\.no|meløy\.no|meraker\.no|meråker\.no|moareke\.no|moåreke\.no|midsund\.no|midtre-gauldal\.no|modalen\.no|modum\.no|molde\.no|moskenes\.no|moss\.no|mosvik\.no|malselv\.no|målselv\.no|malatvuopmi\.no|málatvuopmi\.no|namdalseid\.no|aejrie\.no|namsos\.no|namsskogan\.no|naamesjevuemie\.no|nååmesjevuemie\.no|laakesvuemie\.no|nannestad\.no|narvik\.no|narviika\.no|naustdal\.no|nedre-eiker\.no|nes\.akershus\.no|nes\.buskerud\.no|nesna\.no|nesodden\.no|nesseby\.no|unjarga\.no|unjárga\.no|nesset\.no|nissedal\.no|nittedal\.no|nord-aurdal\.no|nord-fron\.no|nord-odal\.no|norddal\.no|nordkapp\.no|davvenjarga\.no|davvenjárga\.no|nordre-land\.no|nordreisa\.no|raisa\.no|ráisa\.no|nore-og-uvdal\.no|notodden\.no|naroy\.no|nærøy\.no|notteroy\.no|nøtterøy\.no|odda\.no|oksnes\.no|øksnes\.no|oppdal\.no|oppegard\.no|oppegård\.no|orkdal\.no|orland\.no|ørland\.no|orskog\.no|ørskog\.no|orsta\.no|ørsta\.no|os\.hedmark\.no|os\.hordaland\.no|osen\.no|osteroy\.no|osterøy\.no|ostre-toten\.no|østre-toten\.no|overhalla\.no|ovre-eiker\.no|øvre-eiker\.no|oyer\.no|øyer\.no|oygarden\.no|øygarden\.no|oystre-slidre\.no|øystre-slidre\.no|porsanger\.no|porsangu\.no|porsáŋgu\.no|porsgrunn\.no|radoy\.no|radøy\.no|rakkestad\.no|rana\.no|ruovat\.no|randaberg\.no|rauma\.no|rendalen\.no|rennebu\.no|rennesoy\.no|rennesøy\.no|rindal\.no|ringebu\.no|ringerike\.no|ringsaker\.no|rissa\.no|risor\.no|risør\.no|roan\.no|rollag\.no|rygge\.no|ralingen\.no|rælingen\.no|rodoy\.no|rødøy\.no|romskog\.no|rømskog\.no|roros\.no|røros\.no|rost\.no|røst\.no|royken\.no|røyken\.no|royrvik\.no|røyrvik\.no|rade\.no|råde\.no|salangen\.no|siellak\.no|saltdal\.no|salat\.no|sálát\.no|sálat\.no|samnanger\.no|sande\.more-og-romsdal\.no|sande\.møre-og-romsdal\.no|sande\.vestfold\.no|sandefjord\.no|sandnes\.no|sandoy\.no|sandøy\.no|sarpsborg\.no|sauda\.no|sauherad\.no|sel\.no|selbu\.no|selje\.no|seljord\.no|sigdal\.no|siljan\.no|sirdal\.no|skaun\.no|skedsmo\.no|ski\.no|skien\.no|skiptvet\.no|skjervoy\.no|skjervøy\.no|skierva\.no|skiervá\.no|skjak\.no|skjåk\.no|skodje\.no|skanland\.no|skånland\.no|skanit\.no|skánit\.no|smola\.no|smøla\.no|snillfjord\.no|snasa\.no|snåsa\.no|snoasa\.no|snaase\.no|snåase\.no|sogndal\.no|sokndal\.no|sola\.no|solund\.no|songdalen\.no|sortland\.no|spydeberg\.no|stange\.no|stavanger\.no|steigen\.no|steinkjer\.no|stjordal\.no|stjørdal\.no|stokke\.no|stor-elvdal\.no|stord\.no|stordal\.no|storfjord\.no|omasvuotna\.no|strand\.no|stranda\.no|stryn\.no|sula\.no|suldal\.no|sund\.no|sunndal\.no|surnadal\.no|sveio\.no|svelvik\.no|sykkylven\.no|sogne\.no|søgne\.no|somna\.no|sømna\.no|sondre-land\.no|søndre-land\.no|sor-aurdal\.no|sør-aurdal\.no|sor-fron\.no|sør-fron\.no|sor-odal\.no|sør-odal\.no|sor-varanger\.no|sør-varanger\.no|matta-varjjat\.no|mátta-várjjat\.no|sorfold\.no|sørfold\.no|sorreisa\.no|sørreisa\.no|sorum\.no|sørum\.no|tana\.no|deatnu\.no|time\.no|tingvoll\.no|tinn\.no|tjeldsund\.no|dielddanuorri\.no|tjome\.no|tjøme\.no|tokke\.no|tolga\.no|torsken\.no|tranoy\.no|tranøy\.no|tromso\.no|tromsø\.no|tromsa\.no|romsa\.no|trondheim\.no|troandin\.no|trysil\.no|trana\.no|træna\.no|trogstad\.no|trøgstad\.no|tvedestrand\.no|tydal\.no|tynset\.no|tysfjord\.no|divtasvuodna\.no|divttasvuotna\.no|tysnes\.no|tysvar\.no|tysvær\.no|tonsberg\.no|tønsberg\.no|ullensaker\.no|ullensvang\.no|ulvik\.no|utsira\.no|vadso\.no|vadsø\.no|cahcesuolo\.no|čáhcesuolo\.no|vaksdal\.no|valle\.no|vang\.no|vanylven\.no|vardo\.no|vardø\.no|varggat\.no|várggát\.no|vefsn\.no|vaapste\.no|vega\.no|vegarshei\.no|vegårshei\.no|vennesla\.no|verdal\.no|verran\.no|vestby\.no|vestnes\.no|vestre-slidre\.no|vestre-toten\.no|vestvagoy\.no|vestvågøy\.no|vevelstad\.no|vik\.no|vikna\.no|vindafjord\.no|volda\.no|voss\.no|varoy\.no|værøy\.no|vagan\.no|vågan\.no|voagat\.no|vagsoy\.no|vågsøy\.no|vaga\.no|vågå\.no|valer\.ostfold\.no|våler\.østfold\.no|valer\.hedmark\.no|våler\.hedmark\.no|[^.]+\.np|nr|biz\.nr|info\.nr|gov\.nr|edu\.nr|org\.nr|net\.nr|com\.nr|nu|nz|ac\.nz|co\.nz|cri\.nz|geek\.nz|gen\.nz|govt\.nz|health\.nz|iwi\.nz|kiwi\.nz|maori\.nz|mil\.nz|māori\.nz|net\.nz|org\.nz|parliament\.nz|school\.nz|om|co\.om|com\.om|edu\.om|gov\.om|med\.om|museum\.om|net\.om|org\.om|pro\.om|onion|org|pa|ac\.pa|gob\.pa|com\.pa|org\.pa|sld\.pa|edu\.pa|net\.pa|ing\.pa|abo\.pa|med\.pa|nom\.pa|pe|edu\.pe|gob\.pe|nom\.pe|mil\.pe|org\.pe|com\.pe|net\.pe|pf|com\.pf|org\.pf|edu\.pf|[^.]+\.pg|ph|com\.ph|net\.ph|org\.ph|gov\.ph|edu\.ph|ngo\.ph|mil\.ph|i\.ph|pk|com\.pk|net\.pk|edu\.pk|org\.pk|fam\.pk|biz\.pk|web\.pk|gov\.pk|gob\.pk|gok\.pk|gon\.pk|gop\.pk|gos\.pk|info\.pk|pl|com\.pl|net\.pl|org\.pl|aid\.pl|agro\.pl|atm\.pl|auto\.pl|biz\.pl|edu\.pl|gmina\.pl|gsm\.pl|info\.pl|mail\.pl|miasta\.pl|media\.pl|mil\.pl|nieruchomosci\.pl|nom\.pl|pc\.pl|powiat\.pl|priv\.pl|realestate\.pl|rel\.pl|sex\.pl|shop\.pl|sklep\.pl|sos\.pl|szkola\.pl|targi\.pl|tm\.pl|tourism\.pl|travel\.pl|turystyka\.pl|gov\.pl|ap\.gov\.pl|ic\.gov\.pl|is\.gov\.pl|us\.gov\.pl|kmpsp\.gov\.pl|kppsp\.gov\.pl|kwpsp\.gov\.pl|psp\.gov\.pl|wskr\.gov\.pl|kwp\.gov\.pl|mw\.gov\.pl|ug\.gov\.pl|um\.gov\.pl|umig\.gov\.pl|ugim\.gov\.pl|upow\.gov\.pl|uw\.gov\.pl|starostwo\.gov\.pl|pa\.gov\.pl|po\.gov\.pl|psse\.gov\.pl|pup\.gov\.pl|rzgw\.gov\.pl|sa\.gov\.pl|so\.gov\.pl|sr\.gov\.pl|wsa\.gov\.pl|sko\.gov\.pl|uzs\.gov\.pl|wiih\.gov\.pl|winb\.gov\.pl|pinb\.gov\.pl|wios\.gov\.pl|witd\.gov\.pl|wzmiuw\.gov\.pl|piw\.gov\.pl|wiw\.gov\.pl|griw\.gov\.pl|wif\.gov\.pl|oum\.gov\.pl|sdn\.gov\.pl|zp\.gov\.pl|uppo\.gov\.pl|mup\.gov\.pl|wuoz\.gov\.pl|konsulat\.gov\.pl|oirm\.gov\.pl|augustow\.pl|babia-gora\.pl|bedzin\.pl|beskidy\.pl|bialowieza\.pl|bialystok\.pl|bielawa\.pl|bieszczady\.pl|boleslawiec\.pl|bydgoszcz\.pl|bytom\.pl|cieszyn\.pl|czeladz\.pl|czest\.pl|dlugoleka\.pl|elblag\.pl|elk\.pl|glogow\.pl|gniezno\.pl|gorlice\.pl|grajewo\.pl|ilawa\.pl|jaworzno\.pl|jelenia-gora\.pl|jgora\.pl|kalisz\.pl|kazimierz-dolny\.pl|karpacz\.pl|kartuzy\.pl|kaszuby\.pl|katowice\.pl|kepno\.pl|ketrzyn\.pl|klodzko\.pl|kobierzyce\.pl|kolobrzeg\.pl|konin\.pl|konskowola\.pl|kutno\.pl|lapy\.pl|lebork\.pl|legnica\.pl|lezajsk\.pl|limanowa\.pl|lomza\.pl|lowicz\.pl|lubin\.pl|lukow\.pl|malbork\.pl|malopolska\.pl|mazowsze\.pl|mazury\.pl|mielec\.pl|mielno\.pl|mragowo\.pl|naklo\.pl|nowaruda\.pl|nysa\.pl|olawa\.pl|olecko\.pl|olkusz\.pl|olsztyn\.pl|opoczno\.pl|opole\.pl|ostroda\.pl|ostroleka\.pl|ostrowiec\.pl|ostrowwlkp\.pl|pila\.pl|pisz\.pl|podhale\.pl|podlasie\.pl|polkowice\.pl|pomorze\.pl|pomorskie\.pl|prochowice\.pl|pruszkow\.pl|przeworsk\.pl|pulawy\.pl|radom\.pl|rawa-maz\.pl|rybnik\.pl|rzeszow\.pl|sanok\.pl|sejny\.pl|slask\.pl|slupsk\.pl|sosnowiec\.pl|stalowa-wola\.pl|skoczow\.pl|starachowice\.pl|stargard\.pl|suwalki\.pl|swidnica\.pl|swiebodzin\.pl|swinoujscie\.pl|szczecin\.pl|szczytno\.pl|tarnobrzeg\.pl|tgory\.pl|turek\.pl|tychy\.pl|ustka\.pl|walbrzych\.pl|warmia\.pl|warszawa\.pl|waw\.pl|wegrow\.pl|wielun\.pl|wlocl\.pl|wloclawek\.pl|wodzislaw\.pl|wolomin\.pl|wroclaw\.pl|zachpomor\.pl|zagan\.pl|zarow\.pl|zgora\.pl|zgorzelec\.pl|pm|pn|gov\.pn|co\.pn|org\.pn|edu\.pn|net\.pn|post|pr|com\.pr|net\.pr|org\.pr|gov\.pr|edu\.pr|isla\.pr|pro\.pr|biz\.pr|info\.pr|name\.pr|est\.pr|prof\.pr|ac\.pr|pro|aaa\.pro|aca\.pro|acct\.pro|avocat\.pro|bar\.pro|cpa\.pro|eng\.pro|jur\.pro|law\.pro|med\.pro|recht\.pro|ps|edu\.ps|gov\.ps|sec\.ps|plo\.ps|com\.ps|org\.ps|net\.ps|pt|net\.pt|gov\.pt|org\.pt|edu\.pt|int\.pt|publ\.pt|com\.pt|nome\.pt|pw|co\.pw|ne\.pw|or\.pw|ed\.pw|go\.pw|belau\.pw|py|com\.py|coop\.py|edu\.py|gov\.py|mil\.py|net\.py|org\.py|qa|com\.qa|edu\.qa|gov\.qa|mil\.qa|name\.qa|net\.qa|org\.qa|sch\.qa|re|asso\.re|com\.re|nom\.re|ro|arts\.ro|com\.ro|firm\.ro|info\.ro|nom\.ro|nt\.ro|org\.ro|rec\.ro|store\.ro|tm\.ro|www\.ro|rs|ac\.rs|co\.rs|edu\.rs|gov\.rs|in\.rs|org\.rs|ru|ac\.ru|edu\.ru|gov\.ru|int\.ru|mil\.ru|test\.ru|rw|gov\.rw|net\.rw|edu\.rw|ac\.rw|com\.rw|co\.rw|int\.rw|mil\.rw|gouv\.rw|sa|com\.sa|net\.sa|org\.sa|gov\.sa|med\.sa|pub\.sa|edu\.sa|sch\.sa|sb|com\.sb|edu\.sb|gov\.sb|net\.sb|org\.sb|sc|com\.sc|gov\.sc|net\.sc|org\.sc|edu\.sc|sd|com\.sd|net\.sd|org\.sd|edu\.sd|med\.sd|tv\.sd|gov\.sd|info\.sd|se|a\.se|ac\.se|b\.se|bd\.se|brand\.se|c\.se|d\.se|e\.se|f\.se|fh\.se|fhsk\.se|fhv\.se|g\.se|h\.se|i\.se|k\.se|komforb\.se|kommunalforbund\.se|komvux\.se|l\.se|lanbib\.se|m\.se|n\.se|naturbruksgymn\.se|o\.se|org\.se|p\.se|parti\.se|pp\.se|press\.se|r\.se|s\.se|t\.se|tm\.se|u\.se|w\.se|x\.se|y\.se|z\.se|sg|com\.sg|net\.sg|org\.sg|gov\.sg|edu\.sg|per\.sg|sh|com\.sh|net\.sh|gov\.sh|org\.sh|mil\.sh|si|sj|sk|sl|com\.sl|net\.sl|edu\.sl|gov\.sl|org\.sl|sm|sn|art\.sn|com\.sn|edu\.sn|gouv\.sn|org\.sn|perso\.sn|univ\.sn|so|com\.so|net\.so|org\.so|sr|st|co\.st|com\.st|consulado\.st|edu\.st|embaixada\.st|gov\.st|mil\.st|net\.st|org\.st|principe\.st|saotome\.st|store\.st|su|sv|com\.sv|edu\.sv|gob\.sv|org\.sv|red\.sv|sx|gov\.sx|sy|edu\.sy|gov\.sy|net\.sy|mil\.sy|com\.sy|org\.sy|sz|co\.sz|ac\.sz|org\.sz|tc|td|tel|tf|tg|th|ac\.th|co\.th|go\.th|in\.th|mi\.th|net\.th|or\.th|tj|ac\.tj|biz\.tj|co\.tj|com\.tj|edu\.tj|go\.tj|gov\.tj|int\.tj|mil\.tj|name\.tj|net\.tj|nic\.tj|org\.tj|test\.tj|web\.tj|tk|tl|gov\.tl|tm|com\.tm|co\.tm|org\.tm|net\.tm|nom\.tm|gov\.tm|mil\.tm|edu\.tm|tn|com\.tn|ens\.tn|fin\.tn|gov\.tn|ind\.tn|intl\.tn|nat\.tn|net\.tn|org\.tn|info\.tn|perso\.tn|tourism\.tn|edunet\.tn|rnrt\.tn|rns\.tn|rnu\.tn|mincom\.tn|agrinet\.tn|defense\.tn|turen\.tn|to|com\.to|gov\.to|net\.to|org\.to|edu\.to|mil\.to|tr|com\.tr|info\.tr|biz\.tr|net\.tr|org\.tr|web\.tr|gen\.tr|tv\.tr|av\.tr|dr\.tr|bbs\.tr|name\.tr|tel\.tr|gov\.tr|bel\.tr|pol\.tr|mil\.tr|k12\.tr|edu\.tr|kep\.tr|nc\.tr|gov\.nc\.tr|travel|tt|co\.tt|com\.tt|org\.tt|net\.tt|biz\.tt|info\.tt|pro\.tt|int\.tt|coop\.tt|jobs\.tt|mobi\.tt|travel\.tt|museum\.tt|aero\.tt|name\.tt|gov\.tt|edu\.tt|tv|tw|edu\.tw|gov\.tw|mil\.tw|com\.tw|net\.tw|org\.tw|idv\.tw|game\.tw|ebiz\.tw|club\.tw|網路\.tw|組織\.tw|商業\.tw|tz|ac\.tz|co\.tz|go\.tz|hotel\.tz|info\.tz|me\.tz|mil\.tz|mobi\.tz|ne\.tz|or\.tz|sc\.tz|tv\.tz|ua|com\.ua|edu\.ua|gov\.ua|in\.ua|net\.ua|org\.ua|cherkassy\.ua|cherkasy\.ua|chernigov\.ua|chernihiv\.ua|chernivtsi\.ua|chernovtsy\.ua|ck\.ua|cn\.ua|cr\.ua|crimea\.ua|cv\.ua|dn\.ua|dnepropetrovsk\.ua|dnipropetrovsk\.ua|dominic\.ua|donetsk\.ua|dp\.ua|if\.ua|ivano-frankivsk\.ua|kh\.ua|kharkiv\.ua|kharkov\.ua|kherson\.ua|khmelnitskiy\.ua|khmelnytskyi\.ua|kiev\.ua|kirovograd\.ua|km\.ua|kr\.ua|krym\.ua|ks\.ua|kv\.ua|kyiv\.ua|lg\.ua|lt\.ua|lugansk\.ua|lutsk\.ua|lv\.ua|lviv\.ua|mk\.ua|mykolaiv\.ua|nikolaev\.ua|od\.ua|odesa\.ua|odessa\.ua|pl\.ua|poltava\.ua|rivne\.ua|rovno\.ua|rv\.ua|sb\.ua|sebastopol\.ua|sevastopol\.ua|sm\.ua|sumy\.ua|te\.ua|ternopil\.ua|uz\.ua|uzhgorod\.ua|vinnica\.ua|vinnytsia\.ua|vn\.ua|volyn\.ua|yalta\.ua|zaporizhzhe\.ua|zaporizhzhia\.ua|zhitomir\.ua|zhytomyr\.ua|zp\.ua|zt\.ua|ug|co\.ug|or\.ug|ac\.ug|sc\.ug|go\.ug|ne\.ug|com\.ug|org\.ug|uk|ac\.uk|co\.uk|gov\.uk|ltd\.uk|me\.uk|net\.uk|nhs\.uk|org\.uk|plc\.uk|police\.uk|[^.]+\.sch\.uk|us|dni\.us|fed\.us|isa\.us|kids\.us|nsn\.us|ak\.us|al\.us|ar\.us|as\.us|az\.us|ca\.us|co\.us|ct\.us|dc\.us|de\.us|fl\.us|ga\.us|gu\.us|hi\.us|ia\.us|id\.us|il\.us|in\.us|ks\.us|ky\.us|la\.us|ma\.us|md\.us|me\.us|mi\.us|mn\.us|mo\.us|ms\.us|mt\.us|nc\.us|nd\.us|ne\.us|nh\.us|nj\.us|nm\.us|nv\.us|ny\.us|oh\.us|ok\.us|or\.us|pa\.us|pr\.us|ri\.us|sc\.us|sd\.us|tn\.us|tx\.us|ut\.us|vi\.us|vt\.us|va\.us|wa\.us|wi\.us|wv\.us|wy\.us|k12\.ak\.us|k12\.al\.us|k12\.ar\.us|k12\.as\.us|k12\.az\.us|k12\.ca\.us|k12\.co\.us|k12\.ct\.us|k12\.dc\.us|k12\.de\.us|k12\.fl\.us|k12\.ga\.us|k12\.gu\.us|k12\.ia\.us|k12\.id\.us|k12\.il\.us|k12\.in\.us|k12\.ks\.us|k12\.ky\.us|k12\.la\.us|k12\.ma\.us|k12\.md\.us|k12\.me\.us|k12\.mi\.us|k12\.mn\.us|k12\.mo\.us|k12\.ms\.us|k12\.mt\.us|k12\.nc\.us|k12\.ne\.us|k12\.nh\.us|k12\.nj\.us|k12\.nm\.us|k12\.nv\.us|k12\.ny\.us|k12\.oh\.us|k12\.ok\.us|k12\.or\.us|k12\.pa\.us|k12\.pr\.us|k12\.ri\.us|k12\.sc\.us|k12\.tn\.us|k12\.tx\.us|k12\.ut\.us|k12\.vi\.us|k12\.vt\.us|k12\.va\.us|k12\.wa\.us|k12\.wi\.us|k12\.wy\.us|cc\.ak\.us|cc\.al\.us|cc\.ar\.us|cc\.as\.us|cc\.az\.us|cc\.ca\.us|cc\.co\.us|cc\.ct\.us|cc\.dc\.us|cc\.de\.us|cc\.fl\.us|cc\.ga\.us|cc\.gu\.us|cc\.hi\.us|cc\.ia\.us|cc\.id\.us|cc\.il\.us|cc\.in\.us|cc\.ks\.us|cc\.ky\.us|cc\.la\.us|cc\.ma\.us|cc\.md\.us|cc\.me\.us|cc\.mi\.us|cc\.mn\.us|cc\.mo\.us|cc\.ms\.us|cc\.mt\.us|cc\.nc\.us|cc\.nd\.us|cc\.ne\.us|cc\.nh\.us|cc\.nj\.us|cc\.nm\.us|cc\.nv\.us|cc\.ny\.us|cc\.oh\.us|cc\.ok\.us|cc\.or\.us|cc\.pa\.us|cc\.pr\.us|cc\.ri\.us|cc\.sc\.us|cc\.sd\.us|cc\.tn\.us|cc\.tx\.us|cc\.ut\.us|cc\.vi\.us|cc\.vt\.us|cc\.va\.us|cc\.wa\.us|cc\.wi\.us|cc\.wv\.us|cc\.wy\.us|lib\.ak\.us|lib\.al\.us|lib\.ar\.us|lib\.as\.us|lib\.az\.us|lib\.ca\.us|lib\.co\.us|lib\.ct\.us|lib\.dc\.us|lib\.fl\.us|lib\.ga\.us|lib\.gu\.us|lib\.hi\.us|lib\.ia\.us|lib\.id\.us|lib\.il\.us|lib\.in\.us|lib\.ks\.us|lib\.ky\.us|lib\.la\.us|lib\.ma\.us|lib\.md\.us|lib\.me\.us|lib\.mi\.us|lib\.mn\.us|lib\.mo\.us|lib\.ms\.us|lib\.mt\.us|lib\.nc\.us|lib\.nd\.us|lib\.ne\.us|lib\.nh\.us|lib\.nj\.us|lib\.nm\.us|lib\.nv\.us|lib\.ny\.us|lib\.oh\.us|lib\.ok\.us|lib\.or\.us|lib\.pa\.us|lib\.pr\.us|lib\.ri\.us|lib\.sc\.us|lib\.sd\.us|lib\.tn\.us|lib\.tx\.us|lib\.ut\.us|lib\.vi\.us|lib\.vt\.us|lib\.va\.us|lib\.wa\.us|lib\.wi\.us|lib\.wy\.us|pvt\.k12\.ma\.us|chtr\.k12\.ma\.us|paroch\.k12\.ma\.us|uy|com\.uy|edu\.uy|gub\.uy|mil\.uy|net\.uy|org\.uy|uz|co\.uz|com\.uz|net\.uz|org\.uz|va|vc|com\.vc|net\.vc|org\.vc|gov\.vc|mil\.vc|edu\.vc|ve|arts\.ve|co\.ve|com\.ve|e12\.ve|edu\.ve|firm\.ve|gob\.ve|gov\.ve|info\.ve|int\.ve|mil\.ve|net\.ve|org\.ve|rec\.ve|store\.ve|tec\.ve|web\.ve|vg|vi|co\.vi|com\.vi|k12\.vi|net\.vi|org\.vi|vn|com\.vn|net\.vn|org\.vn|edu\.vn|gov\.vn|int\.vn|ac\.vn|biz\.vn|info\.vn|name\.vn|pro\.vn|health\.vn|vu|com\.vu|edu\.vu|net\.vu|org\.vu|wf|ws|com\.ws|net\.ws|org\.ws|gov\.ws|edu\.ws|yt|امارات|հայ|বাংলা|бел|中国|中國|الجزائر|مصر|ею|გე|ελ|香港|भारत|بھارت|భారత్|ભારત|ਭਾਰਤ|ভারত|இந்தியா|ایران|ايران|عراق|الاردن|한국|қаз|ලංකා|இலங்கை|المغرب|мкд|мон|澳門|澳门|مليسيا|عمان|پاکستان|پاكستان|فلسطين|срб|пр\.срб|орг\.срб|обр\.срб|од\.срб|упр\.срб|ак\.срб|рф|قطر|السعودية|السعودیة|السعودیۃ|السعوديه|سودان|新加坡|சிங்கப்பூர்|سورية|سوريا|ไทย|تونس|台灣|台湾|臺灣|укр|اليمن|xxx|[^.]+\.ye|ac\.za|agric\.za|alt\.za|co\.za|edu\.za|gov\.za|grondar\.za|law\.za|mil\.za|net\.za|ngo\.za|nis\.za|nom\.za|org\.za|school\.za|tm\.za|web\.za|zm|ac\.zm|biz\.zm|co\.zm|com\.zm|edu\.zm|gov\.zm|info\.zm|mil\.zm|net\.zm|org\.zm|sch\.zm|[^.]+\.zw|aaa|aarp|abarth|abb|abbott|abbvie|abc|able|abogado|abudhabi|academy|accenture|accountant|accountants|aco|active|actor|adac|ads|adult|aeg|aetna|afamilycompany|afl|africa|agakhan|agency|aig|aigo|airbus|airforce|airtel|akdn|alfaromeo|alibaba|alipay|allfinanz|allstate|ally|alsace|alstom|americanexpress|americanfamily|amex|amfam|amica|amsterdam|analytics|android|anquan|anz|aol|apartments|app|apple|aquarelle|arab|aramco|archi|army|art|arte|asda|associates|athleta|attorney|auction|audi|audible|audio|auspost|author|auto|autos|avianca|aws|axa|azure|baby|baidu|banamex|bananarepublic|band|bank|bar|barcelona|barclaycard|barclays|barefoot|bargains|baseball|basketball|bauhaus|bayern|bbc|bbt|bbva|bcg|bcn|beats|beauty|beer|bentley|berlin|best|bestbuy|bet|bharti|bible|bid|bike|bing|bingo|bio|black|blackfriday|blanco|blockbuster|blog|bloomberg|blue|bms|bmw|bnl|bnpparibas|boats|boehringer|bofa|bom|bond|boo|book|booking|boots|bosch|bostik|boston|bot|boutique|box|bradesco|bridgestone|broadway|broker|brother|brussels|budapest|bugatti|build|builders|business|buy|buzz|bzh|cab|cafe|cal|call|calvinklein|cam|camera|camp|cancerresearch|canon|capetown|capital|capitalone|car|caravan|cards|care|career|careers|cars|cartier|casa|case|caseih|cash|casino|catering|catholic|cba|cbn|cbre|cbs|ceb|center|ceo|cern|cfa|cfd|chanel|channel|chase|chat|cheap|chintai|chloe|christmas|chrome|chrysler|church|cipriani|circle|cisco|citadel|citi|citic|city|cityeats|claims|cleaning|click|clinic|clinique|clothing|cloud|club|clubmed|coach|codes|coffee|college|cologne|comcast|commbank|community|company|compare|computer|comsec|condos|construction|consulting|contact|contractors|cooking|cookingchannel|cool|corsica|country|coupon|coupons|courses|credit|creditcard|creditunion|cricket|crown|crs|cruise|cruises|csc|cuisinella|cymru|cyou|dabur|dad|dance|data|date|dating|datsun|day|dclk|dds|deal|dealer|deals|degree|delivery|dell|deloitte|delta|democrat|dental|dentist|desi|design|dev|dhl|diamonds|diet|digital|direct|directory|discount|discover|dish|diy|dnp|docs|doctor|dodge|dog|doha|domains|dot|download|drive|dtv|dubai|duck|dunlop|duns|dupont|durban|dvag|dvr|dwg|earth|eat|eco|edeka|education|email|emerck|energy|engineer|engineering|enterprises|epost|epson|equipment|ericsson|erni|esq|estate|esurance|etisalat|eurovision|eus|events|everbank|exchange|expert|exposed|express|extraspace|fage|fail|fairwinds|faith|family|fan|fans|farm|farmers|fashion|fast|fedex|feedback|ferrari|ferrero|fiat|fidelity|fido|film|final|finance|financial|fire|firestone|firmdale|fish|fishing|fit|fitness|flickr|flights|flir|florist|flowers|fly|foo|food|foodnetwork|football|ford|forex|forsale|forum|foundation|fox|free|fresenius|frl|frogans|frontdoor|frontier|ftr|fujitsu|fujixerox|fun|fund|furniture|futbol|fyi|gal|gallery|gallo|gallup|game|games|gap|garden|gbiz|gdn|gea|gent|genting|george|ggee|gift|gifts|gives|giving|glade|glass|gle|global|globo|gmail|gmbh|gmo|gmx|godaddy|gold|goldpoint|golf|goo|goodhands|goodyear|goog|google|gop|got|grainger|graphics|gratis|green|gripe|grocery|group|guardian|gucci|guge|guide|guitars|guru|hair|hamburg|hangout|haus|hbo|hdfc|hdfcbank|health|healthcare|help|helsinki|here|hermes|hgtv|hiphop|hisamitsu|hitachi|hiv|hkt|hockey|holdings|holiday|homedepot|homegoods|homes|homesense|honda|honeywell|horse|hospital|host|hosting|hot|hoteles|hotels|hotmail|house|how|hsbc|htc|hughes|hyatt|hyundai|ibm|icbc|ice|icu|ieee|ifm|iinet|ikano|imamat|imdb|immo|immobilien|industries|infiniti|ing|ink|institute|insurance|insure|intel|international|intuit|investments|ipiranga|irish|iselect|ismaili|ist|istanbul|itau|itv|iveco|iwc|jaguar|java|jcb|jcp|jeep|jetzt|jewelry|jio|jlc|jll|jmp|jnj|joburg|jot|joy|jpmorgan|jprs|juegos|juniper|kaufen|kddi|kerryhotels|kerrylogistics|kerryproperties|kfh|kia|kim|kinder|kindle|kitchen|kiwi|koeln|komatsu|kosher|kpmg|kpn|krd|kred|kuokgroup|kyoto|lacaixa|ladbrokes|lamborghini|lamer|lancaster|lancia|lancome|land|landrover|lanxess|lasalle|lat|latino|latrobe|law|lawyer|lds|lease|leclerc|lefrak|legal|lego|lexus|lgbt|liaison|lidl|life|lifeinsurance|lifestyle|lighting|like|lilly|limited|limo|lincoln|linde|link|lipsy|live|living|lixil|loan|loans|locker|locus|loft|lol|london|lotte|lotto|love|lpl|lplfinancial|ltd|ltda|lundbeck|lupin|luxe|luxury|macys|madrid|maif|maison|makeup|man|management|mango|map|market|marketing|markets|marriott|marshalls|maserati|mattel|mba|mcd|mcdonalds|mckinsey|med|media|meet|melbourne|meme|memorial|men|menu|meo|merckmsd|metlife|miami|microsoft|mini|mint|mit|mitsubishi|mlb|mls|mma|mobile|mobily|moda|moe|moi|mom|monash|money|monster|montblanc|mopar|mormon|mortgage|moscow|moto|motorcycles|mov|movie|movistar|msd|mtn|mtpc|mtr|mutual|mutuelle|nab|nadex|nagoya|nationwide|natura|navy|nba|nec|netbank|netflix|network|neustar|new|newholland|news|next|nextdirect|nexus|nfl|ngo|nhk|nico|nike|nikon|ninja|nissan|nissay|nokia|northwesternmutual|norton|now|nowruz|nowtv|nra|nrw|ntt|nyc|obi|observer|off|office|okinawa|olayan|olayangroup|oldnavy|ollo|omega|one|ong|onl|online|onyourside|ooo|open|oracle|orange|organic|orientexpress|origins|osaka|otsuka|ott|ovh|page|pamperedchef|panasonic|panerai|paris|pars|partners|parts|party|passagens|pay|pccw|pet|pfizer|pharmacy|phd|philips|phone|photo|photography|photos|physio|piaget|pics|pictet|pictures|pid|pin|ping|pink|pioneer|pizza|place|play|playstation|plumbing|plus|pnc|pohl|poker|politie|porn|pramerica|praxi|press|prime|prod|productions|prof|progressive|promo|properties|property|protection|pru|prudential|pub|pwc|qpon|quebec|quest|qvc|racing|radio|raid|read|realestate|realtor|realty|recipes|red|redstone|redumbrella|rehab|reise|reisen|reit|reliance|ren|rent|rentals|repair|report|republican|rest|restaurant|review|reviews|rexroth|rich|richardli|ricoh|rightathome|ril|rio|rip|rmit|rocher|rocks|rodeo|rogers|room|rsvp|ruhr|run|rwe|ryukyu|saarland|safe|safety|sakura|sale|salon|samsclub|samsung|sandvik|sandvikcoromant|sanofi|sap|sapo|sarl|sas|save|saxo|sbi|sbs|sca|scb|schaeffler|schmidt|scholarships|school|schule|schwarz|science|scjohnson|scor|scot|search|seat|secure|security|seek|select|sener|services|ses|seven|sew|sex|sexy|sfr|shangrila|sharp|shaw|shell|shia|shiksha|shoes|shop|shopping|shouji|show|showtime|shriram|silk|sina|singles|site|ski|skin|sky|skype|sling|smart|smile|sncf|soccer|social|softbank|software|sohu|solar|solutions|song|sony|soy|space|spiegel|spot|spreadbetting|srl|srt|stada|staples|star|starhub|statebank|statefarm|statoil|stc|stcgroup|stockholm|storage|store|stream|studio|study|style|sucks|supplies|supply|support|surf|surgery|suzuki|swatch|swiftcover|swiss|sydney|symantec|systems|tab|taipei|talk|taobao|target|tatamotors|tatar|tattoo|tax|taxi|tci|tdk|team|tech|technology|telecity|telefonica|temasek|tennis|teva|thd|theater|theatre|theguardian|tiaa|tickets|tienda|tiffany|tips|tires|tirol|tjmaxx|tjx|tkmaxx|tmall|today|tokyo|tools|top|toray|toshiba|total|tours|town|toyota|toys|trade|trading|training|travelchannel|travelers|travelersinsurance|trust|trv|tube|tui|tunes|tushu|tvs|ubank|ubs|uconnect|unicom|university|uno|uol|ups|vacations|vana|vanguard|vegas|ventures|verisign|versicherung|vet|viajes|video|vig|viking|villas|vin|vip|virgin|visa|vision|vista|vistaprint|viva|vivo|vlaanderen|vodka|volkswagen|volvo|vote|voting|voto|voyage|vuelos|wales|walmart|walter|wang|wanggou|warman|watch|watches|weather|weatherchannel|webcam|weber|website|wed|wedding|weibo|weir|whoswho|wien|wiki|williamhill|win|windows|wine|winners|wme|wolterskluwer|woodside|work|works|world|wow|wtc|wtf|xbox|xerox|xfinity|xihuan|xin|कॉम|セール|佛山|慈善|集团|在线|大众汽车|点看|คอม|八卦|موقع|一号店|公益|公司|香格里拉|网站|移动|我爱你|москва|католик|онлайн|сайт|联通|קום|时尚|微博|淡马锡|ファッション|орг|नेट|ストア|삼성|商标|商店|商城|дети|ポイント|新闻|工行|家電|كوم|中文网|中信|娱乐|谷歌|電訊盈科|购物|クラウド|通販|网店|संगठन|餐厅|网络|ком|诺基亚|食品|飞利浦|手表|手机|ارامكو|العليان|اتصالات|بازار|موبايلي|ابوظبي|كاثوليك|همراه|닷컴|政府|شبكة|بيتك|عرب|机构|组织机构|健康|рус|珠宝|大拿|みんな|グーグル|世界|書籍|网址|닷넷|コム|天主教|游戏|vermögensberater|vermögensberatung|企业|信息|嘉里大酒店|嘉里|广东|政务|xperia|xyz|yachts|yahoo|yamaxun|yandex|yodobashi|yoga|yokohama|you|youtube|yun|zappos|zara|zero|zip|zippo|zone|zuerich|$beep\.pl|[^.]+\.compute\.estate|[^.]+\.alces\.network|[^.]+\.alwaysdata\.net|cloudfront\.net|[^.]+\.compute\.amazonaws\.com|[^.]+\.compute-1\.amazonaws\.com|[^.]+\.compute\.amazonaws\.com\.cn|us-east-1\.amazonaws\.com|elasticbeanstalk\.cn-north-1\.amazonaws\.com\.cn|[^.]+\.elasticbeanstalk\.com|[^.]+\.elb\.amazonaws\.com|[^.]+\.elb\.amazonaws\.com\.cn|s3\.amazonaws\.com|s3-ap-northeast-1\.amazonaws\.com|s3-ap-northeast-2\.amazonaws\.com|s3-ap-south-1\.amazonaws\.com|s3-ap-southeast-1\.amazonaws\.com|s3-ap-southeast-2\.amazonaws\.com|s3-ca-central-1\.amazonaws\.com|s3-eu-central-1\.amazonaws\.com|s3-eu-west-1\.amazonaws\.com|s3-eu-west-2\.amazonaws\.com|s3-external-1\.amazonaws\.com|s3-fips-us-gov-west-1\.amazonaws\.com|s3-sa-east-1\.amazonaws\.com|s3-us-gov-west-1\.amazonaws\.com|s3-us-east-2\.amazonaws\.com|s3-us-west-1\.amazonaws\.com|s3-us-west-2\.amazonaws\.com|s3\.ap-northeast-2\.amazonaws\.com|s3\.ap-south-1\.amazonaws\.com|s3\.cn-north-1\.amazonaws\.com\.cn|s3\.ca-central-1\.amazonaws\.com|s3\.eu-central-1\.amazonaws\.com|s3\.eu-west-2\.amazonaws\.com|s3\.us-east-2\.amazonaws\.com|s3\.dualstack\.ap-northeast-1\.amazonaws\.com|s3\.dualstack\.ap-northeast-2\.amazonaws\.com|s3\.dualstack\.ap-south-1\.amazonaws\.com|s3\.dualstack\.ap-southeast-1\.amazonaws\.com|s3\.dualstack\.ap-southeast-2\.amazonaws\.com|s3\.dualstack\.ca-central-1\.amazonaws\.com|s3\.dualstack\.eu-central-1\.amazonaws\.com|s3\.dualstack\.eu-west-1\.amazonaws\.com|s3\.dualstack\.eu-west-2\.amazonaws\.com|s3\.dualstack\.sa-east-1\.amazonaws\.com|s3\.dualstack\.us-east-1\.amazonaws\.com|s3\.dualstack\.us-east-2\.amazonaws\.com|s3-website-us-east-1\.amazonaws\.com|s3-website-us-west-1\.amazonaws\.com|s3-website-us-west-2\.amazonaws\.com|s3-website-ap-northeast-1\.amazonaws\.com|s3-website-ap-southeast-1\.amazonaws\.com|s3-website-ap-southeast-2\.amazonaws\.com|s3-website-eu-west-1\.amazonaws\.com|s3-website-sa-east-1\.amazonaws\.com|s3-website\.ap-northeast-2\.amazonaws\.com|s3-website\.ap-south-1\.amazonaws\.com|s3-website\.ca-central-1\.amazonaws\.com|s3-website\.eu-central-1\.amazonaws\.com|s3-website\.eu-west-2\.amazonaws\.com|s3-website\.us-east-2\.amazonaws\.com|t3l3p0rt\.net|tele\.amune\.org|on-aptible\.com|user\.party\.eus|pimienta\.org|poivron\.org|potager\.org|sweetpepper\.org|myasustor\.com|myfritz\.net|backplaneapp\.io|betainabox\.com|bnr\.la|boxfuse\.io|browsersafetymark\.io|mycd\.eu|ae\.org|ar\.com|br\.com|cn\.com|com\.de|com\.se|de\.com|eu\.com|gb\.com|gb\.net|hu\.com|hu\.net|jp\.net|jpn\.com|kr\.com|mex\.com|no\.com|qc\.com|ru\.com|sa\.com|se\.com|se\.net|uk\.com|uk\.net|us\.com|uy\.com|za\.bz|za\.com|africa\.com|gr\.com|in\.net|us\.org|co\.com|c\.la|certmgr\.org|xenapponazure\.com|virtueeldomein\.nl|cloudcontrolled\.com|cloudcontrolapp\.com|co\.ca|co\.cz|c\.cdn77\.org|cdn77-ssl\.net|r\.cdn77\.net|rsc\.cdn77\.org|ssl\.origin\.cdn77-secure\.org|cloudns\.asia|cloudns\.biz|cloudns\.club|cloudns\.cc|cloudns\.eu|cloudns\.in|cloudns\.info|cloudns\.org|cloudns\.pro|cloudns\.pw|cloudns\.us|co\.nl|co\.no|[^.]+\.platform\.sh|dyn\.cosidns\.de|dynamisches-dns\.de|dnsupdater\.de|internet-dns\.de|l-o-g-i-n\.de|dynamic-dns\.info|feste-ip\.net|knx-server\.net|static-access\.net|realm\.cz|[^.]+\.cryptonomic\.net|cupcake\.is|cyon\.link|cyon\.site|daplie\.me|biz\.dk|co\.dk|firm\.dk|reg\.dk|store\.dk|dedyn\.io|dnshome\.de|dreamhosters\.com|mydrobo\.com|drud\.io|drud\.us|duckdns\.org|dy\.fi|tunk\.org|dyndns-at-home\.com|dyndns-at-work\.com|dyndns-blog\.com|dyndns-free\.com|dyndns-home\.com|dyndns-ip\.com|dyndns-mail\.com|dyndns-office\.com|dyndns-pics\.com|dyndns-remote\.com|dyndns-server\.com|dyndns-web\.com|dyndns-wiki\.com|dyndns-work\.com|dyndns\.biz|dyndns\.info|dyndns\.org|dyndns\.tv|at-band-camp\.net|ath\.cx|barrel-of-knowledge\.info|barrell-of-knowledge\.info|better-than\.tv|blogdns\.com|blogdns\.net|blogdns\.org|blogsite\.org|boldlygoingnowhere\.org|broke-it\.net|buyshouses\.net|cechire\.com|dnsalias\.com|dnsalias\.net|dnsalias\.org|dnsdojo\.com|dnsdojo\.net|dnsdojo\.org|does-it\.net|doesntexist\.com|doesntexist\.org|dontexist\.com|dontexist\.net|dontexist\.org|doomdns\.com|doomdns\.org|dvrdns\.org|dyn-o-saur\.com|dynalias\.com|dynalias\.net|dynalias\.org|dynathome\.net|dyndns\.ws|endofinternet\.net|endofinternet\.org|endoftheinternet\.org|est-a-la-maison\.com|est-a-la-masion\.com|est-le-patron\.com|est-mon-blogueur\.com|for-better\.biz|for-more\.biz|for-our\.info|for-some\.biz|for-the\.biz|forgot\.her\.name|forgot\.his\.name|from-ak\.com|from-al\.com|from-ar\.com|from-az\.net|from-ca\.com|from-co\.net|from-ct\.com|from-dc\.com|from-de\.com|from-fl\.com|from-ga\.com|from-hi\.com|from-ia\.com|from-id\.com|from-il\.com|from-in\.com|from-ks\.com|from-ky\.com|from-la\.net|from-ma\.com|from-md\.com|from-me\.org|from-mi\.com|from-mn\.com|from-mo\.com|from-ms\.com|from-mt\.com|from-nc\.com|from-nd\.com|from-ne\.com|from-nh\.com|from-nj\.com|from-nm\.com|from-nv\.com|from-ny\.net|from-oh\.com|from-ok\.com|from-or\.com|from-pa\.com|from-pr\.com|from-ri\.com|from-sc\.com|from-sd\.com|from-tn\.com|from-tx\.com|from-ut\.com|from-va\.com|from-vt\.com|from-wa\.com|from-wi\.com|from-wv\.com|from-wy\.com|ftpaccess\.cc|fuettertdasnetz\.de|game-host\.org|game-server\.cc|getmyip\.com|gets-it\.net|go\.dyndns\.org|gotdns\.com|gotdns\.org|groks-the\.info|groks-this\.info|ham-radio-op\.net|here-for-more\.info|hobby-site\.com|hobby-site\.org|home\.dyndns\.org|homedns\.org|homeftp\.net|homeftp\.org|homeip\.net|homelinux\.com|homelinux\.net|homelinux\.org|homeunix\.com|homeunix\.net|homeunix\.org|iamallama\.com|in-the-band\.net|is-a-anarchist\.com|is-a-blogger\.com|is-a-bookkeeper\.com|is-a-bruinsfan\.org|is-a-bulls-fan\.com|is-a-candidate\.org|is-a-caterer\.com|is-a-celticsfan\.org|is-a-chef\.com|is-a-chef\.net|is-a-chef\.org|is-a-conservative\.com|is-a-cpa\.com|is-a-cubicle-slave\.com|is-a-democrat\.com|is-a-designer\.com|is-a-doctor\.com|is-a-financialadvisor\.com|is-a-geek\.com|is-a-geek\.net|is-a-geek\.org|is-a-green\.com|is-a-guru\.com|is-a-hard-worker\.com|is-a-hunter\.com|is-a-knight\.org|is-a-landscaper\.com|is-a-lawyer\.com|is-a-liberal\.com|is-a-libertarian\.com|is-a-linux-user\.org|is-a-llama\.com|is-a-musician\.com|is-a-nascarfan\.com|is-a-nurse\.com|is-a-painter\.com|is-a-patsfan\.org|is-a-personaltrainer\.com|is-a-photographer\.com|is-a-player\.com|is-a-republican\.com|is-a-rockstar\.com|is-a-socialist\.com|is-a-soxfan\.org|is-a-student\.com|is-a-teacher\.com|is-a-techie\.com|is-a-therapist\.com|is-an-accountant\.com|is-an-actor\.com|is-an-actress\.com|is-an-anarchist\.com|is-an-artist\.com|is-an-engineer\.com|is-an-entertainer\.com|is-by\.us|is-certified\.com|is-found\.org|is-gone\.com|is-into-anime\.com|is-into-cars\.com|is-into-cartoons\.com|is-into-games\.com|is-leet\.com|is-lost\.org|is-not-certified\.com|is-saved\.org|is-slick\.com|is-uberleet\.com|is-very-bad\.org|is-very-evil\.org|is-very-good\.org|is-very-nice\.org|is-very-sweet\.org|is-with-theband\.com|isa-geek\.com|isa-geek\.net|isa-geek\.org|isa-hockeynut\.com|issmarterthanyou\.com|isteingeek\.de|istmein\.de|kicks-ass\.net|kicks-ass\.org|knowsitall\.info|land-4-sale\.us|lebtimnetz\.de|leitungsen\.de|likes-pie\.com|likescandy\.com|merseine\.nu|mine\.nu|misconfused\.org|mypets\.ws|myphotos\.cc|neat-url\.com|office-on-the\.net|on-the-web\.tv|podzone\.net|podzone\.org|readmyblog\.org|saves-the-whales\.com|scrapper-site\.net|scrapping\.cc|selfip\.biz|selfip\.com|selfip\.info|selfip\.net|selfip\.org|sells-for-less\.com|sells-for-u\.com|sells-it\.net|sellsyourhome\.org|servebbs\.com|servebbs\.net|servebbs\.org|serveftp\.net|serveftp\.org|servegame\.org|shacknet\.nu|simple-url\.com|space-to-rent\.com|stuff-4-sale\.org|stuff-4-sale\.us|teaches-yoga\.com|thruhere\.net|traeumtgerade\.de|webhop\.biz|webhop\.info|webhop\.net|webhop\.org|worse-than\.tv|writesthisblog\.com|ddnss\.de|dyn\.ddnss\.de|dyndns\.ddnss\.de|dyndns1\.de|dyn-ip24\.de|home-webserver\.de|dyn\.home-webserver\.de|myhome-server\.de|ddnss\.org|dynv6\.net|e4\.cz|enonic\.io|customer\.enonic\.io|eu\.org|al\.eu\.org|asso\.eu\.org|at\.eu\.org|au\.eu\.org|be\.eu\.org|bg\.eu\.org|ca\.eu\.org|cd\.eu\.org|ch\.eu\.org|cn\.eu\.org|cy\.eu\.org|cz\.eu\.org|de\.eu\.org|dk\.eu\.org|edu\.eu\.org|ee\.eu\.org|es\.eu\.org|fi\.eu\.org|fr\.eu\.org|gr\.eu\.org|hr\.eu\.org|hu\.eu\.org|ie\.eu\.org|il\.eu\.org|in\.eu\.org|int\.eu\.org|is\.eu\.org|it\.eu\.org|jp\.eu\.org|kr\.eu\.org|lt\.eu\.org|lu\.eu\.org|lv\.eu\.org|mc\.eu\.org|me\.eu\.org|mk\.eu\.org|mt\.eu\.org|my\.eu\.org|net\.eu\.org|ng\.eu\.org|nl\.eu\.org|no\.eu\.org|nz\.eu\.org|paris\.eu\.org|pl\.eu\.org|pt\.eu\.org|q-a\.eu\.org|ro\.eu\.org|ru\.eu\.org|se\.eu\.org|si\.eu\.org|sk\.eu\.org|tr\.eu\.org|uk\.eu\.org|us\.eu\.org|eu-1\.evennode\.com|eu-2\.evennode\.com|us-1\.evennode\.com|us-2\.evennode\.com|apps\.fbsbx\.com|ru\.net|adygeya\.ru|bashkiria\.ru|bir\.ru|cbg\.ru|com\.ru|dagestan\.ru|grozny\.ru|kalmykia\.ru|kustanai\.ru|marine\.ru|mordovia\.ru|msk\.ru|mytis\.ru|nalchik\.ru|nov\.ru|pyatigorsk\.ru|spb\.ru|vladikavkaz\.ru|vladimir\.ru|abkhazia\.su|adygeya\.su|aktyubinsk\.su|arkhangelsk\.su|armenia\.su|ashgabad\.su|azerbaijan\.su|balashov\.su|bashkiria\.su|bryansk\.su|bukhara\.su|chimkent\.su|dagestan\.su|east-kazakhstan\.su|exnet\.su|georgia\.su|grozny\.su|ivanovo\.su|jambyl\.su|kalmykia\.su|kaluga\.su|karacol\.su|karaganda\.su|karelia\.su|khakassia\.su|krasnodar\.su|kurgan\.su|kustanai\.su|lenug\.su|mangyshlak\.su|mordovia\.su|msk\.su|murmansk\.su|nalchik\.su|navoi\.su|north-kazakhstan\.su|nov\.su|obninsk\.su|penza\.su|pokrovsk\.su|sochi\.su|spb\.su|tashkent\.su|termez\.su|togliatti\.su|troitsk\.su|tselinograd\.su|tula\.su|tuva\.su|vladikavkaz\.su|vladimir\.su|vologda\.su|map\.fastly\.net|a\.prod\.fastly\.net|global\.prod\.fastly\.net|a\.ssl\.fastly\.net|b\.ssl\.fastly\.net|global\.ssl\.fastly\.net|fastlylb\.net|map\.fastlylb\.net|fhapp\.xyz|firebaseapp\.com|flynnhub\.com|freebox-os\.com|freeboxos\.com|fbx-os\.fr|fbxos\.fr|freebox-os\.fr|freeboxos\.fr|myfusion\.cloud|futurehosting\.at|futuremailing\.at|[^.]+\.ex\.ortsinfo\.at|[^.]+\.kunden\.ortsinfo\.at|[^.]+\.statics\.cloud|service\.gov\.uk|github\.io|githubusercontent\.com|githubcloud\.com|[^.]+\.api\.githubcloud\.com|[^.]+\.ext\.githubcloud\.com|gist\.githubcloud\.com|[^.]+\.githubcloudusercontent\.com|gitlab\.io|homeoffice\.gov\.uk|ro\.im|shop\.ro|goip\.de|[^.]+\.0emm\.com|appspot\.com|blogspot\.ae|blogspot\.al|blogspot\.am|blogspot\.ba|blogspot\.be|blogspot\.bg|blogspot\.bj|blogspot\.ca|blogspot\.cf|blogspot\.ch|blogspot\.cl|blogspot\.co\.at|blogspot\.co\.id|blogspot\.co\.il|blogspot\.co\.ke|blogspot\.co\.nz|blogspot\.co\.uk|blogspot\.co\.za|blogspot\.com|blogspot\.com\.ar|blogspot\.com\.au|blogspot\.com\.br|blogspot\.com\.by|blogspot\.com\.co|blogspot\.com\.cy|blogspot\.com\.ee|blogspot\.com\.eg|blogspot\.com\.es|blogspot\.com\.mt|blogspot\.com\.ng|blogspot\.com\.tr|blogspot\.com\.uy|blogspot\.cv|blogspot\.cz|blogspot\.de|blogspot\.dk|blogspot\.fi|blogspot\.fr|blogspot\.gr|blogspot\.hk|blogspot\.hr|blogspot\.hu|blogspot\.ie|blogspot\.in|blogspot\.is|blogspot\.it|blogspot\.jp|blogspot\.kr|blogspot\.li|blogspot\.lt|blogspot\.lu|blogspot\.md|blogspot\.mk|blogspot\.mr|blogspot\.mx|blogspot\.my|blogspot\.nl|blogspot\.no|blogspot\.pe|blogspot\.pt|blogspot\.qa|blogspot\.re|blogspot\.ro|blogspot\.rs|blogspot\.ru|blogspot\.se|blogspot\.sg|blogspot\.si|blogspot\.sk|blogspot\.sn|blogspot\.td|blogspot\.tw|blogspot\.ug|blogspot\.vn|cloudfunctions\.net|codespot\.com|googleapis\.com|googlecode\.com|pagespeedmobilizer\.com|publishproxy\.com|withgoogle\.com|withyoutube\.com|hashbang\.sh|hasura-app\.io|hepforge\.org|herokuapp\.com|herokussl\.com|iki\.fi|biz\.at|info\.at|ac\.leg\.br|al\.leg\.br|am\.leg\.br|ap\.leg\.br|ba\.leg\.br|ce\.leg\.br|df\.leg\.br|es\.leg\.br|go\.leg\.br|ma\.leg\.br|mg\.leg\.br|ms\.leg\.br|mt\.leg\.br|pa\.leg\.br|pb\.leg\.br|pe\.leg\.br|pi\.leg\.br|pr\.leg\.br|rj\.leg\.br|rn\.leg\.br|ro\.leg\.br|rr\.leg\.br|rs\.leg\.br|sc\.leg\.br|se\.leg\.br|sp\.leg\.br|to\.leg\.br|[^.]+\.triton\.zone|[^.]+\.cns\.joyent\.com|js\.org|keymachine\.de|knightpoint\.systems|co\.krd|edu\.krd|[^.]+\.magentosite\.cloud|meteorapp\.com|eu\.meteorapp\.com|co\.pl|azurewebsites\.net|azure-mobile\.net|cloudapp\.net|bmoattachments\.org|4u\.com|ngrok\.io|nfshost\.com|nsupdate\.info|nerdpol\.ovh|blogsyte\.com|brasilia\.me|cable-modem\.org|ciscofreak\.com|collegefan\.org|couchpotatofries\.org|damnserver\.com|ddns\.me|ditchyourip\.com|dnsfor\.me|dnsiskinky\.com|dvrcam\.info|dynns\.com|eating-organic\.net|fantasyleague\.cc|geekgalaxy\.com|golffan\.us|health-carereform\.com|homesecuritymac\.com|homesecuritypc\.com|hopto\.me|ilovecollege\.info|loginto\.me|mlbfan\.org|mmafan\.biz|myactivedirectory\.com|mydissent\.net|myeffect\.net|mymediapc\.net|mypsx\.net|mysecuritycamera\.com|mysecuritycamera\.net|mysecuritycamera\.org|net-freaks\.com|nflfan\.org|nhlfan\.net|no-ip\.ca|no-ip\.co\.uk|no-ip\.net|noip\.us|onthewifi\.com|pgafan\.net|point2this\.com|pointto\.us|privatizehealthinsurance\.net|quicksytes\.com|read-books\.org|securitytactics\.com|serveexchange\.com|servehumour\.com|servep2p\.com|servesarcasm\.com|stufftoread\.com|ufcfan\.org|unusualperson\.com|workisboring\.com|3utilities\.com|bounceme\.net|ddns\.net|ddnsking\.com|gotdns\.ch|hopto\.org|myftp\.biz|myftp\.org|myvnc\.com|no-ip\.biz|no-ip\.info|no-ip\.org|noip\.me|redirectme\.net|servebeer\.com|serveblog\.net|servecounterstrike\.com|serveftp\.com|servegame\.com|servehalflife\.com|servehttp\.com|serveirc\.com|serveminecraft\.net|servemp3\.com|servepics\.com|servequake\.com|sytes\.net|webhop\.me|zapto\.org|nyc\.mn|nid\.io|opencraft\.hosting|operaunite\.com|outsystemscloud\.com|ownprovider\.com|oy\.lc|pgfog\.com|pagefrontapp\.com|art\.pl|gliwice\.pl|krakow\.pl|poznan\.pl|wroc\.pl|zakopane\.pl|pantheonsite\.io|gotpantheon\.com|mypep\.link|on-web\.fr|xen\.prgmr\.com|priv\.at|protonet\.io|chirurgiens-dentistes-en-france\.fr|qa2\.com|dev-myqnapcloud\.com|alpha-myqnapcloud\.com|myqnapcloud\.com|rackmaze\.com|rackmaze\.net|rhcloud\.com|hzc\.io|wellbeingzone\.eu|ptplus\.fit|wellbeingzone\.co\.uk|sandcats\.io|logoip\.de|logoip\.com|firewall-gateway\.com|firewall-gateway\.de|my-gateway\.de|my-router\.de|spdns\.de|spdns\.eu|firewall-gateway\.net|my-firewall\.org|myfirewall\.org|spdns\.org|biz\.ua|co\.ua|pp\.ua|shiftedit\.io|myshopblocks\.com|1kapp\.com|appchizi\.com|applinzi\.com|sinaapp\.com|vipsinaapp\.com|bounty-full\.com|alpha\.bounty-full\.com|beta\.bounty-full\.com|static\.land|dev\.static\.land|sites\.static\.land|apps\.lair\.io|[^.]+\.stolos\.io|spacekit\.io|stackspace\.space|diskstation\.me|dscloud\.biz|dscloud\.me|dscloud\.mobi|dsmynas\.com|dsmynas\.net|dsmynas\.org|familyds\.com|familyds\.net|familyds\.org|i234\.me|myds\.me|synology\.me|taifun-dns\.de|gda\.pl|gdansk\.pl|gdynia\.pl|med\.pl|sopot\.pl|bloxcms\.com|townnews-staging\.com|[^.]+\.transurl\.be|[^.]+\.transurl\.eu|[^.]+\.transurl\.nl|tuxfamily\.org|dd-dns\.de|diskstation\.eu|diskstation\.org|dray-dns\.de|draydns\.de|dyn-vpn\.de|dynvpn\.de|mein-vigor\.de|my-vigor\.de|my-wan\.de|syno-ds\.de|synology-diskstation\.de|synology-ds\.de|hk\.com|hk\.org|ltd\.hk|inc\.hk|lib\.de\.us|router\.management|remotewd\.com|wmflabs\.org|yolasite\.com|ybo\.faith|yombo\.me|homelink\.one|ybo\.party|ybo\.review|ybo\.science|ybo\.trade|za\.net|za\.org|now\.sh|cc\.ua|inf\.ua|ltd\.ua)$/;
 exports.icann = /\.(ac|com\.ac|edu\.ac|gov\.ac|net\.ac|mil\.ac|org\.ac|ad|nom\.ad|ae|co\.ae|net\.ae|org\.ae|sch\.ae|ac\.ae|gov\.ae|mil\.ae|aero|accident-investigation\.aero|accident-prevention\.aero|aerobatic\.aero|aeroclub\.aero|aerodrome\.aero|agents\.aero|aircraft\.aero|airline\.aero|airport\.aero|air-surveillance\.aero|airtraffic\.aero|air-traffic-control\.aero|ambulance\.aero|amusement\.aero|association\.aero|author\.aero|ballooning\.aero|broker\.aero|caa\.aero|cargo\.aero|catering\.aero|certification\.aero|championship\.aero|charter\.aero|civilaviation\.aero|club\.aero|conference\.aero|consultant\.aero|consulting\.aero|control\.aero|council\.aero|crew\.aero|design\.aero|dgca\.aero|educator\.aero|emergency\.aero|engine\.aero|engineer\.aero|entertainment\.aero|equipment\.aero|exchange\.aero|express\.aero|federation\.aero|flight\.aero|freight\.aero|fuel\.aero|gliding\.aero|government\.aero|groundhandling\.aero|group\.aero|hanggliding\.aero|homebuilt\.aero|insurance\.aero|journal\.aero|journalist\.aero|leasing\.aero|logistics\.aero|magazine\.aero|maintenance\.aero|media\.aero|microlight\.aero|modelling\.aero|navigation\.aero|parachuting\.aero|paragliding\.aero|passenger-association\.aero|pilot\.aero|press\.aero|production\.aero|recreation\.aero|repbody\.aero|res\.aero|research\.aero|rotorcraft\.aero|safety\.aero|scientist\.aero|services\.aero|show\.aero|skydiving\.aero|software\.aero|student\.aero|trader\.aero|trading\.aero|trainer\.aero|union\.aero|workinggroup\.aero|works\.aero|af|gov\.af|com\.af|org\.af|net\.af|edu\.af|ag|com\.ag|org\.ag|net\.ag|co\.ag|nom\.ag|ai|off\.ai|com\.ai|net\.ai|org\.ai|al|com\.al|edu\.al|gov\.al|mil\.al|net\.al|org\.al|am|ao|ed\.ao|gv\.ao|og\.ao|co\.ao|pb\.ao|it\.ao|aq|ar|com\.ar|edu\.ar|gob\.ar|gov\.ar|int\.ar|mil\.ar|net\.ar|org\.ar|tur\.ar|arpa|e164\.arpa|in-addr\.arpa|ip6\.arpa|iris\.arpa|uri\.arpa|urn\.arpa|as|gov\.as|asia|at|ac\.at|co\.at|gv\.at|or\.at|au|com\.au|net\.au|org\.au|edu\.au|gov\.au|asn\.au|id\.au|info\.au|conf\.au|oz\.au|act\.au|nsw\.au|nt\.au|qld\.au|sa\.au|tas\.au|vic\.au|wa\.au|act\.edu\.au|nsw\.edu\.au|nt\.edu\.au|qld\.edu\.au|sa\.edu\.au|tas\.edu\.au|vic\.edu\.au|wa\.edu\.au|qld\.gov\.au|sa\.gov\.au|tas\.gov\.au|vic\.gov\.au|wa\.gov\.au|aw|com\.aw|ax|az|com\.az|net\.az|int\.az|gov\.az|org\.az|edu\.az|info\.az|pp\.az|mil\.az|name\.az|pro\.az|biz\.az|ba|com\.ba|edu\.ba|gov\.ba|mil\.ba|net\.ba|org\.ba|bb|biz\.bb|co\.bb|com\.bb|edu\.bb|gov\.bb|info\.bb|net\.bb|org\.bb|store\.bb|tv\.bb|[^.]+\.bd|be|ac\.be|bf|gov\.bf|bg|a\.bg|b\.bg|c\.bg|d\.bg|e\.bg|f\.bg|g\.bg|h\.bg|i\.bg|j\.bg|k\.bg|l\.bg|m\.bg|n\.bg|o\.bg|p\.bg|q\.bg|r\.bg|s\.bg|t\.bg|u\.bg|v\.bg|w\.bg|x\.bg|y\.bg|z\.bg|0\.bg|1\.bg|2\.bg|3\.bg|4\.bg|5\.bg|6\.bg|7\.bg|8\.bg|9\.bg|bh|com\.bh|edu\.bh|net\.bh|org\.bh|gov\.bh|bi|co\.bi|com\.bi|edu\.bi|or\.bi|org\.bi|biz|bj|asso\.bj|barreau\.bj|gouv\.bj|bm|com\.bm|edu\.bm|gov\.bm|net\.bm|org\.bm|[^.]+\.bn|bo|com\.bo|edu\.bo|gov\.bo|gob\.bo|int\.bo|org\.bo|net\.bo|mil\.bo|tv\.bo|br|adm\.br|adv\.br|agr\.br|am\.br|arq\.br|art\.br|ato\.br|b\.br|bio\.br|blog\.br|bmd\.br|cim\.br|cng\.br|cnt\.br|com\.br|coop\.br|ecn\.br|eco\.br|edu\.br|emp\.br|eng\.br|esp\.br|etc\.br|eti\.br|far\.br|flog\.br|fm\.br|fnd\.br|fot\.br|fst\.br|g12\.br|ggf\.br|gov\.br|imb\.br|ind\.br|inf\.br|jor\.br|jus\.br|leg\.br|lel\.br|mat\.br|med\.br|mil\.br|mp\.br|mus\.br|net\.br|[^.]+\.nom\.br|not\.br|ntr\.br|odo\.br|org\.br|ppg\.br|pro\.br|psc\.br|psi\.br|qsl\.br|radio\.br|rec\.br|slg\.br|srv\.br|taxi\.br|teo\.br|tmp\.br|trd\.br|tur\.br|tv\.br|vet\.br|vlog\.br|wiki\.br|zlg\.br|bs|com\.bs|net\.bs|org\.bs|edu\.bs|gov\.bs|bt|com\.bt|edu\.bt|gov\.bt|net\.bt|org\.bt|bv|bw|co\.bw|org\.bw|by|gov\.by|mil\.by|com\.by|of\.by|bz|com\.bz|net\.bz|org\.bz|edu\.bz|gov\.bz|ca|ab\.ca|bc\.ca|mb\.ca|nb\.ca|nf\.ca|nl\.ca|ns\.ca|nt\.ca|nu\.ca|on\.ca|pe\.ca|qc\.ca|sk\.ca|yk\.ca|gc\.ca|cat|cc|cd|gov\.cd|cf|cg|ch|ci|org\.ci|or\.ci|com\.ci|co\.ci|edu\.ci|ed\.ci|ac\.ci|net\.ci|go\.ci|asso\.ci|aéroport\.ci|int\.ci|presse\.ci|md\.ci|gouv\.ci|[^.]+\.ck|!www\.ck|cl|gov\.cl|gob\.cl|co\.cl|mil\.cl|cm|co\.cm|com\.cm|gov\.cm|net\.cm|cn|ac\.cn|com\.cn|edu\.cn|gov\.cn|net\.cn|org\.cn|mil\.cn|公司\.cn|网络\.cn|網絡\.cn|ah\.cn|bj\.cn|cq\.cn|fj\.cn|gd\.cn|gs\.cn|gz\.cn|gx\.cn|ha\.cn|hb\.cn|he\.cn|hi\.cn|hl\.cn|hn\.cn|jl\.cn|js\.cn|jx\.cn|ln\.cn|nm\.cn|nx\.cn|qh\.cn|sc\.cn|sd\.cn|sh\.cn|sn\.cn|sx\.cn|tj\.cn|xj\.cn|xz\.cn|yn\.cn|zj\.cn|hk\.cn|mo\.cn|tw\.cn|co|arts\.co|com\.co|edu\.co|firm\.co|gov\.co|info\.co|int\.co|mil\.co|net\.co|nom\.co|org\.co|rec\.co|web\.co|com|coop|cr|ac\.cr|co\.cr|ed\.cr|fi\.cr|go\.cr|or\.cr|sa\.cr|cu|com\.cu|edu\.cu|org\.cu|net\.cu|gov\.cu|inf\.cu|cv|cw|com\.cw|edu\.cw|net\.cw|org\.cw|cx|gov\.cx|cy|ac\.cy|biz\.cy|com\.cy|ekloges\.cy|gov\.cy|ltd\.cy|name\.cy|net\.cy|org\.cy|parliament\.cy|press\.cy|pro\.cy|tm\.cy|cz|de|dj|dk|dm|com\.dm|net\.dm|org\.dm|edu\.dm|gov\.dm|do|art\.do|com\.do|edu\.do|gob\.do|gov\.do|mil\.do|net\.do|org\.do|sld\.do|web\.do|dz|com\.dz|org\.dz|net\.dz|gov\.dz|edu\.dz|asso\.dz|pol\.dz|art\.dz|ec|com\.ec|info\.ec|net\.ec|fin\.ec|k12\.ec|med\.ec|pro\.ec|org\.ec|edu\.ec|gov\.ec|gob\.ec|mil\.ec|edu|ee|edu\.ee|gov\.ee|riik\.ee|lib\.ee|med\.ee|com\.ee|pri\.ee|aip\.ee|org\.ee|fie\.ee|eg|com\.eg|edu\.eg|eun\.eg|gov\.eg|mil\.eg|name\.eg|net\.eg|org\.eg|sci\.eg|[^.]+\.er|es|com\.es|nom\.es|org\.es|gob\.es|edu\.es|et|com\.et|gov\.et|org\.et|edu\.et|biz\.et|name\.et|info\.et|net\.et|eu|fi|aland\.fi|[^.]+\.fj|[^.]+\.fk|fm|fo|fr|com\.fr|asso\.fr|nom\.fr|prd\.fr|presse\.fr|tm\.fr|aeroport\.fr|assedic\.fr|avocat\.fr|avoues\.fr|cci\.fr|chambagri\.fr|chirurgiens-dentistes\.fr|experts-comptables\.fr|geometre-expert\.fr|gouv\.fr|greta\.fr|huissier-justice\.fr|medecin\.fr|notaires\.fr|pharmacien\.fr|port\.fr|veterinaire\.fr|ga|gb|gd|ge|com\.ge|edu\.ge|gov\.ge|org\.ge|mil\.ge|net\.ge|pvt\.ge|gf|gg|co\.gg|net\.gg|org\.gg|gh|com\.gh|edu\.gh|gov\.gh|org\.gh|mil\.gh|gi|com\.gi|ltd\.gi|gov\.gi|mod\.gi|edu\.gi|org\.gi|gl|co\.gl|com\.gl|edu\.gl|net\.gl|org\.gl|gm|gn|ac\.gn|com\.gn|edu\.gn|gov\.gn|org\.gn|net\.gn|gov|gp|com\.gp|net\.gp|mobi\.gp|edu\.gp|org\.gp|asso\.gp|gq|gr|com\.gr|edu\.gr|net\.gr|org\.gr|gov\.gr|gs|gt|com\.gt|edu\.gt|gob\.gt|ind\.gt|mil\.gt|net\.gt|org\.gt|[^.]+\.gu|gw|gy|co\.gy|com\.gy|edu\.gy|gov\.gy|net\.gy|org\.gy|hk|com\.hk|edu\.hk|gov\.hk|idv\.hk|net\.hk|org\.hk|公司\.hk|教育\.hk|敎育\.hk|政府\.hk|個人\.hk|个人\.hk|箇人\.hk|網络\.hk|网络\.hk|组織\.hk|網絡\.hk|网絡\.hk|组织\.hk|組織\.hk|組织\.hk|hm|hn|com\.hn|edu\.hn|org\.hn|net\.hn|mil\.hn|gob\.hn|hr|iz\.hr|from\.hr|name\.hr|com\.hr|ht|com\.ht|shop\.ht|firm\.ht|info\.ht|adult\.ht|net\.ht|pro\.ht|org\.ht|med\.ht|art\.ht|coop\.ht|pol\.ht|asso\.ht|edu\.ht|rel\.ht|gouv\.ht|perso\.ht|hu|co\.hu|info\.hu|org\.hu|priv\.hu|sport\.hu|tm\.hu|2000\.hu|agrar\.hu|bolt\.hu|casino\.hu|city\.hu|erotica\.hu|erotika\.hu|film\.hu|forum\.hu|games\.hu|hotel\.hu|ingatlan\.hu|jogasz\.hu|konyvelo\.hu|lakas\.hu|media\.hu|news\.hu|reklam\.hu|sex\.hu|shop\.hu|suli\.hu|szex\.hu|tozsde\.hu|utazas\.hu|video\.hu|id|ac\.id|biz\.id|co\.id|desa\.id|go\.id|mil\.id|my\.id|net\.id|or\.id|sch\.id|web\.id|ie|gov\.ie|il|ac\.il|co\.il|gov\.il|idf\.il|k12\.il|muni\.il|net\.il|org\.il|im|ac\.im|co\.im|com\.im|ltd\.co\.im|net\.im|org\.im|plc\.co\.im|tt\.im|tv\.im|in|co\.in|firm\.in|net\.in|org\.in|gen\.in|ind\.in|nic\.in|ac\.in|edu\.in|res\.in|gov\.in|mil\.in|info|int|eu\.int|io|com\.io|iq|gov\.iq|edu\.iq|mil\.iq|com\.iq|org\.iq|net\.iq|ir|ac\.ir|co\.ir|gov\.ir|id\.ir|net\.ir|org\.ir|sch\.ir|ایران\.ir|ايران\.ir|is|net\.is|com\.is|edu\.is|gov\.is|org\.is|int\.is|it|gov\.it|edu\.it|abr\.it|abruzzo\.it|aosta-valley\.it|aostavalley\.it|bas\.it|basilicata\.it|cal\.it|calabria\.it|cam\.it|campania\.it|emilia-romagna\.it|emiliaromagna\.it|emr\.it|friuli-v-giulia\.it|friuli-ve-giulia\.it|friuli-vegiulia\.it|friuli-venezia-giulia\.it|friuli-veneziagiulia\.it|friuli-vgiulia\.it|friuliv-giulia\.it|friulive-giulia\.it|friulivegiulia\.it|friulivenezia-giulia\.it|friuliveneziagiulia\.it|friulivgiulia\.it|fvg\.it|laz\.it|lazio\.it|lig\.it|liguria\.it|lom\.it|lombardia\.it|lombardy\.it|lucania\.it|mar\.it|marche\.it|mol\.it|molise\.it|piedmont\.it|piemonte\.it|pmn\.it|pug\.it|puglia\.it|sar\.it|sardegna\.it|sardinia\.it|sic\.it|sicilia\.it|sicily\.it|taa\.it|tos\.it|toscana\.it|trentino-a-adige\.it|trentino-aadige\.it|trentino-alto-adige\.it|trentino-altoadige\.it|trentino-s-tirol\.it|trentino-stirol\.it|trentino-sud-tirol\.it|trentino-sudtirol\.it|trentino-sued-tirol\.it|trentino-suedtirol\.it|trentinoa-adige\.it|trentinoaadige\.it|trentinoalto-adige\.it|trentinoaltoadige\.it|trentinos-tirol\.it|trentinostirol\.it|trentinosud-tirol\.it|trentinosudtirol\.it|trentinosued-tirol\.it|trentinosuedtirol\.it|tuscany\.it|umb\.it|umbria\.it|val-d-aosta\.it|val-daosta\.it|vald-aosta\.it|valdaosta\.it|valle-aosta\.it|valle-d-aosta\.it|valle-daosta\.it|valleaosta\.it|valled-aosta\.it|valledaosta\.it|vallee-aoste\.it|valleeaoste\.it|vao\.it|vda\.it|ven\.it|veneto\.it|ag\.it|agrigento\.it|al\.it|alessandria\.it|alto-adige\.it|altoadige\.it|an\.it|ancona\.it|andria-barletta-trani\.it|andria-trani-barletta\.it|andriabarlettatrani\.it|andriatranibarletta\.it|ao\.it|aosta\.it|aoste\.it|ap\.it|aq\.it|aquila\.it|ar\.it|arezzo\.it|ascoli-piceno\.it|ascolipiceno\.it|asti\.it|at\.it|av\.it|avellino\.it|ba\.it|balsan\.it|bari\.it|barletta-trani-andria\.it|barlettatraniandria\.it|belluno\.it|benevento\.it|bergamo\.it|bg\.it|bi\.it|biella\.it|bl\.it|bn\.it|bo\.it|bologna\.it|bolzano\.it|bozen\.it|br\.it|brescia\.it|brindisi\.it|bs\.it|bt\.it|bz\.it|ca\.it|cagliari\.it|caltanissetta\.it|campidano-medio\.it|campidanomedio\.it|campobasso\.it|carbonia-iglesias\.it|carboniaiglesias\.it|carrara-massa\.it|carraramassa\.it|caserta\.it|catania\.it|catanzaro\.it|cb\.it|ce\.it|cesena-forli\.it|cesenaforli\.it|ch\.it|chieti\.it|ci\.it|cl\.it|cn\.it|co\.it|como\.it|cosenza\.it|cr\.it|cremona\.it|crotone\.it|cs\.it|ct\.it|cuneo\.it|cz\.it|dell-ogliastra\.it|dellogliastra\.it|en\.it|enna\.it|fc\.it|fe\.it|fermo\.it|ferrara\.it|fg\.it|fi\.it|firenze\.it|florence\.it|fm\.it|foggia\.it|forli-cesena\.it|forlicesena\.it|fr\.it|frosinone\.it|ge\.it|genoa\.it|genova\.it|go\.it|gorizia\.it|gr\.it|grosseto\.it|iglesias-carbonia\.it|iglesiascarbonia\.it|im\.it|imperia\.it|is\.it|isernia\.it|kr\.it|la-spezia\.it|laquila\.it|laspezia\.it|latina\.it|lc\.it|le\.it|lecce\.it|lecco\.it|li\.it|livorno\.it|lo\.it|lodi\.it|lt\.it|lu\.it|lucca\.it|macerata\.it|mantova\.it|massa-carrara\.it|massacarrara\.it|matera\.it|mb\.it|mc\.it|me\.it|medio-campidano\.it|mediocampidano\.it|messina\.it|mi\.it|milan\.it|milano\.it|mn\.it|mo\.it|modena\.it|monza-brianza\.it|monza-e-della-brianza\.it|monza\.it|monzabrianza\.it|monzaebrianza\.it|monzaedellabrianza\.it|ms\.it|mt\.it|na\.it|naples\.it|napoli\.it|no\.it|novara\.it|nu\.it|nuoro\.it|og\.it|ogliastra\.it|olbia-tempio\.it|olbiatempio\.it|or\.it|oristano\.it|ot\.it|pa\.it|padova\.it|padua\.it|palermo\.it|parma\.it|pavia\.it|pc\.it|pd\.it|pe\.it|perugia\.it|pesaro-urbino\.it|pesarourbino\.it|pescara\.it|pg\.it|pi\.it|piacenza\.it|pisa\.it|pistoia\.it|pn\.it|po\.it|pordenone\.it|potenza\.it|pr\.it|prato\.it|pt\.it|pu\.it|pv\.it|pz\.it|ra\.it|ragusa\.it|ravenna\.it|rc\.it|re\.it|reggio-calabria\.it|reggio-emilia\.it|reggiocalabria\.it|reggioemilia\.it|rg\.it|ri\.it|rieti\.it|rimini\.it|rm\.it|rn\.it|ro\.it|roma\.it|rome\.it|rovigo\.it|sa\.it|salerno\.it|sassari\.it|savona\.it|si\.it|siena\.it|siracusa\.it|so\.it|sondrio\.it|sp\.it|sr\.it|ss\.it|suedtirol\.it|sv\.it|ta\.it|taranto\.it|te\.it|tempio-olbia\.it|tempioolbia\.it|teramo\.it|terni\.it|tn\.it|to\.it|torino\.it|tp\.it|tr\.it|trani-andria-barletta\.it|trani-barletta-andria\.it|traniandriabarletta\.it|tranibarlettaandria\.it|trapani\.it|trentino\.it|trento\.it|treviso\.it|trieste\.it|ts\.it|turin\.it|tv\.it|ud\.it|udine\.it|urbino-pesaro\.it|urbinopesaro\.it|va\.it|varese\.it|vb\.it|vc\.it|ve\.it|venezia\.it|venice\.it|verbania\.it|vercelli\.it|verona\.it|vi\.it|vibo-valentia\.it|vibovalentia\.it|vicenza\.it|viterbo\.it|vr\.it|vs\.it|vt\.it|vv\.it|je|co\.je|net\.je|org\.je|[^.]+\.jm|jo|com\.jo|org\.jo|net\.jo|edu\.jo|sch\.jo|gov\.jo|mil\.jo|name\.jo|jobs|jp|ac\.jp|ad\.jp|co\.jp|ed\.jp|go\.jp|gr\.jp|lg\.jp|ne\.jp|or\.jp|aichi\.jp|akita\.jp|aomori\.jp|chiba\.jp|ehime\.jp|fukui\.jp|fukuoka\.jp|fukushima\.jp|gifu\.jp|gunma\.jp|hiroshima\.jp|hokkaido\.jp|hyogo\.jp|ibaraki\.jp|ishikawa\.jp|iwate\.jp|kagawa\.jp|kagoshima\.jp|kanagawa\.jp|kochi\.jp|kumamoto\.jp|kyoto\.jp|mie\.jp|miyagi\.jp|miyazaki\.jp|nagano\.jp|nagasaki\.jp|nara\.jp|niigata\.jp|oita\.jp|okayama\.jp|okinawa\.jp|osaka\.jp|saga\.jp|saitama\.jp|shiga\.jp|shimane\.jp|shizuoka\.jp|tochigi\.jp|tokushima\.jp|tokyo\.jp|tottori\.jp|toyama\.jp|wakayama\.jp|yamagata\.jp|yamaguchi\.jp|yamanashi\.jp|栃木\.jp|愛知\.jp|愛媛\.jp|兵庫\.jp|熊本\.jp|茨城\.jp|北海道\.jp|千葉\.jp|和歌山\.jp|長崎\.jp|長野\.jp|新潟\.jp|青森\.jp|静岡\.jp|東京\.jp|石川\.jp|埼玉\.jp|三重\.jp|京都\.jp|佐賀\.jp|大分\.jp|大阪\.jp|奈良\.jp|宮城\.jp|宮崎\.jp|富山\.jp|山口\.jp|山形\.jp|山梨\.jp|岩手\.jp|岐阜\.jp|岡山\.jp|島根\.jp|広島\.jp|徳島\.jp|沖縄\.jp|滋賀\.jp|神奈川\.jp|福井\.jp|福岡\.jp|福島\.jp|秋田\.jp|群馬\.jp|香川\.jp|高知\.jp|鳥取\.jp|鹿児島\.jp|[^.]+\.kawasaki\.jp|[^.]+\.kitakyushu\.jp|[^.]+\.kobe\.jp|[^.]+\.nagoya\.jp|[^.]+\.sapporo\.jp|[^.]+\.sendai\.jp|[^.]+\.yokohama\.jp|!city\.kawasaki\.jp|!city\.kitakyushu\.jp|!city\.kobe\.jp|!city\.nagoya\.jp|!city\.sapporo\.jp|!city\.sendai\.jp|!city\.yokohama\.jp|aisai\.aichi\.jp|ama\.aichi\.jp|anjo\.aichi\.jp|asuke\.aichi\.jp|chiryu\.aichi\.jp|chita\.aichi\.jp|fuso\.aichi\.jp|gamagori\.aichi\.jp|handa\.aichi\.jp|hazu\.aichi\.jp|hekinan\.aichi\.jp|higashiura\.aichi\.jp|ichinomiya\.aichi\.jp|inazawa\.aichi\.jp|inuyama\.aichi\.jp|isshiki\.aichi\.jp|iwakura\.aichi\.jp|kanie\.aichi\.jp|kariya\.aichi\.jp|kasugai\.aichi\.jp|kira\.aichi\.jp|kiyosu\.aichi\.jp|komaki\.aichi\.jp|konan\.aichi\.jp|kota\.aichi\.jp|mihama\.aichi\.jp|miyoshi\.aichi\.jp|nishio\.aichi\.jp|nisshin\.aichi\.jp|obu\.aichi\.jp|oguchi\.aichi\.jp|oharu\.aichi\.jp|okazaki\.aichi\.jp|owariasahi\.aichi\.jp|seto\.aichi\.jp|shikatsu\.aichi\.jp|shinshiro\.aichi\.jp|shitara\.aichi\.jp|tahara\.aichi\.jp|takahama\.aichi\.jp|tobishima\.aichi\.jp|toei\.aichi\.jp|togo\.aichi\.jp|tokai\.aichi\.jp|tokoname\.aichi\.jp|toyoake\.aichi\.jp|toyohashi\.aichi\.jp|toyokawa\.aichi\.jp|toyone\.aichi\.jp|toyota\.aichi\.jp|tsushima\.aichi\.jp|yatomi\.aichi\.jp|akita\.akita\.jp|daisen\.akita\.jp|fujisato\.akita\.jp|gojome\.akita\.jp|hachirogata\.akita\.jp|happou\.akita\.jp|higashinaruse\.akita\.jp|honjo\.akita\.jp|honjyo\.akita\.jp|ikawa\.akita\.jp|kamikoani\.akita\.jp|kamioka\.akita\.jp|katagami\.akita\.jp|kazuno\.akita\.jp|kitaakita\.akita\.jp|kosaka\.akita\.jp|kyowa\.akita\.jp|misato\.akita\.jp|mitane\.akita\.jp|moriyoshi\.akita\.jp|nikaho\.akita\.jp|noshiro\.akita\.jp|odate\.akita\.jp|oga\.akita\.jp|ogata\.akita\.jp|semboku\.akita\.jp|yokote\.akita\.jp|yurihonjo\.akita\.jp|aomori\.aomori\.jp|gonohe\.aomori\.jp|hachinohe\.aomori\.jp|hashikami\.aomori\.jp|hiranai\.aomori\.jp|hirosaki\.aomori\.jp|itayanagi\.aomori\.jp|kuroishi\.aomori\.jp|misawa\.aomori\.jp|mutsu\.aomori\.jp|nakadomari\.aomori\.jp|noheji\.aomori\.jp|oirase\.aomori\.jp|owani\.aomori\.jp|rokunohe\.aomori\.jp|sannohe\.aomori\.jp|shichinohe\.aomori\.jp|shingo\.aomori\.jp|takko\.aomori\.jp|towada\.aomori\.jp|tsugaru\.aomori\.jp|tsuruta\.aomori\.jp|abiko\.chiba\.jp|asahi\.chiba\.jp|chonan\.chiba\.jp|chosei\.chiba\.jp|choshi\.chiba\.jp|chuo\.chiba\.jp|funabashi\.chiba\.jp|futtsu\.chiba\.jp|hanamigawa\.chiba\.jp|ichihara\.chiba\.jp|ichikawa\.chiba\.jp|ichinomiya\.chiba\.jp|inzai\.chiba\.jp|isumi\.chiba\.jp|kamagaya\.chiba\.jp|kamogawa\.chiba\.jp|kashiwa\.chiba\.jp|katori\.chiba\.jp|katsuura\.chiba\.jp|kimitsu\.chiba\.jp|kisarazu\.chiba\.jp|kozaki\.chiba\.jp|kujukuri\.chiba\.jp|kyonan\.chiba\.jp|matsudo\.chiba\.jp|midori\.chiba\.jp|mihama\.chiba\.jp|minamiboso\.chiba\.jp|mobara\.chiba\.jp|mutsuzawa\.chiba\.jp|nagara\.chiba\.jp|nagareyama\.chiba\.jp|narashino\.chiba\.jp|narita\.chiba\.jp|noda\.chiba\.jp|oamishirasato\.chiba\.jp|omigawa\.chiba\.jp|onjuku\.chiba\.jp|otaki\.chiba\.jp|sakae\.chiba\.jp|sakura\.chiba\.jp|shimofusa\.chiba\.jp|shirako\.chiba\.jp|shiroi\.chiba\.jp|shisui\.chiba\.jp|sodegaura\.chiba\.jp|sosa\.chiba\.jp|tako\.chiba\.jp|tateyama\.chiba\.jp|togane\.chiba\.jp|tohnosho\.chiba\.jp|tomisato\.chiba\.jp|urayasu\.chiba\.jp|yachimata\.chiba\.jp|yachiyo\.chiba\.jp|yokaichiba\.chiba\.jp|yokoshibahikari\.chiba\.jp|yotsukaido\.chiba\.jp|ainan\.ehime\.jp|honai\.ehime\.jp|ikata\.ehime\.jp|imabari\.ehime\.jp|iyo\.ehime\.jp|kamijima\.ehime\.jp|kihoku\.ehime\.jp|kumakogen\.ehime\.jp|masaki\.ehime\.jp|matsuno\.ehime\.jp|matsuyama\.ehime\.jp|namikata\.ehime\.jp|niihama\.ehime\.jp|ozu\.ehime\.jp|saijo\.ehime\.jp|seiyo\.ehime\.jp|shikokuchuo\.ehime\.jp|tobe\.ehime\.jp|toon\.ehime\.jp|uchiko\.ehime\.jp|uwajima\.ehime\.jp|yawatahama\.ehime\.jp|echizen\.fukui\.jp|eiheiji\.fukui\.jp|fukui\.fukui\.jp|ikeda\.fukui\.jp|katsuyama\.fukui\.jp|mihama\.fukui\.jp|minamiechizen\.fukui\.jp|obama\.fukui\.jp|ohi\.fukui\.jp|ono\.fukui\.jp|sabae\.fukui\.jp|sakai\.fukui\.jp|takahama\.fukui\.jp|tsuruga\.fukui\.jp|wakasa\.fukui\.jp|ashiya\.fukuoka\.jp|buzen\.fukuoka\.jp|chikugo\.fukuoka\.jp|chikuho\.fukuoka\.jp|chikujo\.fukuoka\.jp|chikushino\.fukuoka\.jp|chikuzen\.fukuoka\.jp|chuo\.fukuoka\.jp|dazaifu\.fukuoka\.jp|fukuchi\.fukuoka\.jp|hakata\.fukuoka\.jp|higashi\.fukuoka\.jp|hirokawa\.fukuoka\.jp|hisayama\.fukuoka\.jp|iizuka\.fukuoka\.jp|inatsuki\.fukuoka\.jp|kaho\.fukuoka\.jp|kasuga\.fukuoka\.jp|kasuya\.fukuoka\.jp|kawara\.fukuoka\.jp|keisen\.fukuoka\.jp|koga\.fukuoka\.jp|kurate\.fukuoka\.jp|kurogi\.fukuoka\.jp|kurume\.fukuoka\.jp|minami\.fukuoka\.jp|miyako\.fukuoka\.jp|miyama\.fukuoka\.jp|miyawaka\.fukuoka\.jp|mizumaki\.fukuoka\.jp|munakata\.fukuoka\.jp|nakagawa\.fukuoka\.jp|nakama\.fukuoka\.jp|nishi\.fukuoka\.jp|nogata\.fukuoka\.jp|ogori\.fukuoka\.jp|okagaki\.fukuoka\.jp|okawa\.fukuoka\.jp|oki\.fukuoka\.jp|omuta\.fukuoka\.jp|onga\.fukuoka\.jp|onojo\.fukuoka\.jp|oto\.fukuoka\.jp|saigawa\.fukuoka\.jp|sasaguri\.fukuoka\.jp|shingu\.fukuoka\.jp|shinyoshitomi\.fukuoka\.jp|shonai\.fukuoka\.jp|soeda\.fukuoka\.jp|sue\.fukuoka\.jp|tachiarai\.fukuoka\.jp|tagawa\.fukuoka\.jp|takata\.fukuoka\.jp|toho\.fukuoka\.jp|toyotsu\.fukuoka\.jp|tsuiki\.fukuoka\.jp|ukiha\.fukuoka\.jp|umi\.fukuoka\.jp|usui\.fukuoka\.jp|yamada\.fukuoka\.jp|yame\.fukuoka\.jp|yanagawa\.fukuoka\.jp|yukuhashi\.fukuoka\.jp|aizubange\.fukushima\.jp|aizumisato\.fukushima\.jp|aizuwakamatsu\.fukushima\.jp|asakawa\.fukushima\.jp|bandai\.fukushima\.jp|date\.fukushima\.jp|fukushima\.fukushima\.jp|furudono\.fukushima\.jp|futaba\.fukushima\.jp|hanawa\.fukushima\.jp|higashi\.fukushima\.jp|hirata\.fukushima\.jp|hirono\.fukushima\.jp|iitate\.fukushima\.jp|inawashiro\.fukushima\.jp|ishikawa\.fukushima\.jp|iwaki\.fukushima\.jp|izumizaki\.fukushima\.jp|kagamiishi\.fukushima\.jp|kaneyama\.fukushima\.jp|kawamata\.fukushima\.jp|kitakata\.fukushima\.jp|kitashiobara\.fukushima\.jp|koori\.fukushima\.jp|koriyama\.fukushima\.jp|kunimi\.fukushima\.jp|miharu\.fukushima\.jp|mishima\.fukushima\.jp|namie\.fukushima\.jp|nango\.fukushima\.jp|nishiaizu\.fukushima\.jp|nishigo\.fukushima\.jp|okuma\.fukushima\.jp|omotego\.fukushima\.jp|ono\.fukushima\.jp|otama\.fukushima\.jp|samegawa\.fukushima\.jp|shimogo\.fukushima\.jp|shirakawa\.fukushima\.jp|showa\.fukushima\.jp|soma\.fukushima\.jp|sukagawa\.fukushima\.jp|taishin\.fukushima\.jp|tamakawa\.fukushima\.jp|tanagura\.fukushima\.jp|tenei\.fukushima\.jp|yabuki\.fukushima\.jp|yamato\.fukushima\.jp|yamatsuri\.fukushima\.jp|yanaizu\.fukushima\.jp|yugawa\.fukushima\.jp|anpachi\.gifu\.jp|ena\.gifu\.jp|gifu\.gifu\.jp|ginan\.gifu\.jp|godo\.gifu\.jp|gujo\.gifu\.jp|hashima\.gifu\.jp|hichiso\.gifu\.jp|hida\.gifu\.jp|higashishirakawa\.gifu\.jp|ibigawa\.gifu\.jp|ikeda\.gifu\.jp|kakamigahara\.gifu\.jp|kani\.gifu\.jp|kasahara\.gifu\.jp|kasamatsu\.gifu\.jp|kawaue\.gifu\.jp|kitagata\.gifu\.jp|mino\.gifu\.jp|minokamo\.gifu\.jp|mitake\.gifu\.jp|mizunami\.gifu\.jp|motosu\.gifu\.jp|nakatsugawa\.gifu\.jp|ogaki\.gifu\.jp|sakahogi\.gifu\.jp|seki\.gifu\.jp|sekigahara\.gifu\.jp|shirakawa\.gifu\.jp|tajimi\.gifu\.jp|takayama\.gifu\.jp|tarui\.gifu\.jp|toki\.gifu\.jp|tomika\.gifu\.jp|wanouchi\.gifu\.jp|yamagata\.gifu\.jp|yaotsu\.gifu\.jp|yoro\.gifu\.jp|annaka\.gunma\.jp|chiyoda\.gunma\.jp|fujioka\.gunma\.jp|higashiagatsuma\.gunma\.jp|isesaki\.gunma\.jp|itakura\.gunma\.jp|kanna\.gunma\.jp|kanra\.gunma\.jp|katashina\.gunma\.jp|kawaba\.gunma\.jp|kiryu\.gunma\.jp|kusatsu\.gunma\.jp|maebashi\.gunma\.jp|meiwa\.gunma\.jp|midori\.gunma\.jp|minakami\.gunma\.jp|naganohara\.gunma\.jp|nakanojo\.gunma\.jp|nanmoku\.gunma\.jp|numata\.gunma\.jp|oizumi\.gunma\.jp|ora\.gunma\.jp|ota\.gunma\.jp|shibukawa\.gunma\.jp|shimonita\.gunma\.jp|shinto\.gunma\.jp|showa\.gunma\.jp|takasaki\.gunma\.jp|takayama\.gunma\.jp|tamamura\.gunma\.jp|tatebayashi\.gunma\.jp|tomioka\.gunma\.jp|tsukiyono\.gunma\.jp|tsumagoi\.gunma\.jp|ueno\.gunma\.jp|yoshioka\.gunma\.jp|asaminami\.hiroshima\.jp|daiwa\.hiroshima\.jp|etajima\.hiroshima\.jp|fuchu\.hiroshima\.jp|fukuyama\.hiroshima\.jp|hatsukaichi\.hiroshima\.jp|higashihiroshima\.hiroshima\.jp|hongo\.hiroshima\.jp|jinsekikogen\.hiroshima\.jp|kaita\.hiroshima\.jp|kui\.hiroshima\.jp|kumano\.hiroshima\.jp|kure\.hiroshima\.jp|mihara\.hiroshima\.jp|miyoshi\.hiroshima\.jp|naka\.hiroshima\.jp|onomichi\.hiroshima\.jp|osakikamijima\.hiroshima\.jp|otake\.hiroshima\.jp|saka\.hiroshima\.jp|sera\.hiroshima\.jp|seranishi\.hiroshima\.jp|shinichi\.hiroshima\.jp|shobara\.hiroshima\.jp|takehara\.hiroshima\.jp|abashiri\.hokkaido\.jp|abira\.hokkaido\.jp|aibetsu\.hokkaido\.jp|akabira\.hokkaido\.jp|akkeshi\.hokkaido\.jp|asahikawa\.hokkaido\.jp|ashibetsu\.hokkaido\.jp|ashoro\.hokkaido\.jp|assabu\.hokkaido\.jp|atsuma\.hokkaido\.jp|bibai\.hokkaido\.jp|biei\.hokkaido\.jp|bifuka\.hokkaido\.jp|bihoro\.hokkaido\.jp|biratori\.hokkaido\.jp|chippubetsu\.hokkaido\.jp|chitose\.hokkaido\.jp|date\.hokkaido\.jp|ebetsu\.hokkaido\.jp|embetsu\.hokkaido\.jp|eniwa\.hokkaido\.jp|erimo\.hokkaido\.jp|esan\.hokkaido\.jp|esashi\.hokkaido\.jp|fukagawa\.hokkaido\.jp|fukushima\.hokkaido\.jp|furano\.hokkaido\.jp|furubira\.hokkaido\.jp|haboro\.hokkaido\.jp|hakodate\.hokkaido\.jp|hamatonbetsu\.hokkaido\.jp|hidaka\.hokkaido\.jp|higashikagura\.hokkaido\.jp|higashikawa\.hokkaido\.jp|hiroo\.hokkaido\.jp|hokuryu\.hokkaido\.jp|hokuto\.hokkaido\.jp|honbetsu\.hokkaido\.jp|horokanai\.hokkaido\.jp|horonobe\.hokkaido\.jp|ikeda\.hokkaido\.jp|imakane\.hokkaido\.jp|ishikari\.hokkaido\.jp|iwamizawa\.hokkaido\.jp|iwanai\.hokkaido\.jp|kamifurano\.hokkaido\.jp|kamikawa\.hokkaido\.jp|kamishihoro\.hokkaido\.jp|kamisunagawa\.hokkaido\.jp|kamoenai\.hokkaido\.jp|kayabe\.hokkaido\.jp|kembuchi\.hokkaido\.jp|kikonai\.hokkaido\.jp|kimobetsu\.hokkaido\.jp|kitahiroshima\.hokkaido\.jp|kitami\.hokkaido\.jp|kiyosato\.hokkaido\.jp|koshimizu\.hokkaido\.jp|kunneppu\.hokkaido\.jp|kuriyama\.hokkaido\.jp|kuromatsunai\.hokkaido\.jp|kushiro\.hokkaido\.jp|kutchan\.hokkaido\.jp|kyowa\.hokkaido\.jp|mashike\.hokkaido\.jp|matsumae\.hokkaido\.jp|mikasa\.hokkaido\.jp|minamifurano\.hokkaido\.jp|mombetsu\.hokkaido\.jp|moseushi\.hokkaido\.jp|mukawa\.hokkaido\.jp|muroran\.hokkaido\.jp|naie\.hokkaido\.jp|nakagawa\.hokkaido\.jp|nakasatsunai\.hokkaido\.jp|nakatombetsu\.hokkaido\.jp|nanae\.hokkaido\.jp|nanporo\.hokkaido\.jp|nayoro\.hokkaido\.jp|nemuro\.hokkaido\.jp|niikappu\.hokkaido\.jp|niki\.hokkaido\.jp|nishiokoppe\.hokkaido\.jp|noboribetsu\.hokkaido\.jp|numata\.hokkaido\.jp|obihiro\.hokkaido\.jp|obira\.hokkaido\.jp|oketo\.hokkaido\.jp|okoppe\.hokkaido\.jp|otaru\.hokkaido\.jp|otobe\.hokkaido\.jp|otofuke\.hokkaido\.jp|otoineppu\.hokkaido\.jp|oumu\.hokkaido\.jp|ozora\.hokkaido\.jp|pippu\.hokkaido\.jp|rankoshi\.hokkaido\.jp|rebun\.hokkaido\.jp|rikubetsu\.hokkaido\.jp|rishiri\.hokkaido\.jp|rishirifuji\.hokkaido\.jp|saroma\.hokkaido\.jp|sarufutsu\.hokkaido\.jp|shakotan\.hokkaido\.jp|shari\.hokkaido\.jp|shibecha\.hokkaido\.jp|shibetsu\.hokkaido\.jp|shikabe\.hokkaido\.jp|shikaoi\.hokkaido\.jp|shimamaki\.hokkaido\.jp|shimizu\.hokkaido\.jp|shimokawa\.hokkaido\.jp|shinshinotsu\.hokkaido\.jp|shintoku\.hokkaido\.jp|shiranuka\.hokkaido\.jp|shiraoi\.hokkaido\.jp|shiriuchi\.hokkaido\.jp|sobetsu\.hokkaido\.jp|sunagawa\.hokkaido\.jp|taiki\.hokkaido\.jp|takasu\.hokkaido\.jp|takikawa\.hokkaido\.jp|takinoue\.hokkaido\.jp|teshikaga\.hokkaido\.jp|tobetsu\.hokkaido\.jp|tohma\.hokkaido\.jp|tomakomai\.hokkaido\.jp|tomari\.hokkaido\.jp|toya\.hokkaido\.jp|toyako\.hokkaido\.jp|toyotomi\.hokkaido\.jp|toyoura\.hokkaido\.jp|tsubetsu\.hokkaido\.jp|tsukigata\.hokkaido\.jp|urakawa\.hokkaido\.jp|urausu\.hokkaido\.jp|uryu\.hokkaido\.jp|utashinai\.hokkaido\.jp|wakkanai\.hokkaido\.jp|wassamu\.hokkaido\.jp|yakumo\.hokkaido\.jp|yoichi\.hokkaido\.jp|aioi\.hyogo\.jp|akashi\.hyogo\.jp|ako\.hyogo\.jp|amagasaki\.hyogo\.jp|aogaki\.hyogo\.jp|asago\.hyogo\.jp|ashiya\.hyogo\.jp|awaji\.hyogo\.jp|fukusaki\.hyogo\.jp|goshiki\.hyogo\.jp|harima\.hyogo\.jp|himeji\.hyogo\.jp|ichikawa\.hyogo\.jp|inagawa\.hyogo\.jp|itami\.hyogo\.jp|kakogawa\.hyogo\.jp|kamigori\.hyogo\.jp|kamikawa\.hyogo\.jp|kasai\.hyogo\.jp|kasuga\.hyogo\.jp|kawanishi\.hyogo\.jp|miki\.hyogo\.jp|minamiawaji\.hyogo\.jp|nishinomiya\.hyogo\.jp|nishiwaki\.hyogo\.jp|ono\.hyogo\.jp|sanda\.hyogo\.jp|sannan\.hyogo\.jp|sasayama\.hyogo\.jp|sayo\.hyogo\.jp|shingu\.hyogo\.jp|shinonsen\.hyogo\.jp|shiso\.hyogo\.jp|sumoto\.hyogo\.jp|taishi\.hyogo\.jp|taka\.hyogo\.jp|takarazuka\.hyogo\.jp|takasago\.hyogo\.jp|takino\.hyogo\.jp|tamba\.hyogo\.jp|tatsuno\.hyogo\.jp|toyooka\.hyogo\.jp|yabu\.hyogo\.jp|yashiro\.hyogo\.jp|yoka\.hyogo\.jp|yokawa\.hyogo\.jp|ami\.ibaraki\.jp|asahi\.ibaraki\.jp|bando\.ibaraki\.jp|chikusei\.ibaraki\.jp|daigo\.ibaraki\.jp|fujishiro\.ibaraki\.jp|hitachi\.ibaraki\.jp|hitachinaka\.ibaraki\.jp|hitachiomiya\.ibaraki\.jp|hitachiota\.ibaraki\.jp|ibaraki\.ibaraki\.jp|ina\.ibaraki\.jp|inashiki\.ibaraki\.jp|itako\.ibaraki\.jp|iwama\.ibaraki\.jp|joso\.ibaraki\.jp|kamisu\.ibaraki\.jp|kasama\.ibaraki\.jp|kashima\.ibaraki\.jp|kasumigaura\.ibaraki\.jp|koga\.ibaraki\.jp|miho\.ibaraki\.jp|mito\.ibaraki\.jp|moriya\.ibaraki\.jp|naka\.ibaraki\.jp|namegata\.ibaraki\.jp|oarai\.ibaraki\.jp|ogawa\.ibaraki\.jp|omitama\.ibaraki\.jp|ryugasaki\.ibaraki\.jp|sakai\.ibaraki\.jp|sakuragawa\.ibaraki\.jp|shimodate\.ibaraki\.jp|shimotsuma\.ibaraki\.jp|shirosato\.ibaraki\.jp|sowa\.ibaraki\.jp|suifu\.ibaraki\.jp|takahagi\.ibaraki\.jp|tamatsukuri\.ibaraki\.jp|tokai\.ibaraki\.jp|tomobe\.ibaraki\.jp|tone\.ibaraki\.jp|toride\.ibaraki\.jp|tsuchiura\.ibaraki\.jp|tsukuba\.ibaraki\.jp|uchihara\.ibaraki\.jp|ushiku\.ibaraki\.jp|yachiyo\.ibaraki\.jp|yamagata\.ibaraki\.jp|yawara\.ibaraki\.jp|yuki\.ibaraki\.jp|anamizu\.ishikawa\.jp|hakui\.ishikawa\.jp|hakusan\.ishikawa\.jp|kaga\.ishikawa\.jp|kahoku\.ishikawa\.jp|kanazawa\.ishikawa\.jp|kawakita\.ishikawa\.jp|komatsu\.ishikawa\.jp|nakanoto\.ishikawa\.jp|nanao\.ishikawa\.jp|nomi\.ishikawa\.jp|nonoichi\.ishikawa\.jp|noto\.ishikawa\.jp|shika\.ishikawa\.jp|suzu\.ishikawa\.jp|tsubata\.ishikawa\.jp|tsurugi\.ishikawa\.jp|uchinada\.ishikawa\.jp|wajima\.ishikawa\.jp|fudai\.iwate\.jp|fujisawa\.iwate\.jp|hanamaki\.iwate\.jp|hiraizumi\.iwate\.jp|hirono\.iwate\.jp|ichinohe\.iwate\.jp|ichinoseki\.iwate\.jp|iwaizumi\.iwate\.jp|iwate\.iwate\.jp|joboji\.iwate\.jp|kamaishi\.iwate\.jp|kanegasaki\.iwate\.jp|karumai\.iwate\.jp|kawai\.iwate\.jp|kitakami\.iwate\.jp|kuji\.iwate\.jp|kunohe\.iwate\.jp|kuzumaki\.iwate\.jp|miyako\.iwate\.jp|mizusawa\.iwate\.jp|morioka\.iwate\.jp|ninohe\.iwate\.jp|noda\.iwate\.jp|ofunato\.iwate\.jp|oshu\.iwate\.jp|otsuchi\.iwate\.jp|rikuzentakata\.iwate\.jp|shiwa\.iwate\.jp|shizukuishi\.iwate\.jp|sumita\.iwate\.jp|tanohata\.iwate\.jp|tono\.iwate\.jp|yahaba\.iwate\.jp|yamada\.iwate\.jp|ayagawa\.kagawa\.jp|higashikagawa\.kagawa\.jp|kanonji\.kagawa\.jp|kotohira\.kagawa\.jp|manno\.kagawa\.jp|marugame\.kagawa\.jp|mitoyo\.kagawa\.jp|naoshima\.kagawa\.jp|sanuki\.kagawa\.jp|tadotsu\.kagawa\.jp|takamatsu\.kagawa\.jp|tonosho\.kagawa\.jp|uchinomi\.kagawa\.jp|utazu\.kagawa\.jp|zentsuji\.kagawa\.jp|akune\.kagoshima\.jp|amami\.kagoshima\.jp|hioki\.kagoshima\.jp|isa\.kagoshima\.jp|isen\.kagoshima\.jp|izumi\.kagoshima\.jp|kagoshima\.kagoshima\.jp|kanoya\.kagoshima\.jp|kawanabe\.kagoshima\.jp|kinko\.kagoshima\.jp|kouyama\.kagoshima\.jp|makurazaki\.kagoshima\.jp|matsumoto\.kagoshima\.jp|minamitane\.kagoshima\.jp|nakatane\.kagoshima\.jp|nishinoomote\.kagoshima\.jp|satsumasendai\.kagoshima\.jp|soo\.kagoshima\.jp|tarumizu\.kagoshima\.jp|yusui\.kagoshima\.jp|aikawa\.kanagawa\.jp|atsugi\.kanagawa\.jp|ayase\.kanagawa\.jp|chigasaki\.kanagawa\.jp|ebina\.kanagawa\.jp|fujisawa\.kanagawa\.jp|hadano\.kanagawa\.jp|hakone\.kanagawa\.jp|hiratsuka\.kanagawa\.jp|isehara\.kanagawa\.jp|kaisei\.kanagawa\.jp|kamakura\.kanagawa\.jp|kiyokawa\.kanagawa\.jp|matsuda\.kanagawa\.jp|minamiashigara\.kanagawa\.jp|miura\.kanagawa\.jp|nakai\.kanagawa\.jp|ninomiya\.kanagawa\.jp|odawara\.kanagawa\.jp|oi\.kanagawa\.jp|oiso\.kanagawa\.jp|sagamihara\.kanagawa\.jp|samukawa\.kanagawa\.jp|tsukui\.kanagawa\.jp|yamakita\.kanagawa\.jp|yamato\.kanagawa\.jp|yokosuka\.kanagawa\.jp|yugawara\.kanagawa\.jp|zama\.kanagawa\.jp|zushi\.kanagawa\.jp|aki\.kochi\.jp|geisei\.kochi\.jp|hidaka\.kochi\.jp|higashitsuno\.kochi\.jp|ino\.kochi\.jp|kagami\.kochi\.jp|kami\.kochi\.jp|kitagawa\.kochi\.jp|kochi\.kochi\.jp|mihara\.kochi\.jp|motoyama\.kochi\.jp|muroto\.kochi\.jp|nahari\.kochi\.jp|nakamura\.kochi\.jp|nankoku\.kochi\.jp|nishitosa\.kochi\.jp|niyodogawa\.kochi\.jp|ochi\.kochi\.jp|okawa\.kochi\.jp|otoyo\.kochi\.jp|otsuki\.kochi\.jp|sakawa\.kochi\.jp|sukumo\.kochi\.jp|susaki\.kochi\.jp|tosa\.kochi\.jp|tosashimizu\.kochi\.jp|toyo\.kochi\.jp|tsuno\.kochi\.jp|umaji\.kochi\.jp|yasuda\.kochi\.jp|yusuhara\.kochi\.jp|amakusa\.kumamoto\.jp|arao\.kumamoto\.jp|aso\.kumamoto\.jp|choyo\.kumamoto\.jp|gyokuto\.kumamoto\.jp|kamiamakusa\.kumamoto\.jp|kikuchi\.kumamoto\.jp|kumamoto\.kumamoto\.jp|mashiki\.kumamoto\.jp|mifune\.kumamoto\.jp|minamata\.kumamoto\.jp|minamioguni\.kumamoto\.jp|nagasu\.kumamoto\.jp|nishihara\.kumamoto\.jp|oguni\.kumamoto\.jp|ozu\.kumamoto\.jp|sumoto\.kumamoto\.jp|takamori\.kumamoto\.jp|uki\.kumamoto\.jp|uto\.kumamoto\.jp|yamaga\.kumamoto\.jp|yamato\.kumamoto\.jp|yatsushiro\.kumamoto\.jp|ayabe\.kyoto\.jp|fukuchiyama\.kyoto\.jp|higashiyama\.kyoto\.jp|ide\.kyoto\.jp|ine\.kyoto\.jp|joyo\.kyoto\.jp|kameoka\.kyoto\.jp|kamo\.kyoto\.jp|kita\.kyoto\.jp|kizu\.kyoto\.jp|kumiyama\.kyoto\.jp|kyotamba\.kyoto\.jp|kyotanabe\.kyoto\.jp|kyotango\.kyoto\.jp|maizuru\.kyoto\.jp|minami\.kyoto\.jp|minamiyamashiro\.kyoto\.jp|miyazu\.kyoto\.jp|muko\.kyoto\.jp|nagaokakyo\.kyoto\.jp|nakagyo\.kyoto\.jp|nantan\.kyoto\.jp|oyamazaki\.kyoto\.jp|sakyo\.kyoto\.jp|seika\.kyoto\.jp|tanabe\.kyoto\.jp|uji\.kyoto\.jp|ujitawara\.kyoto\.jp|wazuka\.kyoto\.jp|yamashina\.kyoto\.jp|yawata\.kyoto\.jp|asahi\.mie\.jp|inabe\.mie\.jp|ise\.mie\.jp|kameyama\.mie\.jp|kawagoe\.mie\.jp|kiho\.mie\.jp|kisosaki\.mie\.jp|kiwa\.mie\.jp|komono\.mie\.jp|kumano\.mie\.jp|kuwana\.mie\.jp|matsusaka\.mie\.jp|meiwa\.mie\.jp|mihama\.mie\.jp|minamiise\.mie\.jp|misugi\.mie\.jp|miyama\.mie\.jp|nabari\.mie\.jp|shima\.mie\.jp|suzuka\.mie\.jp|tado\.mie\.jp|taiki\.mie\.jp|taki\.mie\.jp|tamaki\.mie\.jp|toba\.mie\.jp|tsu\.mie\.jp|udono\.mie\.jp|ureshino\.mie\.jp|watarai\.mie\.jp|yokkaichi\.mie\.jp|furukawa\.miyagi\.jp|higashimatsushima\.miyagi\.jp|ishinomaki\.miyagi\.jp|iwanuma\.miyagi\.jp|kakuda\.miyagi\.jp|kami\.miyagi\.jp|kawasaki\.miyagi\.jp|marumori\.miyagi\.jp|matsushima\.miyagi\.jp|minamisanriku\.miyagi\.jp|misato\.miyagi\.jp|murata\.miyagi\.jp|natori\.miyagi\.jp|ogawara\.miyagi\.jp|ohira\.miyagi\.jp|onagawa\.miyagi\.jp|osaki\.miyagi\.jp|rifu\.miyagi\.jp|semine\.miyagi\.jp|shibata\.miyagi\.jp|shichikashuku\.miyagi\.jp|shikama\.miyagi\.jp|shiogama\.miyagi\.jp|shiroishi\.miyagi\.jp|tagajo\.miyagi\.jp|taiwa\.miyagi\.jp|tome\.miyagi\.jp|tomiya\.miyagi\.jp|wakuya\.miyagi\.jp|watari\.miyagi\.jp|yamamoto\.miyagi\.jp|zao\.miyagi\.jp|aya\.miyazaki\.jp|ebino\.miyazaki\.jp|gokase\.miyazaki\.jp|hyuga\.miyazaki\.jp|kadogawa\.miyazaki\.jp|kawaminami\.miyazaki\.jp|kijo\.miyazaki\.jp|kitagawa\.miyazaki\.jp|kitakata\.miyazaki\.jp|kitaura\.miyazaki\.jp|kobayashi\.miyazaki\.jp|kunitomi\.miyazaki\.jp|kushima\.miyazaki\.jp|mimata\.miyazaki\.jp|miyakonojo\.miyazaki\.jp|miyazaki\.miyazaki\.jp|morotsuka\.miyazaki\.jp|nichinan\.miyazaki\.jp|nishimera\.miyazaki\.jp|nobeoka\.miyazaki\.jp|saito\.miyazaki\.jp|shiiba\.miyazaki\.jp|shintomi\.miyazaki\.jp|takaharu\.miyazaki\.jp|takanabe\.miyazaki\.jp|takazaki\.miyazaki\.jp|tsuno\.miyazaki\.jp|achi\.nagano\.jp|agematsu\.nagano\.jp|anan\.nagano\.jp|aoki\.nagano\.jp|asahi\.nagano\.jp|azumino\.nagano\.jp|chikuhoku\.nagano\.jp|chikuma\.nagano\.jp|chino\.nagano\.jp|fujimi\.nagano\.jp|hakuba\.nagano\.jp|hara\.nagano\.jp|hiraya\.nagano\.jp|iida\.nagano\.jp|iijima\.nagano\.jp|iiyama\.nagano\.jp|iizuna\.nagano\.jp|ikeda\.nagano\.jp|ikusaka\.nagano\.jp|ina\.nagano\.jp|karuizawa\.nagano\.jp|kawakami\.nagano\.jp|kiso\.nagano\.jp|kisofukushima\.nagano\.jp|kitaaiki\.nagano\.jp|komagane\.nagano\.jp|komoro\.nagano\.jp|matsukawa\.nagano\.jp|matsumoto\.nagano\.jp|miasa\.nagano\.jp|minamiaiki\.nagano\.jp|minamimaki\.nagano\.jp|minamiminowa\.nagano\.jp|minowa\.nagano\.jp|miyada\.nagano\.jp|miyota\.nagano\.jp|mochizuki\.nagano\.jp|nagano\.nagano\.jp|nagawa\.nagano\.jp|nagiso\.nagano\.jp|nakagawa\.nagano\.jp|nakano\.nagano\.jp|nozawaonsen\.nagano\.jp|obuse\.nagano\.jp|ogawa\.nagano\.jp|okaya\.nagano\.jp|omachi\.nagano\.jp|omi\.nagano\.jp|ookuwa\.nagano\.jp|ooshika\.nagano\.jp|otaki\.nagano\.jp|otari\.nagano\.jp|sakae\.nagano\.jp|sakaki\.nagano\.jp|saku\.nagano\.jp|sakuho\.nagano\.jp|shimosuwa\.nagano\.jp|shinanomachi\.nagano\.jp|shiojiri\.nagano\.jp|suwa\.nagano\.jp|suzaka\.nagano\.jp|takagi\.nagano\.jp|takamori\.nagano\.jp|takayama\.nagano\.jp|tateshina\.nagano\.jp|tatsuno\.nagano\.jp|togakushi\.nagano\.jp|togura\.nagano\.jp|tomi\.nagano\.jp|ueda\.nagano\.jp|wada\.nagano\.jp|yamagata\.nagano\.jp|yamanouchi\.nagano\.jp|yasaka\.nagano\.jp|yasuoka\.nagano\.jp|chijiwa\.nagasaki\.jp|futsu\.nagasaki\.jp|goto\.nagasaki\.jp|hasami\.nagasaki\.jp|hirado\.nagasaki\.jp|iki\.nagasaki\.jp|isahaya\.nagasaki\.jp|kawatana\.nagasaki\.jp|kuchinotsu\.nagasaki\.jp|matsuura\.nagasaki\.jp|nagasaki\.nagasaki\.jp|obama\.nagasaki\.jp|omura\.nagasaki\.jp|oseto\.nagasaki\.jp|saikai\.nagasaki\.jp|sasebo\.nagasaki\.jp|seihi\.nagasaki\.jp|shimabara\.nagasaki\.jp|shinkamigoto\.nagasaki\.jp|togitsu\.nagasaki\.jp|tsushima\.nagasaki\.jp|unzen\.nagasaki\.jp|ando\.nara\.jp|gose\.nara\.jp|heguri\.nara\.jp|higashiyoshino\.nara\.jp|ikaruga\.nara\.jp|ikoma\.nara\.jp|kamikitayama\.nara\.jp|kanmaki\.nara\.jp|kashiba\.nara\.jp|kashihara\.nara\.jp|katsuragi\.nara\.jp|kawai\.nara\.jp|kawakami\.nara\.jp|kawanishi\.nara\.jp|koryo\.nara\.jp|kurotaki\.nara\.jp|mitsue\.nara\.jp|miyake\.nara\.jp|nara\.nara\.jp|nosegawa\.nara\.jp|oji\.nara\.jp|ouda\.nara\.jp|oyodo\.nara\.jp|sakurai\.nara\.jp|sango\.nara\.jp|shimoichi\.nara\.jp|shimokitayama\.nara\.jp|shinjo\.nara\.jp|soni\.nara\.jp|takatori\.nara\.jp|tawaramoto\.nara\.jp|tenkawa\.nara\.jp|tenri\.nara\.jp|uda\.nara\.jp|yamatokoriyama\.nara\.jp|yamatotakada\.nara\.jp|yamazoe\.nara\.jp|yoshino\.nara\.jp|aga\.niigata\.jp|agano\.niigata\.jp|gosen\.niigata\.jp|itoigawa\.niigata\.jp|izumozaki\.niigata\.jp|joetsu\.niigata\.jp|kamo\.niigata\.jp|kariwa\.niigata\.jp|kashiwazaki\.niigata\.jp|minamiuonuma\.niigata\.jp|mitsuke\.niigata\.jp|muika\.niigata\.jp|murakami\.niigata\.jp|myoko\.niigata\.jp|nagaoka\.niigata\.jp|niigata\.niigata\.jp|ojiya\.niigata\.jp|omi\.niigata\.jp|sado\.niigata\.jp|sanjo\.niigata\.jp|seiro\.niigata\.jp|seirou\.niigata\.jp|sekikawa\.niigata\.jp|shibata\.niigata\.jp|tagami\.niigata\.jp|tainai\.niigata\.jp|tochio\.niigata\.jp|tokamachi\.niigata\.jp|tsubame\.niigata\.jp|tsunan\.niigata\.jp|uonuma\.niigata\.jp|yahiko\.niigata\.jp|yoita\.niigata\.jp|yuzawa\.niigata\.jp|beppu\.oita\.jp|bungoono\.oita\.jp|bungotakada\.oita\.jp|hasama\.oita\.jp|hiji\.oita\.jp|himeshima\.oita\.jp|hita\.oita\.jp|kamitsue\.oita\.jp|kokonoe\.oita\.jp|kuju\.oita\.jp|kunisaki\.oita\.jp|kusu\.oita\.jp|oita\.oita\.jp|saiki\.oita\.jp|taketa\.oita\.jp|tsukumi\.oita\.jp|usa\.oita\.jp|usuki\.oita\.jp|yufu\.oita\.jp|akaiwa\.okayama\.jp|asakuchi\.okayama\.jp|bizen\.okayama\.jp|hayashima\.okayama\.jp|ibara\.okayama\.jp|kagamino\.okayama\.jp|kasaoka\.okayama\.jp|kibichuo\.okayama\.jp|kumenan\.okayama\.jp|kurashiki\.okayama\.jp|maniwa\.okayama\.jp|misaki\.okayama\.jp|nagi\.okayama\.jp|niimi\.okayama\.jp|nishiawakura\.okayama\.jp|okayama\.okayama\.jp|satosho\.okayama\.jp|setouchi\.okayama\.jp|shinjo\.okayama\.jp|shoo\.okayama\.jp|soja\.okayama\.jp|takahashi\.okayama\.jp|tamano\.okayama\.jp|tsuyama\.okayama\.jp|wake\.okayama\.jp|yakage\.okayama\.jp|aguni\.okinawa\.jp|ginowan\.okinawa\.jp|ginoza\.okinawa\.jp|gushikami\.okinawa\.jp|haebaru\.okinawa\.jp|higashi\.okinawa\.jp|hirara\.okinawa\.jp|iheya\.okinawa\.jp|ishigaki\.okinawa\.jp|ishikawa\.okinawa\.jp|itoman\.okinawa\.jp|izena\.okinawa\.jp|kadena\.okinawa\.jp|kin\.okinawa\.jp|kitadaito\.okinawa\.jp|kitanakagusuku\.okinawa\.jp|kumejima\.okinawa\.jp|kunigami\.okinawa\.jp|minamidaito\.okinawa\.jp|motobu\.okinawa\.jp|nago\.okinawa\.jp|naha\.okinawa\.jp|nakagusuku\.okinawa\.jp|nakijin\.okinawa\.jp|nanjo\.okinawa\.jp|nishihara\.okinawa\.jp|ogimi\.okinawa\.jp|okinawa\.okinawa\.jp|onna\.okinawa\.jp|shimoji\.okinawa\.jp|taketomi\.okinawa\.jp|tarama\.okinawa\.jp|tokashiki\.okinawa\.jp|tomigusuku\.okinawa\.jp|tonaki\.okinawa\.jp|urasoe\.okinawa\.jp|uruma\.okinawa\.jp|yaese\.okinawa\.jp|yomitan\.okinawa\.jp|yonabaru\.okinawa\.jp|yonaguni\.okinawa\.jp|zamami\.okinawa\.jp|abeno\.osaka\.jp|chihayaakasaka\.osaka\.jp|chuo\.osaka\.jp|daito\.osaka\.jp|fujiidera\.osaka\.jp|habikino\.osaka\.jp|hannan\.osaka\.jp|higashiosaka\.osaka\.jp|higashisumiyoshi\.osaka\.jp|higashiyodogawa\.osaka\.jp|hirakata\.osaka\.jp|ibaraki\.osaka\.jp|ikeda\.osaka\.jp|izumi\.osaka\.jp|izumiotsu\.osaka\.jp|izumisano\.osaka\.jp|kadoma\.osaka\.jp|kaizuka\.osaka\.jp|kanan\.osaka\.jp|kashiwara\.osaka\.jp|katano\.osaka\.jp|kawachinagano\.osaka\.jp|kishiwada\.osaka\.jp|kita\.osaka\.jp|kumatori\.osaka\.jp|matsubara\.osaka\.jp|minato\.osaka\.jp|minoh\.osaka\.jp|misaki\.osaka\.jp|moriguchi\.osaka\.jp|neyagawa\.osaka\.jp|nishi\.osaka\.jp|nose\.osaka\.jp|osakasayama\.osaka\.jp|sakai\.osaka\.jp|sayama\.osaka\.jp|sennan\.osaka\.jp|settsu\.osaka\.jp|shijonawate\.osaka\.jp|shimamoto\.osaka\.jp|suita\.osaka\.jp|tadaoka\.osaka\.jp|taishi\.osaka\.jp|tajiri\.osaka\.jp|takaishi\.osaka\.jp|takatsuki\.osaka\.jp|tondabayashi\.osaka\.jp|toyonaka\.osaka\.jp|toyono\.osaka\.jp|yao\.osaka\.jp|ariake\.saga\.jp|arita\.saga\.jp|fukudomi\.saga\.jp|genkai\.saga\.jp|hamatama\.saga\.jp|hizen\.saga\.jp|imari\.saga\.jp|kamimine\.saga\.jp|kanzaki\.saga\.jp|karatsu\.saga\.jp|kashima\.saga\.jp|kitagata\.saga\.jp|kitahata\.saga\.jp|kiyama\.saga\.jp|kouhoku\.saga\.jp|kyuragi\.saga\.jp|nishiarita\.saga\.jp|ogi\.saga\.jp|omachi\.saga\.jp|ouchi\.saga\.jp|saga\.saga\.jp|shiroishi\.saga\.jp|taku\.saga\.jp|tara\.saga\.jp|tosu\.saga\.jp|yoshinogari\.saga\.jp|arakawa\.saitama\.jp|asaka\.saitama\.jp|chichibu\.saitama\.jp|fujimi\.saitama\.jp|fujimino\.saitama\.jp|fukaya\.saitama\.jp|hanno\.saitama\.jp|hanyu\.saitama\.jp|hasuda\.saitama\.jp|hatogaya\.saitama\.jp|hatoyama\.saitama\.jp|hidaka\.saitama\.jp|higashichichibu\.saitama\.jp|higashimatsuyama\.saitama\.jp|honjo\.saitama\.jp|ina\.saitama\.jp|iruma\.saitama\.jp|iwatsuki\.saitama\.jp|kamiizumi\.saitama\.jp|kamikawa\.saitama\.jp|kamisato\.saitama\.jp|kasukabe\.saitama\.jp|kawagoe\.saitama\.jp|kawaguchi\.saitama\.jp|kawajima\.saitama\.jp|kazo\.saitama\.jp|kitamoto\.saitama\.jp|koshigaya\.saitama\.jp|kounosu\.saitama\.jp|kuki\.saitama\.jp|kumagaya\.saitama\.jp|matsubushi\.saitama\.jp|minano\.saitama\.jp|misato\.saitama\.jp|miyashiro\.saitama\.jp|miyoshi\.saitama\.jp|moroyama\.saitama\.jp|nagatoro\.saitama\.jp|namegawa\.saitama\.jp|niiza\.saitama\.jp|ogano\.saitama\.jp|ogawa\.saitama\.jp|ogose\.saitama\.jp|okegawa\.saitama\.jp|omiya\.saitama\.jp|otaki\.saitama\.jp|ranzan\.saitama\.jp|ryokami\.saitama\.jp|saitama\.saitama\.jp|sakado\.saitama\.jp|satte\.saitama\.jp|sayama\.saitama\.jp|shiki\.saitama\.jp|shiraoka\.saitama\.jp|soka\.saitama\.jp|sugito\.saitama\.jp|toda\.saitama\.jp|tokigawa\.saitama\.jp|tokorozawa\.saitama\.jp|tsurugashima\.saitama\.jp|urawa\.saitama\.jp|warabi\.saitama\.jp|yashio\.saitama\.jp|yokoze\.saitama\.jp|yono\.saitama\.jp|yorii\.saitama\.jp|yoshida\.saitama\.jp|yoshikawa\.saitama\.jp|yoshimi\.saitama\.jp|aisho\.shiga\.jp|gamo\.shiga\.jp|higashiomi\.shiga\.jp|hikone\.shiga\.jp|koka\.shiga\.jp|konan\.shiga\.jp|kosei\.shiga\.jp|koto\.shiga\.jp|kusatsu\.shiga\.jp|maibara\.shiga\.jp|moriyama\.shiga\.jp|nagahama\.shiga\.jp|nishiazai\.shiga\.jp|notogawa\.shiga\.jp|omihachiman\.shiga\.jp|otsu\.shiga\.jp|ritto\.shiga\.jp|ryuoh\.shiga\.jp|takashima\.shiga\.jp|takatsuki\.shiga\.jp|torahime\.shiga\.jp|toyosato\.shiga\.jp|yasu\.shiga\.jp|akagi\.shimane\.jp|ama\.shimane\.jp|gotsu\.shimane\.jp|hamada\.shimane\.jp|higashiizumo\.shimane\.jp|hikawa\.shimane\.jp|hikimi\.shimane\.jp|izumo\.shimane\.jp|kakinoki\.shimane\.jp|masuda\.shimane\.jp|matsue\.shimane\.jp|misato\.shimane\.jp|nishinoshima\.shimane\.jp|ohda\.shimane\.jp|okinoshima\.shimane\.jp|okuizumo\.shimane\.jp|shimane\.shimane\.jp|tamayu\.shimane\.jp|tsuwano\.shimane\.jp|unnan\.shimane\.jp|yakumo\.shimane\.jp|yasugi\.shimane\.jp|yatsuka\.shimane\.jp|arai\.shizuoka\.jp|atami\.shizuoka\.jp|fuji\.shizuoka\.jp|fujieda\.shizuoka\.jp|fujikawa\.shizuoka\.jp|fujinomiya\.shizuoka\.jp|fukuroi\.shizuoka\.jp|gotemba\.shizuoka\.jp|haibara\.shizuoka\.jp|hamamatsu\.shizuoka\.jp|higashiizu\.shizuoka\.jp|ito\.shizuoka\.jp|iwata\.shizuoka\.jp|izu\.shizuoka\.jp|izunokuni\.shizuoka\.jp|kakegawa\.shizuoka\.jp|kannami\.shizuoka\.jp|kawanehon\.shizuoka\.jp|kawazu\.shizuoka\.jp|kikugawa\.shizuoka\.jp|kosai\.shizuoka\.jp|makinohara\.shizuoka\.jp|matsuzaki\.shizuoka\.jp|minamiizu\.shizuoka\.jp|mishima\.shizuoka\.jp|morimachi\.shizuoka\.jp|nishiizu\.shizuoka\.jp|numazu\.shizuoka\.jp|omaezaki\.shizuoka\.jp|shimada\.shizuoka\.jp|shimizu\.shizuoka\.jp|shimoda\.shizuoka\.jp|shizuoka\.shizuoka\.jp|susono\.shizuoka\.jp|yaizu\.shizuoka\.jp|yoshida\.shizuoka\.jp|ashikaga\.tochigi\.jp|bato\.tochigi\.jp|haga\.tochigi\.jp|ichikai\.tochigi\.jp|iwafune\.tochigi\.jp|kaminokawa\.tochigi\.jp|kanuma\.tochigi\.jp|karasuyama\.tochigi\.jp|kuroiso\.tochigi\.jp|mashiko\.tochigi\.jp|mibu\.tochigi\.jp|moka\.tochigi\.jp|motegi\.tochigi\.jp|nasu\.tochigi\.jp|nasushiobara\.tochigi\.jp|nikko\.tochigi\.jp|nishikata\.tochigi\.jp|nogi\.tochigi\.jp|ohira\.tochigi\.jp|ohtawara\.tochigi\.jp|oyama\.tochigi\.jp|sakura\.tochigi\.jp|sano\.tochigi\.jp|shimotsuke\.tochigi\.jp|shioya\.tochigi\.jp|takanezawa\.tochigi\.jp|tochigi\.tochigi\.jp|tsuga\.tochigi\.jp|ujiie\.tochigi\.jp|utsunomiya\.tochigi\.jp|yaita\.tochigi\.jp|aizumi\.tokushima\.jp|anan\.tokushima\.jp|ichiba\.tokushima\.jp|itano\.tokushima\.jp|kainan\.tokushima\.jp|komatsushima\.tokushima\.jp|matsushige\.tokushima\.jp|mima\.tokushima\.jp|minami\.tokushima\.jp|miyoshi\.tokushima\.jp|mugi\.tokushima\.jp|nakagawa\.tokushima\.jp|naruto\.tokushima\.jp|sanagochi\.tokushima\.jp|shishikui\.tokushima\.jp|tokushima\.tokushima\.jp|wajiki\.tokushima\.jp|adachi\.tokyo\.jp|akiruno\.tokyo\.jp|akishima\.tokyo\.jp|aogashima\.tokyo\.jp|arakawa\.tokyo\.jp|bunkyo\.tokyo\.jp|chiyoda\.tokyo\.jp|chofu\.tokyo\.jp|chuo\.tokyo\.jp|edogawa\.tokyo\.jp|fuchu\.tokyo\.jp|fussa\.tokyo\.jp|hachijo\.tokyo\.jp|hachioji\.tokyo\.jp|hamura\.tokyo\.jp|higashikurume\.tokyo\.jp|higashimurayama\.tokyo\.jp|higashiyamato\.tokyo\.jp|hino\.tokyo\.jp|hinode\.tokyo\.jp|hinohara\.tokyo\.jp|inagi\.tokyo\.jp|itabashi\.tokyo\.jp|katsushika\.tokyo\.jp|kita\.tokyo\.jp|kiyose\.tokyo\.jp|kodaira\.tokyo\.jp|koganei\.tokyo\.jp|kokubunji\.tokyo\.jp|komae\.tokyo\.jp|koto\.tokyo\.jp|kouzushima\.tokyo\.jp|kunitachi\.tokyo\.jp|machida\.tokyo\.jp|meguro\.tokyo\.jp|minato\.tokyo\.jp|mitaka\.tokyo\.jp|mizuho\.tokyo\.jp|musashimurayama\.tokyo\.jp|musashino\.tokyo\.jp|nakano\.tokyo\.jp|nerima\.tokyo\.jp|ogasawara\.tokyo\.jp|okutama\.tokyo\.jp|ome\.tokyo\.jp|oshima\.tokyo\.jp|ota\.tokyo\.jp|setagaya\.tokyo\.jp|shibuya\.tokyo\.jp|shinagawa\.tokyo\.jp|shinjuku\.tokyo\.jp|suginami\.tokyo\.jp|sumida\.tokyo\.jp|tachikawa\.tokyo\.jp|taito\.tokyo\.jp|tama\.tokyo\.jp|toshima\.tokyo\.jp|chizu\.tottori\.jp|hino\.tottori\.jp|kawahara\.tottori\.jp|koge\.tottori\.jp|kotoura\.tottori\.jp|misasa\.tottori\.jp|nanbu\.tottori\.jp|nichinan\.tottori\.jp|sakaiminato\.tottori\.jp|tottori\.tottori\.jp|wakasa\.tottori\.jp|yazu\.tottori\.jp|yonago\.tottori\.jp|asahi\.toyama\.jp|fuchu\.toyama\.jp|fukumitsu\.toyama\.jp|funahashi\.toyama\.jp|himi\.toyama\.jp|imizu\.toyama\.jp|inami\.toyama\.jp|johana\.toyama\.jp|kamiichi\.toyama\.jp|kurobe\.toyama\.jp|nakaniikawa\.toyama\.jp|namerikawa\.toyama\.jp|nanto\.toyama\.jp|nyuzen\.toyama\.jp|oyabe\.toyama\.jp|taira\.toyama\.jp|takaoka\.toyama\.jp|tateyama\.toyama\.jp|toga\.toyama\.jp|tonami\.toyama\.jp|toyama\.toyama\.jp|unazuki\.toyama\.jp|uozu\.toyama\.jp|yamada\.toyama\.jp|arida\.wakayama\.jp|aridagawa\.wakayama\.jp|gobo\.wakayama\.jp|hashimoto\.wakayama\.jp|hidaka\.wakayama\.jp|hirogawa\.wakayama\.jp|inami\.wakayama\.jp|iwade\.wakayama\.jp|kainan\.wakayama\.jp|kamitonda\.wakayama\.jp|katsuragi\.wakayama\.jp|kimino\.wakayama\.jp|kinokawa\.wakayama\.jp|kitayama\.wakayama\.jp|koya\.wakayama\.jp|koza\.wakayama\.jp|kozagawa\.wakayama\.jp|kudoyama\.wakayama\.jp|kushimoto\.wakayama\.jp|mihama\.wakayama\.jp|misato\.wakayama\.jp|nachikatsuura\.wakayama\.jp|shingu\.wakayama\.jp|shirahama\.wakayama\.jp|taiji\.wakayama\.jp|tanabe\.wakayama\.jp|wakayama\.wakayama\.jp|yuasa\.wakayama\.jp|yura\.wakayama\.jp|asahi\.yamagata\.jp|funagata\.yamagata\.jp|higashine\.yamagata\.jp|iide\.yamagata\.jp|kahoku\.yamagata\.jp|kaminoyama\.yamagata\.jp|kaneyama\.yamagata\.jp|kawanishi\.yamagata\.jp|mamurogawa\.yamagata\.jp|mikawa\.yamagata\.jp|murayama\.yamagata\.jp|nagai\.yamagata\.jp|nakayama\.yamagata\.jp|nanyo\.yamagata\.jp|nishikawa\.yamagata\.jp|obanazawa\.yamagata\.jp|oe\.yamagata\.jp|oguni\.yamagata\.jp|ohkura\.yamagata\.jp|oishida\.yamagata\.jp|sagae\.yamagata\.jp|sakata\.yamagata\.jp|sakegawa\.yamagata\.jp|shinjo\.yamagata\.jp|shirataka\.yamagata\.jp|shonai\.yamagata\.jp|takahata\.yamagata\.jp|tendo\.yamagata\.jp|tozawa\.yamagata\.jp|tsuruoka\.yamagata\.jp|yamagata\.yamagata\.jp|yamanobe\.yamagata\.jp|yonezawa\.yamagata\.jp|yuza\.yamagata\.jp|abu\.yamaguchi\.jp|hagi\.yamaguchi\.jp|hikari\.yamaguchi\.jp|hofu\.yamaguchi\.jp|iwakuni\.yamaguchi\.jp|kudamatsu\.yamaguchi\.jp|mitou\.yamaguchi\.jp|nagato\.yamaguchi\.jp|oshima\.yamaguchi\.jp|shimonoseki\.yamaguchi\.jp|shunan\.yamaguchi\.jp|tabuse\.yamaguchi\.jp|tokuyama\.yamaguchi\.jp|toyota\.yamaguchi\.jp|ube\.yamaguchi\.jp|yuu\.yamaguchi\.jp|chuo\.yamanashi\.jp|doshi\.yamanashi\.jp|fuefuki\.yamanashi\.jp|fujikawa\.yamanashi\.jp|fujikawaguchiko\.yamanashi\.jp|fujiyoshida\.yamanashi\.jp|hayakawa\.yamanashi\.jp|hokuto\.yamanashi\.jp|ichikawamisato\.yamanashi\.jp|kai\.yamanashi\.jp|kofu\.yamanashi\.jp|koshu\.yamanashi\.jp|kosuge\.yamanashi\.jp|minami-alps\.yamanashi\.jp|minobu\.yamanashi\.jp|nakamichi\.yamanashi\.jp|nanbu\.yamanashi\.jp|narusawa\.yamanashi\.jp|nirasaki\.yamanashi\.jp|nishikatsura\.yamanashi\.jp|oshino\.yamanashi\.jp|otsuki\.yamanashi\.jp|showa\.yamanashi\.jp|tabayama\.yamanashi\.jp|tsuru\.yamanashi\.jp|uenohara\.yamanashi\.jp|yamanakako\.yamanashi\.jp|yamanashi\.yamanashi\.jp|[^.]+\.ke|kg|org\.kg|net\.kg|com\.kg|edu\.kg|gov\.kg|mil\.kg|[^.]+\.kh|ki|edu\.ki|biz\.ki|net\.ki|org\.ki|gov\.ki|info\.ki|com\.ki|km|org\.km|nom\.km|gov\.km|prd\.km|tm\.km|edu\.km|mil\.km|ass\.km|com\.km|coop\.km|asso\.km|presse\.km|medecin\.km|notaires\.km|pharmaciens\.km|veterinaire\.km|gouv\.km|kn|net\.kn|org\.kn|edu\.kn|gov\.kn|kp|com\.kp|edu\.kp|gov\.kp|org\.kp|rep\.kp|tra\.kp|kr|ac\.kr|co\.kr|es\.kr|go\.kr|hs\.kr|kg\.kr|mil\.kr|ms\.kr|ne\.kr|or\.kr|pe\.kr|re\.kr|sc\.kr|busan\.kr|chungbuk\.kr|chungnam\.kr|daegu\.kr|daejeon\.kr|gangwon\.kr|gwangju\.kr|gyeongbuk\.kr|gyeonggi\.kr|gyeongnam\.kr|incheon\.kr|jeju\.kr|jeonbuk\.kr|jeonnam\.kr|seoul\.kr|ulsan\.kr|[^.]+\.kw|ky|edu\.ky|gov\.ky|com\.ky|org\.ky|net\.ky|kz|org\.kz|edu\.kz|net\.kz|gov\.kz|mil\.kz|com\.kz|la|int\.la|net\.la|info\.la|edu\.la|gov\.la|per\.la|com\.la|org\.la|lb|com\.lb|edu\.lb|gov\.lb|net\.lb|org\.lb|lc|com\.lc|net\.lc|co\.lc|org\.lc|edu\.lc|gov\.lc|li|lk|gov\.lk|sch\.lk|net\.lk|int\.lk|com\.lk|org\.lk|edu\.lk|ngo\.lk|soc\.lk|web\.lk|ltd\.lk|assn\.lk|grp\.lk|hotel\.lk|ac\.lk|lr|com\.lr|edu\.lr|gov\.lr|org\.lr|net\.lr|ls|co\.ls|org\.ls|lt|gov\.lt|lu|lv|com\.lv|edu\.lv|gov\.lv|org\.lv|mil\.lv|id\.lv|net\.lv|asn\.lv|conf\.lv|ly|com\.ly|net\.ly|gov\.ly|plc\.ly|edu\.ly|sch\.ly|med\.ly|org\.ly|id\.ly|ma|co\.ma|net\.ma|gov\.ma|org\.ma|ac\.ma|press\.ma|mc|tm\.mc|asso\.mc|md|me|co\.me|net\.me|org\.me|edu\.me|ac\.me|gov\.me|its\.me|priv\.me|mg|org\.mg|nom\.mg|gov\.mg|prd\.mg|tm\.mg|edu\.mg|mil\.mg|com\.mg|co\.mg|mh|mil|mk|com\.mk|org\.mk|net\.mk|edu\.mk|gov\.mk|inf\.mk|name\.mk|ml|com\.ml|edu\.ml|gouv\.ml|gov\.ml|net\.ml|org\.ml|presse\.ml|[^.]+\.mm|mn|gov\.mn|edu\.mn|org\.mn|mo|com\.mo|net\.mo|org\.mo|edu\.mo|gov\.mo|mobi|mp|mq|mr|gov\.mr|ms|com\.ms|edu\.ms|gov\.ms|net\.ms|org\.ms|mt|com\.mt|edu\.mt|net\.mt|org\.mt|mu|com\.mu|net\.mu|org\.mu|gov\.mu|ac\.mu|co\.mu|or\.mu|museum|academy\.museum|agriculture\.museum|air\.museum|airguard\.museum|alabama\.museum|alaska\.museum|amber\.museum|ambulance\.museum|american\.museum|americana\.museum|americanantiques\.museum|americanart\.museum|amsterdam\.museum|and\.museum|annefrank\.museum|anthro\.museum|anthropology\.museum|antiques\.museum|aquarium\.museum|arboretum\.museum|archaeological\.museum|archaeology\.museum|architecture\.museum|art\.museum|artanddesign\.museum|artcenter\.museum|artdeco\.museum|arteducation\.museum|artgallery\.museum|arts\.museum|artsandcrafts\.museum|asmatart\.museum|assassination\.museum|assisi\.museum|association\.museum|astronomy\.museum|atlanta\.museum|austin\.museum|australia\.museum|automotive\.museum|aviation\.museum|axis\.museum|badajoz\.museum|baghdad\.museum|bahn\.museum|bale\.museum|baltimore\.museum|barcelona\.museum|baseball\.museum|basel\.museum|baths\.museum|bauern\.museum|beauxarts\.museum|beeldengeluid\.museum|bellevue\.museum|bergbau\.museum|berkeley\.museum|berlin\.museum|bern\.museum|bible\.museum|bilbao\.museum|bill\.museum|birdart\.museum|birthplace\.museum|bonn\.museum|boston\.museum|botanical\.museum|botanicalgarden\.museum|botanicgarden\.museum|botany\.museum|brandywinevalley\.museum|brasil\.museum|bristol\.museum|british\.museum|britishcolumbia\.museum|broadcast\.museum|brunel\.museum|brussel\.museum|brussels\.museum|bruxelles\.museum|building\.museum|burghof\.museum|bus\.museum|bushey\.museum|cadaques\.museum|california\.museum|cambridge\.museum|can\.museum|canada\.museum|capebreton\.museum|carrier\.museum|cartoonart\.museum|casadelamoneda\.museum|castle\.museum|castres\.museum|celtic\.museum|center\.museum|chattanooga\.museum|cheltenham\.museum|chesapeakebay\.museum|chicago\.museum|children\.museum|childrens\.museum|childrensgarden\.museum|chiropractic\.museum|chocolate\.museum|christiansburg\.museum|cincinnati\.museum|cinema\.museum|circus\.museum|civilisation\.museum|civilization\.museum|civilwar\.museum|clinton\.museum|clock\.museum|coal\.museum|coastaldefence\.museum|cody\.museum|coldwar\.museum|collection\.museum|colonialwilliamsburg\.museum|coloradoplateau\.museum|columbia\.museum|columbus\.museum|communication\.museum|communications\.museum|community\.museum|computer\.museum|computerhistory\.museum|comunicações\.museum|contemporary\.museum|contemporaryart\.museum|convent\.museum|copenhagen\.museum|corporation\.museum|correios-e-telecomunicações\.museum|corvette\.museum|costume\.museum|countryestate\.museum|county\.museum|crafts\.museum|cranbrook\.museum|creation\.museum|cultural\.museum|culturalcenter\.museum|culture\.museum|cyber\.museum|cymru\.museum|dali\.museum|dallas\.museum|database\.museum|ddr\.museum|decorativearts\.museum|delaware\.museum|delmenhorst\.museum|denmark\.museum|depot\.museum|design\.museum|detroit\.museum|dinosaur\.museum|discovery\.museum|dolls\.museum|donostia\.museum|durham\.museum|eastafrica\.museum|eastcoast\.museum|education\.museum|educational\.museum|egyptian\.museum|eisenbahn\.museum|elburg\.museum|elvendrell\.museum|embroidery\.museum|encyclopedic\.museum|england\.museum|entomology\.museum|environment\.museum|environmentalconservation\.museum|epilepsy\.museum|essex\.museum|estate\.museum|ethnology\.museum|exeter\.museum|exhibition\.museum|family\.museum|farm\.museum|farmequipment\.museum|farmers\.museum|farmstead\.museum|field\.museum|figueres\.museum|filatelia\.museum|film\.museum|fineart\.museum|finearts\.museum|finland\.museum|flanders\.museum|florida\.museum|force\.museum|fortmissoula\.museum|fortworth\.museum|foundation\.museum|francaise\.museum|frankfurt\.museum|franziskaner\.museum|freemasonry\.museum|freiburg\.museum|fribourg\.museum|frog\.museum|fundacio\.museum|furniture\.museum|gallery\.museum|garden\.museum|gateway\.museum|geelvinck\.museum|gemological\.museum|geology\.museum|georgia\.museum|giessen\.museum|glas\.museum|glass\.museum|gorge\.museum|grandrapids\.museum|graz\.museum|guernsey\.museum|halloffame\.museum|hamburg\.museum|handson\.museum|harvestcelebration\.museum|hawaii\.museum|health\.museum|heimatunduhren\.museum|hellas\.museum|helsinki\.museum|hembygdsforbund\.museum|heritage\.museum|histoire\.museum|historical\.museum|historicalsociety\.museum|historichouses\.museum|historisch\.museum|historisches\.museum|history\.museum|historyofscience\.museum|horology\.museum|house\.museum|humanities\.museum|illustration\.museum|imageandsound\.museum|indian\.museum|indiana\.museum|indianapolis\.museum|indianmarket\.museum|intelligence\.museum|interactive\.museum|iraq\.museum|iron\.museum|isleofman\.museum|jamison\.museum|jefferson\.museum|jerusalem\.museum|jewelry\.museum|jewish\.museum|jewishart\.museum|jfk\.museum|journalism\.museum|judaica\.museum|judygarland\.museum|juedisches\.museum|juif\.museum|karate\.museum|karikatur\.museum|kids\.museum|koebenhavn\.museum|koeln\.museum|kunst\.museum|kunstsammlung\.museum|kunstunddesign\.museum|labor\.museum|labour\.museum|lajolla\.museum|lancashire\.museum|landes\.museum|lans\.museum|läns\.museum|larsson\.museum|lewismiller\.museum|lincoln\.museum|linz\.museum|living\.museum|livinghistory\.museum|localhistory\.museum|london\.museum|losangeles\.museum|louvre\.museum|loyalist\.museum|lucerne\.museum|luxembourg\.museum|luzern\.museum|mad\.museum|madrid\.museum|mallorca\.museum|manchester\.museum|mansion\.museum|mansions\.museum|manx\.museum|marburg\.museum|maritime\.museum|maritimo\.museum|maryland\.museum|marylhurst\.museum|media\.museum|medical\.museum|medizinhistorisches\.museum|meeres\.museum|memorial\.museum|mesaverde\.museum|michigan\.museum|midatlantic\.museum|military\.museum|mill\.museum|miners\.museum|mining\.museum|minnesota\.museum|missile\.museum|missoula\.museum|modern\.museum|moma\.museum|money\.museum|monmouth\.museum|monticello\.museum|montreal\.museum|moscow\.museum|motorcycle\.museum|muenchen\.museum|muenster\.museum|mulhouse\.museum|muncie\.museum|museet\.museum|museumcenter\.museum|museumvereniging\.museum|music\.museum|national\.museum|nationalfirearms\.museum|nationalheritage\.museum|nativeamerican\.museum|naturalhistory\.museum|naturalhistorymuseum\.museum|naturalsciences\.museum|nature\.museum|naturhistorisches\.museum|natuurwetenschappen\.museum|naumburg\.museum|naval\.museum|nebraska\.museum|neues\.museum|newhampshire\.museum|newjersey\.museum|newmexico\.museum|newport\.museum|newspaper\.museum|newyork\.museum|niepce\.museum|norfolk\.museum|north\.museum|nrw\.museum|nuernberg\.museum|nuremberg\.museum|nyc\.museum|nyny\.museum|oceanographic\.museum|oceanographique\.museum|omaha\.museum|online\.museum|ontario\.museum|openair\.museum|oregon\.museum|oregontrail\.museum|otago\.museum|oxford\.museum|pacific\.museum|paderborn\.museum|palace\.museum|paleo\.museum|palmsprings\.museum|panama\.museum|paris\.museum|pasadena\.museum|pharmacy\.museum|philadelphia\.museum|philadelphiaarea\.museum|philately\.museum|phoenix\.museum|photography\.museum|pilots\.museum|pittsburgh\.museum|planetarium\.museum|plantation\.museum|plants\.museum|plaza\.museum|portal\.museum|portland\.museum|portlligat\.museum|posts-and-telecommunications\.museum|preservation\.museum|presidio\.museum|press\.museum|project\.museum|public\.museum|pubol\.museum|quebec\.museum|railroad\.museum|railway\.museum|research\.museum|resistance\.museum|riodejaneiro\.museum|rochester\.museum|rockart\.museum|roma\.museum|russia\.museum|saintlouis\.museum|salem\.museum|salvadordali\.museum|salzburg\.museum|sandiego\.museum|sanfrancisco\.museum|santabarbara\.museum|santacruz\.museum|santafe\.museum|saskatchewan\.museum|satx\.museum|savannahga\.museum|schlesisches\.museum|schoenbrunn\.museum|schokoladen\.museum|school\.museum|schweiz\.museum|science\.museum|scienceandhistory\.museum|scienceandindustry\.museum|sciencecenter\.museum|sciencecenters\.museum|science-fiction\.museum|sciencehistory\.museum|sciences\.museum|sciencesnaturelles\.museum|scotland\.museum|seaport\.museum|settlement\.museum|settlers\.museum|shell\.museum|sherbrooke\.museum|sibenik\.museum|silk\.museum|ski\.museum|skole\.museum|society\.museum|sologne\.museum|soundandvision\.museum|southcarolina\.museum|southwest\.museum|space\.museum|spy\.museum|square\.museum|stadt\.museum|stalbans\.museum|starnberg\.museum|state\.museum|stateofdelaware\.museum|station\.museum|steam\.museum|steiermark\.museum|stjohn\.museum|stockholm\.museum|stpetersburg\.museum|stuttgart\.museum|suisse\.museum|surgeonshall\.museum|surrey\.museum|svizzera\.museum|sweden\.museum|sydney\.museum|tank\.museum|tcm\.museum|technology\.museum|telekommunikation\.museum|television\.museum|texas\.museum|textile\.museum|theater\.museum|time\.museum|timekeeping\.museum|topology\.museum|torino\.museum|touch\.museum|town\.museum|transport\.museum|tree\.museum|trolley\.museum|trust\.museum|trustee\.museum|uhren\.museum|ulm\.museum|undersea\.museum|university\.museum|usa\.museum|usantiques\.museum|usarts\.museum|uscountryestate\.museum|usculture\.museum|usdecorativearts\.museum|usgarden\.museum|ushistory\.museum|ushuaia\.museum|uslivinghistory\.museum|utah\.museum|uvic\.museum|valley\.museum|vantaa\.museum|versailles\.museum|viking\.museum|village\.museum|virginia\.museum|virtual\.museum|virtuel\.museum|vlaanderen\.museum|volkenkunde\.museum|wales\.museum|wallonie\.museum|war\.museum|washingtondc\.museum|watchandclock\.museum|watch-and-clock\.museum|western\.museum|westfalen\.museum|whaling\.museum|wildlife\.museum|williamsburg\.museum|windmill\.museum|workshop\.museum|york\.museum|yorkshire\.museum|yosemite\.museum|youth\.museum|zoological\.museum|zoology\.museum|ירושלים\.museum|иком\.museum|mv|aero\.mv|biz\.mv|com\.mv|coop\.mv|edu\.mv|gov\.mv|info\.mv|int\.mv|mil\.mv|museum\.mv|name\.mv|net\.mv|org\.mv|pro\.mv|mw|ac\.mw|biz\.mw|co\.mw|com\.mw|coop\.mw|edu\.mw|gov\.mw|int\.mw|museum\.mw|net\.mw|org\.mw|mx|com\.mx|org\.mx|gob\.mx|edu\.mx|net\.mx|my|com\.my|net\.my|org\.my|gov\.my|edu\.my|mil\.my|name\.my|mz|ac\.mz|adv\.mz|co\.mz|edu\.mz|gov\.mz|mil\.mz|net\.mz|org\.mz|na|info\.na|pro\.na|name\.na|school\.na|or\.na|dr\.na|us\.na|mx\.na|ca\.na|in\.na|cc\.na|tv\.na|ws\.na|mobi\.na|co\.na|com\.na|org\.na|name|nc|asso\.nc|ne|net|nf|com\.nf|net\.nf|per\.nf|rec\.nf|web\.nf|arts\.nf|firm\.nf|info\.nf|other\.nf|store\.nf|ng|com\.ng|edu\.ng|gov\.ng|i\.ng|mil\.ng|mobi\.ng|name\.ng|net\.ng|org\.ng|sch\.ng|ni|ac\.ni|biz\.ni|co\.ni|com\.ni|edu\.ni|gob\.ni|in\.ni|info\.ni|int\.ni|mil\.ni|net\.ni|nom\.ni|org\.ni|web\.ni|nl|bv\.nl|no|fhs\.no|vgs\.no|fylkesbibl\.no|folkebibl\.no|museum\.no|idrett\.no|priv\.no|mil\.no|stat\.no|dep\.no|kommune\.no|herad\.no|aa\.no|ah\.no|bu\.no|fm\.no|hl\.no|hm\.no|jan-mayen\.no|mr\.no|nl\.no|nt\.no|of\.no|ol\.no|oslo\.no|rl\.no|sf\.no|st\.no|svalbard\.no|tm\.no|tr\.no|va\.no|vf\.no|gs\.aa\.no|gs\.ah\.no|gs\.bu\.no|gs\.fm\.no|gs\.hl\.no|gs\.hm\.no|gs\.jan-mayen\.no|gs\.mr\.no|gs\.nl\.no|gs\.nt\.no|gs\.of\.no|gs\.ol\.no|gs\.oslo\.no|gs\.rl\.no|gs\.sf\.no|gs\.st\.no|gs\.svalbard\.no|gs\.tm\.no|gs\.tr\.no|gs\.va\.no|gs\.vf\.no|akrehamn\.no|åkrehamn\.no|algard\.no|ålgård\.no|arna\.no|brumunddal\.no|bryne\.no|bronnoysund\.no|brønnøysund\.no|drobak\.no|drøbak\.no|egersund\.no|fetsund\.no|floro\.no|florø\.no|fredrikstad\.no|hokksund\.no|honefoss\.no|hønefoss\.no|jessheim\.no|jorpeland\.no|jørpeland\.no|kirkenes\.no|kopervik\.no|krokstadelva\.no|langevag\.no|langevåg\.no|leirvik\.no|mjondalen\.no|mjøndalen\.no|mo-i-rana\.no|mosjoen\.no|mosjøen\.no|nesoddtangen\.no|orkanger\.no|osoyro\.no|osøyro\.no|raholt\.no|råholt\.no|sandnessjoen\.no|sandnessjøen\.no|skedsmokorset\.no|slattum\.no|spjelkavik\.no|stathelle\.no|stavern\.no|stjordalshalsen\.no|stjørdalshalsen\.no|tananger\.no|tranby\.no|vossevangen\.no|afjord\.no|åfjord\.no|agdenes\.no|al\.no|ål\.no|alesund\.no|ålesund\.no|alstahaug\.no|alta\.no|áltá\.no|alaheadju\.no|álaheadju\.no|alvdal\.no|amli\.no|åmli\.no|amot\.no|åmot\.no|andebu\.no|andoy\.no|andøy\.no|andasuolo\.no|ardal\.no|årdal\.no|aremark\.no|arendal\.no|ås\.no|aseral\.no|åseral\.no|asker\.no|askim\.no|askvoll\.no|askoy\.no|askøy\.no|asnes\.no|åsnes\.no|audnedaln\.no|aukra\.no|aure\.no|aurland\.no|aurskog-holand\.no|aurskog-høland\.no|austevoll\.no|austrheim\.no|averoy\.no|averøy\.no|balestrand\.no|ballangen\.no|balat\.no|bálát\.no|balsfjord\.no|bahccavuotna\.no|báhccavuotna\.no|bamble\.no|bardu\.no|beardu\.no|beiarn\.no|bajddar\.no|bájddar\.no|baidar\.no|báidár\.no|berg\.no|bergen\.no|berlevag\.no|berlevåg\.no|bearalvahki\.no|bearalváhki\.no|bindal\.no|birkenes\.no|bjarkoy\.no|bjarkøy\.no|bjerkreim\.no|bjugn\.no|bodo\.no|bodø\.no|badaddja\.no|bådåddjå\.no|budejju\.no|bokn\.no|bremanger\.no|bronnoy\.no|brønnøy\.no|bygland\.no|bykle\.no|barum\.no|bærum\.no|bo\.telemark\.no|bø\.telemark\.no|bo\.nordland\.no|bø\.nordland\.no|bievat\.no|bievát\.no|bomlo\.no|bømlo\.no|batsfjord\.no|båtsfjord\.no|bahcavuotna\.no|báhcavuotna\.no|dovre\.no|drammen\.no|drangedal\.no|dyroy\.no|dyrøy\.no|donna\.no|dønna\.no|eid\.no|eidfjord\.no|eidsberg\.no|eidskog\.no|eidsvoll\.no|eigersund\.no|elverum\.no|enebakk\.no|engerdal\.no|etne\.no|etnedal\.no|evenes\.no|evenassi\.no|evenášši\.no|evje-og-hornnes\.no|farsund\.no|fauske\.no|fuossko\.no|fuoisku\.no|fedje\.no|fet\.no|finnoy\.no|finnøy\.no|fitjar\.no|fjaler\.no|fjell\.no|flakstad\.no|flatanger\.no|flekkefjord\.no|flesberg\.no|flora\.no|fla\.no|flå\.no|folldal\.no|forsand\.no|fosnes\.no|frei\.no|frogn\.no|froland\.no|frosta\.no|frana\.no|fræna\.no|froya\.no|frøya\.no|fusa\.no|fyresdal\.no|forde\.no|førde\.no|gamvik\.no|gangaviika\.no|gáŋgaviika\.no|gaular\.no|gausdal\.no|gildeskal\.no|gildeskål\.no|giske\.no|gjemnes\.no|gjerdrum\.no|gjerstad\.no|gjesdal\.no|gjovik\.no|gjøvik\.no|gloppen\.no|gol\.no|gran\.no|grane\.no|granvin\.no|gratangen\.no|grimstad\.no|grong\.no|kraanghke\.no|kråanghke\.no|grue\.no|gulen\.no|hadsel\.no|halden\.no|halsa\.no|hamar\.no|hamaroy\.no|habmer\.no|hábmer\.no|hapmir\.no|hápmir\.no|hammerfest\.no|hammarfeasta\.no|hámmárfeasta\.no|haram\.no|hareid\.no|harstad\.no|hasvik\.no|aknoluokta\.no|ákŋoluokta\.no|hattfjelldal\.no|aarborte\.no|haugesund\.no|hemne\.no|hemnes\.no|hemsedal\.no|heroy\.more-og-romsdal\.no|herøy\.møre-og-romsdal\.no|heroy\.nordland\.no|herøy\.nordland\.no|hitra\.no|hjartdal\.no|hjelmeland\.no|hobol\.no|hobøl\.no|hof\.no|hol\.no|hole\.no|holmestrand\.no|holtalen\.no|holtålen\.no|hornindal\.no|horten\.no|hurdal\.no|hurum\.no|hvaler\.no|hyllestad\.no|hagebostad\.no|hægebostad\.no|hoyanger\.no|høyanger\.no|hoylandet\.no|høylandet\.no|ha\.no|hå\.no|ibestad\.no|inderoy\.no|inderøy\.no|iveland\.no|jevnaker\.no|jondal\.no|jolster\.no|jølster\.no|karasjok\.no|karasjohka\.no|kárášjohka\.no|karlsoy\.no|galsa\.no|gálsá\.no|karmoy\.no|karmøy\.no|kautokeino\.no|guovdageaidnu\.no|klepp\.no|klabu\.no|klæbu\.no|kongsberg\.no|kongsvinger\.no|kragero\.no|kragerø\.no|kristiansand\.no|kristiansund\.no|krodsherad\.no|krødsherad\.no|kvalsund\.no|rahkkeravju\.no|ráhkkerávju\.no|kvam\.no|kvinesdal\.no|kvinnherad\.no|kviteseid\.no|kvitsoy\.no|kvitsøy\.no|kvafjord\.no|kvæfjord\.no|giehtavuoatna\.no|kvanangen\.no|kvænangen\.no|navuotna\.no|návuotna\.no|kafjord\.no|kåfjord\.no|gaivuotna\.no|gáivuotna\.no|larvik\.no|lavangen\.no|lavagis\.no|loabat\.no|loabát\.no|lebesby\.no|davvesiida\.no|leikanger\.no|leirfjord\.no|leka\.no|leksvik\.no|lenvik\.no|leangaviika\.no|leaŋgaviika\.no|lesja\.no|levanger\.no|lier\.no|lierne\.no|lillehammer\.no|lillesand\.no|lindesnes\.no|lindas\.no|lindås\.no|lom\.no|loppa\.no|lahppi\.no|láhppi\.no|lund\.no|lunner\.no|luroy\.no|lurøy\.no|luster\.no|lyngdal\.no|lyngen\.no|ivgu\.no|lardal\.no|lerdal\.no|lærdal\.no|lodingen\.no|lødingen\.no|lorenskog\.no|lørenskog\.no|loten\.no|løten\.no|malvik\.no|masoy\.no|måsøy\.no|muosat\.no|muosát\.no|mandal\.no|marker\.no|marnardal\.no|masfjorden\.no|meland\.no|meldal\.no|melhus\.no|meloy\.no|meløy\.no|meraker\.no|meråker\.no|moareke\.no|moåreke\.no|midsund\.no|midtre-gauldal\.no|modalen\.no|modum\.no|molde\.no|moskenes\.no|moss\.no|mosvik\.no|malselv\.no|målselv\.no|malatvuopmi\.no|málatvuopmi\.no|namdalseid\.no|aejrie\.no|namsos\.no|namsskogan\.no|naamesjevuemie\.no|nååmesjevuemie\.no|laakesvuemie\.no|nannestad\.no|narvik\.no|narviika\.no|naustdal\.no|nedre-eiker\.no|nes\.akershus\.no|nes\.buskerud\.no|nesna\.no|nesodden\.no|nesseby\.no|unjarga\.no|unjárga\.no|nesset\.no|nissedal\.no|nittedal\.no|nord-aurdal\.no|nord-fron\.no|nord-odal\.no|norddal\.no|nordkapp\.no|davvenjarga\.no|davvenjárga\.no|nordre-land\.no|nordreisa\.no|raisa\.no|ráisa\.no|nore-og-uvdal\.no|notodden\.no|naroy\.no|nærøy\.no|notteroy\.no|nøtterøy\.no|odda\.no|oksnes\.no|øksnes\.no|oppdal\.no|oppegard\.no|oppegård\.no|orkdal\.no|orland\.no|ørland\.no|orskog\.no|ørskog\.no|orsta\.no|ørsta\.no|os\.hedmark\.no|os\.hordaland\.no|osen\.no|osteroy\.no|osterøy\.no|ostre-toten\.no|østre-toten\.no|overhalla\.no|ovre-eiker\.no|øvre-eiker\.no|oyer\.no|øyer\.no|oygarden\.no|øygarden\.no|oystre-slidre\.no|øystre-slidre\.no|porsanger\.no|porsangu\.no|porsáŋgu\.no|porsgrunn\.no|radoy\.no|radøy\.no|rakkestad\.no|rana\.no|ruovat\.no|randaberg\.no|rauma\.no|rendalen\.no|rennebu\.no|rennesoy\.no|rennesøy\.no|rindal\.no|ringebu\.no|ringerike\.no|ringsaker\.no|rissa\.no|risor\.no|risør\.no|roan\.no|rollag\.no|rygge\.no|ralingen\.no|rælingen\.no|rodoy\.no|rødøy\.no|romskog\.no|rømskog\.no|roros\.no|røros\.no|rost\.no|røst\.no|royken\.no|røyken\.no|royrvik\.no|røyrvik\.no|rade\.no|råde\.no|salangen\.no|siellak\.no|saltdal\.no|salat\.no|sálát\.no|sálat\.no|samnanger\.no|sande\.more-og-romsdal\.no|sande\.møre-og-romsdal\.no|sande\.vestfold\.no|sandefjord\.no|sandnes\.no|sandoy\.no|sandøy\.no|sarpsborg\.no|sauda\.no|sauherad\.no|sel\.no|selbu\.no|selje\.no|seljord\.no|sigdal\.no|siljan\.no|sirdal\.no|skaun\.no|skedsmo\.no|ski\.no|skien\.no|skiptvet\.no|skjervoy\.no|skjervøy\.no|skierva\.no|skiervá\.no|skjak\.no|skjåk\.no|skodje\.no|skanland\.no|skånland\.no|skanit\.no|skánit\.no|smola\.no|smøla\.no|snillfjord\.no|snasa\.no|snåsa\.no|snoasa\.no|snaase\.no|snåase\.no|sogndal\.no|sokndal\.no|sola\.no|solund\.no|songdalen\.no|sortland\.no|spydeberg\.no|stange\.no|stavanger\.no|steigen\.no|steinkjer\.no|stjordal\.no|stjørdal\.no|stokke\.no|stor-elvdal\.no|stord\.no|stordal\.no|storfjord\.no|omasvuotna\.no|strand\.no|stranda\.no|stryn\.no|sula\.no|suldal\.no|sund\.no|sunndal\.no|surnadal\.no|sveio\.no|svelvik\.no|sykkylven\.no|sogne\.no|søgne\.no|somna\.no|sømna\.no|sondre-land\.no|søndre-land\.no|sor-aurdal\.no|sør-aurdal\.no|sor-fron\.no|sør-fron\.no|sor-odal\.no|sør-odal\.no|sor-varanger\.no|sør-varanger\.no|matta-varjjat\.no|mátta-várjjat\.no|sorfold\.no|sørfold\.no|sorreisa\.no|sørreisa\.no|sorum\.no|sørum\.no|tana\.no|deatnu\.no|time\.no|tingvoll\.no|tinn\.no|tjeldsund\.no|dielddanuorri\.no|tjome\.no|tjøme\.no|tokke\.no|tolga\.no|torsken\.no|tranoy\.no|tranøy\.no|tromso\.no|tromsø\.no|tromsa\.no|romsa\.no|trondheim\.no|troandin\.no|trysil\.no|trana\.no|træna\.no|trogstad\.no|trøgstad\.no|tvedestrand\.no|tydal\.no|tynset\.no|tysfjord\.no|divtasvuodna\.no|divttasvuotna\.no|tysnes\.no|tysvar\.no|tysvær\.no|tonsberg\.no|tønsberg\.no|ullensaker\.no|ullensvang\.no|ulvik\.no|utsira\.no|vadso\.no|vadsø\.no|cahcesuolo\.no|čáhcesuolo\.no|vaksdal\.no|valle\.no|vang\.no|vanylven\.no|vardo\.no|vardø\.no|varggat\.no|várggát\.no|vefsn\.no|vaapste\.no|vega\.no|vegarshei\.no|vegårshei\.no|vennesla\.no|verdal\.no|verran\.no|vestby\.no|vestnes\.no|vestre-slidre\.no|vestre-toten\.no|vestvagoy\.no|vestvågøy\.no|vevelstad\.no|vik\.no|vikna\.no|vindafjord\.no|volda\.no|voss\.no|varoy\.no|værøy\.no|vagan\.no|vågan\.no|voagat\.no|vagsoy\.no|vågsøy\.no|vaga\.no|vågå\.no|valer\.ostfold\.no|våler\.østfold\.no|valer\.hedmark\.no|våler\.hedmark\.no|[^.]+\.np|nr|biz\.nr|info\.nr|gov\.nr|edu\.nr|org\.nr|net\.nr|com\.nr|nu|nz|ac\.nz|co\.nz|cri\.nz|geek\.nz|gen\.nz|govt\.nz|health\.nz|iwi\.nz|kiwi\.nz|maori\.nz|mil\.nz|māori\.nz|net\.nz|org\.nz|parliament\.nz|school\.nz|om|co\.om|com\.om|edu\.om|gov\.om|med\.om|museum\.om|net\.om|org\.om|pro\.om|onion|org|pa|ac\.pa|gob\.pa|com\.pa|org\.pa|sld\.pa|edu\.pa|net\.pa|ing\.pa|abo\.pa|med\.pa|nom\.pa|pe|edu\.pe|gob\.pe|nom\.pe|mil\.pe|org\.pe|com\.pe|net\.pe|pf|com\.pf|org\.pf|edu\.pf|[^.]+\.pg|ph|com\.ph|net\.ph|org\.ph|gov\.ph|edu\.ph|ngo\.ph|mil\.ph|i\.ph|pk|com\.pk|net\.pk|edu\.pk|org\.pk|fam\.pk|biz\.pk|web\.pk|gov\.pk|gob\.pk|gok\.pk|gon\.pk|gop\.pk|gos\.pk|info\.pk|pl|com\.pl|net\.pl|org\.pl|aid\.pl|agro\.pl|atm\.pl|auto\.pl|biz\.pl|edu\.pl|gmina\.pl|gsm\.pl|info\.pl|mail\.pl|miasta\.pl|media\.pl|mil\.pl|nieruchomosci\.pl|nom\.pl|pc\.pl|powiat\.pl|priv\.pl|realestate\.pl|rel\.pl|sex\.pl|shop\.pl|sklep\.pl|sos\.pl|szkola\.pl|targi\.pl|tm\.pl|tourism\.pl|travel\.pl|turystyka\.pl|gov\.pl|ap\.gov\.pl|ic\.gov\.pl|is\.gov\.pl|us\.gov\.pl|kmpsp\.gov\.pl|kppsp\.gov\.pl|kwpsp\.gov\.pl|psp\.gov\.pl|wskr\.gov\.pl|kwp\.gov\.pl|mw\.gov\.pl|ug\.gov\.pl|um\.gov\.pl|umig\.gov\.pl|ugim\.gov\.pl|upow\.gov\.pl|uw\.gov\.pl|starostwo\.gov\.pl|pa\.gov\.pl|po\.gov\.pl|psse\.gov\.pl|pup\.gov\.pl|rzgw\.gov\.pl|sa\.gov\.pl|so\.gov\.pl|sr\.gov\.pl|wsa\.gov\.pl|sko\.gov\.pl|uzs\.gov\.pl|wiih\.gov\.pl|winb\.gov\.pl|pinb\.gov\.pl|wios\.gov\.pl|witd\.gov\.pl|wzmiuw\.gov\.pl|piw\.gov\.pl|wiw\.gov\.pl|griw\.gov\.pl|wif\.gov\.pl|oum\.gov\.pl|sdn\.gov\.pl|zp\.gov\.pl|uppo\.gov\.pl|mup\.gov\.pl|wuoz\.gov\.pl|konsulat\.gov\.pl|oirm\.gov\.pl|augustow\.pl|babia-gora\.pl|bedzin\.pl|beskidy\.pl|bialowieza\.pl|bialystok\.pl|bielawa\.pl|bieszczady\.pl|boleslawiec\.pl|bydgoszcz\.pl|bytom\.pl|cieszyn\.pl|czeladz\.pl|czest\.pl|dlugoleka\.pl|elblag\.pl|elk\.pl|glogow\.pl|gniezno\.pl|gorlice\.pl|grajewo\.pl|ilawa\.pl|jaworzno\.pl|jelenia-gora\.pl|jgora\.pl|kalisz\.pl|kazimierz-dolny\.pl|karpacz\.pl|kartuzy\.pl|kaszuby\.pl|katowice\.pl|kepno\.pl|ketrzyn\.pl|klodzko\.pl|kobierzyce\.pl|kolobrzeg\.pl|konin\.pl|konskowola\.pl|kutno\.pl|lapy\.pl|lebork\.pl|legnica\.pl|lezajsk\.pl|limanowa\.pl|lomza\.pl|lowicz\.pl|lubin\.pl|lukow\.pl|malbork\.pl|malopolska\.pl|mazowsze\.pl|mazury\.pl|mielec\.pl|mielno\.pl|mragowo\.pl|naklo\.pl|nowaruda\.pl|nysa\.pl|olawa\.pl|olecko\.pl|olkusz\.pl|olsztyn\.pl|opoczno\.pl|opole\.pl|ostroda\.pl|ostroleka\.pl|ostrowiec\.pl|ostrowwlkp\.pl|pila\.pl|pisz\.pl|podhale\.pl|podlasie\.pl|polkowice\.pl|pomorze\.pl|pomorskie\.pl|prochowice\.pl|pruszkow\.pl|przeworsk\.pl|pulawy\.pl|radom\.pl|rawa-maz\.pl|rybnik\.pl|rzeszow\.pl|sanok\.pl|sejny\.pl|slask\.pl|slupsk\.pl|sosnowiec\.pl|stalowa-wola\.pl|skoczow\.pl|starachowice\.pl|stargard\.pl|suwalki\.pl|swidnica\.pl|swiebodzin\.pl|swinoujscie\.pl|szczecin\.pl|szczytno\.pl|tarnobrzeg\.pl|tgory\.pl|turek\.pl|tychy\.pl|ustka\.pl|walbrzych\.pl|warmia\.pl|warszawa\.pl|waw\.pl|wegrow\.pl|wielun\.pl|wlocl\.pl|wloclawek\.pl|wodzislaw\.pl|wolomin\.pl|wroclaw\.pl|zachpomor\.pl|zagan\.pl|zarow\.pl|zgora\.pl|zgorzelec\.pl|pm|pn|gov\.pn|co\.pn|org\.pn|edu\.pn|net\.pn|post|pr|com\.pr|net\.pr|org\.pr|gov\.pr|edu\.pr|isla\.pr|pro\.pr|biz\.pr|info\.pr|name\.pr|est\.pr|prof\.pr|ac\.pr|pro|aaa\.pro|aca\.pro|acct\.pro|avocat\.pro|bar\.pro|cpa\.pro|eng\.pro|jur\.pro|law\.pro|med\.pro|recht\.pro|ps|edu\.ps|gov\.ps|sec\.ps|plo\.ps|com\.ps|org\.ps|net\.ps|pt|net\.pt|gov\.pt|org\.pt|edu\.pt|int\.pt|publ\.pt|com\.pt|nome\.pt|pw|co\.pw|ne\.pw|or\.pw|ed\.pw|go\.pw|belau\.pw|py|com\.py|coop\.py|edu\.py|gov\.py|mil\.py|net\.py|org\.py|qa|com\.qa|edu\.qa|gov\.qa|mil\.qa|name\.qa|net\.qa|org\.qa|sch\.qa|re|asso\.re|com\.re|nom\.re|ro|arts\.ro|com\.ro|firm\.ro|info\.ro|nom\.ro|nt\.ro|org\.ro|rec\.ro|store\.ro|tm\.ro|www\.ro|rs|ac\.rs|co\.rs|edu\.rs|gov\.rs|in\.rs|org\.rs|ru|ac\.ru|edu\.ru|gov\.ru|int\.ru|mil\.ru|test\.ru|rw|gov\.rw|net\.rw|edu\.rw|ac\.rw|com\.rw|co\.rw|int\.rw|mil\.rw|gouv\.rw|sa|com\.sa|net\.sa|org\.sa|gov\.sa|med\.sa|pub\.sa|edu\.sa|sch\.sa|sb|com\.sb|edu\.sb|gov\.sb|net\.sb|org\.sb|sc|com\.sc|gov\.sc|net\.sc|org\.sc|edu\.sc|sd|com\.sd|net\.sd|org\.sd|edu\.sd|med\.sd|tv\.sd|gov\.sd|info\.sd|se|a\.se|ac\.se|b\.se|bd\.se|brand\.se|c\.se|d\.se|e\.se|f\.se|fh\.se|fhsk\.se|fhv\.se|g\.se|h\.se|i\.se|k\.se|komforb\.se|kommunalforbund\.se|komvux\.se|l\.se|lanbib\.se|m\.se|n\.se|naturbruksgymn\.se|o\.se|org\.se|p\.se|parti\.se|pp\.se|press\.se|r\.se|s\.se|t\.se|tm\.se|u\.se|w\.se|x\.se|y\.se|z\.se|sg|com\.sg|net\.sg|org\.sg|gov\.sg|edu\.sg|per\.sg|sh|com\.sh|net\.sh|gov\.sh|org\.sh|mil\.sh|si|sj|sk|sl|com\.sl|net\.sl|edu\.sl|gov\.sl|org\.sl|sm|sn|art\.sn|com\.sn|edu\.sn|gouv\.sn|org\.sn|perso\.sn|univ\.sn|so|com\.so|net\.so|org\.so|sr|st|co\.st|com\.st|consulado\.st|edu\.st|embaixada\.st|gov\.st|mil\.st|net\.st|org\.st|principe\.st|saotome\.st|store\.st|su|sv|com\.sv|edu\.sv|gob\.sv|org\.sv|red\.sv|sx|gov\.sx|sy|edu\.sy|gov\.sy|net\.sy|mil\.sy|com\.sy|org\.sy|sz|co\.sz|ac\.sz|org\.sz|tc|td|tel|tf|tg|th|ac\.th|co\.th|go\.th|in\.th|mi\.th|net\.th|or\.th|tj|ac\.tj|biz\.tj|co\.tj|com\.tj|edu\.tj|go\.tj|gov\.tj|int\.tj|mil\.tj|name\.tj|net\.tj|nic\.tj|org\.tj|test\.tj|web\.tj|tk|tl|gov\.tl|tm|com\.tm|co\.tm|org\.tm|net\.tm|nom\.tm|gov\.tm|mil\.tm|edu\.tm|tn|com\.tn|ens\.tn|fin\.tn|gov\.tn|ind\.tn|intl\.tn|nat\.tn|net\.tn|org\.tn|info\.tn|perso\.tn|tourism\.tn|edunet\.tn|rnrt\.tn|rns\.tn|rnu\.tn|mincom\.tn|agrinet\.tn|defense\.tn|turen\.tn|to|com\.to|gov\.to|net\.to|org\.to|edu\.to|mil\.to|tr|com\.tr|info\.tr|biz\.tr|net\.tr|org\.tr|web\.tr|gen\.tr|tv\.tr|av\.tr|dr\.tr|bbs\.tr|name\.tr|tel\.tr|gov\.tr|bel\.tr|pol\.tr|mil\.tr|k12\.tr|edu\.tr|kep\.tr|nc\.tr|gov\.nc\.tr|travel|tt|co\.tt|com\.tt|org\.tt|net\.tt|biz\.tt|info\.tt|pro\.tt|int\.tt|coop\.tt|jobs\.tt|mobi\.tt|travel\.tt|museum\.tt|aero\.tt|name\.tt|gov\.tt|edu\.tt|tv|tw|edu\.tw|gov\.tw|mil\.tw|com\.tw|net\.tw|org\.tw|idv\.tw|game\.tw|ebiz\.tw|club\.tw|網路\.tw|組織\.tw|商業\.tw|tz|ac\.tz|co\.tz|go\.tz|hotel\.tz|info\.tz|me\.tz|mil\.tz|mobi\.tz|ne\.tz|or\.tz|sc\.tz|tv\.tz|ua|com\.ua|edu\.ua|gov\.ua|in\.ua|net\.ua|org\.ua|cherkassy\.ua|cherkasy\.ua|chernigov\.ua|chernihiv\.ua|chernivtsi\.ua|chernovtsy\.ua|ck\.ua|cn\.ua|cr\.ua|crimea\.ua|cv\.ua|dn\.ua|dnepropetrovsk\.ua|dnipropetrovsk\.ua|dominic\.ua|donetsk\.ua|dp\.ua|if\.ua|ivano-frankivsk\.ua|kh\.ua|kharkiv\.ua|kharkov\.ua|kherson\.ua|khmelnitskiy\.ua|khmelnytskyi\.ua|kiev\.ua|kirovograd\.ua|km\.ua|kr\.ua|krym\.ua|ks\.ua|kv\.ua|kyiv\.ua|lg\.ua|lt\.ua|lugansk\.ua|lutsk\.ua|lv\.ua|lviv\.ua|mk\.ua|mykolaiv\.ua|nikolaev\.ua|od\.ua|odesa\.ua|odessa\.ua|pl\.ua|poltava\.ua|rivne\.ua|rovno\.ua|rv\.ua|sb\.ua|sebastopol\.ua|sevastopol\.ua|sm\.ua|sumy\.ua|te\.ua|ternopil\.ua|uz\.ua|uzhgorod\.ua|vinnica\.ua|vinnytsia\.ua|vn\.ua|volyn\.ua|yalta\.ua|zaporizhzhe\.ua|zaporizhzhia\.ua|zhitomir\.ua|zhytomyr\.ua|zp\.ua|zt\.ua|ug|co\.ug|or\.ug|ac\.ug|sc\.ug|go\.ug|ne\.ug|com\.ug|org\.ug|uk|ac\.uk|co\.uk|gov\.uk|ltd\.uk|me\.uk|net\.uk|nhs\.uk|org\.uk|plc\.uk|police\.uk|[^.]+\.sch\.uk|us|dni\.us|fed\.us|isa\.us|kids\.us|nsn\.us|ak\.us|al\.us|ar\.us|as\.us|az\.us|ca\.us|co\.us|ct\.us|dc\.us|de\.us|fl\.us|ga\.us|gu\.us|hi\.us|ia\.us|id\.us|il\.us|in\.us|ks\.us|ky\.us|la\.us|ma\.us|md\.us|me\.us|mi\.us|mn\.us|mo\.us|ms\.us|mt\.us|nc\.us|nd\.us|ne\.us|nh\.us|nj\.us|nm\.us|nv\.us|ny\.us|oh\.us|ok\.us|or\.us|pa\.us|pr\.us|ri\.us|sc\.us|sd\.us|tn\.us|tx\.us|ut\.us|vi\.us|vt\.us|va\.us|wa\.us|wi\.us|wv\.us|wy\.us|k12\.ak\.us|k12\.al\.us|k12\.ar\.us|k12\.as\.us|k12\.az\.us|k12\.ca\.us|k12\.co\.us|k12\.ct\.us|k12\.dc\.us|k12\.de\.us|k12\.fl\.us|k12\.ga\.us|k12\.gu\.us|k12\.ia\.us|k12\.id\.us|k12\.il\.us|k12\.in\.us|k12\.ks\.us|k12\.ky\.us|k12\.la\.us|k12\.ma\.us|k12\.md\.us|k12\.me\.us|k12\.mi\.us|k12\.mn\.us|k12\.mo\.us|k12\.ms\.us|k12\.mt\.us|k12\.nc\.us|k12\.ne\.us|k12\.nh\.us|k12\.nj\.us|k12\.nm\.us|k12\.nv\.us|k12\.ny\.us|k12\.oh\.us|k12\.ok\.us|k12\.or\.us|k12\.pa\.us|k12\.pr\.us|k12\.ri\.us|k12\.sc\.us|k12\.tn\.us|k12\.tx\.us|k12\.ut\.us|k12\.vi\.us|k12\.vt\.us|k12\.va\.us|k12\.wa\.us|k12\.wi\.us|k12\.wy\.us|cc\.ak\.us|cc\.al\.us|cc\.ar\.us|cc\.as\.us|cc\.az\.us|cc\.ca\.us|cc\.co\.us|cc\.ct\.us|cc\.dc\.us|cc\.de\.us|cc\.fl\.us|cc\.ga\.us|cc\.gu\.us|cc\.hi\.us|cc\.ia\.us|cc\.id\.us|cc\.il\.us|cc\.in\.us|cc\.ks\.us|cc\.ky\.us|cc\.la\.us|cc\.ma\.us|cc\.md\.us|cc\.me\.us|cc\.mi\.us|cc\.mn\.us|cc\.mo\.us|cc\.ms\.us|cc\.mt\.us|cc\.nc\.us|cc\.nd\.us|cc\.ne\.us|cc\.nh\.us|cc\.nj\.us|cc\.nm\.us|cc\.nv\.us|cc\.ny\.us|cc\.oh\.us|cc\.ok\.us|cc\.or\.us|cc\.pa\.us|cc\.pr\.us|cc\.ri\.us|cc\.sc\.us|cc\.sd\.us|cc\.tn\.us|cc\.tx\.us|cc\.ut\.us|cc\.vi\.us|cc\.vt\.us|cc\.va\.us|cc\.wa\.us|cc\.wi\.us|cc\.wv\.us|cc\.wy\.us|lib\.ak\.us|lib\.al\.us|lib\.ar\.us|lib\.as\.us|lib\.az\.us|lib\.ca\.us|lib\.co\.us|lib\.ct\.us|lib\.dc\.us|lib\.fl\.us|lib\.ga\.us|lib\.gu\.us|lib\.hi\.us|lib\.ia\.us|lib\.id\.us|lib\.il\.us|lib\.in\.us|lib\.ks\.us|lib\.ky\.us|lib\.la\.us|lib\.ma\.us|lib\.md\.us|lib\.me\.us|lib\.mi\.us|lib\.mn\.us|lib\.mo\.us|lib\.ms\.us|lib\.mt\.us|lib\.nc\.us|lib\.nd\.us|lib\.ne\.us|lib\.nh\.us|lib\.nj\.us|lib\.nm\.us|lib\.nv\.us|lib\.ny\.us|lib\.oh\.us|lib\.ok\.us|lib\.or\.us|lib\.pa\.us|lib\.pr\.us|lib\.ri\.us|lib\.sc\.us|lib\.sd\.us|lib\.tn\.us|lib\.tx\.us|lib\.ut\.us|lib\.vi\.us|lib\.vt\.us|lib\.va\.us|lib\.wa\.us|lib\.wi\.us|lib\.wy\.us|pvt\.k12\.ma\.us|chtr\.k12\.ma\.us|paroch\.k12\.ma\.us|uy|com\.uy|edu\.uy|gub\.uy|mil\.uy|net\.uy|org\.uy|uz|co\.uz|com\.uz|net\.uz|org\.uz|va|vc|com\.vc|net\.vc|org\.vc|gov\.vc|mil\.vc|edu\.vc|ve|arts\.ve|co\.ve|com\.ve|e12\.ve|edu\.ve|firm\.ve|gob\.ve|gov\.ve|info\.ve|int\.ve|mil\.ve|net\.ve|org\.ve|rec\.ve|store\.ve|tec\.ve|web\.ve|vg|vi|co\.vi|com\.vi|k12\.vi|net\.vi|org\.vi|vn|com\.vn|net\.vn|org\.vn|edu\.vn|gov\.vn|int\.vn|ac\.vn|biz\.vn|info\.vn|name\.vn|pro\.vn|health\.vn|vu|com\.vu|edu\.vu|net\.vu|org\.vu|wf|ws|com\.ws|net\.ws|org\.ws|gov\.ws|edu\.ws|yt|امارات|հայ|বাংলা|бел|中国|中國|الجزائر|مصر|ею|გე|ελ|香港|भारत|بھارت|భారత్|ભારત|ਭਾਰਤ|ভারত|இந்தியா|ایران|ايران|عراق|الاردن|한국|қаз|ලංකා|இலங்கை|المغرب|мкд|мон|澳門|澳门|مليسيا|عمان|پاکستان|پاكستان|فلسطين|срб|пр\.срб|орг\.срб|обр\.срб|од\.срб|упр\.срб|ак\.срб|рф|قطر|السعودية|السعودیة|السعودیۃ|السعوديه|سودان|新加坡|சிங்கப்பூர்|سورية|سوريا|ไทย|تونس|台灣|台湾|臺灣|укр|اليمن|xxx|[^.]+\.ye|ac\.za|agric\.za|alt\.za|co\.za|edu\.za|gov\.za|grondar\.za|law\.za|mil\.za|net\.za|ngo\.za|nis\.za|nom\.za|org\.za|school\.za|tm\.za|web\.za|zm|ac\.zm|biz\.zm|co\.zm|com\.zm|edu\.zm|gov\.zm|info\.zm|mil\.zm|net\.zm|org\.zm|sch\.zm|[^.]+\.zw|aaa|aarp|abarth|abb|abbott|abbvie|abc|able|abogado|abudhabi|academy|accenture|accountant|accountants|aco|active|actor|adac|ads|adult|aeg|aetna|afamilycompany|afl|africa|agakhan|agency|aig|aigo|airbus|airforce|airtel|akdn|alfaromeo|alibaba|alipay|allfinanz|allstate|ally|alsace|alstom|americanexpress|americanfamily|amex|amfam|amica|amsterdam|analytics|android|anquan|anz|aol|apartments|app|apple|aquarelle|arab|aramco|archi|army|art|arte|asda|associates|athleta|attorney|auction|audi|audible|audio|auspost|author|auto|autos|avianca|aws|axa|azure|baby|baidu|banamex|bananarepublic|band|bank|bar|barcelona|barclaycard|barclays|barefoot|bargains|baseball|basketball|bauhaus|bayern|bbc|bbt|bbva|bcg|bcn|beats|beauty|beer|bentley|berlin|best|bestbuy|bet|bharti|bible|bid|bike|bing|bingo|bio|black|blackfriday|blanco|blockbuster|blog|bloomberg|blue|bms|bmw|bnl|bnpparibas|boats|boehringer|bofa|bom|bond|boo|book|booking|boots|bosch|bostik|boston|bot|boutique|box|bradesco|bridgestone|broadway|broker|brother|brussels|budapest|bugatti|build|builders|business|buy|buzz|bzh|cab|cafe|cal|call|calvinklein|cam|camera|camp|cancerresearch|canon|capetown|capital|capitalone|car|caravan|cards|care|career|careers|cars|cartier|casa|case|caseih|cash|casino|catering|catholic|cba|cbn|cbre|cbs|ceb|center|ceo|cern|cfa|cfd|chanel|channel|chase|chat|cheap|chintai|chloe|christmas|chrome|chrysler|church|cipriani|circle|cisco|citadel|citi|citic|city|cityeats|claims|cleaning|click|clinic|clinique|clothing|cloud|club|clubmed|coach|codes|coffee|college|cologne|comcast|commbank|community|company|compare|computer|comsec|condos|construction|consulting|contact|contractors|cooking|cookingchannel|cool|corsica|country|coupon|coupons|courses|credit|creditcard|creditunion|cricket|crown|crs|cruise|cruises|csc|cuisinella|cymru|cyou|dabur|dad|dance|data|date|dating|datsun|day|dclk|dds|deal|dealer|deals|degree|delivery|dell|deloitte|delta|democrat|dental|dentist|desi|design|dev|dhl|diamonds|diet|digital|direct|directory|discount|discover|dish|diy|dnp|docs|doctor|dodge|dog|doha|domains|dot|download|drive|dtv|dubai|duck|dunlop|duns|dupont|durban|dvag|dvr|dwg|earth|eat|eco|edeka|education|email|emerck|energy|engineer|engineering|enterprises|epost|epson|equipment|ericsson|erni|esq|estate|esurance|etisalat|eurovision|eus|events|everbank|exchange|expert|exposed|express|extraspace|fage|fail|fairwinds|faith|family|fan|fans|farm|farmers|fashion|fast|fedex|feedback|ferrari|ferrero|fiat|fidelity|fido|film|final|finance|financial|fire|firestone|firmdale|fish|fishing|fit|fitness|flickr|flights|flir|florist|flowers|fly|foo|food|foodnetwork|football|ford|forex|forsale|forum|foundation|fox|free|fresenius|frl|frogans|frontdoor|frontier|ftr|fujitsu|fujixerox|fun|fund|furniture|futbol|fyi|gal|gallery|gallo|gallup|game|games|gap|garden|gbiz|gdn|gea|gent|genting|george|ggee|gift|gifts|gives|giving|glade|glass|gle|global|globo|gmail|gmbh|gmo|gmx|godaddy|gold|goldpoint|golf|goo|goodhands|goodyear|goog|google|gop|got|grainger|graphics|gratis|green|gripe|grocery|group|guardian|gucci|guge|guide|guitars|guru|hair|hamburg|hangout|haus|hbo|hdfc|hdfcbank|health|healthcare|help|helsinki|here|hermes|hgtv|hiphop|hisamitsu|hitachi|hiv|hkt|hockey|holdings|holiday|homedepot|homegoods|homes|homesense|honda|honeywell|horse|hospital|host|hosting|hot|hoteles|hotels|hotmail|house|how|hsbc|htc|hughes|hyatt|hyundai|ibm|icbc|ice|icu|ieee|ifm|iinet|ikano|imamat|imdb|immo|immobilien|industries|infiniti|ing|ink|institute|insurance|insure|intel|international|intuit|investments|ipiranga|irish|iselect|ismaili|ist|istanbul|itau|itv|iveco|iwc|jaguar|java|jcb|jcp|jeep|jetzt|jewelry|jio|jlc|jll|jmp|jnj|joburg|jot|joy|jpmorgan|jprs|juegos|juniper|kaufen|kddi|kerryhotels|kerrylogistics|kerryproperties|kfh|kia|kim|kinder|kindle|kitchen|kiwi|koeln|komatsu|kosher|kpmg|kpn|krd|kred|kuokgroup|kyoto|lacaixa|ladbrokes|lamborghini|lamer|lancaster|lancia|lancome|land|landrover|lanxess|lasalle|lat|latino|latrobe|law|lawyer|lds|lease|leclerc|lefrak|legal|lego|lexus|lgbt|liaison|lidl|life|lifeinsurance|lifestyle|lighting|like|lilly|limited|limo|lincoln|linde|link|lipsy|live|living|lixil|loan|loans|locker|locus|loft|lol|london|lotte|lotto|love|lpl|lplfinancial|ltd|ltda|lundbeck|lupin|luxe|luxury|macys|madrid|maif|maison|makeup|man|management|mango|map|market|marketing|markets|marriott|marshalls|maserati|mattel|mba|mcd|mcdonalds|mckinsey|med|media|meet|melbourne|meme|memorial|men|menu|meo|merckmsd|metlife|miami|microsoft|mini|mint|mit|mitsubishi|mlb|mls|mma|mobile|mobily|moda|moe|moi|mom|monash|money|monster|montblanc|mopar|mormon|mortgage|moscow|moto|motorcycles|mov|movie|movistar|msd|mtn|mtpc|mtr|mutual|mutuelle|nab|nadex|nagoya|nationwide|natura|navy|nba|nec|netbank|netflix|network|neustar|new|newholland|news|next|nextdirect|nexus|nfl|ngo|nhk|nico|nike|nikon|ninja|nissan|nissay|nokia|northwesternmutual|norton|now|nowruz|nowtv|nra|nrw|ntt|nyc|obi|observer|off|office|okinawa|olayan|olayangroup|oldnavy|ollo|omega|one|ong|onl|online|onyourside|ooo|open|oracle|orange|organic|orientexpress|origins|osaka|otsuka|ott|ovh|page|pamperedchef|panasonic|panerai|paris|pars|partners|parts|party|passagens|pay|pccw|pet|pfizer|pharmacy|phd|philips|phone|photo|photography|photos|physio|piaget|pics|pictet|pictures|pid|pin|ping|pink|pioneer|pizza|place|play|playstation|plumbing|plus|pnc|pohl|poker|politie|porn|pramerica|praxi|press|prime|prod|productions|prof|progressive|promo|properties|property|protection|pru|prudential|pub|pwc|qpon|quebec|quest|qvc|racing|radio|raid|read|realestate|realtor|realty|recipes|red|redstone|redumbrella|rehab|reise|reisen|reit|reliance|ren|rent|rentals|repair|report|republican|rest|restaurant|review|reviews|rexroth|rich|richardli|ricoh|rightathome|ril|rio|rip|rmit|rocher|rocks|rodeo|rogers|room|rsvp|ruhr|run|rwe|ryukyu|saarland|safe|safety|sakura|sale|salon|samsclub|samsung|sandvik|sandvikcoromant|sanofi|sap|sapo|sarl|sas|save|saxo|sbi|sbs|sca|scb|schaeffler|schmidt|scholarships|school|schule|schwarz|science|scjohnson|scor|scot|search|seat|secure|security|seek|select|sener|services|ses|seven|sew|sex|sexy|sfr|shangrila|sharp|shaw|shell|shia|shiksha|shoes|shop|shopping|shouji|show|showtime|shriram|silk|sina|singles|site|ski|skin|sky|skype|sling|smart|smile|sncf|soccer|social|softbank|software|sohu|solar|solutions|song|sony|soy|space|spiegel|spot|spreadbetting|srl|srt|stada|staples|star|starhub|statebank|statefarm|statoil|stc|stcgroup|stockholm|storage|store|stream|studio|study|style|sucks|supplies|supply|support|surf|surgery|suzuki|swatch|swiftcover|swiss|sydney|symantec|systems|tab|taipei|talk|taobao|target|tatamotors|tatar|tattoo|tax|taxi|tci|tdk|team|tech|technology|telecity|telefonica|temasek|tennis|teva|thd|theater|theatre|theguardian|tiaa|tickets|tienda|tiffany|tips|tires|tirol|tjmaxx|tjx|tkmaxx|tmall|today|tokyo|tools|top|toray|toshiba|total|tours|town|toyota|toys|trade|trading|training|travelchannel|travelers|travelersinsurance|trust|trv|tube|tui|tunes|tushu|tvs|ubank|ubs|uconnect|unicom|university|uno|uol|ups|vacations|vana|vanguard|vegas|ventures|verisign|versicherung|vet|viajes|video|vig|viking|villas|vin|vip|virgin|visa|vision|vista|vistaprint|viva|vivo|vlaanderen|vodka|volkswagen|volvo|vote|voting|voto|voyage|vuelos|wales|walmart|walter|wang|wanggou|warman|watch|watches|weather|weatherchannel|webcam|weber|website|wed|wedding|weibo|weir|whoswho|wien|wiki|williamhill|win|windows|wine|winners|wme|wolterskluwer|woodside|work|works|world|wow|wtc|wtf|xbox|xerox|xfinity|xihuan|xin|कॉम|セール|佛山|慈善|集团|在线|大众汽车|点看|คอม|八卦|موقع|一号店|公益|公司|香格里拉|网站|移动|我爱你|москва|католик|онлайн|сайт|联通|קום|时尚|微博|淡马锡|ファッション|орг|नेट|ストア|삼성|商标|商店|商城|дети|ポイント|新闻|工行|家電|كوم|中文网|中信|娱乐|谷歌|電訊盈科|购物|クラウド|通販|网店|संगठन|餐厅|网络|ком|诺基亚|食品|飞利浦|手表|手机|ارامكو|العليان|اتصالات|بازار|موبايلي|ابوظبي|كاثوليك|همراه|닷컴|政府|شبكة|بيتك|عرب|机构|组织机构|健康|рус|珠宝|大拿|みんな|グーグル|世界|書籍|网址|닷넷|コム|天主教|游戏|vermögensberater|vermögensberatung|企业|信息|嘉里大酒店|嘉里|广东|政务|xperia|xyz|yachts|yahoo|yamaxun|yandex|yodobashi|yoga|yokohama|you|youtube|yun|zappos|zara|zero|zip|zippo|zone|zuerich)$/;
 exports.private = /\.(beep\.pl|[^.]+\.compute\.estate|[^.]+\.alces\.network|[^.]+\.alwaysdata\.net|cloudfront\.net|[^.]+\.compute\.amazonaws\.com|[^.]+\.compute-1\.amazonaws\.com|[^.]+\.compute\.amazonaws\.com\.cn|us-east-1\.amazonaws\.com|elasticbeanstalk\.cn-north-1\.amazonaws\.com\.cn|[^.]+\.elasticbeanstalk\.com|[^.]+\.elb\.amazonaws\.com|[^.]+\.elb\.amazonaws\.com\.cn|s3\.amazonaws\.com|s3-ap-northeast-1\.amazonaws\.com|s3-ap-northeast-2\.amazonaws\.com|s3-ap-south-1\.amazonaws\.com|s3-ap-southeast-1\.amazonaws\.com|s3-ap-southeast-2\.amazonaws\.com|s3-ca-central-1\.amazonaws\.com|s3-eu-central-1\.amazonaws\.com|s3-eu-west-1\.amazonaws\.com|s3-eu-west-2\.amazonaws\.com|s3-external-1\.amazonaws\.com|s3-fips-us-gov-west-1\.amazonaws\.com|s3-sa-east-1\.amazonaws\.com|s3-us-gov-west-1\.amazonaws\.com|s3-us-east-2\.amazonaws\.com|s3-us-west-1\.amazonaws\.com|s3-us-west-2\.amazonaws\.com|s3\.ap-northeast-2\.amazonaws\.com|s3\.ap-south-1\.amazonaws\.com|s3\.cn-north-1\.amazonaws\.com\.cn|s3\.ca-central-1\.amazonaws\.com|s3\.eu-central-1\.amazonaws\.com|s3\.eu-west-2\.amazonaws\.com|s3\.us-east-2\.amazonaws\.com|s3\.dualstack\.ap-northeast-1\.amazonaws\.com|s3\.dualstack\.ap-northeast-2\.amazonaws\.com|s3\.dualstack\.ap-south-1\.amazonaws\.com|s3\.dualstack\.ap-southeast-1\.amazonaws\.com|s3\.dualstack\.ap-southeast-2\.amazonaws\.com|s3\.dualstack\.ca-central-1\.amazonaws\.com|s3\.dualstack\.eu-central-1\.amazonaws\.com|s3\.dualstack\.eu-west-1\.amazonaws\.com|s3\.dualstack\.eu-west-2\.amazonaws\.com|s3\.dualstack\.sa-east-1\.amazonaws\.com|s3\.dualstack\.us-east-1\.amazonaws\.com|s3\.dualstack\.us-east-2\.amazonaws\.com|s3-website-us-east-1\.amazonaws\.com|s3-website-us-west-1\.amazonaws\.com|s3-website-us-west-2\.amazonaws\.com|s3-website-ap-northeast-1\.amazonaws\.com|s3-website-ap-southeast-1\.amazonaws\.com|s3-website-ap-southeast-2\.amazonaws\.com|s3-website-eu-west-1\.amazonaws\.com|s3-website-sa-east-1\.amazonaws\.com|s3-website\.ap-northeast-2\.amazonaws\.com|s3-website\.ap-south-1\.amazonaws\.com|s3-website\.ca-central-1\.amazonaws\.com|s3-website\.eu-central-1\.amazonaws\.com|s3-website\.eu-west-2\.amazonaws\.com|s3-website\.us-east-2\.amazonaws\.com|t3l3p0rt\.net|tele\.amune\.org|on-aptible\.com|user\.party\.eus|pimienta\.org|poivron\.org|potager\.org|sweetpepper\.org|myasustor\.com|myfritz\.net|backplaneapp\.io|betainabox\.com|bnr\.la|boxfuse\.io|browsersafetymark\.io|mycd\.eu|ae\.org|ar\.com|br\.com|cn\.com|com\.de|com\.se|de\.com|eu\.com|gb\.com|gb\.net|hu\.com|hu\.net|jp\.net|jpn\.com|kr\.com|mex\.com|no\.com|qc\.com|ru\.com|sa\.com|se\.com|se\.net|uk\.com|uk\.net|us\.com|uy\.com|za\.bz|za\.com|africa\.com|gr\.com|in\.net|us\.org|co\.com|c\.la|certmgr\.org|xenapponazure\.com|virtueeldomein\.nl|cloudcontrolled\.com|cloudcontrolapp\.com|co\.ca|co\.cz|c\.cdn77\.org|cdn77-ssl\.net|r\.cdn77\.net|rsc\.cdn77\.org|ssl\.origin\.cdn77-secure\.org|cloudns\.asia|cloudns\.biz|cloudns\.club|cloudns\.cc|cloudns\.eu|cloudns\.in|cloudns\.info|cloudns\.org|cloudns\.pro|cloudns\.pw|cloudns\.us|co\.nl|co\.no|[^.]+\.platform\.sh|dyn\.cosidns\.de|dynamisches-dns\.de|dnsupdater\.de|internet-dns\.de|l-o-g-i-n\.de|dynamic-dns\.info|feste-ip\.net|knx-server\.net|static-access\.net|realm\.cz|[^.]+\.cryptonomic\.net|cupcake\.is|cyon\.link|cyon\.site|daplie\.me|biz\.dk|co\.dk|firm\.dk|reg\.dk|store\.dk|dedyn\.io|dnshome\.de|dreamhosters\.com|mydrobo\.com|drud\.io|drud\.us|duckdns\.org|dy\.fi|tunk\.org|dyndns-at-home\.com|dyndns-at-work\.com|dyndns-blog\.com|dyndns-free\.com|dyndns-home\.com|dyndns-ip\.com|dyndns-mail\.com|dyndns-office\.com|dyndns-pics\.com|dyndns-remote\.com|dyndns-server\.com|dyndns-web\.com|dyndns-wiki\.com|dyndns-work\.com|dyndns\.biz|dyndns\.info|dyndns\.org|dyndns\.tv|at-band-camp\.net|ath\.cx|barrel-of-knowledge\.info|barrell-of-knowledge\.info|better-than\.tv|blogdns\.com|blogdns\.net|blogdns\.org|blogsite\.org|boldlygoingnowhere\.org|broke-it\.net|buyshouses\.net|cechire\.com|dnsalias\.com|dnsalias\.net|dnsalias\.org|dnsdojo\.com|dnsdojo\.net|dnsdojo\.org|does-it\.net|doesntexist\.com|doesntexist\.org|dontexist\.com|dontexist\.net|dontexist\.org|doomdns\.com|doomdns\.org|dvrdns\.org|dyn-o-saur\.com|dynalias\.com|dynalias\.net|dynalias\.org|dynathome\.net|dyndns\.ws|endofinternet\.net|endofinternet\.org|endoftheinternet\.org|est-a-la-maison\.com|est-a-la-masion\.com|est-le-patron\.com|est-mon-blogueur\.com|for-better\.biz|for-more\.biz|for-our\.info|for-some\.biz|for-the\.biz|forgot\.her\.name|forgot\.his\.name|from-ak\.com|from-al\.com|from-ar\.com|from-az\.net|from-ca\.com|from-co\.net|from-ct\.com|from-dc\.com|from-de\.com|from-fl\.com|from-ga\.com|from-hi\.com|from-ia\.com|from-id\.com|from-il\.com|from-in\.com|from-ks\.com|from-ky\.com|from-la\.net|from-ma\.com|from-md\.com|from-me\.org|from-mi\.com|from-mn\.com|from-mo\.com|from-ms\.com|from-mt\.com|from-nc\.com|from-nd\.com|from-ne\.com|from-nh\.com|from-nj\.com|from-nm\.com|from-nv\.com|from-ny\.net|from-oh\.com|from-ok\.com|from-or\.com|from-pa\.com|from-pr\.com|from-ri\.com|from-sc\.com|from-sd\.com|from-tn\.com|from-tx\.com|from-ut\.com|from-va\.com|from-vt\.com|from-wa\.com|from-wi\.com|from-wv\.com|from-wy\.com|ftpaccess\.cc|fuettertdasnetz\.de|game-host\.org|game-server\.cc|getmyip\.com|gets-it\.net|go\.dyndns\.org|gotdns\.com|gotdns\.org|groks-the\.info|groks-this\.info|ham-radio-op\.net|here-for-more\.info|hobby-site\.com|hobby-site\.org|home\.dyndns\.org|homedns\.org|homeftp\.net|homeftp\.org|homeip\.net|homelinux\.com|homelinux\.net|homelinux\.org|homeunix\.com|homeunix\.net|homeunix\.org|iamallama\.com|in-the-band\.net|is-a-anarchist\.com|is-a-blogger\.com|is-a-bookkeeper\.com|is-a-bruinsfan\.org|is-a-bulls-fan\.com|is-a-candidate\.org|is-a-caterer\.com|is-a-celticsfan\.org|is-a-chef\.com|is-a-chef\.net|is-a-chef\.org|is-a-conservative\.com|is-a-cpa\.com|is-a-cubicle-slave\.com|is-a-democrat\.com|is-a-designer\.com|is-a-doctor\.com|is-a-financialadvisor\.com|is-a-geek\.com|is-a-geek\.net|is-a-geek\.org|is-a-green\.com|is-a-guru\.com|is-a-hard-worker\.com|is-a-hunter\.com|is-a-knight\.org|is-a-landscaper\.com|is-a-lawyer\.com|is-a-liberal\.com|is-a-libertarian\.com|is-a-linux-user\.org|is-a-llama\.com|is-a-musician\.com|is-a-nascarfan\.com|is-a-nurse\.com|is-a-painter\.com|is-a-patsfan\.org|is-a-personaltrainer\.com|is-a-photographer\.com|is-a-player\.com|is-a-republican\.com|is-a-rockstar\.com|is-a-socialist\.com|is-a-soxfan\.org|is-a-student\.com|is-a-teacher\.com|is-a-techie\.com|is-a-therapist\.com|is-an-accountant\.com|is-an-actor\.com|is-an-actress\.com|is-an-anarchist\.com|is-an-artist\.com|is-an-engineer\.com|is-an-entertainer\.com|is-by\.us|is-certified\.com|is-found\.org|is-gone\.com|is-into-anime\.com|is-into-cars\.com|is-into-cartoons\.com|is-into-games\.com|is-leet\.com|is-lost\.org|is-not-certified\.com|is-saved\.org|is-slick\.com|is-uberleet\.com|is-very-bad\.org|is-very-evil\.org|is-very-good\.org|is-very-nice\.org|is-very-sweet\.org|is-with-theband\.com|isa-geek\.com|isa-geek\.net|isa-geek\.org|isa-hockeynut\.com|issmarterthanyou\.com|isteingeek\.de|istmein\.de|kicks-ass\.net|kicks-ass\.org|knowsitall\.info|land-4-sale\.us|lebtimnetz\.de|leitungsen\.de|likes-pie\.com|likescandy\.com|merseine\.nu|mine\.nu|misconfused\.org|mypets\.ws|myphotos\.cc|neat-url\.com|office-on-the\.net|on-the-web\.tv|podzone\.net|podzone\.org|readmyblog\.org|saves-the-whales\.com|scrapper-site\.net|scrapping\.cc|selfip\.biz|selfip\.com|selfip\.info|selfip\.net|selfip\.org|sells-for-less\.com|sells-for-u\.com|sells-it\.net|sellsyourhome\.org|servebbs\.com|servebbs\.net|servebbs\.org|serveftp\.net|serveftp\.org|servegame\.org|shacknet\.nu|simple-url\.com|space-to-rent\.com|stuff-4-sale\.org|stuff-4-sale\.us|teaches-yoga\.com|thruhere\.net|traeumtgerade\.de|webhop\.biz|webhop\.info|webhop\.net|webhop\.org|worse-than\.tv|writesthisblog\.com|ddnss\.de|dyn\.ddnss\.de|dyndns\.ddnss\.de|dyndns1\.de|dyn-ip24\.de|home-webserver\.de|dyn\.home-webserver\.de|myhome-server\.de|ddnss\.org|dynv6\.net|e4\.cz|enonic\.io|customer\.enonic\.io|eu\.org|al\.eu\.org|asso\.eu\.org|at\.eu\.org|au\.eu\.org|be\.eu\.org|bg\.eu\.org|ca\.eu\.org|cd\.eu\.org|ch\.eu\.org|cn\.eu\.org|cy\.eu\.org|cz\.eu\.org|de\.eu\.org|dk\.eu\.org|edu\.eu\.org|ee\.eu\.org|es\.eu\.org|fi\.eu\.org|fr\.eu\.org|gr\.eu\.org|hr\.eu\.org|hu\.eu\.org|ie\.eu\.org|il\.eu\.org|in\.eu\.org|int\.eu\.org|is\.eu\.org|it\.eu\.org|jp\.eu\.org|kr\.eu\.org|lt\.eu\.org|lu\.eu\.org|lv\.eu\.org|mc\.eu\.org|me\.eu\.org|mk\.eu\.org|mt\.eu\.org|my\.eu\.org|net\.eu\.org|ng\.eu\.org|nl\.eu\.org|no\.eu\.org|nz\.eu\.org|paris\.eu\.org|pl\.eu\.org|pt\.eu\.org|q-a\.eu\.org|ro\.eu\.org|ru\.eu\.org|se\.eu\.org|si\.eu\.org|sk\.eu\.org|tr\.eu\.org|uk\.eu\.org|us\.eu\.org|eu-1\.evennode\.com|eu-2\.evennode\.com|us-1\.evennode\.com|us-2\.evennode\.com|apps\.fbsbx\.com|ru\.net|adygeya\.ru|bashkiria\.ru|bir\.ru|cbg\.ru|com\.ru|dagestan\.ru|grozny\.ru|kalmykia\.ru|kustanai\.ru|marine\.ru|mordovia\.ru|msk\.ru|mytis\.ru|nalchik\.ru|nov\.ru|pyatigorsk\.ru|spb\.ru|vladikavkaz\.ru|vladimir\.ru|abkhazia\.su|adygeya\.su|aktyubinsk\.su|arkhangelsk\.su|armenia\.su|ashgabad\.su|azerbaijan\.su|balashov\.su|bashkiria\.su|bryansk\.su|bukhara\.su|chimkent\.su|dagestan\.su|east-kazakhstan\.su|exnet\.su|georgia\.su|grozny\.su|ivanovo\.su|jambyl\.su|kalmykia\.su|kaluga\.su|karacol\.su|karaganda\.su|karelia\.su|khakassia\.su|krasnodar\.su|kurgan\.su|kustanai\.su|lenug\.su|mangyshlak\.su|mordovia\.su|msk\.su|murmansk\.su|nalchik\.su|navoi\.su|north-kazakhstan\.su|nov\.su|obninsk\.su|penza\.su|pokrovsk\.su|sochi\.su|spb\.su|tashkent\.su|termez\.su|togliatti\.su|troitsk\.su|tselinograd\.su|tula\.su|tuva\.su|vladikavkaz\.su|vladimir\.su|vologda\.su|map\.fastly\.net|a\.prod\.fastly\.net|global\.prod\.fastly\.net|a\.ssl\.fastly\.net|b\.ssl\.fastly\.net|global\.ssl\.fastly\.net|fastlylb\.net|map\.fastlylb\.net|fhapp\.xyz|firebaseapp\.com|flynnhub\.com|freebox-os\.com|freeboxos\.com|fbx-os\.fr|fbxos\.fr|freebox-os\.fr|freeboxos\.fr|myfusion\.cloud|futurehosting\.at|futuremailing\.at|[^.]+\.ex\.ortsinfo\.at|[^.]+\.kunden\.ortsinfo\.at|[^.]+\.statics\.cloud|service\.gov\.uk|github\.io|githubusercontent\.com|githubcloud\.com|[^.]+\.api\.githubcloud\.com|[^.]+\.ext\.githubcloud\.com|gist\.githubcloud\.com|[^.]+\.githubcloudusercontent\.com|gitlab\.io|homeoffice\.gov\.uk|ro\.im|shop\.ro|goip\.de|[^.]+\.0emm\.com|appspot\.com|blogspot\.ae|blogspot\.al|blogspot\.am|blogspot\.ba|blogspot\.be|blogspot\.bg|blogspot\.bj|blogspot\.ca|blogspot\.cf|blogspot\.ch|blogspot\.cl|blogspot\.co\.at|blogspot\.co\.id|blogspot\.co\.il|blogspot\.co\.ke|blogspot\.co\.nz|blogspot\.co\.uk|blogspot\.co\.za|blogspot\.com|blogspot\.com\.ar|blogspot\.com\.au|blogspot\.com\.br|blogspot\.com\.by|blogspot\.com\.co|blogspot\.com\.cy|blogspot\.com\.ee|blogspot\.com\.eg|blogspot\.com\.es|blogspot\.com\.mt|blogspot\.com\.ng|blogspot\.com\.tr|blogspot\.com\.uy|blogspot\.cv|blogspot\.cz|blogspot\.de|blogspot\.dk|blogspot\.fi|blogspot\.fr|blogspot\.gr|blogspot\.hk|blogspot\.hr|blogspot\.hu|blogspot\.ie|blogspot\.in|blogspot\.is|blogspot\.it|blogspot\.jp|blogspot\.kr|blogspot\.li|blogspot\.lt|blogspot\.lu|blogspot\.md|blogspot\.mk|blogspot\.mr|blogspot\.mx|blogspot\.my|blogspot\.nl|blogspot\.no|blogspot\.pe|blogspot\.pt|blogspot\.qa|blogspot\.re|blogspot\.ro|blogspot\.rs|blogspot\.ru|blogspot\.se|blogspot\.sg|blogspot\.si|blogspot\.sk|blogspot\.sn|blogspot\.td|blogspot\.tw|blogspot\.ug|blogspot\.vn|cloudfunctions\.net|codespot\.com|googleapis\.com|googlecode\.com|pagespeedmobilizer\.com|publishproxy\.com|withgoogle\.com|withyoutube\.com|hashbang\.sh|hasura-app\.io|hepforge\.org|herokuapp\.com|herokussl\.com|iki\.fi|biz\.at|info\.at|ac\.leg\.br|al\.leg\.br|am\.leg\.br|ap\.leg\.br|ba\.leg\.br|ce\.leg\.br|df\.leg\.br|es\.leg\.br|go\.leg\.br|ma\.leg\.br|mg\.leg\.br|ms\.leg\.br|mt\.leg\.br|pa\.leg\.br|pb\.leg\.br|pe\.leg\.br|pi\.leg\.br|pr\.leg\.br|rj\.leg\.br|rn\.leg\.br|ro\.leg\.br|rr\.leg\.br|rs\.leg\.br|sc\.leg\.br|se\.leg\.br|sp\.leg\.br|to\.leg\.br|[^.]+\.triton\.zone|[^.]+\.cns\.joyent\.com|js\.org|keymachine\.de|knightpoint\.systems|co\.krd|edu\.krd|[^.]+\.magentosite\.cloud|meteorapp\.com|eu\.meteorapp\.com|co\.pl|azurewebsites\.net|azure-mobile\.net|cloudapp\.net|bmoattachments\.org|4u\.com|ngrok\.io|nfshost\.com|nsupdate\.info|nerdpol\.ovh|blogsyte\.com|brasilia\.me|cable-modem\.org|ciscofreak\.com|collegefan\.org|couchpotatofries\.org|damnserver\.com|ddns\.me|ditchyourip\.com|dnsfor\.me|dnsiskinky\.com|dvrcam\.info|dynns\.com|eating-organic\.net|fantasyleague\.cc|geekgalaxy\.com|golffan\.us|health-carereform\.com|homesecuritymac\.com|homesecuritypc\.com|hopto\.me|ilovecollege\.info|loginto\.me|mlbfan\.org|mmafan\.biz|myactivedirectory\.com|mydissent\.net|myeffect\.net|mymediapc\.net|mypsx\.net|mysecuritycamera\.com|mysecuritycamera\.net|mysecuritycamera\.org|net-freaks\.com|nflfan\.org|nhlfan\.net|no-ip\.ca|no-ip\.co\.uk|no-ip\.net|noip\.us|onthewifi\.com|pgafan\.net|point2this\.com|pointto\.us|privatizehealthinsurance\.net|quicksytes\.com|read-books\.org|securitytactics\.com|serveexchange\.com|servehumour\.com|servep2p\.com|servesarcasm\.com|stufftoread\.com|ufcfan\.org|unusualperson\.com|workisboring\.com|3utilities\.com|bounceme\.net|ddns\.net|ddnsking\.com|gotdns\.ch|hopto\.org|myftp\.biz|myftp\.org|myvnc\.com|no-ip\.biz|no-ip\.info|no-ip\.org|noip\.me|redirectme\.net|servebeer\.com|serveblog\.net|servecounterstrike\.com|serveftp\.com|servegame\.com|servehalflife\.com|servehttp\.com|serveirc\.com|serveminecraft\.net|servemp3\.com|servepics\.com|servequake\.com|sytes\.net|webhop\.me|zapto\.org|nyc\.mn|nid\.io|opencraft\.hosting|operaunite\.com|outsystemscloud\.com|ownprovider\.com|oy\.lc|pgfog\.com|pagefrontapp\.com|art\.pl|gliwice\.pl|krakow\.pl|poznan\.pl|wroc\.pl|zakopane\.pl|pantheonsite\.io|gotpantheon\.com|mypep\.link|on-web\.fr|xen\.prgmr\.com|priv\.at|protonet\.io|chirurgiens-dentistes-en-france\.fr|qa2\.com|dev-myqnapcloud\.com|alpha-myqnapcloud\.com|myqnapcloud\.com|rackmaze\.com|rackmaze\.net|rhcloud\.com|hzc\.io|wellbeingzone\.eu|ptplus\.fit|wellbeingzone\.co\.uk|sandcats\.io|logoip\.de|logoip\.com|firewall-gateway\.com|firewall-gateway\.de|my-gateway\.de|my-router\.de|spdns\.de|spdns\.eu|firewall-gateway\.net|my-firewall\.org|myfirewall\.org|spdns\.org|biz\.ua|co\.ua|pp\.ua|shiftedit\.io|myshopblocks\.com|1kapp\.com|appchizi\.com|applinzi\.com|sinaapp\.com|vipsinaapp\.com|bounty-full\.com|alpha\.bounty-full\.com|beta\.bounty-full\.com|static\.land|dev\.static\.land|sites\.static\.land|apps\.lair\.io|[^.]+\.stolos\.io|spacekit\.io|stackspace\.space|diskstation\.me|dscloud\.biz|dscloud\.me|dscloud\.mobi|dsmynas\.com|dsmynas\.net|dsmynas\.org|familyds\.com|familyds\.net|familyds\.org|i234\.me|myds\.me|synology\.me|taifun-dns\.de|gda\.pl|gdansk\.pl|gdynia\.pl|med\.pl|sopot\.pl|bloxcms\.com|townnews-staging\.com|[^.]+\.transurl\.be|[^.]+\.transurl\.eu|[^.]+\.transurl\.nl|tuxfamily\.org|dd-dns\.de|diskstation\.eu|diskstation\.org|dray-dns\.de|draydns\.de|dyn-vpn\.de|dynvpn\.de|mein-vigor\.de|my-vigor\.de|my-wan\.de|syno-ds\.de|synology-diskstation\.de|synology-ds\.de|hk\.com|hk\.org|ltd\.hk|inc\.hk|lib\.de\.us|router\.management|remotewd\.com|wmflabs\.org|yolasite\.com|ybo\.faith|yombo\.me|homelink\.one|ybo\.party|ybo\.review|ybo\.science|ybo\.trade|za\.net|za\.org|now\.sh|cc\.ua|inf\.ua|ltd\.ua)$/;
-},{}],224:[function(require,module,exports){
+},{}],226:[function(require,module,exports){
 
 exports.pbkdf2 = require('./lib/async')
 
 exports.pbkdf2Sync = require('./lib/sync')
 
-},{"./lib/async":225,"./lib/sync":228}],225:[function(require,module,exports){
+},{"./lib/async":227,"./lib/sync":230}],227:[function(require,module,exports){
 (function (process,global){
 var checkParameters = require('./precondition')
 var defaultEncoding = require('./default-encoding')
@@ -43953,7 +49638,7 @@ module.exports = function (password, salt, iterations, keylen, digest, callback)
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./default-encoding":226,"./precondition":227,"./sync":228,"_process":91,"safe-buffer":261}],226:[function(require,module,exports){
+},{"./default-encoding":228,"./precondition":229,"./sync":230,"_process":92,"safe-buffer":263}],228:[function(require,module,exports){
 (function (process){
 var defaultEncoding
 /* istanbul ignore next */
@@ -43967,7 +49652,7 @@ if (process.browser) {
 module.exports = defaultEncoding
 
 }).call(this,require('_process'))
-},{"_process":91}],227:[function(require,module,exports){
+},{"_process":92}],229:[function(require,module,exports){
 var MAX_ALLOC = Math.pow(2, 30) - 1 // default in iojs
 module.exports = function (iterations, keylen) {
   if (typeof iterations !== 'number') {
@@ -43987,7 +49672,7 @@ module.exports = function (iterations, keylen) {
   }
 }
 
-},{}],228:[function(require,module,exports){
+},{}],230:[function(require,module,exports){
 var md5 = require('create-hash/md5')
 var rmd160 = require('ripemd160')
 var sha = require('sha.js')
@@ -44090,7 +49775,7 @@ function pbkdf2 (password, salt, iterations, keylen, digest) {
 
 module.exports = pbkdf2
 
-},{"./default-encoding":226,"./precondition":227,"create-hash/md5":100,"ripemd160":259,"safe-buffer":261,"sha.js":269}],229:[function(require,module,exports){
+},{"./default-encoding":228,"./precondition":229,"create-hash/md5":101,"ripemd160":261,"safe-buffer":263,"sha.js":271}],231:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -44137,7 +49822,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 }
 
 }).call(this,require('_process'))
-},{"_process":91}],230:[function(require,module,exports){
+},{"_process":92}],232:[function(require,module,exports){
 function wait (time, shouldResolve) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -44163,7 +49848,7 @@ waitForResolve.reject = waitForReject
 
 module.exports = waitForResolve
 
-},{}],231:[function(require,module,exports){
+},{}],233:[function(require,module,exports){
 exports.publicEncrypt = require('./publicEncrypt');
 exports.privateDecrypt = require('./privateDecrypt');
 
@@ -44174,7 +49859,7 @@ exports.privateEncrypt = function privateEncrypt(key, buf) {
 exports.publicDecrypt = function publicDecrypt(key, buf) {
   return exports.privateDecrypt(key, buf, true);
 };
-},{"./privateDecrypt":233,"./publicEncrypt":234}],232:[function(require,module,exports){
+},{"./privateDecrypt":235,"./publicEncrypt":236}],234:[function(require,module,exports){
 (function (Buffer){
 var createHash = require('create-hash');
 module.exports = function (seed, len) {
@@ -44193,7 +49878,7 @@ function i2ops(c) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"create-hash":98}],233:[function(require,module,exports){
+},{"buffer":94,"create-hash":99}],235:[function(require,module,exports){
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var mgf = require('./mgf');
@@ -44304,7 +49989,7 @@ function compare(a, b){
   return dif;
 }
 }).call(this,require("buffer").Buffer)
-},{"./mgf":232,"./withPublic":235,"./xor":236,"bn.js":60,"browserify-rsa":83,"buffer":93,"create-hash":98,"parse-asn1":221}],234:[function(require,module,exports){
+},{"./mgf":234,"./withPublic":237,"./xor":238,"bn.js":61,"browserify-rsa":84,"buffer":94,"create-hash":99,"parse-asn1":222}],236:[function(require,module,exports){
 (function (Buffer){
 var parseKeys = require('parse-asn1');
 var randomBytes = require('randombytes');
@@ -44402,7 +50087,7 @@ function nonZero(len, crypto) {
   return out;
 }
 }).call(this,require("buffer").Buffer)
-},{"./mgf":232,"./withPublic":235,"./xor":236,"bn.js":60,"browserify-rsa":83,"buffer":93,"create-hash":98,"parse-asn1":221,"randombytes":241}],235:[function(require,module,exports){
+},{"./mgf":234,"./withPublic":237,"./xor":238,"bn.js":61,"browserify-rsa":84,"buffer":94,"create-hash":99,"parse-asn1":222,"randombytes":243}],237:[function(require,module,exports){
 (function (Buffer){
 var bn = require('bn.js');
 function withPublic(paddedMsg, key) {
@@ -44415,7 +50100,7 @@ function withPublic(paddedMsg, key) {
 
 module.exports = withPublic;
 }).call(this,require("buffer").Buffer)
-},{"bn.js":60,"buffer":93}],236:[function(require,module,exports){
+},{"bn.js":61,"buffer":94}],238:[function(require,module,exports){
 module.exports = function xor(a, b) {
   var len = a.length;
   var i = -1;
@@ -44424,7 +50109,7 @@ module.exports = function xor(a, b) {
   }
   return a
 };
-},{}],237:[function(require,module,exports){
+},{}],239:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 ;(function(root) {
@@ -44961,7 +50646,7 @@ module.exports = function xor(a, b) {
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],238:[function(require,module,exports){
+},{}],240:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -45047,7 +50732,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-},{}],239:[function(require,module,exports){
+},{}],241:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -45134,13 +50819,13 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-},{}],240:[function(require,module,exports){
+},{}],242:[function(require,module,exports){
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-},{"./decode":238,"./encode":239}],241:[function(require,module,exports){
+},{"./decode":240,"./encode":241}],243:[function(require,module,exports){
 (function (process,global){
 'use strict'
 
@@ -45182,7 +50867,7 @@ function randomBytes (size, cb) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":91,"safe-buffer":261}],242:[function(require,module,exports){
+},{"_process":92,"safe-buffer":263}],244:[function(require,module,exports){
 (function (process,global){
 'use strict'
 
@@ -45294,11 +50979,11 @@ function randomFillSync (buf, offset, size) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":91,"randombytes":241,"safe-buffer":261}],243:[function(require,module,exports){
+},{"_process":92,"randombytes":243,"safe-buffer":263}],245:[function(require,module,exports){
 module.exports = window.crypto;
-},{}],244:[function(require,module,exports){
+},{}],246:[function(require,module,exports){
 module.exports = require('crypto');
-},{"crypto":243}],245:[function(require,module,exports){
+},{"crypto":245}],247:[function(require,module,exports){
 var randomHex = function(size, callback) {
     var crypto = require('./crypto.js');
     var isCallback = (typeof callback === 'function');
@@ -45364,10 +51049,10 @@ var randomHex = function(size, callback) {
 
 module.exports = randomHex;
 
-},{"./crypto.js":244}],246:[function(require,module,exports){
+},{"./crypto.js":246}],248:[function(require,module,exports){
 module.exports = require('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":247}],247:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":249}],249:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -45492,7 +51177,7 @@ function forEach(xs, f) {
     f(xs[i], i);
   }
 }
-},{"./_stream_readable":249,"./_stream_writable":251,"core-util-is":96,"inherits":196,"process-nextick-args":229}],248:[function(require,module,exports){
+},{"./_stream_readable":251,"./_stream_writable":253,"core-util-is":97,"inherits":197,"process-nextick-args":231}],250:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -45540,7 +51225,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":250,"core-util-is":96,"inherits":196}],249:[function(require,module,exports){
+},{"./_stream_transform":252,"core-util-is":97,"inherits":197}],251:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -46550,7 +52235,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":247,"./internal/streams/BufferList":252,"./internal/streams/destroy":253,"./internal/streams/stream":254,"_process":91,"core-util-is":96,"events":176,"inherits":196,"isarray":199,"process-nextick-args":229,"safe-buffer":261,"string_decoder/":277,"util":62}],250:[function(require,module,exports){
+},{"./_stream_duplex":249,"./internal/streams/BufferList":254,"./internal/streams/destroy":255,"./internal/streams/stream":256,"_process":92,"core-util-is":97,"events":177,"inherits":197,"isarray":200,"process-nextick-args":231,"safe-buffer":263,"string_decoder/":279,"util":63}],252:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -46765,7 +52450,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":247,"core-util-is":96,"inherits":196}],251:[function(require,module,exports){
+},{"./_stream_duplex":249,"core-util-is":97,"inherits":197}],253:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -47432,7 +53117,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":247,"./internal/streams/destroy":253,"./internal/streams/stream":254,"_process":91,"core-util-is":96,"inherits":196,"process-nextick-args":229,"safe-buffer":261,"util-deprecate":396}],252:[function(require,module,exports){
+},{"./_stream_duplex":249,"./internal/streams/destroy":255,"./internal/streams/stream":256,"_process":92,"core-util-is":97,"inherits":197,"process-nextick-args":231,"safe-buffer":263,"util-deprecate":398}],254:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -47507,7 +53192,7 @@ module.exports = function () {
 
   return BufferList;
 }();
-},{"safe-buffer":261}],253:[function(require,module,exports){
+},{"safe-buffer":263}],255:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -47580,13 +53265,13 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":229}],254:[function(require,module,exports){
+},{"process-nextick-args":231}],256:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":176}],255:[function(require,module,exports){
+},{"events":177}],257:[function(require,module,exports){
 module.exports = require('./readable').PassThrough
 
-},{"./readable":256}],256:[function(require,module,exports){
+},{"./readable":258}],258:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -47595,13 +53280,13 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":247,"./lib/_stream_passthrough.js":248,"./lib/_stream_readable.js":249,"./lib/_stream_transform.js":250,"./lib/_stream_writable.js":251}],257:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":249,"./lib/_stream_passthrough.js":250,"./lib/_stream_readable.js":251,"./lib/_stream_transform.js":252,"./lib/_stream_writable.js":253}],259:[function(require,module,exports){
 module.exports = require('./readable').Transform
 
-},{"./readable":256}],258:[function(require,module,exports){
+},{"./readable":258}],260:[function(require,module,exports){
 module.exports = require('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":251}],259:[function(require,module,exports){
+},{"./lib/_stream_writable.js":253}],261:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = require('inherits')
@@ -47896,7 +53581,7 @@ function fn5 (a, b, c, d, e, m, k, s) {
 module.exports = RIPEMD160
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":93,"hash-base":180,"inherits":196}],260:[function(require,module,exports){
+},{"buffer":94,"hash-base":181,"inherits":197}],262:[function(require,module,exports){
 (function (Buffer){
 const assert = require('assert')
 /**
@@ -48129,7 +53814,7 @@ function toBuffer (v) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"assert":57,"buffer":93}],261:[function(require,module,exports){
+},{"assert":57,"buffer":94}],263:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -48193,11 +53878,11 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":93}],262:[function(require,module,exports){
+},{"buffer":94}],264:[function(require,module,exports){
 'use strict'
 module.exports = require('./lib')(require('./lib/elliptic'))
 
-},{"./lib":266,"./lib/elliptic":265}],263:[function(require,module,exports){
+},{"./lib":268,"./lib/elliptic":267}],265:[function(require,module,exports){
 (function (Buffer){
 'use strict'
 var toString = Object.prototype.toString
@@ -48245,7 +53930,7 @@ exports.isNumberInInterval = function (number, x, y, message) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":197}],264:[function(require,module,exports){
+},{"../../is-buffer/index.js":198}],266:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var bip66 = require('bip66')
@@ -48440,7 +54125,7 @@ exports.signatureImportLax = function (sig) {
   return { r: r, s: s }
 }
 
-},{"bip66":59,"safe-buffer":261}],265:[function(require,module,exports){
+},{"bip66":59,"safe-buffer":263}],267:[function(require,module,exports){
 'use strict'
 var Buffer = require('safe-buffer').Buffer
 var createHash = require('create-hash')
@@ -48690,7 +54375,7 @@ exports.ecdhUnsafe = function (publicKey, privateKey, compressed) {
   return Buffer.from(pair.pub.mul(scalar).encode(true, compressed))
 }
 
-},{"../messages.json":267,"bn.js":60,"create-hash":98,"elliptic":148,"safe-buffer":261}],266:[function(require,module,exports){
+},{"../messages.json":269,"bn.js":61,"create-hash":99,"elliptic":149,"safe-buffer":263}],268:[function(require,module,exports){
 'use strict'
 var assert = require('./assert')
 var der = require('./der')
@@ -48923,7 +54608,7 @@ module.exports = function (secp256k1) {
   }
 }
 
-},{"./assert":263,"./der":264,"./messages.json":267}],267:[function(require,module,exports){
+},{"./assert":265,"./der":266,"./messages.json":269}],269:[function(require,module,exports){
 module.exports={
   "COMPRESSED_TYPE_INVALID": "compressed should be a boolean",
   "EC_PRIVATE_KEY_TYPE_INVALID": "private key should be a Buffer",
@@ -48961,7 +54646,7 @@ module.exports={
   "TWEAK_LENGTH_INVALID": "tweak length is invalid"
 }
 
-},{}],268:[function(require,module,exports){
+},{}],270:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 
 // prototype class for hash functions
@@ -49044,7 +54729,7 @@ Hash.prototype._update = function () {
 
 module.exports = Hash
 
-},{"safe-buffer":261}],269:[function(require,module,exports){
+},{"safe-buffer":263}],271:[function(require,module,exports){
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -49061,7 +54746,7 @@ exports.sha256 = require('./sha256')
 exports.sha384 = require('./sha384')
 exports.sha512 = require('./sha512')
 
-},{"./sha":270,"./sha1":271,"./sha224":272,"./sha256":273,"./sha384":274,"./sha512":275}],270:[function(require,module,exports){
+},{"./sha":272,"./sha1":273,"./sha224":274,"./sha256":275,"./sha384":276,"./sha512":277}],272:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
  * in FIPS PUB 180-1
@@ -49157,7 +54842,7 @@ Sha.prototype._hash = function () {
 
 module.exports = Sha
 
-},{"./hash":268,"inherits":196,"safe-buffer":261}],271:[function(require,module,exports){
+},{"./hash":270,"inherits":197,"safe-buffer":263}],273:[function(require,module,exports){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
@@ -49258,7 +54943,7 @@ Sha1.prototype._hash = function () {
 
 module.exports = Sha1
 
-},{"./hash":268,"inherits":196,"safe-buffer":261}],272:[function(require,module,exports){
+},{"./hash":270,"inherits":197,"safe-buffer":263}],274:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -49313,7 +54998,7 @@ Sha224.prototype._hash = function () {
 
 module.exports = Sha224
 
-},{"./hash":268,"./sha256":273,"inherits":196,"safe-buffer":261}],273:[function(require,module,exports){
+},{"./hash":270,"./sha256":275,"inherits":197,"safe-buffer":263}],275:[function(require,module,exports){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
  * in FIPS 180-2
@@ -49450,7 +55135,7 @@ Sha256.prototype._hash = function () {
 
 module.exports = Sha256
 
-},{"./hash":268,"inherits":196,"safe-buffer":261}],274:[function(require,module,exports){
+},{"./hash":270,"inherits":197,"safe-buffer":263}],276:[function(require,module,exports){
 var inherits = require('inherits')
 var SHA512 = require('./sha512')
 var Hash = require('./hash')
@@ -49509,7 +55194,7 @@ Sha384.prototype._hash = function () {
 
 module.exports = Sha384
 
-},{"./hash":268,"./sha512":275,"inherits":196,"safe-buffer":261}],275:[function(require,module,exports){
+},{"./hash":270,"./sha512":277,"inherits":197,"safe-buffer":263}],277:[function(require,module,exports){
 var inherits = require('inherits')
 var Hash = require('./hash')
 var Buffer = require('safe-buffer').Buffer
@@ -49771,7 +55456,7 @@ Sha512.prototype._hash = function () {
 
 module.exports = Sha512
 
-},{"./hash":268,"inherits":196,"safe-buffer":261}],276:[function(require,module,exports){
+},{"./hash":270,"inherits":197,"safe-buffer":263}],278:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -49900,7 +55585,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":176,"inherits":196,"readable-stream/duplex.js":246,"readable-stream/passthrough.js":255,"readable-stream/readable.js":256,"readable-stream/transform.js":257,"readable-stream/writable.js":258}],277:[function(require,module,exports){
+},{"events":177,"inherits":197,"readable-stream/duplex.js":248,"readable-stream/passthrough.js":257,"readable-stream/readable.js":258,"readable-stream/transform.js":259,"readable-stream/writable.js":260}],279:[function(require,module,exports){
 'use strict';
 
 var Buffer = require('safe-buffer').Buffer;
@@ -50173,7 +55858,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":261}],278:[function(require,module,exports){
+},{"safe-buffer":263}],280:[function(require,module,exports){
 var isHexPrefixed = require('is-hex-prefixed');
 
 /**
@@ -50189,7 +55874,7 @@ module.exports = function stripHexPrefix(str) {
   return isHexPrefixed(str) ? str.slice(2) : str;
 }
 
-},{"is-hex-prefixed":198}],279:[function(require,module,exports){
+},{"is-hex-prefixed":199}],281:[function(require,module,exports){
 // TODO: remove web3 requirement
 // Call functions directly on the provider.
 var Web3 = require("web3");
@@ -50252,7 +55937,7 @@ var Blockchain = {
 
 module.exports = Blockchain;
 
-},{"web3":281}],280:[function(require,module,exports){
+},{"web3":283}],282:[function(require,module,exports){
 /*! bignumber.js v2.0.7 https://github.com/MikeMcl/bignumber.js/LICENCE */
 
 ;(function (global) {
@@ -52937,7 +58622,7 @@ module.exports = Blockchain;
     }
 })(this);
 
-},{"crypto":103}],281:[function(require,module,exports){
+},{"crypto":104}],283:[function(require,module,exports){
 var Web3 = require('./lib/web3');
 
 // dont override global variable
@@ -52947,7 +58632,7 @@ if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
 
 module.exports = Web3;
 
-},{"./lib/web3":303}],282:[function(require,module,exports){
+},{"./lib/web3":305}],284:[function(require,module,exports){
 module.exports=[
   {
     "constant": true,
@@ -53203,7 +58888,7 @@ module.exports=[
   }
 ]
 
-},{}],283:[function(require,module,exports){
+},{}],285:[function(require,module,exports){
 module.exports=[
   {
     "constant": true,
@@ -53313,7 +58998,7 @@ module.exports=[
   }
 ]
 
-},{}],284:[function(require,module,exports){
+},{}],286:[function(require,module,exports){
 module.exports=[
   {
     "constant": false,
@@ -53462,7 +59147,7 @@ module.exports=[
   }
 ]
 
-},{}],285:[function(require,module,exports){
+},{}],287:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -53490,7 +59175,7 @@ SolidityTypeAddress.prototype.isType = function (name) {
 
 module.exports = SolidityTypeAddress;
 
-},{"./formatters":290,"./type":295}],286:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],288:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -53518,7 +59203,7 @@ SolidityTypeBool.prototype.isType = function (name) {
 
 module.exports = SolidityTypeBool;
 
-},{"./formatters":290,"./type":295}],287:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],289:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -53549,7 +59234,7 @@ SolidityTypeBytes.prototype.isType = function (name) {
 
 module.exports = SolidityTypeBytes;
 
-},{"./formatters":290,"./type":295}],288:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],290:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -53798,7 +59483,7 @@ var coder = new SolidityCoder([
 
 module.exports = coder;
 
-},{"./address":285,"./bool":286,"./bytes":287,"./dynamicbytes":289,"./formatters":290,"./int":291,"./real":293,"./string":294,"./uint":296,"./ureal":297}],289:[function(require,module,exports){
+},{"./address":287,"./bool":288,"./bytes":289,"./dynamicbytes":291,"./formatters":292,"./int":293,"./real":295,"./string":296,"./uint":298,"./ureal":299}],291:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -53820,7 +59505,7 @@ SolidityTypeDynamicBytes.prototype.isDynamicType = function () {
 
 module.exports = SolidityTypeDynamicBytes;
 
-},{"./formatters":290,"./type":295}],290:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],292:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -54074,7 +59759,7 @@ module.exports = {
     formatOutputAddress: formatOutputAddress
 };
 
-},{"../utils/config":299,"../utils/utils":301,"./param":292,"bignumber.js":280}],291:[function(require,module,exports){
+},{"../utils/config":301,"../utils/utils":303,"./param":294,"bignumber.js":282}],293:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -54108,7 +59793,7 @@ SolidityTypeInt.prototype.isType = function (name) {
 
 module.exports = SolidityTypeInt;
 
-},{"./formatters":290,"./type":295}],292:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],294:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -54262,7 +59947,7 @@ SolidityParam.encodeList = function (params) {
 module.exports = SolidityParam;
 
 
-},{"../utils/utils":301}],293:[function(require,module,exports){
+},{"../utils/utils":303}],295:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -54296,7 +59981,7 @@ SolidityTypeReal.prototype.isType = function (name) {
 
 module.exports = SolidityTypeReal;
 
-},{"./formatters":290,"./type":295}],294:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],296:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -54318,7 +60003,7 @@ SolidityTypeString.prototype.isDynamicType = function () {
 
 module.exports = SolidityTypeString;
 
-},{"./formatters":290,"./type":295}],295:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],297:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityParam = require('./param');
 
@@ -54575,7 +60260,7 @@ SolidityType.prototype.decode = function (bytes, offset, name) {
 
 module.exports = SolidityType;
 
-},{"./formatters":290,"./param":292}],296:[function(require,module,exports){
+},{"./formatters":292,"./param":294}],298:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -54609,7 +60294,7 @@ SolidityTypeUInt.prototype.isType = function (name) {
 
 module.exports = SolidityTypeUInt;
 
-},{"./formatters":290,"./type":295}],297:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],299:[function(require,module,exports){
 var f = require('./formatters');
 var SolidityType = require('./type');
 
@@ -54643,7 +60328,7 @@ SolidityTypeUReal.prototype.isType = function (name) {
 
 module.exports = SolidityTypeUReal;
 
-},{"./formatters":290,"./type":295}],298:[function(require,module,exports){
+},{"./formatters":292,"./type":297}],300:[function(require,module,exports){
 'use strict';
 
 // go env doesn't have and need XMLHttpRequest
@@ -54654,7 +60339,7 @@ if (typeof XMLHttpRequest === 'undefined') {
 }
 
 
-},{}],299:[function(require,module,exports){
+},{}],301:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -54735,7 +60420,7 @@ module.exports = {
 };
 
 
-},{"bignumber.js":280}],300:[function(require,module,exports){
+},{"bignumber.js":282}],302:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -54775,7 +60460,7 @@ module.exports = function (value, options) {
 };
 
 
-},{"crypto-js":112,"crypto-js/sha3":133}],301:[function(require,module,exports){
+},{"crypto-js":113,"crypto-js/sha3":134}],303:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -55406,12 +61091,12 @@ module.exports = {
     isTopic: isTopic,
 };
 
-},{"./sha3.js":300,"bignumber.js":280,"utf8":395}],302:[function(require,module,exports){
+},{"./sha3.js":302,"bignumber.js":282,"utf8":397}],304:[function(require,module,exports){
 module.exports={
     "version": "0.20.2"
 }
 
-},{}],303:[function(require,module,exports){
+},{}],305:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -55565,7 +61250,7 @@ Web3.prototype.createBatch = function () {
 module.exports = Web3;
 
 
-},{"./utils/sha3":300,"./utils/utils":301,"./version.json":302,"./web3/batch":305,"./web3/extend":309,"./web3/httpprovider":313,"./web3/iban":314,"./web3/ipcprovider":315,"./web3/methods/db":318,"./web3/methods/eth":319,"./web3/methods/net":320,"./web3/methods/personal":321,"./web3/methods/shh":322,"./web3/methods/swarm":323,"./web3/property":326,"./web3/requestmanager":327,"./web3/settings":328,"bignumber.js":280}],304:[function(require,module,exports){
+},{"./utils/sha3":302,"./utils/utils":303,"./version.json":304,"./web3/batch":307,"./web3/extend":311,"./web3/httpprovider":315,"./web3/iban":316,"./web3/ipcprovider":317,"./web3/methods/db":320,"./web3/methods/eth":321,"./web3/methods/net":322,"./web3/methods/personal":323,"./web3/methods/shh":324,"./web3/methods/swarm":325,"./web3/property":328,"./web3/requestmanager":329,"./web3/settings":330,"bignumber.js":282}],306:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -55655,7 +61340,7 @@ AllSolidityEvents.prototype.attachToContract = function (contract) {
 module.exports = AllSolidityEvents;
 
 
-},{"../utils/sha3":300,"../utils/utils":301,"./event":308,"./filter":310,"./formatters":311,"./methods/watches":324}],305:[function(require,module,exports){
+},{"../utils/sha3":302,"../utils/utils":303,"./event":310,"./filter":312,"./formatters":313,"./methods/watches":326}],307:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -55723,7 +61408,7 @@ Batch.prototype.execute = function () {
 module.exports = Batch;
 
 
-},{"./errors":307,"./jsonrpc":316}],306:[function(require,module,exports){
+},{"./errors":309,"./jsonrpc":318}],308:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -56035,7 +61720,7 @@ var Contract = function (eth, abi, address) {
 
 module.exports = ContractFactory;
 
-},{"../solidity/coder":288,"../utils/utils":301,"./allevents":304,"./event":308,"./function":312}],307:[function(require,module,exports){
+},{"../solidity/coder":290,"../utils/utils":303,"./allevents":306,"./event":310,"./function":314}],309:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -56080,7 +61765,7 @@ module.exports = {
     }
 };
 
-},{}],308:[function(require,module,exports){
+},{}],310:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -56290,7 +61975,7 @@ SolidityEvent.prototype.attachToContract = function (contract) {
 module.exports = SolidityEvent;
 
 
-},{"../solidity/coder":288,"../utils/sha3":300,"../utils/utils":301,"./filter":310,"./formatters":311,"./methods/watches":324}],309:[function(require,module,exports){
+},{"../solidity/coder":290,"../utils/sha3":302,"../utils/utils":303,"./filter":312,"./formatters":313,"./methods/watches":326}],311:[function(require,module,exports){
 var formatters = require('./formatters');
 var utils = require('./../utils/utils');
 var Method = require('./method');
@@ -56340,7 +62025,7 @@ var extend = function (web3) {
 module.exports = extend;
 
 
-},{"./../utils/utils":301,"./formatters":311,"./method":317,"./property":326}],310:[function(require,module,exports){
+},{"./../utils/utils":303,"./formatters":313,"./method":319,"./property":328}],312:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -56587,7 +62272,7 @@ Filter.prototype.get = function (callback) {
 module.exports = Filter;
 
 
-},{"../utils/utils":301,"./formatters":311}],311:[function(require,module,exports){
+},{"../utils/utils":303,"./formatters":313}],313:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -56898,7 +62583,7 @@ module.exports = {
 };
 
 
-},{"../utils/config":299,"../utils/utils":301,"./iban":314}],312:[function(require,module,exports){
+},{"../utils/config":301,"../utils/utils":303,"./iban":316}],314:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -57183,7 +62868,7 @@ SolidityFunction.prototype.attachToContract = function (contract) {
 
 module.exports = SolidityFunction;
 
-},{"../solidity/coder":288,"../utils/sha3":300,"../utils/utils":301,"./errors":307,"./formatters":311}],313:[function(require,module,exports){
+},{"../solidity/coder":290,"../utils/sha3":302,"../utils/utils":303,"./errors":309,"./formatters":313}],315:[function(require,module,exports){
 (function (Buffer){
 /*
     This file is part of web3.js.
@@ -57344,7 +63029,7 @@ HttpProvider.prototype.isConnected = function () {
 module.exports = HttpProvider;
 
 }).call(this,require("buffer").Buffer)
-},{"./errors":307,"buffer":93,"xhr2":416,"xmlhttprequest":298}],314:[function(require,module,exports){
+},{"./errors":309,"buffer":94,"xhr2":417,"xmlhttprequest":300}],316:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -57573,7 +63258,7 @@ Iban.prototype.toString = function () {
 module.exports = Iban;
 
 
-},{"bignumber.js":280}],315:[function(require,module,exports){
+},{"bignumber.js":282}],317:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -57782,7 +63467,7 @@ IpcProvider.prototype.sendAsync = function (payload, callback) {
 module.exports = IpcProvider;
 
 
-},{"../utils/utils":301,"./errors":307}],316:[function(require,module,exports){
+},{"../utils/utils":303,"./errors":309}],318:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -57869,7 +63554,7 @@ Jsonrpc.toBatchPayload = function (messages) {
 module.exports = Jsonrpc;
 
 
-},{}],317:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58035,7 +63720,7 @@ Method.prototype.request = function () {
 
 module.exports = Method;
 
-},{"../utils/utils":301,"./errors":307}],318:[function(require,module,exports){
+},{"../utils/utils":303,"./errors":309}],320:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58103,7 +63788,7 @@ var methods = function () {
 
 module.exports = DB;
 
-},{"../method":317}],319:[function(require,module,exports){
+},{"../method":319}],321:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58459,7 +64144,7 @@ Eth.prototype.isSyncing = function (callback) {
 
 module.exports = Eth;
 
-},{"../../utils/config":299,"../../utils/utils":301,"../contract":306,"../filter":310,"../formatters":311,"../iban":314,"../method":317,"../namereg":325,"../property":326,"../syncing":329,"../transfer":330,"./watches":324}],320:[function(require,module,exports){
+},{"../../utils/config":301,"../../utils/utils":303,"../contract":308,"../filter":312,"../formatters":313,"../iban":316,"../method":319,"../namereg":327,"../property":328,"../syncing":331,"../transfer":332,"./watches":326}],322:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58513,7 +64198,7 @@ var properties = function () {
 
 module.exports = Net;
 
-},{"../../utils/utils":301,"../property":326}],321:[function(require,module,exports){
+},{"../../utils/utils":303,"../property":328}],323:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58630,7 +64315,7 @@ var properties = function () {
 
 module.exports = Personal;
 
-},{"../formatters":311,"../method":317,"../property":326}],322:[function(require,module,exports){
+},{"../formatters":313,"../method":319,"../property":328}],324:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58776,7 +64461,7 @@ var methods = function () {
 module.exports = Shh;
 
 
-},{"../filter":310,"../method":317,"./watches":324}],323:[function(require,module,exports){
+},{"../filter":312,"../method":319,"./watches":326}],325:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -58923,7 +64608,7 @@ var properties = function () {
 
 module.exports = Swarm;
 
-},{"../method":317,"../property":326}],324:[function(require,module,exports){
+},{"../method":319,"../property":328}],326:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -59032,7 +64717,7 @@ module.exports = {
 };
 
 
-},{"../method":317}],325:[function(require,module,exports){
+},{"../method":319}],327:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -59073,7 +64758,7 @@ module.exports = {
 };
 
 
-},{"../contracts/GlobalRegistrar.json":282,"../contracts/ICAPRegistrar.json":283}],326:[function(require,module,exports){
+},{"../contracts/GlobalRegistrar.json":284,"../contracts/ICAPRegistrar.json":285}],328:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -59219,7 +64904,7 @@ Property.prototype.request = function () {
 module.exports = Property;
 
 
-},{"../utils/utils":301}],327:[function(require,module,exports){
+},{"../utils/utils":303}],329:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -59486,7 +65171,7 @@ RequestManager.prototype.poll = function () {
 module.exports = RequestManager;
 
 
-},{"../utils/config":299,"../utils/utils":301,"./errors":307,"./jsonrpc":316}],328:[function(require,module,exports){
+},{"../utils/config":301,"../utils/utils":303,"./errors":309,"./jsonrpc":318}],330:[function(require,module,exports){
 
 
 var Settings = function () {
@@ -59497,7 +65182,7 @@ var Settings = function () {
 module.exports = Settings;
 
 
-},{}],329:[function(require,module,exports){
+},{}],331:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -59592,7 +65277,7 @@ IsSyncing.prototype.stopWatching = function () {
 module.exports = IsSyncing;
 
 
-},{"../utils/utils":301,"./formatters":311}],330:[function(require,module,exports){
+},{"../utils/utils":303,"./formatters":313}],332:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -59686,7 +65371,7 @@ var deposit = function (eth, from, to, value, client, callback) {
 module.exports = transfer;
 
 
-},{"../contracts/SmartExchange.json":284,"./iban":314}],331:[function(require,module,exports){
+},{"../contracts/SmartExchange.json":286,"./iban":316}],333:[function(require,module,exports){
 var sha3 = require("crypto-js/sha3");
 var pkgVersion = require("./package.json").version;
 var Ajv = require("ajv");
@@ -59911,13 +65596,13 @@ var TruffleContractSchema = {
 
 module.exports = TruffleContractSchema;
 
-},{"./package.json":335,"./spec/abi.spec.json":336,"./spec/contract-object.spec.json":337,"./spec/network-object.spec.json":338,"ajv":3,"crypto-js/sha3":333}],332:[function(require,module,exports){
-arguments[4][106][0].apply(exports,arguments)
-},{"dup":106}],333:[function(require,module,exports){
-arguments[4][133][0].apply(exports,arguments)
-},{"./core":332,"./x64-core":334,"dup":133}],334:[function(require,module,exports){
-arguments[4][137][0].apply(exports,arguments)
-},{"./core":332,"dup":137}],335:[function(require,module,exports){
+},{"./package.json":337,"./spec/abi.spec.json":338,"./spec/contract-object.spec.json":339,"./spec/network-object.spec.json":340,"ajv":3,"crypto-js/sha3":335}],334:[function(require,module,exports){
+arguments[4][107][0].apply(exports,arguments)
+},{"dup":107}],335:[function(require,module,exports){
+arguments[4][134][0].apply(exports,arguments)
+},{"./core":334,"./x64-core":336,"dup":134}],336:[function(require,module,exports){
+arguments[4][138][0].apply(exports,arguments)
+},{"./core":334,"dup":138}],337:[function(require,module,exports){
 module.exports={
   "_args": [
     [
@@ -60025,7 +65710,7 @@ module.exports={
   "version": "1.0.1"
 }
 
-},{}],336:[function(require,module,exports){
+},{}],338:[function(require,module,exports){
 module.exports={
   "id": "abi.spec.json",
   "$schema": "http://json-schema.org/schema#",
@@ -60167,7 +65852,7 @@ module.exports={
   }
 }
 
-},{}],337:[function(require,module,exports){
+},{}],339:[function(require,module,exports){
 module.exports={
   "id": "contract-object.spec.json",
   "$schema": "http://json-schema.org/schema#",
@@ -60287,7 +65972,7 @@ module.exports={
   }
 }
 
-},{}],338:[function(require,module,exports){
+},{}],340:[function(require,module,exports){
 module.exports={
   "id": "network-object.spec.json",
   "$schema": "http://json-schema.org/schema#",
@@ -60335,7 +66020,7 @@ module.exports={
   }
 }
 
-},{}],339:[function(require,module,exports){
+},{}],341:[function(require,module,exports){
 (function (global){
 var ethJSABI = require("ethjs-abi");
 var BlockchainUtils = require("truffle-blockchain-utils");
@@ -61252,7 +66937,7 @@ var contract = (function(module) {
 })(module || {});
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"ethjs-abi":169,"truffle-blockchain-utils":279,"web3":342}],340:[function(require,module,exports){
+},{"ethjs-abi":170,"truffle-blockchain-utils":281,"web3":344}],342:[function(require,module,exports){
 var Schema = require("truffle-contract-schema");
 var Contract = require("./contract.js");
 
@@ -61317,109 +67002,109 @@ if (typeof window !== "undefined") {
   window.TruffleContract = contract;
 }
 
-},{"./contract.js":339,"truffle-contract-schema":331}],341:[function(require,module,exports){
-arguments[4][280][0].apply(exports,arguments)
-},{"crypto":103,"dup":280}],342:[function(require,module,exports){
-arguments[4][281][0].apply(exports,arguments)
-},{"./lib/web3":364,"dup":281}],343:[function(require,module,exports){
+},{"./contract.js":341,"truffle-contract-schema":333}],343:[function(require,module,exports){
 arguments[4][282][0].apply(exports,arguments)
-},{"dup":282}],344:[function(require,module,exports){
+},{"crypto":104,"dup":282}],344:[function(require,module,exports){
 arguments[4][283][0].apply(exports,arguments)
-},{"dup":283}],345:[function(require,module,exports){
+},{"./lib/web3":366,"dup":283}],345:[function(require,module,exports){
 arguments[4][284][0].apply(exports,arguments)
 },{"dup":284}],346:[function(require,module,exports){
 arguments[4][285][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":285}],347:[function(require,module,exports){
+},{"dup":285}],347:[function(require,module,exports){
 arguments[4][286][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":286}],348:[function(require,module,exports){
+},{"dup":286}],348:[function(require,module,exports){
 arguments[4][287][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":287}],349:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":287}],349:[function(require,module,exports){
 arguments[4][288][0].apply(exports,arguments)
-},{"./address":346,"./bool":347,"./bytes":348,"./dynamicbytes":350,"./formatters":351,"./int":352,"./real":354,"./string":355,"./uint":357,"./ureal":358,"dup":288}],350:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":288}],350:[function(require,module,exports){
 arguments[4][289][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":289}],351:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":289}],351:[function(require,module,exports){
 arguments[4][290][0].apply(exports,arguments)
-},{"../utils/config":360,"../utils/utils":362,"./param":353,"bignumber.js":341,"dup":290}],352:[function(require,module,exports){
+},{"./address":348,"./bool":349,"./bytes":350,"./dynamicbytes":352,"./formatters":353,"./int":354,"./real":356,"./string":357,"./uint":359,"./ureal":360,"dup":290}],352:[function(require,module,exports){
 arguments[4][291][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":291}],353:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":291}],353:[function(require,module,exports){
 arguments[4][292][0].apply(exports,arguments)
-},{"../utils/utils":362,"dup":292}],354:[function(require,module,exports){
+},{"../utils/config":362,"../utils/utils":364,"./param":355,"bignumber.js":343,"dup":292}],354:[function(require,module,exports){
 arguments[4][293][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":293}],355:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":293}],355:[function(require,module,exports){
 arguments[4][294][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":294}],356:[function(require,module,exports){
+},{"../utils/utils":364,"dup":294}],356:[function(require,module,exports){
 arguments[4][295][0].apply(exports,arguments)
-},{"./formatters":351,"./param":353,"dup":295}],357:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":295}],357:[function(require,module,exports){
 arguments[4][296][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":296}],358:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":296}],358:[function(require,module,exports){
 arguments[4][297][0].apply(exports,arguments)
-},{"./formatters":351,"./type":356,"dup":297}],359:[function(require,module,exports){
+},{"./formatters":353,"./param":355,"dup":297}],359:[function(require,module,exports){
 arguments[4][298][0].apply(exports,arguments)
-},{"dup":298}],360:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":298}],360:[function(require,module,exports){
 arguments[4][299][0].apply(exports,arguments)
-},{"bignumber.js":341,"dup":299}],361:[function(require,module,exports){
+},{"./formatters":353,"./type":358,"dup":299}],361:[function(require,module,exports){
 arguments[4][300][0].apply(exports,arguments)
-},{"crypto-js":112,"crypto-js/sha3":133,"dup":300}],362:[function(require,module,exports){
+},{"dup":300}],362:[function(require,module,exports){
 arguments[4][301][0].apply(exports,arguments)
-},{"./sha3.js":361,"bignumber.js":341,"dup":301,"utf8":395}],363:[function(require,module,exports){
+},{"bignumber.js":343,"dup":301}],363:[function(require,module,exports){
 arguments[4][302][0].apply(exports,arguments)
-},{"dup":302}],364:[function(require,module,exports){
+},{"crypto-js":113,"crypto-js/sha3":134,"dup":302}],364:[function(require,module,exports){
 arguments[4][303][0].apply(exports,arguments)
-},{"./utils/sha3":361,"./utils/utils":362,"./version.json":363,"./web3/batch":366,"./web3/extend":370,"./web3/httpprovider":374,"./web3/iban":375,"./web3/ipcprovider":376,"./web3/methods/db":379,"./web3/methods/eth":380,"./web3/methods/net":381,"./web3/methods/personal":382,"./web3/methods/shh":383,"./web3/methods/swarm":384,"./web3/property":387,"./web3/requestmanager":388,"./web3/settings":389,"bignumber.js":341,"dup":303}],365:[function(require,module,exports){
+},{"./sha3.js":363,"bignumber.js":343,"dup":303,"utf8":397}],365:[function(require,module,exports){
 arguments[4][304][0].apply(exports,arguments)
-},{"../utils/sha3":361,"../utils/utils":362,"./event":369,"./filter":371,"./formatters":372,"./methods/watches":385,"dup":304}],366:[function(require,module,exports){
+},{"dup":304}],366:[function(require,module,exports){
 arguments[4][305][0].apply(exports,arguments)
-},{"./errors":368,"./jsonrpc":377,"dup":305}],367:[function(require,module,exports){
+},{"./utils/sha3":363,"./utils/utils":364,"./version.json":365,"./web3/batch":368,"./web3/extend":372,"./web3/httpprovider":376,"./web3/iban":377,"./web3/ipcprovider":378,"./web3/methods/db":381,"./web3/methods/eth":382,"./web3/methods/net":383,"./web3/methods/personal":384,"./web3/methods/shh":385,"./web3/methods/swarm":386,"./web3/property":389,"./web3/requestmanager":390,"./web3/settings":391,"bignumber.js":343,"dup":305}],367:[function(require,module,exports){
 arguments[4][306][0].apply(exports,arguments)
-},{"../solidity/coder":349,"../utils/utils":362,"./allevents":365,"./event":369,"./function":373,"dup":306}],368:[function(require,module,exports){
+},{"../utils/sha3":363,"../utils/utils":364,"./event":371,"./filter":373,"./formatters":374,"./methods/watches":387,"dup":306}],368:[function(require,module,exports){
 arguments[4][307][0].apply(exports,arguments)
-},{"dup":307}],369:[function(require,module,exports){
+},{"./errors":370,"./jsonrpc":379,"dup":307}],369:[function(require,module,exports){
 arguments[4][308][0].apply(exports,arguments)
-},{"../solidity/coder":349,"../utils/sha3":361,"../utils/utils":362,"./filter":371,"./formatters":372,"./methods/watches":385,"dup":308}],370:[function(require,module,exports){
+},{"../solidity/coder":351,"../utils/utils":364,"./allevents":367,"./event":371,"./function":375,"dup":308}],370:[function(require,module,exports){
 arguments[4][309][0].apply(exports,arguments)
-},{"./../utils/utils":362,"./formatters":372,"./method":378,"./property":387,"dup":309}],371:[function(require,module,exports){
+},{"dup":309}],371:[function(require,module,exports){
 arguments[4][310][0].apply(exports,arguments)
-},{"../utils/utils":362,"./formatters":372,"dup":310}],372:[function(require,module,exports){
+},{"../solidity/coder":351,"../utils/sha3":363,"../utils/utils":364,"./filter":373,"./formatters":374,"./methods/watches":387,"dup":310}],372:[function(require,module,exports){
 arguments[4][311][0].apply(exports,arguments)
-},{"../utils/config":360,"../utils/utils":362,"./iban":375,"dup":311}],373:[function(require,module,exports){
+},{"./../utils/utils":364,"./formatters":374,"./method":380,"./property":389,"dup":311}],373:[function(require,module,exports){
 arguments[4][312][0].apply(exports,arguments)
-},{"../solidity/coder":349,"../utils/sha3":361,"../utils/utils":362,"./errors":368,"./formatters":372,"dup":312}],374:[function(require,module,exports){
+},{"../utils/utils":364,"./formatters":374,"dup":312}],374:[function(require,module,exports){
 arguments[4][313][0].apply(exports,arguments)
-},{"./errors":368,"buffer":93,"dup":313,"xhr2":416,"xmlhttprequest":359}],375:[function(require,module,exports){
+},{"../utils/config":362,"../utils/utils":364,"./iban":377,"dup":313}],375:[function(require,module,exports){
 arguments[4][314][0].apply(exports,arguments)
-},{"bignumber.js":341,"dup":314}],376:[function(require,module,exports){
+},{"../solidity/coder":351,"../utils/sha3":363,"../utils/utils":364,"./errors":370,"./formatters":374,"dup":314}],376:[function(require,module,exports){
 arguments[4][315][0].apply(exports,arguments)
-},{"../utils/utils":362,"./errors":368,"dup":315}],377:[function(require,module,exports){
+},{"./errors":370,"buffer":94,"dup":315,"xhr2":417,"xmlhttprequest":361}],377:[function(require,module,exports){
 arguments[4][316][0].apply(exports,arguments)
-},{"dup":316}],378:[function(require,module,exports){
+},{"bignumber.js":343,"dup":316}],378:[function(require,module,exports){
 arguments[4][317][0].apply(exports,arguments)
-},{"../utils/utils":362,"./errors":368,"dup":317}],379:[function(require,module,exports){
+},{"../utils/utils":364,"./errors":370,"dup":317}],379:[function(require,module,exports){
 arguments[4][318][0].apply(exports,arguments)
-},{"../method":378,"dup":318}],380:[function(require,module,exports){
+},{"dup":318}],380:[function(require,module,exports){
 arguments[4][319][0].apply(exports,arguments)
-},{"../../utils/config":360,"../../utils/utils":362,"../contract":367,"../filter":371,"../formatters":372,"../iban":375,"../method":378,"../namereg":386,"../property":387,"../syncing":390,"../transfer":391,"./watches":385,"dup":319}],381:[function(require,module,exports){
+},{"../utils/utils":364,"./errors":370,"dup":319}],381:[function(require,module,exports){
 arguments[4][320][0].apply(exports,arguments)
-},{"../../utils/utils":362,"../property":387,"dup":320}],382:[function(require,module,exports){
+},{"../method":380,"dup":320}],382:[function(require,module,exports){
 arguments[4][321][0].apply(exports,arguments)
-},{"../formatters":372,"../method":378,"../property":387,"dup":321}],383:[function(require,module,exports){
+},{"../../utils/config":362,"../../utils/utils":364,"../contract":369,"../filter":373,"../formatters":374,"../iban":377,"../method":380,"../namereg":388,"../property":389,"../syncing":392,"../transfer":393,"./watches":387,"dup":321}],383:[function(require,module,exports){
 arguments[4][322][0].apply(exports,arguments)
-},{"../filter":371,"../method":378,"./watches":385,"dup":322}],384:[function(require,module,exports){
+},{"../../utils/utils":364,"../property":389,"dup":322}],384:[function(require,module,exports){
 arguments[4][323][0].apply(exports,arguments)
-},{"../method":378,"../property":387,"dup":323}],385:[function(require,module,exports){
+},{"../formatters":374,"../method":380,"../property":389,"dup":323}],385:[function(require,module,exports){
 arguments[4][324][0].apply(exports,arguments)
-},{"../method":378,"dup":324}],386:[function(require,module,exports){
+},{"../filter":373,"../method":380,"./watches":387,"dup":324}],386:[function(require,module,exports){
 arguments[4][325][0].apply(exports,arguments)
-},{"../contracts/GlobalRegistrar.json":343,"../contracts/ICAPRegistrar.json":344,"dup":325}],387:[function(require,module,exports){
+},{"../method":380,"../property":389,"dup":325}],387:[function(require,module,exports){
 arguments[4][326][0].apply(exports,arguments)
-},{"../utils/utils":362,"dup":326}],388:[function(require,module,exports){
+},{"../method":380,"dup":326}],388:[function(require,module,exports){
 arguments[4][327][0].apply(exports,arguments)
-},{"../utils/config":360,"../utils/utils":362,"./errors":368,"./jsonrpc":377,"dup":327}],389:[function(require,module,exports){
+},{"../contracts/GlobalRegistrar.json":345,"../contracts/ICAPRegistrar.json":346,"dup":327}],389:[function(require,module,exports){
 arguments[4][328][0].apply(exports,arguments)
-},{"dup":328}],390:[function(require,module,exports){
+},{"../utils/utils":364,"dup":328}],390:[function(require,module,exports){
 arguments[4][329][0].apply(exports,arguments)
-},{"../utils/utils":362,"./formatters":372,"dup":329}],391:[function(require,module,exports){
+},{"../utils/config":362,"../utils/utils":364,"./errors":370,"./jsonrpc":379,"dup":329}],391:[function(require,module,exports){
 arguments[4][330][0].apply(exports,arguments)
-},{"../contracts/SmartExchange.json":345,"./iban":375,"dup":330}],392:[function(require,module,exports){
+},{"dup":330}],392:[function(require,module,exports){
+arguments[4][331][0].apply(exports,arguments)
+},{"../utils/utils":364,"./formatters":374,"dup":331}],393:[function(require,module,exports){
+arguments[4][332][0].apply(exports,arguments)
+},{"../contracts/SmartExchange.json":347,"./iban":377,"dup":332}],394:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -62969,7 +68654,7 @@ arguments[4][330][0].apply(exports,arguments)
   }
 }.call(this));
 
-},{}],393:[function(require,module,exports){
+},{}],395:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -63703,7 +69388,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"./util":394,"punycode":237,"querystring":240}],394:[function(require,module,exports){
+},{"./util":396,"punycode":239,"querystring":242}],396:[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -63721,7 +69406,7 @@ module.exports = {
   }
 };
 
-},{}],395:[function(require,module,exports){
+},{}],397:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
 ;(function(root) {
@@ -63969,7 +69654,7 @@ module.exports = {
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],396:[function(require,module,exports){
+},{}],398:[function(require,module,exports){
 (function (global){
 
 /**
@@ -64040,16 +69725,16 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],397:[function(require,module,exports){
-arguments[4][196][0].apply(exports,arguments)
-},{"dup":196}],398:[function(require,module,exports){
+},{}],399:[function(require,module,exports){
+arguments[4][197][0].apply(exports,arguments)
+},{"dup":197}],400:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],399:[function(require,module,exports){
+},{}],401:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -64639,7 +70324,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":398,"_process":91,"inherits":397}],400:[function(require,module,exports){
+},{"./support/isBuffer":400,"_process":92,"inherits":399}],402:[function(require,module,exports){
 var indexOf = require('indexof');
 
 var Object_keys = function (obj) {
@@ -64779,7 +70464,7 @@ exports.createContext = Script.createContext = function (context) {
     return copy;
 };
 
-},{"indexof":195}],401:[function(require,module,exports){
+},{"indexof":196}],403:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -64828,7 +70513,7 @@ module.exports = {
     }
 };
 
-},{}],402:[function(require,module,exports){
+},{}],404:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -65243,7 +70928,7 @@ module.exports = {
 };
 
 
-},{"underscore":392,"web3-eth-iban":406,"web3-utils":410}],403:[function(require,module,exports){
+},{"underscore":394,"web3-eth-iban":407,"web3-utils":411}],405:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -65277,163 +70962,103 @@ module.exports = {
 };
 
 
-},{"./errors":401,"./formatters":402}],404:[function(require,module,exports){
+},{"./errors":403,"./formatters":404}],406:[function(require,module,exports){
+'use strict';
+
 /**
  * TODO: use actual smart contracts and genesis blocks
  * to detect network.
  */
 
-const pify = require('pify')
-const parseDomain = require('parse-domain')
+var pify = require('bluebird').promisify;
+var parseDomain = require('parse-domain');
 
-const networksTypes = {
-  1: 'main',
+var networksTypes = {
+  1: 'mainnet',
   2: 'morden',
   3: 'ropsten',
   42: 'kovan',
   4: 'rinkeby'
-}
+};
 
-const networksIds = {
+var networksIds = {
   main: 1,
   mainnet: 1,
   morden: 2,
   ropsten: 3,
   kovan: 42,
   rinkeby: 4
-}
+};
 
-async function detectNetwork (provider) {
-  let netId = null
+function detectNetwork(provider) {
+  var netId, _parseDomain, subdomain, domain, tld, type, _test, _test2, _test3;
 
-  if (provider instanceof Object) {
+  return Promise.resolve().then(function () {
+    netId = null;
+    _test = provider instanceof Object;
     // MetamaskInpageProvider
-    if (
-      provider.publicConfigStore &&
-      provider.publicConfigStore._state &&
-      provider.publicConfigStore._state.networkVersion) {
-      netId = provider.publicConfigStore._state.networkVersion
 
-    // Web3.providers.HttpProvider
-    } else if (provider.host) {
-      const {subdomain, domain, tld} = parseDomain(provider.host)
+    if (_test && provider.publicConfigStore && provider.publicConfigStore._state && provider.publicConfigStore._state.networkVersion) {
+      netId = provider.publicConfigStore._state.networkVersion;
 
-      if (domain === 'infura' && tld === 'io') {
-        netId = networksIds[subdomain]
+      // Web3.providers.HttpProvider
+    } else {
+      if (_test) {
+        if (provider.host) {
+          _parseDomain = parseDomain(provider.host);
+          subdomain = _parseDomain.subdomain;
+          domain = _parseDomain.domain;
+          tld = _parseDomain.tld;
+
+
+          if (domain === 'infura' && tld === 'io') {
+            netId = networksIds[subdomain];
+          }
+        }
+      }
+
+      _test2 = typeof window !== 'undefined' && window.web3;
+      // web3.js v<1.0
+
+      if (_test2 && web3.version && web3.version.getNetwork) {
+        return Promise.resolve().then(function () {
+          return pify(web3.version.getNetwork)();
+        }).then(function (_resp) {
+          netId = _resp;
+
+          // web3.js v1.0+
+        });
+      } else {
+        _test3 = _test2;
+        if (_test3 && web3.eth && web3.eth.net && web3.eth.net.getId) {
+          return Promise.resolve().then(function () {
+            return pify(web3.eth.net.getId)();
+          }).then(function (_resp) {
+            netId = _resp;
+          });
+        }
       }
     }
-  } else if (typeof window !== 'undefined' && window.web3) {
-    // web3.js v<1.0
-    if (web3.version && web3.version.getNetwork) {
-      netId = await pify(web3.version.getNetwork)()
+  }).then(function () {
 
-    // web3.js v1.0+
-    } else if (web3.eth && web3.eth.net && web3.eth.net.getId) {
-      netId = await pify(web3.eth.net.getId)()
+    if (netId === undefined) {
+      netId = null;
     }
-  }
 
-  if (netId === undefined) {
-    netId = null
-  }
+    type = networksTypes[netId] || 'unknown';
 
-  const type = networksTypes[netId] || 'unknown'
 
-  return {
-    id: netId,
-    type: type
-  }
+    return {
+      id: netId,
+      type: type
+    };
+  });
 }
 
-module.exports = detectNetwork
+module.exports = detectNetwork;
 
-},{"parse-domain":222,"pify":405}],405:[function(require,module,exports){
-'use strict';
 
-const processFn = (fn, opts) => function () {
-	const P = opts.promiseModule;
-	const args = new Array(arguments.length);
-
-	for (let i = 0; i < arguments.length; i++) {
-		args[i] = arguments[i];
-	}
-
-	return new P((resolve, reject) => {
-		if (opts.errorFirst) {
-			args.push(function (err, result) {
-				if (opts.multiArgs) {
-					const results = new Array(arguments.length - 1);
-
-					for (let i = 1; i < arguments.length; i++) {
-						results[i - 1] = arguments[i];
-					}
-
-					if (err) {
-						results.unshift(err);
-						reject(results);
-					} else {
-						resolve(results);
-					}
-				} else if (err) {
-					reject(err);
-				} else {
-					resolve(result);
-				}
-			});
-		} else {
-			args.push(function (result) {
-				if (opts.multiArgs) {
-					const results = new Array(arguments.length - 1);
-
-					for (let i = 0; i < arguments.length; i++) {
-						results[i] = arguments[i];
-					}
-
-					resolve(results);
-				} else {
-					resolve(result);
-				}
-			});
-		}
-
-		fn.apply(this, args);
-	});
-};
-
-module.exports = (obj, opts) => {
-	opts = Object.assign({
-		exclude: [/.+(Sync|Stream)$/],
-		errorFirst: true,
-		promiseModule: Promise
-	}, opts);
-
-	const filter = key => {
-		const match = pattern => typeof pattern === 'string' ? key === pattern : pattern.test(key);
-		return opts.include ? opts.include.some(match) : !opts.exclude.some(match);
-	};
-
-	let ret;
-	if (typeof obj === 'function') {
-		ret = function () {
-			if (opts.excludeMain) {
-				return obj.apply(this, arguments);
-			}
-
-			return processFn(obj, opts).apply(this, arguments);
-		};
-	} else {
-		ret = Object.create(Object.getPrototypeOf(obj));
-	}
-
-	for (const key in obj) { // eslint-disable-line guard-for-in
-		const x = obj[key];
-		ret[key] = typeof x === 'function' && filter(key) ? processFn(x, opts) : x;
-	}
-
-	return ret;
-};
-
-},{}],406:[function(require,module,exports){
+},{"bluebird":60,"parse-domain":224}],407:[function(require,module,exports){
 /*
     This file is part of web3.js.
 
@@ -65702,7 +71327,7 @@ Iban.prototype.toString = function () {
 
 module.exports = Iban;
 
-},{"bn.js":60,"web3-utils":410}],407:[function(require,module,exports){
+},{"bn.js":61,"web3-utils":411}],408:[function(require,module,exports){
 /*
  This file is part of web3.js.
 
@@ -66042,9 +71667,9 @@ WebsocketProvider.prototype.reset = function () {
 module.exports = WebsocketProvider;
 
 
-},{"underscore":392,"web3-core-helpers":403,"websocket":413}],408:[function(require,module,exports){
-arguments[4][171][0].apply(exports,arguments)
-},{"dup":171}],409:[function(require,module,exports){
+},{"underscore":394,"web3-core-helpers":405,"websocket":414}],409:[function(require,module,exports){
+arguments[4][172][0].apply(exports,arguments)
+},{"dup":172}],410:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/utf8js v2.0.0 by @mathias */
 ;(function(root) {
@@ -66292,7 +71917,7 @@ arguments[4][171][0].apply(exports,arguments)
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],410:[function(require,module,exports){
+},{}],411:[function(require,module,exports){
 /*
  This file is part of web3.js.
 
@@ -66608,7 +72233,7 @@ module.exports = {
 };
 
 
-},{"./soliditySha3.js":411,"./utils.js":412,"ethjs-unit":173,"randomhex":245,"underscore":392}],411:[function(require,module,exports){
+},{"./soliditySha3.js":412,"./utils.js":413,"ethjs-unit":174,"randomhex":247,"underscore":394}],412:[function(require,module,exports){
 /*
  This file is part of web3.js.
 
@@ -66855,7 +72480,7 @@ var soliditySha3 = function () {
 
 module.exports = soliditySha3;
 
-},{"./utils.js":412,"bn.js":408,"underscore":392}],412:[function(require,module,exports){
+},{"./utils.js":413,"bn.js":409,"underscore":394}],413:[function(require,module,exports){
 /*
  This file is part of web3.js.
 
@@ -67320,7 +72945,7 @@ module.exports = {
     sha3: sha3
 };
 
-},{"bn.js":408,"eth-lib/lib/hash":164,"number-to-bn":216,"underscore":392,"utf8":409}],413:[function(require,module,exports){
+},{"bn.js":409,"eth-lib/lib/hash":165,"number-to-bn":217,"underscore":394,"utf8":410}],414:[function(require,module,exports){
 var _global = (function() { return this || {}; })();
 var NativeWebSocket = _global.WebSocket || _global.MozWebSocket;
 var websocket_version = require('./version');
@@ -67358,10 +72983,10 @@ module.exports = {
     'version'      : websocket_version
 };
 
-},{"./version":414}],414:[function(require,module,exports){
+},{"./version":415}],415:[function(require,module,exports){
 module.exports = require('../package.json').version;
 
-},{"../package.json":415}],415:[function(require,module,exports){
+},{"../package.json":416}],416:[function(require,module,exports){
 module.exports={
   "_args": [
     [
@@ -67490,10 +73115,10 @@ module.exports={
   "version": "1.0.24"
 }
 
-},{}],416:[function(require,module,exports){
+},{}],417:[function(require,module,exports){
 module.exports = XMLHttpRequest;
 
-},{}],417:[function(require,module,exports){
+},{}],418:[function(require,module,exports){
 // TODO refactor+clean up
 
 const moment = require('moment');
@@ -67511,12 +73136,16 @@ const source = require('../../build/contracts/DocStamp.json');
 let instance = null;
 let account = null;
 
-/**
- * ON LOAD
- */
+let addresses = {
+  mainnet: '0xd749c968399b8cbdf2ce95d1f87c1c38157c579a',
+  rinkeby: '0x3b41bc65821962b9ac60c8151ba0ae593e4e3078'
 
-// wait for MetaMask to inject script
-window.addEventListener('load', onLoad);
+  /**
+   * ON LOAD
+   */
+
+  // wait for MetaMask to inject script
+};window.addEventListener('load', onLoad);
 
 async function onLoad() {
   try {
@@ -67533,20 +73162,30 @@ async function onLoad() {
   }
 }
 
+let network = 'mainnet';
+
 async function init() {
   contract = tc(source);
 
   // wait for web3 to load
   await wait(1000);
+
+  const { id: netId, type: netType } = await detectNetwork(getProvider());
+  if (!(netType === 'mainnet' || netType === 'rinkeby')) {
+    alert('Only Mainnet or Rinkeby Testnet is currencly supported');
+  } else {
+    network = netType;
+  }
+
   provider = getProvider();
   contract.setProvider(provider);
 
-  const { id: netId, type: netType } = await detectNetwork(provider);
-  if (netType !== 'rinkeby') {
-    alert('Please connect to the Rinkeby testnet');
-  }
+  contractAddress = addresses[network];
 
-  instance = await contract.deployed();
+  document.querySelector('#networkType').innerHTML = network;
+  document.querySelector('#etherscanLink').href = `https://${network === 'mainnet' ? '' : `${network}.`}etherscan.io/address/${contractAddress}`;
+
+  instance = await contract.at(contractAddress);
   account = getAccount();
 
   if (!window.web3) {
@@ -67563,7 +73202,7 @@ function getProvider() {
     return window.web3.currentProvider;
   }
 
-  const providerUrl = 'https://rinkeby.infura.io:443';
+  const providerUrl = `https://${network}.infura.io:443`;
   const provider = new window.Web3.providers.HttpProvider(providerUrl);
 
   return provider;
@@ -67575,7 +73214,7 @@ function getWebsocketProvider() {
     window.Web3.providers.WebsocketProvider.prototype.sendAsync = window.Web3.providers.WebsocketProvider.prototype.send;
   }
 
-  return new window.Web3.providers.WebsocketProvider('wss://rinkeby.infura.io/ws');
+  return new window.Web3.providers.WebsocketProvider(`wss://${network}.infura.io/ws`);
 }
 
 function getAccount() {
@@ -67590,7 +73229,7 @@ function getAccount() {
 
 async function setUpEvents() {
 
-  const ws = new Web3WsProvider('wss://rinkeby.infura.io/ws');
+  const ws = new Web3WsProvider(`wss://${network}.infura.io/ws`);
   ws.sendAsync = ws.send;
   const contract = tc(source);
   const provider = ws; //getWebsocketProvider()
@@ -67848,4 +73487,4 @@ async function fileToSha3(file) {
   return hash;
 }
 
-},{"../../build/contracts/DocStamp.json":1,"arraybuffer-to-buffer":42,"buffer/":93,"ethereumjs-abi":165,"ethereumjs-util":168,"moment":214,"promise-wait":230,"truffle-contract":340,"web3-detect-network":404,"web3-providers-ws":407}]},{},[417]);
+},{"../../build/contracts/DocStamp.json":1,"arraybuffer-to-buffer":42,"buffer/":94,"ethereumjs-abi":166,"ethereumjs-util":169,"moment":215,"promise-wait":232,"truffle-contract":342,"web3-detect-network":406,"web3-providers-ws":408}]},{},[418]);
