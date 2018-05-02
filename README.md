@@ -1,6 +1,6 @@
 <h1 align="center">
   <br />
-  <img src="https://user-images.githubusercontent.com/168240/39511327-e76d9a3c-4da1-11e8-996c-bbd158000488.png" alt="docstamp.it" width="600" />
+  <img src="https://user-images.githubusercontent.com/168240/39511732-55b8b16a-4da3-11e8-872d-2497788cca38.png" alt="docstamp.it" width="600" />
   <br />
   <br />
   <br />
