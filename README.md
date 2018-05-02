@@ -8,7 +8,7 @@
 
 > Document notarization on the [Ethereum](https://ethereum.org/) blockchain.
 
-<a href="https://docstamp.it"><img src="https://user-images.githubusercontent.com/168240/39511921-f2deb070-4da3-11e8-9032-020efbd34bc0.png" width="700" /></a>
+<a href="https://docstamp.it"><img src="https://user-images.githubusercontent.com/168240/39511921-f2deb070-4da3-11e8-9032-020efbd34bc0.png" width="900" /></a>
 
 # Demo
 
@@ -16,7 +16,7 @@
 
 # Architecture
 
-<img src="./public/assets/diagrams/docstampitv1.png" width="900" />
+<img src="./public/assets/diagrams/docstampitv1.png" width="600" />
 
 # Test
 
