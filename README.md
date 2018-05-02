@@ -16,7 +16,7 @@
 
 # Architecture
 
-<img src="./public/assets/diagrams/docstampitv1.png" width="600" />
+<img src="./public/assets/diagrams/docstampitv1.png" width="900" />
 
 # Test
 
