@@ -1,4 +1,10 @@
-# docstamp.it
+<h1 align="center">
+  <br />
+  <img src="https://user-images.githubusercontent.com/168240/39511327-e76d9a3c-4da1-11e8-996c-bbd158000488.png" alt="docstamp.it" width="600" />
+  <br />
+  <br />
+  <br />
+</h1>
 
 > Document notarization on the [Ethereum](https://ethereum.org/) blockchain.
 
